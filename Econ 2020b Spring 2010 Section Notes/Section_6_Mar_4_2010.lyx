@@ -1,0 +1,1061 @@
+#LyX 1.6.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-sec
+\end_modules
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Section Notes 6
+\end_layout
+
+\begin_layout Author
+Wonbin Kang
+\end_layout
+
+\begin_layout Date
+March 4, 2010
+\end_layout
+
+\begin_layout Section*
+Agenda
+\end_layout
+
+\begin_layout Enumerate
+Midterm Studying Tips
+\end_layout
+
+\begin_layout Enumerate
+Midterm Review Question: the Price Fixing Game
+\end_layout
+
+\begin_layout Section
+Midterm Studying Tips:
+\end_layout
+
+\begin_layout Itemize
+Expect this class to take a lot of your time between now and the midterm.
+ Materials up to PBE (signaling games) on next week's problem set (BNE)
+ will be on the midterm.
+ Prioritize your time: if you're stuck on the math on a problem set, move
+ on.
+\end_layout
+
+\begin_layout Itemize
+Do old midterm exams and time yourself.
+ Anything other than PBE is fair game.
+ 
+\end_layout
+
+\begin_layout Itemize
+Make sure you understand how to do everything on the 
+\begin_inset Quotes eld
+\end_inset
+
+systematic approach handout
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Review problem set and practice problem set solutions.
+\end_layout
+
+\begin_layout Section
+Midterm Review Question: the Price Fixing Game
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Questions (a) through (c)
+\series default
+: The extensive form game is found in Appendix A-1.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Subpart (a)
+\series default
+ At how many information sets does each player move?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+S_{1}\equiv\left\{ \left\{ C,F\right\} ,q_{1}=30,q_{1}\in(0,\infty)\right\} \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+S_{2}\equiv\left\{ \left\{ C,F\right\} ,q_{2}=30,q_{2}\in(0,\infty)\right\} \]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Subpart (b)
+\series default
+ The problem is information set 1.3.
+ The game as represented in the extensive form fails the assumption of 
+\begin_inset Quotes eld
+\end_inset
+
+perfect recall.
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+This is not the same as perfect information.
+ 
+\end_layout
+
+\end_inset
+
+ The players don't know what he or she played in the previous round.
+ However, for purposes of this game, this assumption is not really necessary.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Subpart (c)
+\series default
+ Note that we can rewrite the game above in a 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ matrix:
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C, 30, 
+\begin_inset Formula $q_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F, 30, 
+\begin_inset Formula $q_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C, 30, 
+\begin_inset Formula $q_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1800, 1800
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{1}(120-q_{1}-q_{2})$
+\end_inset
+
+, 
+\begin_inset Formula $q_{2}(120-q_{1}-q_{2})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F, 30, 
+\begin_inset Formula $q_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{1}(120-q_{1}-q_{2})$
+\end_inset
+
+, 
+\begin_inset Formula $q_{2}(120-q_{1}-q_{2})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $q_{1}(120-q_{1}-q_{2})$
+\end_inset
+
+, 
+\begin_inset Formula $q_{2}(120-q_{1}-q_{2})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Let's first consider what happens in the Cournot part of the game.
+ We see that the NE of the Cournot part (note that it isn't a subgame) of
+ the game is 
+\begin_inset Formula $q_{1}^{*}=q_{2}^{*}=40$
+\end_inset
+
+, for a payoff of 
+\begin_inset Formula $\pi_{1}^{*}=\pi_{2}^{*}=1,600$
+\end_inset
+
+.
+ Therefore, a candidate equilibrium strategy profile would be as follows:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \begin{equation}
+\sigma^{*}=\left[\left(F,\, q_{1}=30,\, q_{1}=40\right),\,\left(F,\, q_{2}=30,\, q_{2}=40\right)\right]\label{NE1}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Given the strategies of the other player, note that each player has no incentive
+ to deviate from the Cournot equilibrium production: it is by definition
+ a best response.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Further, a player does not have an incentive to deviate from F to C since
+ that would merely get her the same payoff.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Therefore, this is a NE.
+ However, is it the only NE? No.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Let's consider when it would be a best response for player 1 (and since
+ this is a symmetric problem, player 2) to play (C, 30, 
+\begin_inset Formula $q_{1}$
+\end_inset
+
+)
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Do you see that the choice of 
+\begin_inset Formula $q_{1}$
+\end_inset
+
+ is off the equilibrium path? Since we're looking for NE and not SPNE, we
+ know that non-credible threats can be sustained in equilibrium.
+ 
+\end_layout
+
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \begin{equation}
+1800\geq u_{1}(F,\,30,\, q_{1}|C,\,30,\, q_{2})\,\forall q_{1}\Rightarrow1800\geq u_{1}(F,\,30,\, q_{1}^{*}|C,\,30,\, q_{2})\,\forall q_{1}\label{inequality for C}\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula \[
+q_{1}^{*}=\arg\max_{q_{1}}q_{1}(120-q_{1}-q_{2})\Rightarrow q_{1}^{*}=\frac{120-q_{2}}{2}\]
+
+\end_inset
+
+Now we substitution our equation for 
+\begin_inset Formula $q_{1}^{*}$
+\end_inset
+
+into inequality 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "inequality for C"
+
+\end_inset
+
+:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \[
+1800\geq\left(\frac{120-q_{2}}{2}\right)^{2}\Rightarrow q_{2}\geq35.15\]
+
+\end_inset
+
+Since this is a symmetric problem, the same will apply for player 2.
+ Therefore the NE we're looking for is:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \begin{equation}
+\sigma^{*}=\left[\left(C,\, q_{1}=30,\, q_{2}\in[35.15,\infty)\right),\,\left(C,\, q_{2}=30,\, q_{2}\in[35.15,\infty)\right)\right]\label{NE2}\end{equation}
+
+\end_inset
+
+What's going on in this game? Why are each of the players indifferent between
+ producing an amount greater than 35.15 in the Cournot game and not an amount
+ greater than 30? 
+\end_layout
+
+\begin_layout Enumerate
+Now let's refine the set of NE identified in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "NE1"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "NE2"
+
+\end_inset
+
+ above.
+ Let's first use the THP refinement.
+ Recall that THP excludes equilibrium strategy profiles which include a
+ weakly dominated strategy.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\sigma^{*}=\left[\left(F,\, q_{1}=30,\, q_{1}=40\right),\,\left(F,\, q_{2}=30,\, q_{2}=40\right)\right]$
+\end_inset
+
+ is not a THPNE since it is weakly dominated by 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+
+\begin_inset Formula $\sigma^{*}=\left[\left(C,\, q_{1}=30,\, q_{1}=40\right),\,\left(C,\, q_{2}=30,\, q_{2}=40\right)\right]$
+\end_inset
+
+.
+ Remember that you only need one strategy to weakly dominate another for
+ the latter to be weakly dominated.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Now consider the second equilibria in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "NE2"
+
+\end_inset
+
+.
+ The strategy 
+\begin_inset Formula $\sigma_{1}=$
+\end_inset
+
+ 
+\begin_inset Formula $\left(C,\, q_{1}=30,\, q_{2}\in(60,\infty)\right)$
+\end_inset
+
+ is weakly dominated by 
+\begin_inset Formula $\sigma_{1}^{*}=\left(C,\, q_{1}=30,\, q_{2}\in[35.15,60)\right)$
+\end_inset
+
+.
+ Do you see why? Check the first-order conditions for player 1 and note
+ that player 1 would never produce more than 60, even if the action is off
+ the equilibrium path.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Therefore, the THPNE of this game is:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \[
+\sigma^{*}=\left[\left(C,\, q_{1}=30,\, q_{2}\in[35.15,\,60)\right),\,\left(C,\, q_{2}=30,\, q_{2}\in[35.15,\,60)\right)\right]\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Now let's refine the set of NE using SPNE.
+ How many subgames? Since there is only one subgame, SPNE is equivalent
+ to NE.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Questions (d) through (f)
+\series default
+: The extensive form game is found in Appendix A-2.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Subpart (d)
+\series default
+ Since this is a symmetric game, 
+\begin_inset Formula $\forall i\in\left\{ 1,2\right\} $
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+S_{i}=\left\{ \left\{ C,F\right\} ,q_{i}=30,q_{i3}\in(0,\infty),q_{i4}\in(0,\infty),q_{i5}\in(0,\infty)\right\} \]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Subpart (e)
+\series default
+ The extensive form game merely gets rid of the information sets after the
+ initial choice of 
+\begin_inset Quotes eld
+\end_inset
+
+C
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+F
+\begin_inset Quotes erd
+\end_inset
+
+.
+ See Appendix A-2
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Subpart (f)
+\series default
+ The game is sequential, we don't have perfect information, and we don't
+ have multiple types: Therefore, the equilibrium concept is SPNE.
+ 
+\end_layout
+
+\begin_layout Enumerate
+How many subgames do we have? We have 6 subgames starting at decisions nodes
+ labeled 1.1; 1.2; 1.3; 1.4; 1.5; and 2.2.
+ Notice that decision nodes 1.2 and 2.2 are not only singletons but the action
+ set is also a singleton (both players can only play 
+\begin_inset Formula $q_{1}=q_{2}=30$
+\end_inset
+
+), and so this is the NE strategy of these subgames.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The subgames starting at 1.3; 1.4; and 1.5 are Cournot with the unique NE equal
+ to 
+\begin_inset Formula $q_{1}^{*}=q_{2}^{*}=40$
+\end_inset
+
+ in each subgame for a payoff of 1,600 for each player.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Moving up the game tree (see Appendix A-3), we can rewrite the game in the
+ following form:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+1800
+\bar default
+, 
+\bar under
+1800
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+1600
+\bar default
+, 1600
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1600, 
+\bar under
+1600
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+1600
+\bar default
+, 
+\bar under
+1600
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Where we find that the pure strategy SPNEs of the entire game are:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \begin{equation}
+\sigma^{*}=\left[\left(C,\, q_{1}=30,\, q_{13}=40,\, q_{14}=40,\, q_{15}=40\right),\,\left(C,\, q_{2}=30,\, q_{23}=40,\, q_{24}=40,\, q_{25}=40\right)\right]\label{SPNE1}\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula \begin{equation}
+\sigma'^{*}=\left[\left(D,\, q_{1}=30,\, q_{13}=40,\, q_{14}=40,\, q_{15}=40\right),\,\left(D,\, q_{2}=30,\, q_{23}=40,\, q_{24}=40,\, q_{25}=40\right)\right].\label{SPNE2}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Are there any refinements? Do you see that THP would eliminate 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "SPNE2"
+
+\end_inset
+
+ as a SPNE? 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Questions (g) through (k)
+\series default
+: Without considering the extensive form of the game, you should be able
+ to tell that this is akin to a signaling game where the Regulator is the
+ Receiver who chooses action 
+\begin_inset Formula $I$
+\end_inset
+
+ and the firms are the Senders who send a message which is equal to the
+ price.
+ Here there, are two firms (unlike in the signaling models where there was
+ only one Sender), but in reality, we only care about whether the firms
+ are colluding (type 1) or not colluding (type 2).
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Subpart (g)
+\series default
+ Remember in the signaling models from class and section, we only had two
+ possible messages that could be sent by the Sender.
+ This resulted in two information sets for the Receiver.
+ By the same logic, since there are an infinite number of prices (messages),
+ we have an infinite number of information sets for which we must set the
+ regulator's level of action:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \[
+S_{Regulator}\equiv\left\{ I(p)\in[0,1]:p\in P\right\} ,\]
+
+\end_inset
+
+where 
+\begin_inset Formula $P$
+\end_inset
+
+ is the set of all possible equilibrium prices.
+ This won't be that big of a problem.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Subpart (h)
+\series default
+ Now the regulator's info set spreads across the terminal nodes from before
+ and therefore, there is only one subgame, (the entire game).
+ The equilibrium concept is PBE since we have to deal with the regulator's
+ belifes.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Subpart (i)
+\series default
+ Consider the case where both firms choose to collude (play 
+\begin_inset Quotes eld
+\end_inset
+
+C
+\begin_inset Quotes erd
+\end_inset
+
+).
+ Then the equilibrium price will equal 60.
+ If the players are not colluding, the the price is not equal to 60.
+ Therefore, 
+\end_layout
+
+\begin_layout Enumerate
+if the regulator sees the message 
+\begin_inset Formula $p\neq60$
+\end_inset
+
+, then the regulator believes that firms are not colluding 
+\begin_inset Formula $\Pr(C,C)=0$
+\end_inset
+
+ and so regulator's payoff is 1-
+\begin_inset Formula $I$
+\end_inset
+
+.
+ And so the regulator best responds to the message of 
+\begin_inset Formula $p\neq60$
+\end_inset
+
+ by setting 
+\begin_inset Formula $I^{*}=0$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+if the regulator sees the message 
+\begin_inset Formula $p=60$
+\end_inset
+
+, then the regulator believes that 
+\begin_inset Formula $\Pr(C,C)=1$
+\end_inset
+
+ and solves for 
+\begin_inset Formula $I^{*}$
+\end_inset
+
+ s.t.:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \[
+I^{*}=\arg\max_{I}\left\{ \sqrt{I}\left(1-I\right)+\left(1-\sqrt{I}\right)\left(-I\right)\right\} =\arg\max_{I}\left\{ \sqrt{I}-I\right\} \]
+
+\end_inset
+
+
+\begin_inset Formula \[
+\Rightarrow^{FOC}\frac{1}{2}\cdot\frac{1}{\sqrt{I}}-1=0\Rightarrow I^{*}=\frac{1}{4}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Subpart (j)
+\series default
+ 
+\end_layout
+
+\begin_layout Enumerate
+The equilibrium outcomes when both firm collude is: 
+\begin_inset Formula $C_{1},\, C_{2},\, q_{1}=30,\, q_{2}=30,\, I^{*}=\frac{1}{4}$
+\end_inset
+
+.
+ If we include a fine equally distributed amongst the two firms, the total
+ payoffs for both firms and the regulator are: 
+\begin_inset Formula $\pi_{1}=1800-\frac{1}{2}f$
+\end_inset
+
+, 
+\begin_inset Formula $\pi_{2}=1800-\frac{1}{2}f$
+\end_inset
+
+, and 
+\begin_inset Formula $\pi_{regulator}=\frac{1}{4}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+If there is no collusion, the outcome is: 
+\begin_inset Formula $F_{1},\, F_{2},\, q_{1}=40,\, q_{2}=40,\, I^{*}=0$
+\end_inset
+
+ and the total payoffs are: 
+\begin_inset Formula $\pi_{1}=1600$
+\end_inset
+
+, 
+\begin_inset Formula $\pi_{2}=1600$
+\end_inset
+
+, and 
+\begin_inset Formula $\pi_{regulator}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Therefore, if 
+\begin_inset Formula $f\leq400$
+\end_inset
+
+, firms are better off colluding and if 
+\begin_inset Formula $f>400$
+\end_inset
+
+, the equilibrium has firms not colluding (though one of the firms could
+ play 
+\begin_inset Quotes eld
+\end_inset
+
+C
+\begin_inset Quotes erd
+\end_inset
+
+ in equilibrium).
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Subpart (k)
+\series default
+ Skip.
+\end_layout
+
+\end_body
+\end_document

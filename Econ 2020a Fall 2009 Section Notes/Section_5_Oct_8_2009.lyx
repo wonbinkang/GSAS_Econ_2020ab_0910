@@ -1,0 +1,1296 @@
+#LyX 1.6.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+\end_modules
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Section Notes 5
+\end_layout
+
+\begin_layout Author
+Wonbin Kang
+\end_layout
+
+\begin_layout Date
+October 8, 2009
+\end_layout
+
+\begin_layout Part*
+Agenda
+\end_layout
+
+\begin_layout Enumerate
+Risk Aversion and Measuring Risk Aversion
+\end_layout
+
+\begin_layout Enumerate
+Summary of Risk Attitudes
+\end_layout
+
+\begin_layout Enumerate
+Investment Example (like Insurance example in class)
+\end_layout
+
+\begin_layout Enumerate
+Math Appendix (Implicit Function Theorem)
+\end_layout
+
+\begin_layout Section
+Risk Aversion and Measuring Risk Aversion
+\end_layout
+
+\begin_layout Definition
+An economic agent is risk averse if for any lottery over money 
+\begin_inset Formula $F(x)$
+\end_inset
+
+, the degenerate lottery that yields the amount 
+\begin_inset Formula $\int xdF(x)$
+\end_inset
+
+ with certainty is at least as good as the lottery 
+\begin_inset Formula $F(\cdot)$
+\end_inset
+
+ itself.
+ If the agent is indifferent between the two lotteries, he is risk neutral.
+ 
+\end_layout
+
+\begin_layout Standard
+To be mathematically precise, for a given Bernoulli utility function 
+\begin_inset Formula $u(\cdot)$
+\end_inset
+
+, an agent is risk averse, iff:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int u(x)dF(x)\leq u\left(\int xdF(x)\right)\]
+
+\end_inset
+
+, for all 
+\begin_inset Formula $F(\cdot)$
+\end_inset
+
+; or
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\sum_{i=1}^{n}p_{i}u(x_{i})\leq u\left(\sum_{i=1}^{n}p_{i}x_{i}\right)\]
+
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Note that we can replace all instances of 
+\begin_inset Formula $\int xdF(x)$
+\end_inset
+
+, which is the expected value of a continuous random variable, with 
+\begin_inset Formula $\sum_{i=1}^{n}p_{i}x_{i}$
+\end_inset
+
+, which is the expected value of a discrete random variable.
+ 
+\end_layout
+
+\end_inset
+
+, where 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+ is equal to the probability of event 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ occurring; or
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E\left[u(x)\right]\leq u\left(E\left[x\right]\right).\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If you're having trouble understanding 
+\shape italic
+Jensen's Inequality
+\shape default
+, try drawing a concave utility function and then checking the inequalities
+ above.
+ How do the equations above change if an agent is 
+\shape italic
+strictly
+\shape default
+ risk averse? 
+\end_layout
+
+\begin_layout Subsection
+Arrow-Pratt Measures
+\end_layout
+
+\begin_layout Definition
+Given a 
+\begin_inset Formula $C^{2}$
+\end_inset
+
+ Bernoulli utility function 
+\begin_inset Formula $u(\cdot)$
+\end_inset
+
+ for money, the Arrow-Pratt coefficient of 
+\shape italic
+absolute
+\shape default
+ risk aversion at the point 
+\begin_inset Formula $x^{*}$
+\end_inset
+
+ is defined as:
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula \[
+r_{A}(x^{*})=-\frac{u''(x^{*})}{u'(x^{*})}.\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As a long aside, I hope everyone understood the second-order Taylor Expansion
+ that Chris did in class and how it was exactly the same as the one we did
+ to approximate the EV and CV.
+ If not, consider the following:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f(x) & \approx & \tilde{f}(x)=f(x^{*})+f'(x^{*})(x-x^{*})+\frac{1}{2!}f''(x^{*})(x-x^{*})^{2}\\
+\tilde{f}(x) & = & f(x^{*})+f'(x^{*})\Delta x+\frac{1}{2!}f''(x^{*})\Delta x^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+Given a 
+\begin_inset Formula $C^{2}$
+\end_inset
+
+ Bernoulli utility function 
+\begin_inset Formula $u(\cdot)$
+\end_inset
+
+ for money, the Arrow-Pratt coefficient of 
+\shape italic
+relative
+\shape default
+ risk aversion at the point 
+\begin_inset Formula $x^{*}$
+\end_inset
+
+ is defined as:
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula \[
+r_{R}(x^{*})=-x^{*}\cdot\frac{u''(x^{*})}{u'(x^{*})}.\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Given a question in class by a fellow student, consider the measurement
+ of relative risk aversion for two utility functions which are often used:
+\end_layout
+
+\begin_layout Example
+The Constant Relative Risk Aversion (
+\begin_inset Quotes eld
+\end_inset
+
+CRRA
+\begin_inset Quotes erd
+\end_inset
+
+) utility function of the form: 
+\begin_inset Formula $u(x)=\ln x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+r_{A}(x^{*}) & = & -\frac{u''(x^{*})}{u'(x^{*})}=\frac{1}{x}\\
+r_{R}(x^{*}) & = & -x^{*}\cdot\frac{u''(x^{*})}{u'(x^{*})}=1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So a CRRA utility function has decreasing absolute risk aversion, but a
+ constant relative risk aversion.
+ 
+\end_layout
+
+\begin_layout Example
+The Constant Absolute Risk Aversion (
+\begin_inset Quotes eld
+\end_inset
+
+CARA
+\begin_inset Quotes erd
+\end_inset
+
+) utility function of the form: 
+\begin_inset Formula $u(x)=-\exp\left\{ -\alpha x\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+r_{A}(x^{*}) & = & -\frac{u''(x^{*})}{u'(x^{*})}=a\\
+r_{R}(x^{*}) & = & -x^{*}\cdot\frac{u''(x^{*})}{u'(x^{*})}=ax\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So a CARA utility function has constant absolute risk aversion, but an increasin
+g relative risk aversion.
+ 
+\end_layout
+
+\begin_layout Subsection
+Certainty Equivalent
+\end_layout
+
+\begin_layout Definition
+The CE of a money lottery (which can be denoted 
+\begin_inset Formula $F(\cdot)$
+\end_inset
+
+) is equal to the amount of money for which the individual is indifferent
+ between the lottery and the certain amount CE, or 
+\begin_inset Formula $c(F,u)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula \[
+u(CE)=\int u(x)dF(x)=\int u(x)f(x)dx\]
+
+\end_inset
+
+, or in the discrete case,
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula \[
+u(CE)=\sum_{i=1}^{n}p_{i}u(x_{i})=U(L)\]
+
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Notice that I used the capital 
+\begin_inset Formula $U$
+\end_inset
+
+ to denote the expected utility of the lottery 
+\begin_inset Formula $L$
+\end_inset
+
+ which is a vector of probabilities, 
+\begin_inset Formula $[p_{1},...,p_{n}]$
+\end_inset
+
+, over the events 
+\begin_inset Formula $x_{1},...,x_{n}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If an agent is risk averse, then CE
+\begin_inset Formula $\leq\int xdF(x)=E(x)$
+\end_inset
+
+.
+ Let's draw a picture to see that this is in fact the case.
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset CommandInset label
+LatexCommand label
+name "exa:Consider-a-Bernoulli"
+
+\end_inset
+
+Consider a Bernoulli utility function, 
+\begin_inset Formula $u(x)=x^{\frac{2}{3}}$
+\end_inset
+
+; a lottery 
+\begin_inset Formula $L=\left[\frac{1}{3},\frac{1}{3},\frac{1}{3}\right]$
+\end_inset
+
+; and event 
+\begin_inset Formula $x=\left[0,1000,8000\right]$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+So, 
+\begin_inset Formula $U(L)=\frac{1}{3}\cdot0^{\frac{2}{3}}+\frac{1}{3}\cdot1000^{\frac{2}{3}}+\frac{1}{3}\cdot8000^{\frac{2}{3}}=\frac{500}{3}$
+\end_inset
+
+; and the expected value of this lottery given the events is, 
+\begin_inset Formula $E(x)=\frac{1}{3}\cdot0+\frac{1}{3}\cdot1000+\frac{1}{3}\cdot8000=3000$
+\end_inset
+
+.
+ From the definition, we know that CE will be such that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+u(CE) & = & CE^{\frac{2}{3}}=\frac{500}{3}\\
+\therefore & CE & \approx2152\end{eqnarray*}
+
+\end_inset
+
+.
+ Notice that this is less than the expected value of the lottery given the
+ events.
+ 
+\end_layout
+
+\begin_layout Standard
+One final note on CE.
+ Can you see the intuition behind the fact that the more risk averse you
+ are, the lower is CE.
+ To use the terms in MWG, if the utility function 
+\begin_inset Formula $u_{1}$
+\end_inset
+
+denotes the preferences of an agent 
+\shape italic
+more
+\shape default
+ risk averse than an agent with the utility function 
+\begin_inset Formula $u_{2}$
+\end_inset
+
+, it will be the case that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+c(F,u_{1})\leq c(F,u_{2})\label{eq:CE}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Risk Premium
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Don't confuse this with the 
+\shape italic
+probability
+\shape default
+ premium, which is a different concept (but using very similar principles
+ to calculate).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+The risk premium is equal to the amount of money a risk averse agent would
+ be willing to pay to remove all of the risk in his payoff.
+ Therefore, the risk premium 
+\begin_inset Formula $\pi(F,u)=E(X)-CE$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+In our example above, the risk premium 
+\begin_inset Formula $\pi(F,u)=3000-2152=848$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Notice that since CE
+\begin_inset Formula $\leq\int xdF(x)=E(x)$
+\end_inset
+
+ if an agent is risk averse, it must be the case that 
+\begin_inset Formula $\pi(F,u)>0$
+\end_inset
+
+ if an agent is risk averse.
+ Further, because of weak inequality 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:CE"
+
+\end_inset
+
+, if the utility function 
+\begin_inset Formula $u_{1}$
+\end_inset
+
+denotes the preferences of an agent 
+\shape italic
+more
+\shape default
+ risk averse than an agent with the utility function 
+\begin_inset Formula $u_{2}$
+\end_inset
+
+, it will be the case that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\pi(F,u_{1})\geq\pi(F,u_{2})\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset CommandInset label
+LatexCommand label
+name "exa:Now-what-if"
+
+\end_inset
+
+Now what if the agent in Example 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exa:Consider-a-Bernoulli"
+
+\end_inset
+
+ had $10,000 (in our previous example, the agent started with $0).
+ Then we can set up the problem as follows: Consider a Bernoulli utility
+ function, 
+\begin_inset Formula $u(x)=x^{\frac{2}{3}}$
+\end_inset
+
+; a lottery 
+\begin_inset Formula $L=\left[\frac{1}{3},\frac{1}{3},\frac{1}{3}\right]$
+\end_inset
+
+; and event 
+\begin_inset Formula $x=\left[10000,11000;18000\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+So, 
+\begin_inset Formula $U(L)=\frac{1}{3}\cdot10000^{\frac{2}{3}}+\frac{1}{3}\cdot11000^{\frac{2}{3}}+\frac{1}{3}\cdot18000^{\frac{2}{3}}=548.53$
+\end_inset
+
+; and the expected value of this lottery given the events is, 
+\begin_inset Formula $E(x)=\frac{1}{3}\cdot10000+\frac{1}{3}\cdot11000+\frac{1}{3}\cdot18000=13000$
+\end_inset
+
+.
+ From the definition, we know that CE will be such that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+u(CE) & = & CE^{\frac{2}{3}}=548.53\\
+\therefore & CE & \approx12,857\\
+ & \pi & \approx143\end{eqnarray*}
+
+\end_inset
+
+.
+ Compare the risk premiums of Examples 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exa:Consider-a-Bernoulli"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exa:Now-what-if"
+
+\end_inset
+
+.
+ Do you see that as your wealth increase, you become less risk averse.
+ 
+\end_layout
+
+\begin_layout Section
+Summary of Risk Attitudes
+\end_layout
+
+\begin_layout Standard
+Here is a quick dirty exposition of risk attitudes and their characteristics:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Strictly Risk Averse
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Risk Neutral
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Strictly Risk Loving
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $u(x)$
+\end_inset
+
+ strictly concave
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $u(x)$
+\end_inset
+
+ linear
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $u(x)$
+\end_inset
+
+ strictly convex
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $E\left[u(x)\right]<u(E\left[X\right])$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $E\left[u(x)\right]=u(E\left[X\right])$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $E\left[u(x)\right]>u(E\left[X\right])$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c(F,u)<E\left[X\right]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c(F,u)=E\left[X\right]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c(F,u)>E\left[X\right]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\pi(F,u)>0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\pi(F,u)=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\pi(F,u)<0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $r_{A}>0$
+\end_inset
+
+ , 
+\begin_inset Formula $r_{R}>0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $r_{A}=0$
+\end_inset
+
+ , 
+\begin_inset Formula $r_{R}=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $r_{A}<0$
+\end_inset
+
+ , 
+\begin_inset Formula $r_{R}<0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Investment Example (from Miller Notes 180-182)
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Sam may go through a previous mid term, but I thought that it would be more
+ helpful to see an abstract version of what Chris did in class in the context
+ of insurance.
+ Please go through your notes from class; Miller Notes 178-182; and the
+ 2004 Midterm, Problem 3.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Consumer has utility function 
+\begin_inset Formula $u(\cdot)$
+\end_inset
+
+ and initial wealth 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ The decision that the consumer must make is how much of her wealth to invest
+ in a riskless asset and how much to invest in a risky asset that pays $0
+ with probability equal to 
+\begin_inset Formula $\pi$
+\end_inset
+
+ and r dollars with probability 
+\begin_inset Formula $1-\pi$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $x$
+\end_inset
+
+ be the number of dollars the investor invests in the risky asset.
+ In the alternative, the investor could invest in a riskless asset which
+ has a return of 1.
+ 
+\end_layout
+
+\begin_layout Standard
+Do you see what the choice variable is? Can you see the connection between
+ this problem and the insurance problem? 
+\end_layout
+
+\begin_layout Standard
+As you should all very well know by now, half of the battle is setting up
+ the correct optimization problem, which in this case is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\max_{x}\pi\cdot u(w-x)+(1-\pi)\cdot u(w-x+rx)\label{eq:investment}\end{equation}
+
+\end_inset
+
+.
+ The first order conditions are:
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\begin_inset Formula \begin{eqnarray}
+-\pi\cdot u'(w-x^{*})+(1-\pi)(r-1)\cdot u'(w-x^{*}+rx^{*}) & \leq & 0\, if\, x^{*}=0\nonumber \\
+ & = & 0\, if\, x^{*}\in(0,w)\label{eq:risky asset interior}\\
+ & \geq & 0\, if\, x^{*}=w\nonumber \end{eqnarray}
+
+\end_inset
+
+.
+ Now let's consider an instance where the investor does not invest in a
+ risky asset at all, or 
+\begin_inset Formula $x^{*}=0$
+\end_inset
+
+.
+ From the FOCs above we know that this means:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray}
+-\pi\cdot u'(w-x^{*})+(1-\pi)(r-1)\cdot u'(w-x^{*}+rx^{*}) & \leq & 0\nonumber \\
+u'(w)\left\{ -\pi+(1-\pi)(r-1)\right\}  & \leq & 0\nonumber \\
+-\pi+(1-\pi)(r-1) & \leq & 0\,(\because u'(\cdot)>0)\nonumber \\
+(1-\pi)r & \leq & 1\label{eq:risky asset 0}\end{eqnarray}
+
+\end_inset
+
+.
+ We interpret this as meaning that the only time that it is optimal for
+ an investor not to invest in a risky asset is when the expected return
+ on the risky asset is less than the return on the safe asset.
+ Trivially, inequality 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:risky asset 0"
+
+\end_inset
+
+ is telling us not to invest in the risky asset if its expected return is
+ less than the expected return on the riskless asset.
+ 
+\end_layout
+
+\begin_layout Standard
+But now what if there exists a unique interior solution which satisfies
+ equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:risky asset interior"
+
+\end_inset
+
+ of the FOCs (assuming that the utility function 
+\begin_inset Formula $u(\cdot)$
+\end_inset
+
+ is well-behaved)?
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+By well-behaved, we're usually talking about the function being strictly
+ quasi-concave (or strictly concave) and satisfying the Inada conditions.
+ See Section Note 3 if you don't know what the Inada conditions are.
+ 
+\end_layout
+
+\end_inset
+
+Because of equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:risky asset interior"
+
+\end_inset
+
+ above, we can solve for 
+\begin_inset Formula $x^{*}$
+\end_inset
+
+ as a function of the parameter 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ Then we can do some comparative statics (as well always do and see how
+ the optimal 
+\begin_inset Formula $x^{*}$
+\end_inset
+
+ varies as you change one of the parameters.
+ Let's denote 
+\begin_inset Formula $x^{*}=x(w)$
+\end_inset
+
+ and plug into equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:risky asset interior"
+
+\end_inset
+
+.
+ Then:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+-\pi\cdot u'(w-x(w))+(1-\pi)(r-1)\cdot u'(w-x(w)+rx(w))=0\label{eq:FOC}\end{equation}
+
+\end_inset
+
+.
+ Notice that equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:FOC"
+
+\end_inset
+
+ is an implicit function, where we can use the Implicit Function Theorem
+ (
+\begin_inset Quotes eld
+\end_inset
+
+IFT
+\begin_inset Quotes erd
+\end_inset
+
+).
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+An explicit function is function of the form: 
+\begin_inset Formula $y=G(\vec{x})$
+\end_inset
+
+, and an implicit function is a function of the form: 
+\begin_inset Formula $F(\vec{x},y)=0$
+\end_inset
+
+.
+ Consider the following functions: 
+\begin_inset Formula $4x+2y=5$
+\end_inset
+
+ and 
+\begin_inset Formula $y^{2}-5xy+4x^{2}=0$
+\end_inset
+
+.
+ For more on the IFT, see Simon and Blume (1994, ch.15) and the appendix
+ to these notes.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $F(x,w)=-\pi\cdot u'(w-x)+(1-\pi)(r-1)\cdot u'(w-x+rx)=0$
+\end_inset
+
+, and apply the IFT.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+x'(w)=\frac{dx(w)}{dw}=-\frac{\frac{\partial F(x,w)}{\partial w}}{\frac{\partial F(x,w)}{\partial x}}=-\frac{-\pi u''(w-x)+(1-\pi)(r-1)u''(w-x+rx)}{\pi u''(w-x(w))+(1-\pi)(r-1)^{2}u''(w-x+rx)}\label{eq:dx/dw}\end{equation}
+
+\end_inset
+
+.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+For all of the comparative statics that Chris did in class for the Insurance
+ model, we can use the IMF to simplify the comparative statics.
+ 
+\end_layout
+
+\end_inset
+
+ We already know that the denominator is negative.
+ Further, the numerator of equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:dx/dw"
+
+\end_inset
+
+ will be negative if:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\pi u''(w-x) & < & (1-\pi)(r-1)u''(w-x+rx)\\
+\frac{u''(w-x)}{u''(w-x+rx)} & > & \frac{(1-\pi)(r-1)}{\pi}\\
+\frac{u''(w-x)}{u''(w-x+rx)}\cdot\frac{u'(w-x+rx)}{u'(w-x)} & > & \frac{(1-\pi)(r-1)}{\pi}\cdot\frac{u'(w-x+rx)}{u'(w-x)}=1\end{eqnarray*}
+
+\end_inset
+
+.
+ Therefore, you will increase the share of your wealth in the risky asset
+ as your wealth increase if:
+\begin_inset Newline newline
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+
+\begin_inset Formula \[
+\frac{u''(w-x)}{u'(w-x)}<\frac{u''(w-x+rx)}{u'(w-x+rx)}\Rightarrow-\frac{u''(w-x)}{u'(w-x)}>-\frac{u''(w-x+rx)}{u'(w-x+rx)}\]
+
+\end_inset
+
+, which can be interpreted as the agent having decreasing absolute risk
+ aversion in wealth.
+ 
+\end_layout
+
+\begin_layout Standard
+As a final step, compare equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:investment"
+
+\end_inset
+
+ with the following maximization problem from the insurance problem:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\max_{\alpha}\pi\cdot u(w-D+(1-q)\alpha)+(1-\pi)\cdot u(w-\alpha q)\]
+
+\end_inset
+
+.
+ Also consider the comparative statics that Chris attempted at the end of
+ class.
+ See how it would've been much easier if we used the Implicit Function Theorem.
+ 
+\end_layout
+
+\begin_layout Section
+Math Appendix (Implicit Function Theorem)
+\end_layout
+
+\begin_layout Standard
+In its simplest for, the IFT is as follows:
+\end_layout
+
+\begin_layout Theorem
+Let 
+\begin_inset Formula $G(x,y)$
+\end_inset
+
+ be a 
+\begin_inset Formula $C^{1}$
+\end_inset
+
+ function on a ball about 
+\begin_inset Formula $(x_{0},y_{0})$
+\end_inset
+
+ in 
+\begin_inset Formula $\mathfrak{R}^{2}$
+\end_inset
+
+.
+ Suppose that 
+\begin_inset Formula $G(x,y)=c$
+\end_inset
+
+, then if 
+\begin_inset Formula $\frac{\partial G(x_{0},y_{0})}{\partial y}\neq0$
+\end_inset
+
+, then there exists a function 
+\begin_inset Formula $y(x)$
+\end_inset
+
+ defined on an interval 
+\begin_inset Formula $I$
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+in the neighborhood
+\begin_inset Quotes erd
+\end_inset
+
+ of the point 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ such that:
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula \[
+y'(x_{0})=\frac{dy(x_{0})}{dx}=-\frac{\frac{\partial G(x_{0},y_{0})}{\partial x}}{\frac{\partial G(x_{0},y_{0}}{\partial y}}\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

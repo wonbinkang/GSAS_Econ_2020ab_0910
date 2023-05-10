@@ -1,0 +1,1439 @@
+#LyX 1.6.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-sec
+\end_modules
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Section Notes 10
+\end_layout
+
+\begin_layout Author
+Wonbin Kang
+\end_layout
+
+\begin_layout Date
+April 8, 2010
+\end_layout
+
+\begin_layout Section*
+Agenda
+\end_layout
+
+\begin_layout Enumerate
+Competitive Screening (Insurance Model Set Up)
+\end_layout
+
+\begin_layout Enumerate
+Main Results
+\end_layout
+
+\begin_layout Enumerate
+Example
+\end_layout
+
+\begin_layout Section
+Competitive Insurance Model Set-Up
+\end_layout
+
+\begin_layout Standard
+Please read Rothschild & Stiglitz (1976)
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Rothschild, Michael and Joseph Stiglitz.
+ 1976.
+ 
+\shape italic
+Equilibrium in Competitive Insurance Markets: An Essay on the Economics
+ of Imperfect Information
+\shape default
+.
+ 
+\shape smallcaps
+The Quarterly Journal of Economics
+\shape default
+.
+ 90(4): 629-49.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Demand Side
+\end_layout
+
+\begin_layout Standard
+We have a population of 
+\shape italic
+risk averse
+\shape default
+ expected utility maximizing consumers.
+ These consumers move second and they accept or reject a firm's offer.
+ A representative consumer has wealth equal to 
+\begin_inset Formula $W$
+\end_inset
+
+; probability of losing 
+\begin_inset Formula $L$
+\end_inset
+
+ equal to 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+, where 
+\begin_inset Formula $i\in\left\{ G,B\right\} $
+\end_inset
+
+, and such that 
+\begin_inset Formula $p_{G}<p_{B}$
+\end_inset
+
+.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+G
+\begin_inset Quotes erd
+\end_inset
+
+ is for a good type of consumer with low risk of loss and 
+\begin_inset Quotes eld
+\end_inset
+
+B
+\begin_inset Quotes erd
+\end_inset
+
+ is a bad type of consumer with a high risk of loss.
+ Assume that the probability of the consumer being a good type is equal
+ to 
+\begin_inset Formula $\lambda$
+\end_inset
+
+, which means that the average risk (or pooled level of risk) is equal to
+ 
+\begin_inset Formula $\bar{p}=\lambda p_{G}+(1-\lambda)p_{B}$
+\end_inset
+
+.
+ Further assume that the expected utility of a consumer of type 
+\begin_inset Formula $i$
+\end_inset
+
+ is equal to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+U_{i}=p_{i}\cdot u(consumption\, in\, s_{2})+(1-p_{i})\cdot u(consumption\, in\, s_{1}),\]
+
+\end_inset
+
+where 
+\begin_inset Formula $s_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $s_{2}$
+\end_inset
+
+ denotes the level of consumption in State 1 where there is no loss; and
+ level of consumption in State 2 where there is a loss, respectively.
+ Also, 
+\begin_inset Formula $u'(\cdot)>0$
+\end_inset
+
+ and 
+\begin_inset Formula $u''(\cdot)<0$
+\end_inset
+
+ for simplicity.
+\end_layout
+
+\begin_layout Standard
+What have we just assumed here?
+\end_layout
+
+\begin_layout Itemize
+The level of risk aversion is equal for both good and bad types of consumers.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Recall our measures of risk aversion from Econ 2020a, and convince yourself.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+We have the same utility function in both the loss state (State 2) and the
+ no loss state (State 1).
+ 
+\end_layout
+
+\begin_layout Subsection
+Supply Side
+\end_layout
+
+\begin_layout Standard
+Multiple 
+\shape italic
+risk neutral
+\shape default
+ profit-maximizing monopolistic firm which move first and offer potentially
+ multiple contracts which can be completely characterized by the following
+ vector: 
+\begin_inset Formula $\vec{\kappa}=\left[M,R\right]$
+\end_inset
+
+,
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Rothschild and Stiglitz (1976) use the notation 
+\begin_inset Formula $\vec{\alpha}=(\alpha_{1},\alpha_{2})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+ where 
+\begin_inset Quotes eld
+\end_inset
+
+M
+\begin_inset Quotes erd
+\end_inset
+
+ denotes the premium, and 
+\begin_inset Quotes eld
+\end_inset
+
+R
+\begin_inset Quotes erd
+\end_inset
+
+ denotes the reimbursement amount.
+ 
+\end_layout
+
+\begin_layout Standard
+Taking the demand and supply side together we have the following trivial
+ results:
+\end_layout
+
+\begin_layout Itemize
+A consumer of type 
+\begin_inset Formula $i\in\left\{ G,B\right\} $
+\end_inset
+
+ who has purchased insurance will consume, with probability 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+, 
+\begin_inset Formula $s_{2}=W-M-L+R$
+\end_inset
+
+ in State 2 and with probability 
+\begin_inset Formula $1-p_{i}$
+\end_inset
+
+ she will consume 
+\begin_inset Formula $s_{1}=W-M$
+\end_inset
+
+ in State 1.
+ Without insurance, consumption is equal to 
+\begin_inset Formula $s_{2,no\, insurance}=W-L$
+\end_inset
+
+ and 
+\begin_inset Formula $s_{1,no\, insurance}=W$
+\end_inset
+
+, respectively.
+ Note that consumption in each state is completely defined by 
+\begin_inset Quotes eld
+\end_inset
+
+M
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+R
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+With probability 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+ a firm who has sold insurance will have payoff equal to 
+\begin_inset Formula $M-R$
+\end_inset
+
+ in State 2 and with probability 
+\begin_inset Formula $1-p_{i}$
+\end_inset
+
+ it will have payoff equal to 
+\begin_inset Formula $M$
+\end_inset
+
+ in State 1.
+\end_layout
+
+\begin_layout Standard
+The firms' expected profit can be written as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray}
+\mathbb{E}\left[\pi\right] & = & p_{i}(M-R)+(1-p_{i})(M)\nonumber \\
+ & = & p_{i}(W-L-s_{2})+(1-p_{i})(W-s_{1})\nonumber \\
+ & = & \left(W-p_{i}L\right)-\left(p_{i}s_{2}+(1-p_{i})s_{1}\right)\label{Expected Profit in s1 and s2}\end{eqnarray}
+
+\end_inset
+
+where the first term is equal to the uninsured expected consumption and
+ the second term is equal to the insured expected consumption.
+ This can be rewritten in a more convenient form as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+s_{2}=-\frac{\left(1-p_{i}\right)}{p_{i}}s_{1}+\frac{1}{p_{i}}\cdot\left\{ \left(W-p_{i}L\right)-\mathbb{E}\left[\pi\right]\right\} \label{Linear Expected Profit in s1 and s2}\end{equation}
+
+\end_inset
+
+Do you see why the 
+\begin_inset Quotes eld
+\end_inset
+
+sun
+\begin_inset Quotes erd
+\end_inset
+
+ is in the lower left hand corner when we draw the 
+\begin_inset Formula $\left[s_{1},s_{2}\right]$
+\end_inset
+
+ Euclidean plane?
+\end_layout
+
+\begin_layout Subsection
+Equilibrium Requirements
+\end_layout
+
+\begin_layout Subsubsection
+Consumer's Problem
+\end_layout
+
+\begin_layout Standard
+Given consumption in the two states, consumers maximize among available
+ contracts:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\max_{\left[M,R\right]\in\Gamma_{insurer}}U_{i}=p_{i}\cdot u(W-M-L+R)+(1-p_{i})\cdot u(W-M)\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\Gamma_{insurer}$
+\end_inset
+
+ denotes the contracts that the insurer offers.
+\end_layout
+
+\begin_layout Subsubsection
+Insurer's Problem
+\end_layout
+
+\begin_layout Standard
+Given that consumer maximize utility, the insurer provides contracts which
+ satisfy the following conditions:
+\end_layout
+
+\begin_layout Itemize
+No contract offered by a firm makes negative profit.
+\end_layout
+
+\begin_layout Itemize
+No contract not offered would make positive profit.
+\end_layout
+
+\begin_layout Standard
+In short, the firm makes zero profits in equilibrium.
+ Recall from Julian's lecture why this was important.
+ 
+\end_layout
+
+\begin_layout Section
+Main Results
+\end_layout
+
+\begin_layout Enumerate
+In a separating equilibrium, the bad types (high risk consumers) are fully
+ insured and the good types (low risk consumers) are not fully insured.
+\end_layout
+
+\begin_layout Enumerate
+No pooling equilibrium exists.
+\end_layout
+
+\begin_layout Enumerate
+There may be no equilibrium in pure strategies.
+ 
+\end_layout
+
+\begin_layout Section
+Example
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The goal is to derive all values of Rothschild and Stiglitz (1976), Figure
+ III, once we know the parameter values.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The parameter values are as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="6">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $w=1000$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $L=900$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p_{G}=0.1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p_{B}=0.6$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\lambda=0.2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $u(s)=\sqrt{s}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+What does the 45 degree line represent? It represents equal consumption
+ in both states of the world: 
+\begin_inset Formula $s_{1}=s_{2}$
+\end_inset
+
+.
+ If the consumer is able to purchase an insurance contract which puts her
+ on the 45 degree line, then she has full insurance.
+ 
+\end_layout
+
+\begin_layout Itemize
+What if the consumer is uninsured? Then we're at point 
+\begin_inset Formula $A=\left[W,\, W-L\right]=\left[1000,\,100\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The zero profit lines, 
+\begin_inset Formula $\overline{AB}$
+\end_inset
+
+ and 
+\begin_inset Formula $\overline{AG}$
+\end_inset
+
+, denote actuarily fair contracts.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Recall that if an insurance contract is actuarily fair, the premium should
+ equal to the expected payout, or 
+\begin_inset Formula $M=p_{i}R$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ In other words, all points on the 
+\begin_inset Formula $\overline{AB}$
+\end_inset
+
+ and 
+\begin_inset Formula $\overline{AG}$
+\end_inset
+
+ describe consumption in state 1 and state 2 such that insurance is priced
+ to be actuarily fair.
+ To see this, substitute 
+\begin_inset Formula $s_{1}=W-M$
+\end_inset
+
+ and 
+\begin_inset Formula $s_{2}=W-M-L+R$
+\end_inset
+
+ into equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Linear Expected Profit in s1 and s2"
+
+\end_inset
+
+ after setting 
+\begin_inset Formula $\mathbb{E\left[\pi\right]=}0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Separating Equilibrium
+\end_layout
+
+\begin_layout Subsubsection
+Actuarily Fair Line for Bad Types and Full Insurance
+\end_layout
+
+\begin_layout Standard
+Using equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Expected Profit in s1 and s2"
+
+\end_inset
+
+ (or equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Linear Expected Profit in s1 and s2"
+
+\end_inset
+
+), we can write the actuarily fair line for bad types (
+\begin_inset Formula $\overline{AB}$
+\end_inset
+
+) as follows: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray}
+\left(W-p_{B}L\right)-\left(p_{B}s_{2}+(1-p_{B})\cdot s_{1}\right) & = & 0\nonumber \\
+\Rightarrow\left(1000-\left(0.6\cdot900\right)\right)-\left(0.6s_{2}+(1-0.6)\cdot s_{1}\right) & = & 0\nonumber \\
+\Rightarrow s_{2}=766.7-\frac{2}{3}s_{1}\label{eq:AB}\end{eqnarray}
+
+\end_inset
+
+Note that the slope of the actuarily fair line for the bad type is equal
+ to 
+\begin_inset Formula $-\frac{1-p_{B}}{p_{B}}=-\frac{0.4}{0.6}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now using equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:AG"
+
+\end_inset
+
+, we can solve for the full insurance, zero-profit point for the bad types,
+ or point 
+\begin_inset Formula $\alpha_{B}$
+\end_inset
+
+ in Figure III.
+ We solve by setting 
+\begin_inset Formula $s_{1}=s_{2}=s$
+\end_inset
+
+, and we find that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+s=766.7-\frac{2}{3}s\Rightarrow s=s_{1}=s_{2}=460\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Actuarily Fair Line for Good Types and Full Insurance
+\end_layout
+
+\begin_layout Standard
+Using equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Expected Profit in s1 and s2"
+
+\end_inset
+
+ (or equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Linear Expected Profit in s1 and s2"
+
+\end_inset
+
+), we can write the actuarily fair line for good types (
+\begin_inset Formula $\overline{AG}$
+\end_inset
+
+) as follows: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray}
+\left(W-p_{G}L\right)-\left(p_{G}\cdot s_{2}+(1-p_{G})\cdot s_{1}\right) & = & 0\nonumber \\
+\Rightarrow\left(1000-\left(0.1\cdot900\right)\right)-\left(0.1\cdot s_{2}+(1-0.1)\cdot s_{1}\right) & = & 0\nonumber \\
+\Rightarrow s_{2}=9100-9\cdot s_{1}\label{eq:AG}\end{eqnarray}
+
+\end_inset
+
+Note that the slope of the actuarily fair line for the good type is equal
+ to 
+\begin_inset Formula $-\frac{1-p_{G}}{p_{G}}=-\frac{0.9}{0.1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now using equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:AG"
+
+\end_inset
+
+, we can solve for the full insurance, zero-profit point for the good types,
+ or point 
+\begin_inset Formula $\beta$
+\end_inset
+
+ in Figure III.
+ We solve by setting 
+\begin_inset Formula $s_{1}=s_{2}=s$
+\end_inset
+
+, and we find that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+s=9100-9s\Rightarrow s=s_{1}=s_{2}=910\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Indifference Curve 
+\begin_inset Formula $\bar{U}_{B}$
+\end_inset
+
+ and Solving for 
+\begin_inset Formula $\alpha_{G}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+How do we pin down the consumption in each state for 
+\begin_inset Formula $\alpha_{G}$
+\end_inset
+
+? We use the fact that the indifference curve through the point 
+\begin_inset Formula $\alpha_{B}$
+\end_inset
+
+ also passes through 
+\begin_inset Formula $\alpha_{G}$
+\end_inset
+
+ and the fact that 
+\begin_inset Formula $\alpha_{G}$
+\end_inset
+
+ lies on the good types actuarily fair line.
+\end_layout
+
+\begin_layout Enumerate
+Solve for the level of 
+\begin_inset Formula $\bar{U}_{B}$
+\end_inset
+
+:
+\begin_inset Formula \[
+\bar{U}_{B}=(1-p_{B})\cdot u(460)+p_{B}\cdot u(460)=(1-p_{B})\sqrt{460}+p_{B}\sqrt{460}=\sqrt{460}\approx21.4\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The bad type is indifferent between 
+\begin_inset Formula $\alpha_{B}$
+\end_inset
+
+ and 
+\begin_inset Formula $\alpha_{G}$
+\end_inset
+
+.
+ Therefore, if we let 
+\begin_inset Formula $\alpha_{G}=\left[s_{1},s_{2}\right]$
+\end_inset
+
+, we have:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \begin{equation}
+U_{B}\left(\alpha_{G}=\left[s_{1},s_{2}\right]\right)=p_{B}\sqrt{s_{2}}+(1-p_{B})\sqrt{s_{1}}=21.4.\label{eq:1}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Further, the point 
+\begin_inset Formula $\alpha_{G}$
+\end_inset
+
+ lies on the good types actuarily fair line which we solved for in equation
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:AG"
+
+\end_inset
+
+:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \begin{equation}
+s_{2}=9100-9\cdot s_{1}\label{eq:2}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Solve the system of equations involving equations 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2"
+
+\end_inset
+
+, which results (after some very laborious algebra) in:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \begin{equation}
+\alpha_{G}=\left[s_{1},s_{2}\right]=\left[987,\,217\right]\label{alpha_G}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Separating Equilibrium?
+\end_layout
+
+\begin_layout Standard
+The separating equilibrium results in the bad type consuming 460 in each
+ period and the good type consuming 987 in state 1 and 217 in state 2.
+ We can write this as:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+460
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\alpha_{B}=\left[460,\,460\right];\,\alpha_{G}=\left[987,\,217\right].\]
+
+\end_inset
+
+Further, since we know the values of 
+\begin_inset Formula $W$
+\end_inset
+
+ and 
+\begin_inset Formula $L$
+\end_inset
+
+, we can solve for 
+\begin_inset Formula $\vec{\kappa}_{B}=\left[M_{B},R_{B}\right]$
+\end_inset
+
+ and 
+\begin_inset Formula $\vec{\kappa}_{G}=\left[M_{G},R_{G}\right]$
+\end_inset
+
+.
+ I won't bother going through the algebra here or below.
+ 
+\end_layout
+
+\begin_layout Standard
+Is this result consistent with Main Result 1.
+ above? 
+\end_layout
+
+\begin_layout Subsubsection
+Certainty Equivalent for Good Types
+\end_layout
+
+\begin_layout Standard
+To put the good type's consumption 
+\begin_inset Formula $\alpha_{G}$
+\end_inset
+
+ into perspective, we can also ask: Give the probability of loss for the
+ good type and her consumption 
+\begin_inset Formula $\alpha_{G}$
+\end_inset
+
+ in the separating equilibrium, what is the good type's certainty equivalent?
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+We defined 
+\begin_inset Quotes eld
+\end_inset
+
+CE
+\begin_inset Quotes erd
+\end_inset
+
+ in Econ 2020a.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can answer this question using the same methodology we used to solve
+ for the separating equilibrium.
+\end_layout
+
+\begin_layout Enumerate
+We can solve for 
+\begin_inset Formula $\bar{U}_{G}$
+\end_inset
+
+ by solving the following:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \begin{equation}
+\bar{U}_{G}=p_{G}\cdot u(217)+(1-p_{G})\cdot u(987)=0.1\sqrt{217}+(1-0.1)\sqrt{987}=29.75\label{eq:3}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+At the CE, the good type's utility, which I denote as 
+\begin_inset Formula $\bar{U}_{G}^{CE}$
+\end_inset
+
+, is as follows:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \begin{equation}
+\bar{U}_{G}^{CE}=p_{G}\cdot u(s)+(1-p_{G})\cdot u(s)=\sqrt{s}\label{eq:4}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Setting equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3"
+
+\end_inset
+
+ to equal equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:4"
+
+\end_inset
+
+, we can solve for the CE consumption for the good type, 
+\begin_inset Formula $s$
+\end_inset
+
+:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \[
+\sqrt{s}=29.75\Rightarrow s=885.\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Pooling Equilibrium
+\end_layout
+
+\begin_layout Standard
+At the pooling equilibrium (if it exists), both the good types and the bad
+ types will choose the same contract.
+ Keeping this in mind, we follow the same procedures that we used to find
+ the separating equilibrium above.
+\end_layout
+
+\begin_layout Standard
+Two points worth re-emphasize are the following:
+\end_layout
+
+\begin_layout Itemize
+No contract offered by a firm makes negative profit.
+\end_layout
+
+\begin_layout Itemize
+No contract not offered would make positive profit.
+\end_layout
+
+\begin_layout Standard
+I've written this twice because this tells us that any contract that is
+ offered by the insurer must lie on a zero profit/actuarily fair line.
+\end_layout
+
+\begin_layout Subsubsection
+Actuarily Fair Line and the Pooling Equilibrium
+\end_layout
+
+\begin_layout Standard
+We need to first consider what the probability of state 2 occurring given
+ that both good and bad types will buy the same contract.
+ Denote the pooled probability of state 2: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\bar{p}=\lambda p_{G}+(1-\lambda)p_{B}=\left(0.2\times0.1\right)+\left(0.8\times0.6\right)=0.5\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Expected Profit in s1 and s2"
+
+\end_inset
+
+ (or equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Linear Expected Profit in s1 and s2"
+
+\end_inset
+
+), we can write the actuarily fair line for pooled contracts (
+\begin_inset Formula $\overline{AP}$
+\end_inset
+
+) as follows: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray}
+\left(W-\bar{p}L\right)-\left(\bar{p}\cdot s_{2}+(1-\bar{p})\cdot s_{1}\right) & = & 0\nonumber \\
+\Rightarrow\left(1000-\left(0.5\cdot900\right)\right)-\left(0.5\cdot s_{2}+(1-0.5)\cdot s_{1}\right) & = & 0\nonumber \\
+\Rightarrow s_{2}=1100-s_{1}\label{eq:AP}\end{eqnarray}
+
+\end_inset
+
+Note that the slope of the actuarily fair line for the bad type is equal
+ to 
+\begin_inset Formula $-\frac{1-\bar{p}}{\bar{p}}=-\frac{0.5}{0.5}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now using equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:AP'"
+
+\end_inset
+
+, we can solve for the full insurance, zero-profit point for the pooled
+ contract, or point 
+\begin_inset Formula $P$
+\end_inset
+
+ in Figure III.
+ We solve by setting 
+\begin_inset Formula $s_{1}=s_{2}=s$
+\end_inset
+
+, and we find that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+s=1100-s\Rightarrow s=s_{1}=s_{2}=750\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Again, we can use 
+\begin_inset Formula $P=\vec{s}_{p}=\left[750,\,750\right]$
+\end_inset
+
+ to solve for the premium and the redistribution (since we know 
+\begin_inset Formula $W$
+\end_inset
+
+ and 
+\begin_inset Formula $L$
+\end_inset
+
+).
+ This in turn fully identifies the pooling insurance contract 
+\begin_inset Formula $\vec{\kappa}_{p}=\left[M_{p},\, R_{p}\right]$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Non-Existence of Pooling Equilibrium
+\end_layout
+
+\begin_layout Standard
+I use a graphical argument to show that 
+\begin_inset Formula $P=\vec{s}_{p}=\left[750,\,750\right]$
+\end_inset
+
+ is not a pooling equilibrium despite satisfying the conditions above.
+ Consider the point 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+, which we can further write as 
+\begin_inset Formula $\varepsilon=\left[s_{1\varepsilon},s_{2\varepsilon}\right]$
+\end_inset
+
+ in Figure III.
+ If an insurer were to offer this consumption bundle, the good type consumer
+ would prefer 
+\begin_inset Formula $\varepsilon=\left[s_{1\varepsilon},s_{2\varepsilon}\right]$
+\end_inset
+
+ to 
+\begin_inset Formula $\vec{s}_{p}=\left[750,\,750\right]$
+\end_inset
+
+ because of the single crossing principle.
+ Furthermore, 
+\begin_inset Formula $\varepsilon=\left[s_{1\varepsilon},s_{2\varepsilon}\right]$
+\end_inset
+
+ is below the pooled actuarily fair/zero profit line 
+\begin_inset Formula $\overline{AP}$
+\end_inset
+
+, which means that the insurer can make positive profits if they were to
+ offer this contract.
+ Because of what I (re)emphasized at the beginning of this section on pooling
+ equilibrium, the immediate result is that there does not exist a pooling
+ equilibrium.
+ This is Main Result 2.
+ 
+\end_layout
+
+\begin_layout Standard
+Also note that because 
+\begin_inset Formula $\vec{s}_{p}=\left[750,\,750\right]$
+\end_inset
+
+ lies below the indifference curve 
+\begin_inset Formula $\bar{U}_{G}$
+\end_inset
+
+, which passes through the separating equilibrium 
+\begin_inset Formula $\alpha_{G}$
+\end_inset
+
+, the good types do not prefer the pooling consumption bundle to the separating
+ equilibrium.
+ 
+\end_layout
+
+\begin_layout Subsection
+Pooling Equilibrium (with high 
+\begin_inset Formula $\lambda$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Subsubsection
+Actuarily Fair Line and the Pooling Equilibrium with high 
+\begin_inset Formula $\lambda$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Assuming that there are a lot of good types and 
+\begin_inset Formula $\lambda=0.95,$
+\end_inset
+
+ we can solve for the pooled probability of state 2 occurring: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\bar{p}'=\lambda p_{G}+(1-\lambda)p_{B}=\left(0.95\times0.1\right)+\left(0.05\times0.6\right)=\frac{1}{8}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Expected Profit in s1 and s2"
+
+\end_inset
+
+ (or equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Linear Expected Profit in s1 and s2"
+
+\end_inset
+
+), we can write the actuarily fair line for pooled contracts (
+\begin_inset Formula $\overline{AP'}$
+\end_inset
+
+) as follows: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray}
+\left(W-\bar{p}'L\right)-\left(\bar{p}'s_{2}+(1-\bar{p}')\cdot s_{1}\right) & = & 0\nonumber \\
+\Rightarrow\left(1000-\left(\frac{1}{8}\cdot900\right)\right)-\left(\frac{1}{8}\cdot s_{2}+(1-0.5)\cdot s_{1}\right) & = & 0\nonumber \\
+\Rightarrow s_{2}=7100-7s_{1}\label{eq:AP'}\end{eqnarray}
+
+\end_inset
+
+Note that the slope of the actuarily fair line for the bad type is equal
+ to 
+\begin_inset Formula $-\frac{1-\bar{p}'}{\bar{p}'}=-\frac{\frac{7}{8}}{\frac{1}{8}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now using equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:AP'"
+
+\end_inset
+
+, we can solve for the full insurance, zero-profit point for the pooled
+ contract, or point 
+\begin_inset Formula $P$
+\end_inset
+
+' in Figure III.
+ We solve by setting 
+\begin_inset Formula $s_{1}=s_{2}=s$
+\end_inset
+
+, and we find that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+s=7100-8s\Rightarrow s=s_{1}=s_{2}=887.5\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Again, we can use 
+\begin_inset Formula $P'=\vec{s}_{p'}=\left[887.5,\,887.5\right]$
+\end_inset
+
+ to solve for the premium and the redistribution (since we know 
+\begin_inset Formula $W$
+\end_inset
+
+ and 
+\begin_inset Formula $L$
+\end_inset
+
+).
+ This in turn fully identifies the pooling insurance contract 
+\begin_inset Formula $\vec{\kappa}_{p'}=\left[M_{p},\, R_{p}\right]$
+\end_inset
+
+, where 
+\begin_inset Formula $\lambda=0.95$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Non-Existence of Equilibrium
+\end_layout
+
+\begin_layout Standard
+The consumption bundle 
+\begin_inset Formula $P'=\vec{s}_{p'}=\left[887.5,\,887.5\right]$
+\end_inset
+
+ is preferred by the good type to 
+\begin_inset Formula $\alpha_{G}$
+\end_inset
+
+, so if we had contracts 
+\begin_inset Formula $\alpha_{G}$
+\end_inset
+
+ and 
+\begin_inset Formula $\alpha_{B}$
+\end_inset
+
+, a firm could make positive profits by offering a contract like 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+ The result is that there is no equilibrium, which is equivalent to Main
+ Result 3.
+ 
+\end_layout
+
+\end_body
+\end_document

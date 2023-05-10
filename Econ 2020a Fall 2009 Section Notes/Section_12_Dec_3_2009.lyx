@@ -1,0 +1,758 @@
+#LyX 1.6.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-sec
+\end_modules
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Section Notes 12
+\end_layout
+
+\begin_layout Author
+Wonbin Kang
+\end_layout
+
+\begin_layout Date
+December 3-4, 2009
+\end_layout
+
+\begin_layout Part*
+Agenda
+\end_layout
+
+\begin_layout Enumerate
+Bertrand (Price Competition) vs.
+ Cournot (Quantity Competition)
+\end_layout
+
+\begin_layout Enumerate
+Stackelberg Model (variant of Cournot)
+\end_layout
+
+\begin_layout Enumerate
+Kreps-Sheinkman (1983) (time permitting)
+\end_layout
+
+\begin_layout Section
+Bertrand vs.
+ Cournot Duopoly 
+\end_layout
+
+\begin_layout Proposition
+In the Bertrand Duopoly model, there is a unique Nash Equilibrium (
+\begin_inset Formula $p_{1}^{*},p_{2}^{*})$
+\end_inset
+
+, where the two identical firms set their prices equal to the marginal cost
+ 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Both firms earn zero profits.
+ 
+\end_layout
+
+\begin_layout Itemize
+Since price is equal to marginal cost, we get the perfectly competitive
+ outcome with only two firms.
+ 
+\end_layout
+
+\begin_layout Itemize
+Because of Bertrand competition, each firm faces infinitely elastic demand
+ corrrespondences given the price of the other firm.
+ 
+\end_layout
+
+\begin_layout Itemize
+Therefore, monopoly is the only form of price distortion that can arise.
+ 
+\end_layout
+
+\begin_layout Proposition
+In the Cournot Duopoly model where per unit cost 
+\begin_inset Formula $c>0$
+\end_inset
+
+ for both firms and the inverse demand function 
+\begin_inset Formula $p(q)$
+\end_inset
+
+ is such that 
+\begin_inset Formula $p'(q)<0$
+\end_inset
+
+ and 
+\begin_inset Formula $p(0)>c$
+\end_inset
+
+; any Nash Equilibrium 
+\begin_inset Formula $(q_{1}^{*},q_{2}^{*})$
+\end_inset
+
+ will result in market prices greater than 
+\begin_inset Formula $c$
+\end_inset
+
+ and smaller than the monopoly price.
+\end_layout
+
+\begin_layout Itemize
+Firms earn positive profits and we are not in a perfectly competitive equilibriu
+m.
+\end_layout
+
+\begin_layout Itemize
+Oligopolies arise under the Cournot model.
+ 
+\end_layout
+
+\begin_layout Standard
+Let's look at an example with linear inverse demand functions and constant
+ marginal costs.
+ Assume that both firms have marginal costs equal to 
+\begin_inset Formula $c$
+\end_inset
+
+, and the inverse demand function is linear: 
+\begin_inset Formula $P(Q)=\alpha-Q$
+\end_inset
+
+, where 
+\begin_inset Formula $Q=q_{1}+q_{2}$
+\end_inset
+
+.
+ Further assume that 
+\begin_inset Formula $\alpha>c$
+\end_inset
+
+.
+ The profit function for each firm can be written as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\pi_{1}(q_{1};q_{2}) & = & q_{1}P(q_{1}+q_{2})-cq_{1}=(\alpha-c-q_{2})q_{1}-q_{1}^{2}\\
+\pi_{2}(q_{2};q_{1}) & = & q_{2}P(q_{1}+q_{2})-cq_{2}=(\alpha-c-q_{1})q_{2}-q_{2}^{2}\end{eqnarray*}
+
+\end_inset
+
+.
+ We can derive the best response functions for each firm by using the FOCs
+ of each firms' profit maximization problem.
+ Therefore, the best response function for firm 
+\begin_inset Formula $i$
+\end_inset
+
+ is:
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Note that the profit functions for both firms are symmetric.
+ This means that the FOCs will be symmetric leading to symmetric best response
+ functions.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+q_{i}=b_{i}(q_{j})=\frac{\alpha-c-q_{j}}{2}\end{equation}
+
+\end_inset
+
+.
+ By the definition of Nash Equilibrium, we know that the following two equations
+ must hold at 
+\begin_inset Formula $(q_{1}^{*},q_{2}^{*})$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+q_{1}^{*} & = & \frac{\alpha-c-q_{2}^{*}}{2}\\
+q_{2}^{*} & = & \frac{\alpha-c-q_{1}^{*}}{2}\end{eqnarray*}
+
+\end_inset
+
+.
+ Solving the two equations above defines the Nash Equilibrium:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+(q_{1}^{*},q_{2}^{*})=\left(\frac{\alpha-c}{3},\frac{\alpha-c}{3}\right)\label{eq:Cournot equ}\end{equation}
+
+\end_inset
+
+, which results in total output 
+\begin_inset Formula $Q_{Cournot}=\frac{2}{3}\cdot(\alpha-c)$
+\end_inset
+
+ and equilibrium price 
+\begin_inset Formula $P_{Cournot}=P\left(\frac{2}{3}\cdot(\alpha-c)\right)=\frac{1}{3}\cdot(\alpha+2c)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Three remarks:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P_{Cournot}=\frac{1}{3}\cdot(\alpha+2c)>c$
+\end_inset
+
+ (
+\begin_inset Formula $\because\alpha>c$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Q_{Cournot}=\frac{2}{3}\cdot(\alpha-c)>Q_{Monopoly}=\frac{1}{2}\cdot(\alpha-c)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Each firm earns profits equal to: 
+\begin_inset Formula $\frac{1}{9}\cdot(\alpha-c)^{2}$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+The monopolist's profit maximization problem is:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula \[
+\max_{Q}P(Q)\cdot Q-cQ\Rightarrow\max_{Q}(\alpha-c)Q-Q^{2}\]
+
+\end_inset
+
+.
+ FOC identifies the monopolist's optimal production level: 
+\begin_inset Formula $Q_{Monopoly}=\frac{\alpha-c}{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Stackelberg Model
+\end_layout
+
+\begin_layout Standard
+One of the assumptions underlying the Cournot model above was that each
+ firm didn't know how much the other firm was producing.
+ However, what happens if firm 2 is now able to observe how much firm 1
+ produces and produces accordingly?
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+In game theory, this is sequential action, and the relevant equilibrium
+ concept is subgame perfect equilibrium.
+\end_layout
+
+\end_inset
+
+ Further, since firm 1 knows that firm 2 is observing its output, will firm
+ 1 change its output from the Cournot equilibrium identified above? 
+\end_layout
+
+\begin_layout Standard
+To repeat the set up from Section 1: Assume that both firms have marginal
+ costs equal to 
+\begin_inset Formula $c$
+\end_inset
+
+, and the inverse demand function is linear: 
+\begin_inset Formula $P(Q)=\alpha-Q$
+\end_inset
+
+, where 
+\begin_inset Formula $Q=q_{1}+q_{2}$
+\end_inset
+
+.
+ Further assume that 
+\begin_inset Formula $\alpha>c$
+\end_inset
+
+ and that firm 1 produces first and then firm 2 produces.
+ 
+\end_layout
+
+\begin_layout Standard
+In equilibrium, let's assume that firm produces 
+\begin_inset Formula $q_{1}^{*}$
+\end_inset
+
+.
+ The firm 2's profit maximization problem is equal to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\max_{q_{2}}P(q_{1}^{*}+q_{2})q_{2}-cq_{2}=\max_{q_{2}}(\alpha-c-q_{1}^{*})q_{2}-q_{2}^{2}\]
+
+\end_inset
+
+, the FOC for the above optimization problem results in:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+q_{2}^{*}=b_{2}(q_{1}^{*})=\frac{\alpha-c-q_{1}^{*}}{2}\label{eq:firm2 best response}\end{equation}
+
+\end_inset
+
+.
+ Because firm 1 knows that firm 2 will best respond to any output 
+\begin_inset Formula $q_{1}$
+\end_inset
+
+ that firm 1 produces, firm 1's profit maximization problem is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\max_{q_{1}}P\left(q_{1}+\frac{\alpha-c-q_{1}^{*}}{2}\right)q_{1}-cq_{1}\Rightarrow\max_{q_{1}}\frac{1}{2}\cdot q_{1}\cdot\left(\alpha-c-q_{1}\right)\end{equation}
+
+\end_inset
+
+.
+ The FOC identifies the optimal level of production for firm 1 as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+q_{1}^{*}=\frac{\alpha-c}{2}\end{equation}
+
+\end_inset
+
+, and equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:firm2 best response"
+
+\end_inset
+
+ identifies the optimal production of firm 2 as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+q_{2}^{*}=\frac{\alpha-c}{4}.\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Two remarks in relation to the Cournot model above:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Q_{Stackelberg}=\frac{3}{4}\cdot(\alpha-c)>Q_{Cournot}=\frac{2}{3}\cdot(\alpha-c)>Q_{Monopoly}=\frac{1}{2}\cdot(\alpha-c)$
+\end_inset
+
+, which means that the equilibrium price in the Stackelberg model is less
+ than that of the Cournot model.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Comparing the profits of each firm to that of the Cournot model: 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \begin{eqnarray*}
+\pi_{1}^{Stackelberg} & = & \frac{1}{8}\cdot(\alpha-c)^{2}>\frac{1}{9}\cdot(\alpha-c)^{2}=\pi_{1}^{Cournot}\\
+\pi_{2}^{Stackelberg} & = & \frac{1}{16}\cdot(\alpha-c)^{2}<\frac{1}{9}\cdot(\alpha-c)^{2}=\pi_{2}^{Cournot}.\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Kreps-Scheinkman (1983) 
+\end_layout
+
+\begin_layout Standard
+In the Cournot model, we assume that firms compete on the basis of quantity
+ produced.
+ We can interpret this as a firm choosing its production capacity.
+ If that is the case, then what is the equilibrium when firms first choose
+ their capacity levels and then engage in Bertrand price competition? This
+ is the question addressed by David M.
+ Kreps and Jose A.
+ Scheinkman, 1983, 
+\shape italic
+Quantity Precommitment and Bertrand Competition Yield Cournot Outcomes
+\shape default
+, 
+\bar under
+Bell Journal of Economics
+\bar default
+, 14(2): 326-337.
+ The result of the paper is clearly stated in the title of the article.
+\end_layout
+
+\begin_layout Standard
+Let's examine this result using MWG 12.C.11(a).
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+I won't cover 12.C.11(b), since you need to know some game theory concepts.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consider a capacity constrained duopoly pricing game.
+ Firm j's capacity is 
+\begin_inset Formula $q_{j}$
+\end_inset
+
+ for 
+\begin_inset Formula $j=1,2$
+\end_inset
+
+, and it has a constant cost per unit of output of 
+\begin_inset Formula $c\geq0$
+\end_inset
+
+ up to this capacity limit.
+ Assume that the market demand function 
+\begin_inset Formula $x(p)$
+\end_inset
+
+ is continous and strictly decreasing at all 
+\begin_inset Formula $p$
+\end_inset
+
+ such that 
+\begin_inset Formula $x(p)>0$
+\end_inset
+
+ and that there exists a price 
+\begin_inset Formula $\tilde{p}$
+\end_inset
+
+ such that 
+\begin_inset Formula $x(\tilde{p})=q_{1}+q_{2}$
+\end_inset
+
+.
+ Suppose also that 
+\begin_inset Formula $x(p)$
+\end_inset
+
+ is concave and let 
+\begin_inset Formula $p(\cdot)=x^{-1}(\cdot)$
+\end_inset
+
+ denote the inverse demand function.
+ 
+\end_layout
+
+\begin_layout Standard
+The rationing scheme if as follows:
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $p_{j}>p_{i}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray}
+x_{i}(p_{1},p_{2}) & = & \min\left\{ q_{i},\, x(p_{i})\right\} \label{eq:scheme1}\\
+x_{j}(p_{1},p_{2}) & = & \min\left\{ q_{j},\,\max\left\{ x(p_{j})-q_{i},\,0\right\} \right\} \label{eq:scheme2}\end{eqnarray}
+
+\end_inset
+
+, and if 
+\begin_inset Formula $p_{j}=p_{i}=p$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x_{i}(p_{1},p_{2}) & = & \min\left\{ q_{i},\max\left\{ \frac{x(p)}{2},\, x(p)-q_{j}\right\} \right\} ,\,\forall i\in\left\{ 1,2\right\} .\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Further assume that the higher value consumers (those consumers with a higher
+ willingness to pay) are served first.
+\end_layout
+
+\begin_layout Standard
+Suppose that 
+\begin_inset Formula $q_{1}<b_{1}(q_{2})$
+\end_inset
+
+ and 
+\begin_inset Formula $q_{2}<b_{2}(q_{1})$
+\end_inset
+
+, where 
+\begin_inset Formula $b_{i}(q_{j})$
+\end_inset
+
+ is the best response function for a firm 
+\begin_inset Formula $i$
+\end_inset
+
+ given production level 
+\begin_inset Formula $q_{j}$
+\end_inset
+
+ by firm 
+\begin_inset Formula $j$
+\end_inset
+
+.
+ Show that 
+\begin_inset Formula $p_{1}^{*}=p_{2}^{*}=p(q_{1}+q_{2})$
+\end_inset
+
+ is a Nash Equilibrium.
+ 
+\end_layout
+
+\begin_layout Standard
+Assume that firm 2 charges 
+\begin_inset Formula $p_{2}^{*}=p(q_{1}+q_{2})$
+\end_inset
+
+, the price at which both firms are producing at their respective capacities.
+ If firm 1 charges 
+\begin_inset Formula $p_{1}\leq p(q_{1}+q_{2})$
+\end_inset
+
+, firm 1 will sell its full capacity level 
+\begin_inset Formula $q_{1}$
+\end_inset
+
+, resulting in profits equal to 
+\begin_inset Formula $(p_{1}-c)q_{1}$
+\end_inset
+
+, which is less than the profits that firm 1 would get if it charged 
+\begin_inset Formula $p_{1}^{*}=p_{2}^{*}=p(q_{1}+q_{2})$
+\end_inset
+
+, 
+\begin_inset Formula $(p_{1}^{*}-c)q_{1}$
+\end_inset
+
+.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Notice how important the capacity constraints are.
+ Unlike in our previous Bertrand example, firm 1 does 
+\shape italic
+not
+\shape default
+ produce goods to satisfy the entire demand.
+\end_layout
+
+\end_inset
+
+ Therefore, there is no profitable deviation for firm 1 to charge below
+ 
+\begin_inset Formula $p_{2}^{*}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Is there a profitable deviation for firm 1 to charge above 
+\begin_inset Formula $p_{2}^{*}=p(q_{1}+q_{2})$
+\end_inset
+
+? Note that from the rationing scheme set out above in equations 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:scheme1"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:scheme2"
+
+\end_inset
+
+, the residual demand for firm 1 can be rewritten as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x_{1}(p_{1},p_{2})=\min\left\{ q_{1},\, x(p_{1})-q_{2}\right\} \]
+
+\end_inset
+
+.
+ Note that 
+\begin_inset Formula $x(p_{1})-q_{2}$
+\end_inset
+
+ is the solution to firm 1's profit maximization problem:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\max_{x_{1}}\left\{ p(x_{1}+q_{2})-c\right\} x_{1}\, s.t.\, x_{1}\leq q_{1}\]
+
+\end_inset
+
+.
+ Solving the maximization problem results in a best response function: 
+\begin_inset Formula $x_{1}^{*}=b_{1}(q_{2})$
+\end_inset
+
+, which by assumption is greater than firm 1's capacity: 
+\begin_inset Formula $b_{1}(q_{2})>q_{1}$
+\end_inset
+
+, meaning that firm 1 can't produce 
+\begin_inset Formula $b_{1}(q_{2})$
+\end_inset
+
+.
+ Therefore, we have a corner solution to the problem, where 
+\begin_inset Formula $x_{1}^{*}=q_{1}$
+\end_inset
+
+.
+ Therefore, 
+\begin_inset Formula $p_{1}=p(q_{1}+q_{2})=p_{2}^{*}$
+\end_inset
+
+ and we have contradiction.
+\end_layout
+
+\begin_layout Standard
+Therefore, it is optimal for firm 1 to charge 
+\begin_inset Formula $p(q_{1}+q_{2})$
+\end_inset
+
+ given that firm 2 does the same.
+ 
+\end_layout
+
+\begin_layout Standard
+By symmetry, the same argument applies to firm 2 and so we are at an equilibrium.
+ 
+\end_layout
+
+\begin_layout Standard
+Since we know the result of the Bertrand price competition given capacity
+ constraints, firms will now maximize profits by solving for the optimal
+ capacities 
+\begin_inset Formula $(q_{1}^{*},q_{2}^{*})$
+\end_inset
+
+, given prices will equal 
+\begin_inset Formula $p(q_{1}+q_{2})$
+\end_inset
+
+.
+ Sound familiar? It should, because this is the set up of the Cournot model.
+ 
+\end_layout
+
+\end_body
+\end_document

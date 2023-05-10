@@ -1,0 +1,920 @@
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+\end_modules
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Section Notes 3
+\end_layout
+
+\begin_layout Author
+Abby Friedman, Wonbin Kang
+\end_layout
+
+\begin_layout Date
+Septemer 24, 2009
+\end_layout
+
+\begin_layout Part*
+Agenda 
+\end_layout
+
+\begin_layout Enumerate
+Indirect Utility Function
+\end_layout
+
+\begin_layout Enumerate
+Envelope Theorem
+\end_layout
+
+\begin_layout Enumerate
+Roy's Identity
+\end_layout
+
+\begin_layout Enumerate
+Expenditure Minimization Problem (
+\begin_inset Quotes eld
+\end_inset
+
+EMP
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+Duality and Slutsky Equation
+\end_layout
+
+\begin_layout Section
+Indirect Utility Function
+\end_layout
+
+\begin_layout Standard
+Recall the following problem from last week.
+ The utility function was of the Cobb-Douglas form and resulted in some
+ very nice properties and comparative statics (go back to last week's section
+ notes for review).
+ 
+\end_layout
+
+\begin_layout Problem
+How much of good 1 and good 2 should a utility maximizing consumer consume
+ to maximize her utility given wealth 
+\begin_inset Formula $w$
+\end_inset
+
+; prices 
+\begin_inset Formula $p_{1},p_{2}$
+\end_inset
+
+; and a utility function such that 
+\begin_inset Formula $u(x_{1},x_{2})=x_{1}x_{2}^{2}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+Recall that we used monotonic transformation to change the objective function
+ to: 
+\begin_inset Formula $\ln u(x_{1},x_{2})=\ln x_{1}+2\ln x_{2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The Lagrangian was as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\mathcal{L}(x_{1},x_{2})=\ln x_{1}+2\ln x_{2}-\lambda[p_{1}x_{1}+p_{2}x_{2}-w]\label{eq:Lagrangian}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The solution to the above UMP was as follows: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+x_{1}^{*}(\vec{p},w)\equiv\frac{1}{3}\left(\frac{w}{p_{1}}\right)\label{eq:good1deman}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+x_{2}^{*}(\vec{p},w)\equiv\frac{2}{3}\left(\frac{w}{p_{2}}\right)\label{eq:good2demand}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\lambda^{*}(\vec{p},w)\equiv\frac{3}{w}.\label{eq:lagrange multiplier}\end{equation}
+
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Notice that I used identities.
+ The equality between the LHS and RHS must hold for all values of 
+\begin_inset Formula $p_{1},p_{2},w$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ Then we define the indirect utility function as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+v(\vec{p},w)=u(x_{1}^{*}(\vec{p},w),x_{2}^{*}(\vec{p},w)).\]
+
+\end_inset
+
+Understanding the relationship between the utility function and the indirect
+ utility function is very important.
+ Note that 
+\begin_inset Formula $u:X\rightarrow\mathbb{R}^{1}$
+\end_inset
+
+, but 
+\begin_inset Formula $v:P\times W\rightarrow\mathbb{R}^{1}$
+\end_inset
+
+, where 
+\begin_inset Formula $P\subset\mathbb{R}_{+}^{L}$
+\end_inset
+
+ and 
+\begin_inset Formula $W\subset\mathbb{R}_{+}^{1}$
+\end_inset
+
+, which represent sets of price vectors and wealth values, respectively.
+ In short, the utility function 
+\begin_inset Quotes eld
+\end_inset
+
+maps
+\begin_inset Quotes erd
+\end_inset
+
+ bundles of goods to levels of utility, while the indirect utility function
+ maps paramter values to levels of utility.
+ A utility maximizing economic agent will reach a certain level of utility
+ when faced with a given price vector and wealth value by solving her UMP.
+ For our problem from last week:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+v(\vec{p},w)=\ln(x_{1}^{*})+2\ln(x_{2}^{*})=\ln\left(\frac{w}{3p_{1}}\right)+2\ln\left(\frac{2w}{3p_{2}}\right).\]
+
+\end_inset
+
+Now let's analyze:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\frac{\partial v(\vec{p},w)}{\partial w}=\left(\frac{3p_{1}}{w}\times\frac{1}{3p_{1}}\right)+2\left(\frac{3p_{2}}{2w}\times\frac{2}{3p_{2}}\right)=\frac{1}{w}+\frac{2}{w}=\frac{3}{w}=\lambda^{*}(\vec{p},w).\label{eq:1}\end{equation}
+
+\end_inset
+
+We can see more directly the meaning of the Lagrange multiplier, which I
+ alluded to in last section---i.e.
+ the Lagrange muliplier is the utility change at the optimum if you change
+ your wealth.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Hence the term 
+\begin_inset Quotes eld
+\end_inset
+
+shadow price of wealth.
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+ Furthermore, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\frac{\partial v(\vec{p},w)}{\partial p_{1}}=\frac{3p_{1}}{w}\times\left(-\frac{w}{3p_{1}^{2}}\right)=-\frac{1}{p_{1}}<0.\label{eq:2}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Envelope Theorem
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Sam Richardson (a long-time TF for Ec2020a) recommends that Silberberg Ch.
+ 7 for an overview of the envelope theorem.
+ I personally haven't read it.
+ MWG has a chapter on the Envelope Theorem and Simon and Blume (1994) also
+ has a comprehensive treatment of the Envelope Theorem.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the context of the indirect utility function, the envelope theorem tells
+ us the following:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial v(\vec{p},w)}{\partial p_{1}}=\frac{\partial u(x_{1}^{*}(\vec{p},w),x_{2}^{*}(\vec{p},w))}{\partial p_{1}}=\frac{\partial\mathcal{L}(x_{1}^{*}(\vec{p},w),\, x_{2}^{*}(\vec{p},w),\,\lambda^{*}(\vec{p},w))}{\partial p_{1}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+=-\lambda^{*}(\vec{p},w)\times x_{1}^{*}(\vec{p},w)=-\frac{3}{w}\times\frac{1}{3}\left(\frac{w}{p_{1}}\right)=-\frac{1}{3p_{1}}.\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The second equation above is where the envelope theorem applies.
+ When we're at the optimum, we can ignore how small changes in the parameters
+ affect our optimal consumption bundle.
+ The general form of the theorem with a general constraint is as follows:
+\end_layout
+
+\begin_layout Theorem
+Let 
+\begin_inset Formula $f,\, h:\mathbb{R}^{n}\times\mathbb{R}^{1}\rightarrow\mathbb{R}^{1}$
+\end_inset
+
+ and let 
+\begin_inset Formula $\vec{x}^{*}(a)=\left[x_{1}^{*}(a),...,x_{L}^{*}(a)\right]$
+\end_inset
+
+ be the solution to the problem optimizing function 
+\begin_inset Formula $f$
+\end_inset
+
+ over the convex set 
+\begin_inset Formula $C_{a}\equiv\left\{ \vec{x}\in\mathfrak{\mathbb{R}}^{n}|\, h(\vec{x};a)=0\right\} $
+\end_inset
+
+ for a fixed parameter 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Then,
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula \[
+\frac{df(\vec{x}^{*}(a);a)}{da}=\frac{\partial\mathcal{L}(\vec{x}^{*}(a),\lambda^{*}(a);a)}{\partial a}.\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Roy's Identity
+\end_layout
+
+\begin_layout Standard
+Roy's Identity states that if you have continuous utility functions, locally
+ non-satiated preferences, and convex preferences, the following identity
+ will hold:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x_{i}^{*}(\vec{p},w)\equiv-\frac{\frac{\partial v}{\partial p_{i}}}{\frac{\partial v}{\partial w}}.\]
+
+\end_inset
+
+MWG (p.74) provides three proofs.
+ Try the envelope theorem version, now that you know what the envelope theorem
+ is.
+ In our example, we have the numerator and denominator values for Roy's
+ Identity for good 1.
+ Plug in equations 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2"
+
+\end_inset
+
+, and you see that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+-\frac{\frac{\partial v}{\partial p_{i}}}{\frac{\partial v}{\partial w}}=-\frac{-\frac{1}{p_{1}}}{\frac{3}{w}}=\frac{w}{3p_{1}}.\]
+
+\end_inset
+
+Compare this to the demand for good 1 we calculated by solving the UMP,
+ identity 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:good1deman"
+
+\end_inset
+
+.
+ This means that the indirect utility function contains the same information
+ as the Walrasian demand function we calculated by optimizing our utility
+ function over our budget set.
+ 
+\end_layout
+
+\begin_layout Section
+EMP
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+A good exercise is to set up the UMP and EMP side by side and compare the
+ two optimizations.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+How much of good 1 and good 2 should I consume to minimize my expenditure
+ given wealth 
+\begin_inset Formula $w$
+\end_inset
+
+; prices 
+\begin_inset Formula $p_{1},p_{2}$
+\end_inset
+
+; utility level 
+\begin_inset Formula $\bar{u}$
+\end_inset
+
+; and a utility function such that 
+\begin_inset Formula $u(x_{1},x_{2})=\ln x_{1}+2\ln x_{2}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+What is the objective? Minimize expenditure, which is equal to 
+\begin_inset Formula $\vec{p}\cdot\vec{h}=p_{1}h_{1}+p_{2}h_{2}$
+\end_inset
+
+.
+ What is the objective function?
+\end_layout
+
+\begin_layout Enumerate
+What are the choice variables (the endogenous variables)? What are the parameter
+s (exogenous / state variables)? 
+\end_layout
+
+\begin_layout Enumerate
+What are the constraints? The utility constraint and non-negativity of the
+ endogenous variables.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The utility constraint (if it can be termed as such), tells us that the
+ economic agent wants to attain 
+\shape italic
+at least
+\shape default
+ a certain level of utility, which we can write as follows: 
+\begin_inset Formula $u(h_{1},h_{2})=\ln h_{1}+2\ln h_{2}\geq\bar{u}$
+\end_inset
+
+.
+ Note that like in the UMP, this constraint will 
+\shape italic
+bind
+\shape default
+ (hold with equality).
+ 
+\end_layout
+
+\begin_layout Enumerate
+In the UMP, we could monotonically transform the utility function to ease
+ calculation.
+ Should we do the same here? Without getting into the specifics, the answer
+ is no.
+ The reason has to do with the fact that now, the value of the utility function
+ actually has meaning! The level of utility has to be greater than 
+\begin_inset Formula $\bar{u}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+How do we set up the problem? Once set up, how do we solve? How do we interpret
+ the answer? Can we use pictures like the ones we saw in Section Notes 1
+ to help us? 
+\end_layout
+
+\begin_layout Standard
+Let's set up the problem and solve it:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\min_{h_{1}h_{2}\geq\geq0}e=p_{1}h_{1}+p_{2}h_{2}\]
+
+\end_inset
+
+s.t.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\ln h_{1}+2\ln h_{2}\geq\bar{u}\]
+
+\end_inset
+
+.
+ The resulting Lagrangian is as follows:
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+What type of Lagrangian is this? Do you see that we haven't considered the
+ non-negativity constraints in the Lagrangian below?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\mathcal{L}(h_{1},h_{2};\bar{u})=p_{1}h_{1}+p_{2}h_{2}+\lambda[\bar{u}-\ln h_{1}-2\ln h_{2}]\label{eq:Lagrangian EMP}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial\mathcal{L}(h_{1}^{*},h_{2}^{*},\lambda^{*})}{\partial h_{1}} & = & p_{1}-\lambda^{*}\frac{1}{h_{1}^{*}}=0\Rightarrow\lambda^{*}=p_{1}h_{1}^{*}\\
+\frac{\partial\mathcal{L}(h_{1}^{*},h_{2}^{*},\lambda^{*})}{\partial h_{2}} & = & p_{2}-\lambda^{*}\frac{2}{h_{2}^{*}}=0\Rightarrow\lambda^{*}=\frac{p_{2}h_{2}^{*}}{2}\\
+\frac{\partial\mathcal{L}(h_{1}^{*},h_{2}^{*},\lambda^{*})}{\partial\lambda} & = & -\ln h_{1}-2\ln h_{2}+\ln e^{\bar{u}}=0.\end{eqnarray*}
+
+\end_inset
+
+We have a system of three equations and three unknowns which we can solve
+ for (recall that 
+\begin_inset Formula $\ln1=0$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+h_{1}^{*}(p_{1},p_{2},\bar{u})\equiv\exp\left(\frac{\bar{u}}{3}\right)\times\left(\frac{p_{2}}{2p_{1}}\right)^{\frac{2}{3}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+h_{2}^{*}(p_{1},p_{2},\bar{u})\equiv\exp\left(\frac{\bar{u}}{3}\right)\times\left(\frac{p_{2}}{2p_{1}}\right)^{-\frac{1}{3}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\lambda^{*}(p_{1},p_{2},\bar{u})\equiv\exp\left(\frac{\bar{u}}{3}\right)\times p_{1}^{\frac{1}{3}}\left(\frac{p_{2}}{2}\right)^{\frac{2}{3}}.\]
+
+\end_inset
+
+With the above Hicksian demand functions, we can solve for the expenditure
+ function which is equal to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+e(\vec{p},\bar{u})=\vec{p}\cdot\vec{h}^{*}(\vec{p},\bar{u})=p_{1}h_{1}^{*}(\vec{p},\bar{u})+p_{2}h_{2}^{*}(\vec{p},\bar{u})=\exp\left(\frac{\bar{u}}{3}\right)\left[\frac{1}{2^{\frac{2}{3}}}p_{1}^{\frac{1}{3}}p_{2}^{\frac{2}{3}}+\frac{2}{2^{\frac{2}{3}}}p_{1}^{\frac{1}{3}}p_{2}^{\frac{2}{3}}\right]=\exp\left(\frac{\bar{u}}{3}\right)\times\frac{3}{2^{\frac{2}{3}}}p_{1}^{\frac{1}{3}}p_{2}^{\frac{2}{3}}.\]
+
+\end_inset
+
+Notice the following three equations (or comparative statics):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray}
+\frac{\partial e(\vec{p},\bar{u})}{\partial p_{1}} & = & \exp\left(\frac{\bar{u}}{3}\right)\times\frac{1}{3}\times\frac{3}{2^{\frac{2}{3}}}p_{1}^{-\frac{2}{3}}p_{2}^{\frac{2}{3}}=\exp\left(\frac{\bar{u}}{3}\right)\times\left(\frac{p_{2}}{2p_{1}}\right)^{\frac{2}{3}}=h_{1}^{*}(\vec{p},\bar{u})\label{eq:expenditure hicksian good1}\\
+\frac{\partial e(\vec{p},\bar{u})}{\partial p_{2}} & = & \exp\left(\frac{\bar{u}}{3}\right)\times\frac{2}{3}\times\frac{3}{2^{\frac{2}{3}}}p_{1}^{\frac{1}{3}}p_{2}^{-\frac{1}{3}}=\exp\left(\frac{\bar{u}}{3}\right)\times\left(\frac{p_{2}}{2p_{1}}\right)^{-\frac{1}{3}}=h_{2}^{*}(\vec{p},\bar{u})\label{eq:expend hicks good2}\\
+\frac{\partial e(\vec{p},\bar{u})}{\partial\bar{u}} & = & \exp\left(\frac{\bar{u}}{3}\right)\frac{1}{3}\frac{3}{2^{\frac{2}{3}}}p_{1}^{\frac{1}{3}}p_{2}^{\frac{2}{3}}=\exp\left(\frac{\bar{u}}{3}\right)p_{1}^{\frac{1}{3}}\left(\frac{p_{2}}{2}\right)^{\frac{2}{3}}=\lambda^{*}(p_{1},p_{2},\bar{u}).\label{eq:expend hicks u_bar}\end{eqnarray}
+
+\end_inset
+
+Equations 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:expenditure hicksian good1"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:expend hicks good2"
+
+\end_inset
+
+ are very important and you should remember this (no need to know the general
+ proof).
+ Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:expend hicks u_bar"
+
+\end_inset
+
+ is not really important, but a really good place to see if you've understood
+ the envelope theorem since this is a direct consequence.
+ 
+\end_layout
+
+\begin_layout Section
+Duality and Slutsky
+\end_layout
+
+\begin_layout Standard
+Arguably the most important figure for the first half of this course can
+ be found on page 75 of MWG, Figure 3.G.3.
+ However, the figure has a typo: the bottom left arrow between the boxes
+ labeld 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $e(p,u)$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $v(p,w)$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ should be: 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $u=v(p,e(p,u))$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ on top and 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $e=e(p,v(p,w))$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ on the bottom.
+ Now let's look at the duality of the UMP and the EMP using the Cobb-Douglas
+ utility function that we saw above.
+ Use our examples above to draw Figure 3.G.3.
+\end_layout
+
+\begin_layout Standard
+Now let's look at the Slutsky Equation.
+ You don't have to know the derivation of the equation itself, however,
+ you should be comfortable with interpreting it.
+ The general form of the Slutsky Equation where there are a total of 
+\begin_inset Formula $L$
+\end_inset
+
+ goods is as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial h_{i}(\vec{p},\bar{u})}{\partial p_{j}}=\frac{\partial x_{i}(\vec{p},w)}{\partial p_{j}}+\frac{\partial x_{i}(\vec{p},w)}{\partial w}\times x_{j}(\vec{p},w)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\Rightarrow\frac{\partial x_{i}(\vec{p},w)}{\partial p_{j}}=\frac{\partial h_{i}(\vec{p},\bar{u})}{\partial p_{j}}-\frac{\partial x_{i}(\vec{p},w)}{\partial w}\times x_{j}(\vec{p},w)\label{eq:Slutsky}\end{equation}
+
+\end_inset
+
+.
+ We interpret the Slutsky equation as follows:
+\end_layout
+
+\begin_layout Enumerate
+The first term in the RHS of equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Slutsky"
+
+\end_inset
+
+, 
+\begin_inset Formula $\frac{\partial h_{i}(\vec{p},\bar{u})}{\partial p_{j}}$
+\end_inset
+
+, is the 
+\shape italic
+substitution effect
+\shape default
+.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Distinguish this from substitute goods and complementary goods, which are
+ given a more precise definition below.
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+If 
+\begin_inset Formula $\frac{\partial h_{i}(\vec{p},\bar{u})}{\partial p_{j}}>0$
+\end_inset
+
+, then goods 
+\begin_inset Formula $i$
+\end_inset
+
+ and 
+\begin_inset Formula $j$
+\end_inset
+
+ are substitutes.
+ 
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $\frac{\partial h_{i}(\vec{p},\bar{u})}{\partial p_{j}}<0$
+\end_inset
+
+, the goods 
+\begin_inset Formula $i$
+\end_inset
+
+ and 
+\begin_inset Formula $j$
+\end_inset
+
+ are complements.
+\end_layout
+
+\begin_layout Enumerate
+However, if 
+\begin_inset Formula $\frac{\partial x_{i}(\vec{p},w)}{\partial p_{j}}\gtrless0$
+\end_inset
+
+, then goods 
+\begin_inset Formula $i$
+\end_inset
+
+ and 
+\begin_inset Formula $j$
+\end_inset
+
+ are either 
+\shape italic
+gross
+\shape default
+ substitutes or 
+\shape italic
+gross
+\shape default
+ complements, respectively.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The second term in the RHS of equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Slutsky"
+
+\end_inset
+
+, 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+
+\begin_inset Formula $\frac{\partial x_{i}(\vec{p},w)}{\partial w}\times x_{j}(\vec{p},w)$
+\end_inset
+
+, is the 
+\family default
+\series default
+\shape italic
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+wealth effect
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+Recall that one of the utility functions that we discussed in a previous
+ section had the property that 
+\begin_inset Formula $\frac{\partial x_{i}(\vec{p},w)}{\partial w}=0$
+\end_inset
+
+ for some of the goods in the set 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ Do you remember which function it was and which goods would not have a
+ wealth effect? Answer is quasilinear utility functions and all of the non-numer
+aire goods.
+ 
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+The important thing to note is that we are able to decompose the change
+ in the Walrasian demand function (which we are able to observe) to substitution
+ and wealth effects.
+ We'd love to be able to use the Hicksian demand functions whenever possible,
+ but the problem is that we can't observe Hicksian demand functions (how
+ are we going to observe 
+\begin_inset Formula $\bar{u}$
+\end_inset
+
+ for each individual agent?).
+ 
+\end_layout
+
+\end_body
+\end_document

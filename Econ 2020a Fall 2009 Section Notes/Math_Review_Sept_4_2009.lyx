@@ -1,0 +1,973 @@
+#LyX 1.6.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-ams-extended
+\end_modules
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Econ 2020a Math Review
+\end_layout
+
+\begin_layout Author
+Wonbin Kang
+\end_layout
+
+\begin_layout Date
+September 4, 2009
+\end_layout
+
+\begin_layout Standard
+What we want to accomplish this section: 1) Cover the six topics below;
+ 2) Cover some mathematical notation that frequently appears in economics;
+ and hopefully 3) feel a bit more comfortable with the math for this class.
+ 
+\end_layout
+
+\begin_layout Section
+Convex and Non-Convex Sets
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:1"
+
+\end_inset
+
+Set 
+\begin_inset Formula $U\subseteq\mathfrak{R}$
+\end_inset
+
+ is a convex set 
+\series bold
+if and only if
+\series default
+ 
+\begin_inset Formula $\forall x,y\in U$
+\end_inset
+
+, and 
+\begin_inset Formula $\forall\alpha\in[0,1]$
+\end_inset
+
+, 
+\begin_inset Formula $\alpha x+(1-\alpha)y\in U$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+In a two-dimensional setting, whether a set is convex is easy to see.
+ 
+\end_layout
+
+\begin_layout Itemize
+We will soon be encountering convex sets in the form of the Walrasian budget
+ set.
+ Draw a two-dimensional picture and see for yourselves that the budget set
+ (when we have two goods 
+\begin_inset Formula $x,y$
+\end_inset
+
+ with prices 
+\begin_inset Formula $p,q$
+\end_inset
+
+ and wealth 
+\begin_inset Formula $w$
+\end_inset
+
+) is a convex set.
+ 
+\end_layout
+
+\begin_layout Standard
+Why do we care? See Theorem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:1"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+\begin_inset Quotes eld
+\end_inset
+
+If and only if
+\begin_inset Quotes erd
+\end_inset
+
+ vs.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+if
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Be careful when you see these expressions.
+ The former denotes a 
+\begin_inset Quotes eld
+\end_inset
+
+necessary and sufficient
+\begin_inset Quotes erd
+\end_inset
+
+ condition, while the latter denotes a 
+\begin_inset Quotes eld
+\end_inset
+
+necessary
+\begin_inset Quotes erd
+\end_inset
+
+ condition.
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset CommandInset label
+LatexCommand label
+name "exa:1"
+
+\end_inset
+
+A function 
+\begin_inset Formula $f:U\rightarrow\mathfrak{R}$
+\end_inset
+
+ is a concave function on the set 
+\begin_inset Formula $U$
+\end_inset
+
+ 
+\shape italic
+iff
+\shape default
+ 
+\begin_inset Formula $f(y)-f(x)\leq f'(x)(y-x)$
+\end_inset
+
+, 
+\begin_inset Formula $\forall x,y\in U$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Compare Example 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exa:1"
+
+\end_inset
+
+ with Example 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exa:2"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset CommandInset label
+LatexCommand label
+name "exa:2"
+
+\end_inset
+
+A function 
+\begin_inset Formula $g:\mathfrak{R}\rightarrow\mathfrak{R}$
+\end_inset
+
+ is a homothetic function 
+\shape italic
+if
+\shape default
+ it is a monotone transformation of a homogeneous function.
+ 
+\end_layout
+
+\begin_layout Standard
+Why do we care? 
+\begin_inset Quotes eld
+\end_inset
+
+[M]any economic principles, such as marginal rate of substitution equals
+ the price ratio, or marginal revenue equals marginal costs are simply the
+ first order 
+\shape italic
+necessary
+\shape default
+ conditions of the corresponding maximization problem.
+ Ideally, an economist would like such a rule to also be a 
+\shape italic
+sufficient
+\shape default
+ condition guaranteeing that utility or profit is being maximized so that
+ it can provide a guideline for economic behavior.
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Simon and Blume (1994, p.518)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Convex and Concave Functions
+\end_layout
+
+\begin_layout Definition
+A function 
+\begin_inset Formula $f:U\rightarrow\mathfrak{R}$
+\end_inset
+
+ is a strictly convex function over the set 
+\begin_inset Formula $U$
+\end_inset
+
+ if 
+\begin_inset Formula $\forall x_{1},x_{2}\in U$
+\end_inset
+
+ and 
+\begin_inset Formula $\forall\alpha\in(0,1)$
+\end_inset
+
+, 
+\begin_inset Formula $f(\alpha x_{1}+(1-\alpha)x_{2})<\alpha f(x_{1})+(1-\alpha)f(x_{2})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Note that if you change the 
+\begin_inset Formula $<$
+\end_inset
+
+ to a 
+\begin_inset Formula $\leq$
+\end_inset
+
+, then the function will be weakly convex.
+ 
+\end_layout
+
+\begin_layout Itemize
+Draw a picture of a convex function and you will see that any line connecting
+ two points on a convex function will lie 
+\shape italic
+above
+\shape default
+ the function.
+\end_layout
+
+\begin_layout Definition
+A function 
+\begin_inset Formula $f:U\rightarrow\mathfrak{R}$
+\end_inset
+
+ is a strictly convex function over the set 
+\begin_inset Formula $U$
+\end_inset
+
+ if 
+\begin_inset Formula $\forall x_{1},x_{2}\in U$
+\end_inset
+
+ and 
+\begin_inset Formula $\forall\alpha\in(0,1)$
+\end_inset
+
+, 
+\begin_inset Formula $f(\alpha x_{1}+(1-\alpha)x_{2})>\alpha f(x_{1})+(1-\alpha)f(x_{2})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Note that if you change the 
+\begin_inset Formula $>$
+\end_inset
+
+ to a 
+\begin_inset Formula $\geq$
+\end_inset
+
+, then the function will be weakly convex.
+\end_layout
+
+\begin_layout Itemize
+Draw a picture of a concave function and you will see that any line connecting
+ two points on a concave function will lie 
+\shape italic
+below
+\shape default
+ the function.
+\end_layout
+
+\begin_layout Itemize
+Some alternative criteria for determining concave functions are as follows
+ (notice the iff!!):
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+A function 
+\begin_inset Formula $f:U\rightarrow\mathfrak{R}$
+\end_inset
+
+ is a (weakly) concave function over 
+\begin_inset Formula $U$
+\end_inset
+
+ iff 
+\begin_inset Formula $f''(x)\leq0$
+\end_inset
+
+, 
+\begin_inset Formula $\forall x\in U$
+\end_inset
+
+.
+ We look at the second-order derivative.
+\end_layout
+
+\begin_layout Itemize
+A function 
+\begin_inset Formula $f:U\rightarrow\mathfrak{R}$
+\end_inset
+
+ is a concave function over 
+\begin_inset Formula $U$
+\end_inset
+
+ iff 
+\begin_inset Formula $f(y)-f(x)\leq f'(x)(y-x)$
+\end_inset
+
+, 
+\begin_inset Formula $\forall x,y\in U$
+\end_inset
+
+.
+ Draw a picture.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Some interesting properties that will be helpful for you to know regarding
+ concave functions:
+\end_layout
+
+\begin_deeper
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:1"
+
+\end_inset
+
+If 
+\begin_inset Formula $f$
+\end_inset
+
+ is a concave function on an 
+\begin_inset Quotes eld
+\end_inset
+
+open,
+\begin_inset Quotes erd
+\end_inset
+
+ convex set 
+\begin_inset Formula $U$
+\end_inset
+
+, (or 
+\begin_inset Formula $f:U\rightarrow\mathfrak{R}$
+\end_inset
+
+ and 
+\begin_inset Formula $f''(\cdot)\leq0$
+\end_inset
+
+) 
+\begin_inset Formula $x^{*}$
+\end_inset
+
+s.t.
+ 
+\begin_inset Formula $f'(x^{*})=0$
+\end_inset
+
+ is the global maximizer of 
+\begin_inset Formula $f$
+\end_inset
+
+ on 
+\begin_inset Formula $U$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+What does this mean? Let's forget about the 
+\begin_inset Quotes eld
+\end_inset
+
+open
+\begin_inset Quotes erd
+\end_inset
+
+ language in the theorem above and concentrate on the convex set 
+\begin_inset Formula $U$
+\end_inset
+
+.
+ Do you remember what else was convex? Can you see why this theorem makes
+ our lives so much easier? 
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:2"
+
+\end_inset
+
+Let 
+\begin_inset Formula $f_{1}...f_{k}$
+\end_inset
+
+ be concave functions, each defined on the same convext subset 
+\begin_inset Formula $U$
+\end_inset
+
+ and let 
+\begin_inset Formula $a_{1}...a_{k}$
+\end_inset
+
+be positive real numbers.
+ Then any linear combination of these functions, 
+\begin_inset Formula $a_{1}f_{1}+...+a_{k}f_{k}$
+\end_inset
+
+, is also a concave function.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Quasiconcave Functions
+\end_layout
+
+\begin_layout Definition
+A function
+\begin_inset Formula $f:U\rightarrow\mathfrak{R}$
+\end_inset
+
+ is a quasiconcave function if 
+\begin_inset Formula $\forall a\in\mathfrak{R}$
+\end_inset
+
+, the set 
+\begin_inset Formula $C_{a}\equiv\left\{ x\in U:f(x)\geq a\right\} $
+\end_inset
+
+ is a convex set.
+ Or in words, the upper level sets of some number 
+\begin_inset Formula $a$
+\end_inset
+
+, or the set of 
+\begin_inset Formula $x$
+\end_inset
+
+ where the function 
+\begin_inset Formula $f$
+\end_inset
+
+ takes values greater than or equal to 
+\begin_inset Formula $a$
+\end_inset
+
+, is convex.
+ 
+\end_layout
+
+\begin_layout Standard
+Confused? Let's take a look at some examples (draw each one and see if this
+ helps):
+\end_layout
+
+\begin_layout Itemize
+Leontieff utility functions of the form 
+\begin_inset Formula $Q(x,y)=min\left\{ x,y\right\} $
+\end_inset
+
+ with 
+\begin_inset Formula $a,b>0$
+\end_inset
+
+ are certainly not concave, but they are quasiconcave.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+Some
+\shape default
+ non-decreasing functions such as 
+\begin_inset Formula $f(x)=x^{3}$
+\end_inset
+
+ may not be concave (note the signs of the second derivatives), but they
+ are quasiconcave.
+\end_layout
+
+\begin_layout Standard
+For our purposes, you should understand quasiconcavity as a 
+\begin_inset Quotes eld
+\end_inset
+
+weak
+\begin_inset Quotes erd
+\end_inset
+
+ form of concavity.
+ This is true since all concave functions are quasiconcave (but the reverse
+ is 
+\shape italic
+not
+\shape default
+ correct).
+ 
+\end_layout
+
+\begin_layout Standard
+Why do we care? We care about quasiconcavity because we like concavity.
+ Concavity has the following great properties: 1) Theorem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:1"
+
+\end_inset
+
+ (no need to check the last 
+\begin_inset Formula $n-m$
+\end_inset
+
+ leading principal minors of the 
+\begin_inset Formula $(m+n)\times(n+m)$
+\end_inset
+
+ border Hessian matrix!!!!); 2) Theorem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:2"
+
+\end_inset
+
+; and 3) their upper level sets are convex, which means that they can represent
+ convex preferences.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+See Simon and Blume (1994, p.517-27) for a great exposition on this topic.
+\end_layout
+
+\end_inset
+
+ However, concavity is a 
+\begin_inset Quotes eld
+\end_inset
+
+cardinal
+\begin_inset Quotes erd
+\end_inset
+
+ property, meaning that a monotonic transformation of a concave function
+ may not result in a concave function, while quasiconcavity is an 
+\begin_inset Quotes eld
+\end_inset
+
+ordinal
+\begin_inset Quotes erd
+\end_inset
+
+ property, meaning that a monotonic transformation of a quasiconcave function
+ will still be a quasiconcave function.
+ In short, the above three properties are preserved (given certain restrictions
+ that we won't discuss).
+ 
+\end_layout
+
+\begin_layout Section
+Homogeneity of Degree 
+\begin_inset Quotes eld
+\end_inset
+
+k
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+For any scalar 
+\begin_inset Formula $k$
+\end_inset
+
+, a real-valued function 
+\begin_inset Formula $f$
+\end_inset
+
+ is homogeneous of degree 
+\begin_inset Formula $k$
+\end_inset
+
+ (hereinafter 
+\begin_inset Quotes eld
+\end_inset
+
+hod
+\begin_inset Formula $k$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+) if 
+\begin_inset Formula $f(\alpha\vec{x})=\alpha^{k}f(\vec{x})$
+\end_inset
+
+.
+ If a function is hod
+\begin_inset Formula $k$
+\end_inset
+
+ in 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+, then 
+\begin_inset Formula $f(\alpha x_{1},\vec{x}_{-1})=\alpha^{k}f(x_{1},\vec{x}_{-1})$
+\end_inset
+
+ or in the two variable case, 
+\begin_inset Formula $f(\alpha x,y)=\alpha^{k}f(x,y)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Walrasian demand is hod 0 in 
+\begin_inset Formula $\vec{p}$
+\end_inset
+
+ and 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ Assume that 
+\begin_inset Formula $x_{i}(\vec{p},w)=\frac{4w+3p_{j}}{5p_{i}}$
+\end_inset
+
+.
+ What happens if double/triple/quadruple...
+ all of the terms? Nothing.
+ Therefore, 
+\begin_inset Formula $x_{i}(\alpha\vec{p},\alpha w)=\alpha^{0}\times x_{i}(\vec{p},w)=1\times x_{i}(\vec{p},w)$
+\end_inset
+
+.
+ Do you see the intuition behind this?
+\end_layout
+
+\begin_layout Standard
+Like concavity we really like homogeneous functions because it has some
+ very convenient properties.
+ One of which is that the marginal rate of substitution (or marginal rate
+ of technical substitution if we're dealing with a homogeneous production
+ function) is constant along rays from the origin.
+\end_layout
+
+\begin_layout Standard
+But again, like concavity, these great properties are not preserved after
+ a monotonic transformation---i.e.
+ they are cardinal, 
+\shape italic
+not
+\shape default
+ ordinal.
+ That's why we have homothetic functions (which we won't discuss here).
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Again, Simon and Blume (1994, ch.
+ 20) is a wonderful exposition of homogeneous and homothetic functions.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Identities, 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\equiv$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Definition
+An identity is a definitional equation, expressing that two things have
+ exactly the same meaning.
+ The statement is true for all values of the parameters.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $3y+4=13$
+\end_inset
+
+ is not an identity because it only holds for the parameter value, 
+\begin_inset Formula $y=3$
+\end_inset
+
+.
+ But 
+\begin_inset Formula $2(y+2)\equiv2y+4$
+\end_inset
+
+ is an identity.
+ Note that the Walrasian demand function is also an identity---i.e.
+ 
+\begin_inset Formula $x_{j}(\vec{p},w)\equiv\frac{4w}{5p_{j}}$
+\end_inset
+
+ will hold for all values of 
+\begin_inset Formula $\vec{p}$
+\end_inset
+
+ and 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ We are often lazy and write identities as 
+\begin_inset Formula $=$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Why do we care? If we have an identity, we can differentiate both sides
+ and still have a true expression.
+ Let's differentiate both sides of 
+\begin_inset Formula $3y+4=13$
+\end_inset
+
+ with regards to 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ Then we get 
+\begin_inset Formula $3=0$
+\end_inset
+
+, which is a contradiction.
+ However, the following is true:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial x_{j}(\vec{p},w)}{\partial w}=\frac{4}{5p_{j}}\]
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+Walras' Law.
+ Let's differentiate both sides of the following identity: 
+\begin_inset Formula $p\cdot x(p,w)\equiv w$
+\end_inset
+
+,
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Note that economists are terrible with notation.
+ I would write this identity as follows:
+\begin_inset Formula $\vec{p}\cdot\vec{x}(\vec{p},w)\equiv w$
+\end_inset
+
+.
+ But you should get used to the notation that is in MWG.
+ 
+\end_layout
+
+\end_inset
+
+ where 
+\begin_inset Formula $p\in\mathfrak{R}^{n}$
+\end_inset
+
+ We can rewrite the identity above as follows:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula \begin{eqnarray*}
+p\cdot x(p,w) & \equiv & w\\
+p_{1}x_{1}(p,w)+p_{2}x_{2}(p,w)+...+p_{n}x_{n}(p,w) & \equiv & w\end{eqnarray*}
+
+\end_inset
+
+,
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Note that the LHS of the first identity is a 
+\begin_inset Quotes eld
+\end_inset
+
+dot product
+\begin_inset Quotes erd
+\end_inset
+
+ and not simply a multiplication.
+\end_layout
+
+\end_inset
+
+ and if we differentiate both sides of the identity with regards to 
+\begin_inset Formula $w$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula \begin{eqnarray*}
+p_{1}\frac{\partial x_{1}(p,w)}{\partial w}+p_{2}\frac{\partial x_{2}(p,w)}{\partial w}+...+p_{n}\frac{\partial x_{n}(p,w)}{\partial w} & \equiv & 1\\
+\sum_{i=1}^{n}p_{i}\frac{\partial x_{i}(p,w)}{\partial w} & \equiv & 1\\
+D_{w}x(p,w)\times p & \equiv & 1\end{eqnarray*}
+
+\end_inset
+
+.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+I would have written the third identity as follows: 
+\begin_inset Formula $D_{w}\vec{x}(\vec{p},w)\times\vec{p}=1$
+\end_inset
+
+, to show that we were multiplying a row vector by a column vector (which
+ results in a scalar), but I'm using the MWG notation.
+ 
+\end_layout
+
+\end_inset
+
+ The intrepretation of this is that the change in wealth will equal the
+ change in expenditure.
+ 
+\end_layout
+
+\end_body
+\end_document

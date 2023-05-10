@@ -1,0 +1,2507 @@
+#LyX 1.6.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-sec
+\end_modules
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Section Notes 4
+\end_layout
+
+\begin_layout Author
+Wonbin Kang
+\end_layout
+
+\begin_layout Date
+February 18, 2010
+\end_layout
+
+\begin_layout Section*
+Agenda
+\end_layout
+
+\begin_layout Enumerate
+Trembling Hand Perfect Nash Equilibrium (
+\begin_inset Quotes eld
+\end_inset
+
+THPNE
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+Bayesian Nash Equilibrium
+\end_layout
+
+\begin_layout Section
+THPNE
+\end_layout
+
+\begin_layout Standard
+By now you should know that in certain games, you will find a number of
+ NEs.
+ Going forward, we're going to be 
+\begin_inset Quotes eld
+\end_inset
+
+refining
+\begin_inset Quotes erd
+\end_inset
+
+ the set of NE or using new equilibrium concepts to give us better predictions
+ in games.
+ THPNE will be the first refinement we consider.
+ Let's look at the following example:
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="4">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+M
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+R
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+U
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4,-4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2,4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,-3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5,3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2,2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-1,1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+M
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+U
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4,-4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+2
+\bar default
+,
+\bar under
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+5
+\bar default
+,
+\bar under
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2,2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Remember, when you first see a game, the first thing you should do is check
+ to see if there is a strictly 
+\shape italic
+dominated
+\shape default
+ strategy.
+ In the game above, we can simplify the 
+\begin_inset Formula $2\times3$
+\end_inset
+
+ matrix into the 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ matrix since 
+\begin_inset Quotes eld
+\end_inset
+
+R
+\begin_inset Quotes erd
+\end_inset
+
+ is a strictly dominated strategy.
+ It's strictly dominated by player 2's mixed strategy where player 2 plays
+ 
+\begin_inset Formula $\vec{p}=\left[\frac{1}{2},\frac{1}{2},0\right]$
+\end_inset
+
+, among other mixed strategies.
+ In the reduced form game, there are two NE: (U,M) and (D,L).
+ What we want to think about is which of the two NEs is 
+\begin_inset Quotes eld
+\end_inset
+
+better.
+\begin_inset Quotes erd
+\end_inset
+
+ We're going to use THPNE to solve for the 
+\begin_inset Quotes eld
+\end_inset
+
+better
+\begin_inset Quotes erd
+\end_inset
+
+ equilibrium.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Elon called this the equilibrium selection process and the 
+\begin_inset Quotes eld
+\end_inset
+
+better
+\begin_inset Quotes erd
+\end_inset
+
+ equilibrium as the self-enforcing equilibrium.
+  
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Definition of THPNE
+\end_layout
+
+\begin_layout Standard
+Let's start with a couple of definitions:
+\end_layout
+
+\begin_layout Definition
+A strategy 
+\begin_inset Formula $\sigma_{i}$
+\end_inset
+
+ is a 
+\shape italic
+completely mixed strategy
+\shape default
+ if it puts positive probability on all of player 
+\begin_inset Formula $i$
+\end_inset
+
+'s pure strategies.
+ A strategy profile 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ is completely mixed if all players are playing a completely mixed strategy.
+ 
+\end_layout
+
+\begin_layout Standard
+To prevent confusion, let's assume that 
+\begin_inset Formula $i\in\left\{ 1,...,I\right\} $
+\end_inset
+
+, then:
+\end_layout
+
+\begin_layout Definition
+A NE strategy profile 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ is trembling hand perfect 
+\shape italic
+if there exists
+\shape default
+ a sequence of completely mixed strategy profiles 
+\begin_inset Formula $\{\sigma_{n}\}_{n=1}^{\infty}$
+\end_inset
+
+ such that 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\sigma_{n}=\sigma$
+\end_inset
+
+ and such that for all players 
+\begin_inset Formula $i$
+\end_inset
+
+, 
+\begin_inset Formula $\sigma_{i}$
+\end_inset
+
+ is a best response to 
+\begin_inset Formula $\sigma_{-in}$
+\end_inset
+
+ for a large enough 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Examples of THPNE
+\end_layout
+
+\begin_layout Standard
+Let's look at a few examples to clarify the definition above:
+\end_layout
+
+\begin_layout Standard
+For Example 1.1 above, consider the NE where player 1 plays 
+\begin_inset Quotes eld
+\end_inset
+
+U
+\begin_inset Quotes erd
+\end_inset
+
+ and player 2 plays 
+\begin_inset Quotes eld
+\end_inset
+
+M
+\begin_inset Quotes erd
+\end_inset
+
+.
+ From the definition of THP, we need to consider completely mixed strategy
+ 
+\shape italic
+profiles
+\shape default
+, so let's assume that player 1 is playing a completely mixed strategy where
+ he places 
+\begin_inset Formula $1-\epsilon$
+\end_inset
+
+ probability on 
+\begin_inset Quotes eld
+\end_inset
+
+U
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ probability on 
+\begin_inset Quotes eld
+\end_inset
+
+D
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Also let's assume that player 2 is playing a completely mixed strategy,
+ denoted 
+\begin_inset Formula $\sigma_{2}^{*}$
+\end_inset
+
+ where she places 
+\begin_inset Formula $1-\epsilon$
+\end_inset
+
+ probability on 
+\begin_inset Quotes eld
+\end_inset
+
+M
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ probability on 
+\begin_inset Quotes eld
+\end_inset
+
+L
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Note the following:
+\end_layout
+
+\begin_layout Enumerate
+We can write 
+\begin_inset Formula $\epsilon=\frac{1}{n}$
+\end_inset
+
+ such that 
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+ is equivalent to 
+\begin_inset Formula $\epsilon\rightarrow0$
+\end_inset
+
+.
+ So we do have a sequence of strategy profiles of the form in the definition.
+\end_layout
+
+\begin_layout Enumerate
+Note that as 
+\begin_inset Formula $\epsilon\rightarrow0$
+\end_inset
+
+, the strategy profiles converge to the NE under consideration, [U,M].
+ 
+\end_layout
+
+\begin_layout Standard
+Now let's look at the expected utilities of player 1 given the completely
+ mixed strategy of player 2:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+U_{1}(Up;\sigma_{2}^{*}) & = & 4\epsilon+2(1-\epsilon)=2+2\epsilon\\
+U_{1}(Down;\sigma_{2}^{*}) & = & 5\epsilon+2(1-\epsilon)=2+3\epsilon\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Because we're looking at values of 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ arbitrarily close to zero (but not equal to zero, because we're considering
+ completely mixed strategy profiles), 
+\begin_inset Formula $U_{1}(Down;\sigma_{2}^{*})>U_{1}(Up;\sigma_{2}^{*})$
+\end_inset
+
+, since 
+\begin_inset Formula $3\epsilon>2\epsilon$
+\end_inset
+
+.
+ Therefore, we conclude that [U,M] is 
+\shape italic
+not
+\shape default
+ trembling hand perfect.
+ 
+\end_layout
+
+\begin_layout Standard
+Note that the definition of THPNE states that there is 
+\shape italic
+no
+\shape default
+ sequence of completely mixed strategies 
+\begin_inset Formula $\{\sigma_{n}\}_{n=1}^{\infty}$
+\end_inset
+
+ such that 
+\begin_inset Formula $\lim_{n\rightarrow\infty}\sigma_{n}=\sigma$
+\end_inset
+
+ and such that for all players 
+\begin_inset Formula $i$
+\end_inset
+
+, 
+\begin_inset Formula $\sigma_{i}$
+\end_inset
+
+ is a best response to 
+\begin_inset Formula $\sigma_{-in}$
+\end_inset
+
+ for a large enough 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ We didn't do that above, but for purposes of this class it is sufficient.
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+From Practice Problem 4.2.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+R
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+U
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3,1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4,0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+M
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2,4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2,2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="4">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+R
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+U
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3,1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4,0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+M
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2,4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+U
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+3
+\bar default
+,
+\bar under
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+M
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+2
+\bar default
+,
+\bar under
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Iterated elimination of strictly dominated strategies gets us to the 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ matrix, where we have 2 pure strategy NE: [U,L] and [M,C]; and a mixed
+ strategy NE where 
+\begin_inset Formula $\vec{p}^{*}=\left[\Pr(U),\Pr(M)\right]=\left[\frac{1}{2},\frac{1}{2}\right]$
+\end_inset
+
+ and 
+\begin_inset Formula $\vec{p}^{*}=\left[\Pr(L),\Pr(C)\right]=\left[\frac{1}{3},\frac{2}{3}\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Check whether the two PSNE are THP.
+ 
+\end_layout
+
+\begin_layout Standard
+Let's check to see whether the MSNE is THP.
+ 
+\end_layout
+
+\begin_layout Enumerate
+We need to come up with a completely mixed strategy for each player that
+ at its limit is equal to the strategy being played in our equilibrium of
+ interest.
+ Consider the following:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \[
+\sigma_{1\epsilon}=\left[\frac{1}{2}-\epsilon,\,\frac{1}{2}-\epsilon,\,2\epsilon\right];\,\sigma_{2\epsilon}=\left[\frac{1}{3}-\epsilon,\,\frac{2}{3}+\frac{\epsilon}{4},\,\frac{3}{4}\epsilon\right]\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Now we calculated the expected utilities for each of the players.
+ Let's start with player 1:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \begin{eqnarray*}
+U_{1}(U) & = & \left(1-3\epsilon\right)+\left(\frac{2}{3}+\frac{\epsilon}{4}\right)+\left(3\epsilon\right)=\frac{5}{3}+\frac{\epsilon}{4}\\
+U_{1}(M) & = & \left(\frac{1}{3}-\epsilon\right)+\left(\frac{4}{3}+\frac{\epsilon}{2}\right)+\left(\frac{3}{4}\cdot\epsilon\right)=\frac{5}{3}+\frac{\epsilon}{4}.\end{eqnarray*}
+
+\end_inset
+
+Since 
+\begin_inset Formula $U_{1}(M)=U_{1}(U)$
+\end_inset
+
+ as 
+\begin_inset Formula $\epsilon\rightarrow0$
+\end_inset
+
+, we've found a sequence of completely mixed strategies which converge to
+ the NE and for which the mixed strategy is a best response.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Try this for player 2 and you should see that the same holds.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \begin{eqnarray*}
+U_{2}(L) & = & \left(\frac{1}{2}-\epsilon\right)+\left(\frac{3}{2}-3\epsilon\right)+\left(2\epsilon\right)=2-2\epsilon\\
+U_{2}(C) & = & 0+\left(2-4\epsilon\right)+\left(2\epsilon\right)=2-2\epsilon.\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+From class:
+\end_layout
+
+\begin_layout Example
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="4">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+M
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+R
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Up
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4,
+\begin_inset space ~
+\end_inset
+
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,
+\begin_inset space ~
+\end_inset
+
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,
+\begin_inset space ~
+\end_inset
+
+-3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Down
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5,
+\begin_inset space ~
+\end_inset
+
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2,
+\begin_inset space ~
+\end_inset
+
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-999999,
+\begin_inset space ~
+\end_inset
+
+-2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Notice that 
+\begin_inset Quotes eld
+\end_inset
+
+R
+\begin_inset Quotes erd
+\end_inset
+
+ is strictly dominated by 
+\begin_inset Quotes eld
+\end_inset
+
+M
+\begin_inset Quotes erd
+\end_inset
+
+ and iterated dominance outcome (NE) is [D, L].
+ 
+\end_layout
+
+\begin_layout Enumerate
+Assume that the probabilities of player 2's completely mixed strategy is
+ equal to 
+\begin_inset Formula $\vec{q}=\left[q_{L},q_{M},q_{R}\right]$
+\end_inset
+
+.
+ Then we can solve for player 1's expected values of playing 
+\begin_inset Quotes eld
+\end_inset
+
+Up
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+Down.
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \begin{eqnarray*}
+U_{1}(Up) & = & 4q_{L}+q_{M}\\
+U_{1}(Down) & = & 5q_{L}+2q_{M}-999999q_{R}\\
+\therefore U_{1}(Down)-U_{1}(Up) & = & q_{L}+q_{M}-999,999q_{R}=1-1000000q_{R}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+For player 1, if 
+\begin_inset Formula $q_{R}\leq\frac{1}{1,000,000}$
+\end_inset
+
+ then 
+\begin_inset Quotes eld
+\end_inset
+
+Down
+\begin_inset Quotes erd
+\end_inset
+
+ is a best response for player 1.
+ Any sequence of strategies for player 2, which has as its limit the strategy
+ 
+\begin_inset Quotes eld
+\end_inset
+
+L
+\begin_inset Quotes erd
+\end_inset
+
+, has the property that eventually 
+\begin_inset Formula $\Pr(R)<\frac{1}{1,000,000}$
+\end_inset
+
+.
+ Therefore, [D,L] is THPNE.
+ 
+\end_layout
+
+\begin_layout Subsection
+Main Results of THPNE
+\end_layout
+
+\begin_layout Enumerate
+All finite games have at least one THPNE.
+\end_layout
+
+\begin_layout Enumerate
+Any completely mixed NE is THPNE.
+ Let the sequence of strategies be equal to the mixed strategy candidate,
+ then the definition of THPNE is satisfied.
+ 
+\end_layout
+
+\begin_layout Enumerate
+If 
+\begin_inset Formula $\sigma^{*}$
+\end_inset
+
+is a THPNE, then no player is putting positive probability on a weakly dominated
+ strategy.
+ 
+\end_layout
+
+\begin_layout Enumerate
+In a two player game, if 
+\begin_inset Formula $\sigma^{*}$
+\end_inset
+
+is a NE not involving a weakly dominated strategy, then 
+\begin_inset Formula $\sigma^{*}$
+\end_inset
+
+ is THP (this doesn't hold if you have 
+\begin_inset Formula $I>2$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Section
+Bayes-Nash Equilibrium
+\end_layout
+
+\begin_layout Standard
+Recall that one of the assumptions of the games that we've looked at was
+ 
+\shape italic
+complete information
+\shape default
+, the players knew the payoff functions of the other players.
+ Now let's consider the case where the parties are unaware of their opponents'
+ payoffs because the parties are of different types, and the players are
+ only aware of the probability distribution of types.
+ Consider the following examples and its extension.
+\end_layout
+
+\begin_layout Example
+Player 1 is a graduate student who has strategies work (
+\begin_inset Quotes eld
+\end_inset
+
+W
+\begin_inset Quotes erd
+\end_inset
+
+) or shirk (
+\begin_inset Quotes eld
+\end_inset
+
+S
+\begin_inset Quotes erd
+\end_inset
+
+).
+ Player 2 is a professor who must decide whether to guide or ignore the
+ graduate student.
+ Let's assume that the graduate student can be of two types: motivated or
+ lazy.
+ The probability that the graduate student is motivated is equal to 
+\begin_inset Formula $m\in\left(0,1\right)$
+\end_inset
+
+.
+ The payoffs for each type are:
+\end_layout
+
+\begin_layout Example
+Motivated:
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+G
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+W
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8,5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4,-1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+S
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2,-1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2,0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Lazy: 
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+G
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+W
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3,5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-1,-1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+S
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2,-1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2,0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+.
+ Draw the extensive form of this game and the Bayesian Normal Form.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The extended form can be found in Appendix A-1.
+ Note that we need the move by 
+\begin_inset Quotes eld
+\end_inset
+
+Nature
+\begin_inset Quotes erd
+\end_inset
+
+ to draw this game.
+\end_layout
+
+\begin_layout Enumerate
+The Bayesian Normal Form is as follows:
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+To reiterate my notation, [WS] means that the 
+\begin_inset Quotes eld
+\end_inset
+
+motivated
+\begin_inset Quotes erd
+\end_inset
+
+ type will 
+\begin_inset Quotes eld
+\end_inset
+
+Work
+\begin_inset Quotes erd
+\end_inset
+
+ and the 
+\begin_inset Quotes eld
+\end_inset
+
+lazy
+\begin_inset Quotes erd
+\end_inset
+
+ type will 
+\begin_inset Quotes eld
+\end_inset
+
+Shirk
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+G
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+WW
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+3+5m
+\bar default
+,
+\begin_inset space ~
+\end_inset
+
+
+\bar under
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-1+5m,
+\begin_inset space ~
+\end_inset
+
+-1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+WS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2+6m,
+\begin_inset space ~
+\end_inset
+
+-1+6m
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+2+2m
+\bar default
+,
+\begin_inset space ~
+\end_inset
+
+-m
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SW
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3-m,
+\begin_inset space ~
+\end_inset
+
+5-6m
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-1+3m,
+\begin_inset space ~
+\end_inset
+
+-1+m
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2,-1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2,0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+For player 1 (the graduate student) 
+\begin_inset Quotes eld
+\end_inset
+
+SS
+\begin_inset Quotes erd
+\end_inset
+
+ is strictly dominated by 
+\begin_inset Quotes eld
+\end_inset
+
+WS
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+For player 1 (the graduate student) 
+\begin_inset Quotes eld
+\end_inset
+
+SW
+\begin_inset Quotes erd
+\end_inset
+
+ is strictly dominated by 
+\begin_inset Quotes eld
+\end_inset
+
+WW
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+If we underline best responses, we see that [WW,G] is BNE.
+ Further, if 
+\begin_inset Formula $-1+6m>-m\Rightarrow m>\frac{1}{7}$
+\end_inset
+
+, then [WW,G] is the unique BNE.
+ Otherwise, we have two BNEs: [WW,G] and [WS, I].
+ 
+\end_layout
+
+\begin_layout Enumerate
+Assuming that 
+\begin_inset Formula $m\leq\frac{1}{7}$
+\end_inset
+
+, which means that there are two BNEs, what is the mixed strategy BNE? Let
+ the probability of player 1 playing 
+\begin_inset Quotes eld
+\end_inset
+
+WW
+\begin_inset Quotes erd
+\end_inset
+
+ equal 
+\begin_inset Formula $p$
+\end_inset
+
+ and the probability of player 2 playing 
+\begin_inset Quotes eld
+\end_inset
+
+I
+\begin_inset Quotes erd
+\end_inset
+
+ equal 
+\begin_inset Formula $q$
+\end_inset
+
+.
+ We won't be putting positive probability on the strictly dominated strategies,
+ and so no need to check against any remaining pure strategies.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+For player 1:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \begin{eqnarray*}
+U_{1}(WW) & = & (3+5m)\cdot(1-q)+(-1+5m)\cdot q=3+5m-4q\\
+U_{1}(WS) & = & (2+6m)\cdot(1-q)+(2+2m)\cdot q=2+6m-4mq\\
+ & \Rightarrow & q=\frac{1-m}{4-4m}=\frac{1}{4}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+For player 2:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \begin{eqnarray*}
+U_{2}(G) & = & 5p+(1-p)\cdot(-1+6m)=6p-1+6m-6mp\\
+U_{2}(I) & = & -p+(1-p)\cdot(-m)=-p-m+mp\\
+ & \Rightarrow & p=\frac{1-7m}{7-7m}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Example
+[Free-riding] There are two players 
+\begin_inset Formula $i=1,2$
+\end_inset
+
+; denote player 1's effort level 
+\begin_inset Formula $x$
+\end_inset
+
+ and player 2's effort level 
+\begin_inset Formula $y$
+\end_inset
+
+; and total profit for the two players is 
+\begin_inset Formula $\Pi(x,y)=4(x+y+kxy)$
+\end_inset
+
+, where 
+\begin_inset Formula $k\in\left[0,\frac{1}{2}\right]$
+\end_inset
+
+.
+ The effort cost of player 1 and player 2 are, respectively, 
+\begin_inset Formula $c(x)=x^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $c(y)=y^{2}$
+\end_inset
+
+.
+ Each player chooses their level of effort simultaneously.
+ What is the NE of this game? 
+\end_layout
+
+\begin_layout Standard
+Recall the way we solved the Cournot model.
+ We set up the maximization problems and solve for 
+\begin_inset Formula $i=1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+U_{1}(x,y)=2(x+y+kxy)-x^{2}\Rightarrow^{FOC}\,\,\frac{\partial U_{1}}{\partial x}=2(1+ky)-2x=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since we have a symmetric problem, we have the following equations:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray}
+x^{*} & = & 1+ky^{*}\\
+y^{*} & = & 1+kx^{*}\end{eqnarray}
+
+\end_inset
+
+, which results in the following NE:
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+An interesting exercise might be to see what the equilibrium effort levels
+ are when we only have one player or when we have two players but player
+ 1 moves first and player 2 moves after observing player 1's move.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+x^{*}=y^{*}=\frac{1}{1-k}\label{NE partnership game}\end{equation}
+
+\end_inset
+
+We can do one interesting comparative static on the equilibrium identified
+ in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "NE partnership game"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{dx^{*}}{dk}=\frac{dy^{*}}{dk}=\frac{1}{(1-k)^{2}}>0.\]
+
+\end_inset
+
+What does this mean? Note that 
+\begin_inset Formula $k$
+\end_inset
+
+ is the complementary increase in profit if both players increase their
+ effort level.
+ 
+\end_layout
+
+\begin_layout Example
+Same set up as Example 2.1, except now suppose that player 1 doesn't know
+ (or observe) the payoffs of player 2.
+ All she knows is the distribution of player 2's payoffs: there is 50% chance
+ that player 2's payoff is 
+\begin_inset Formula $U_{2}^{high}(x,y)=2(x+y+kxy)-2y^{2}$
+\end_inset
+
+ and a 50% chance that his payoff is 
+\begin_inset Formula $U_{2}^{low}(x,y)=2(x+y+kxy)-y^{2}$
+\end_inset
+
+, where the 
+\begin_inset Quotes eld
+\end_inset
+
+high
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+low
+\begin_inset Quotes erd
+\end_inset
+
+ superscripts denote high cost vs low cost type.
+\end_layout
+
+\begin_layout Standard
+The strategy space of each player are: 
+\begin_inset Formula $S_{1}\equiv[0,\infty)$
+\end_inset
+
+ and 
+\begin_inset Formula $S_{2}\equiv\left\{ S_{2}^{low},S_{2}^{high}\right\} =\left\{ [0.\infty),[0,\infty)\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Solving for each of player 2's best responses, we have:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray}
+y_{low}^{*} & = & \arg\max_{y}2(x+y+kxy)-y^{2}=1+kx\label{BNE1}\\
+y_{high}^{*} & = & \arg\max_{y}2(x+y+kxy)-2y^{2}=\frac{1+kx}{2}\label{BNE2}\end{eqnarray}
+
+\end_inset
+
+Given these payoffs for player 2's two types, player 1 will maximize her
+ expected utility to solve for 
+\begin_inset Formula $x^{*}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x^{*} & = & \arg\max_{x}\left[\frac{1}{2}\left\{ 2(x+y_{low}^{*}+kxy_{low}^{*})-x^{2}\right\} +\frac{1}{2}\left\{ 2(x+y_{high}^{*}+kxy_{high}^{*})-x^{2}\right\} \right]\\
+ & = & \arg\max_{x}\left[2x+y_{low}^{*}+y_{high}^{*}+kxy_{low}^{*}kxy_{high}^{*}-x^{2}\right].\end{eqnarray*}
+
+\end_inset
+
+FOCs (don't worry about K-T Conditions) result in the following:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial U_{1}(x,y_{low}^{*},y_{high}^{*})}{\partial x}\mid_{x=x^{*}} & = & 2+ky_{low}^{*}+ky_{high}^{*}-2x^{*}=0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\therefore x^{*}=1+k\cdot\frac{(y_{low}^{*}+y_{high}^{*})}{2}.\label{BNE3}\end{equation}
+
+\end_inset
+
+We have three equations and three unknowns (Equations 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "BNE1"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "BNE2"
+
+\end_inset
+
+, and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "BNE3"
+
+\end_inset
+
+), and if we solve we get the following Bayes-Nash equilibrium:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x^{*}=\frac{4+3k}{4-3k^{2}};\, y_{low}^{*}=1+k\cdot\frac{4+3k}{4-3k^{2}};\, y_{high}^{*}=\frac{1}{2}\left\{ 1+k\cdot\frac{4+3k}{4-3k^{2}}\right\} .\]
+
+\end_inset
+
+We tried some comparative statics in the original game.
+ Try them now and see what results you get.
+ 
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,1172 @@
+#LyX 1.6.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-sec
+\end_modules
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Section Notes 9
+\end_layout
+
+\begin_layout Author
+Wonbin Kang
+\end_layout
+
+\begin_layout Date
+April 1, 2010
+\end_layout
+
+\begin_layout Section*
+Agenda
+\end_layout
+
+\begin_layout Enumerate
+Spence Education Model and PBE
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+A more involved version of the Spence model can be found in Gibbons (1992).
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Separating Equilibrium
+\end_layout
+
+\begin_layout Enumerate
+Pooling Equilibrium and PBE refinements
+\end_layout
+
+\begin_layout Enumerate
+Imperfect Signals and Partial Pooling
+\end_layout
+
+\begin_layout Section
+Spence Education (Signaling) Model and PBE
+\end_layout
+
+\begin_layout Standard
+What's the motivation for signaling? Adverse selection: high types
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The high types in the Spence model are like the 
+\begin_inset Quotes eld
+\end_inset
+
+peaches
+\begin_inset Quotes erd
+\end_inset
+
+ in the Akerlof model.
+ 
+\end_layout
+
+\end_inset
+
+ want to overcome adverse selection and low types want to act like they
+ are high types.
+ In Contract Theory, you can learn about what happens when there are a continuum
+ of infinite types.
+\end_layout
+
+\begin_layout Subsection
+Model Set-Up with Two Types
+\end_layout
+
+\begin_layout Itemize
+Potential employees (who are the agents and the Senders in this model) are
+ of productivity type 
+\begin_inset Formula $\theta\in\left\{ \theta_{L},\theta_{H}\right\} $
+\end_inset
+
+, where 
+\begin_inset Formula $\theta_{L}<\theta_{H}$
+\end_inset
+
+ .
+ The probability of an employee being a high productivity type given a level
+ of education is equal to 
+\begin_inset Formula $\mu(\theta_{H}|e)=\mu_{e}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Potential employees can send a signal 
+\begin_inset Formula $e\in\left[0,\bar{e}\right]$
+\end_inset
+
+; and the cost of education for employees of type 
+\begin_inset Formula $j\in\{L,H\}$
+\end_inset
+
+ is equal to 
+\begin_inset Formula $c_{j}(\cdot)$
+\end_inset
+
+, where 
+\begin_inset Formula $c_{j}'(\cdot)>0;\, c_{j}''(\cdot)>0;\, c_{j}(0)=0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+Single-crossing assumption
+\shape default
+: assume that the marginal cost of eduction is greater for the low types
+ than the high types for all levels of education.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+See Appendix A-1.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \[
+c_{H}'(e)<c_{L}'(e)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The utility for employee 
+\begin_inset Formula $j\in\{L,H\}$
+\end_inset
+
+ is:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \begin{eqnarray*}
+u_{j}(w,e) & = & w(e)-c_{j}(e)\\
+u(w,e|\theta) & = & w(e)-c(e|\theta)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+We further assume a competitive market for employees and so wage is equal
+ to marginal productivity, which in turn is equal to 
+\begin_inset Formula $\theta$
+\end_inset
+
+ for an employee of type 
+\begin_inset Formula $\theta$
+\end_inset
+
+.
+ In short, 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \begin{eqnarray*}
+w_{L} & = & \theta_{L}\\
+w_{H} & = & \theta_{H}.\end{eqnarray*}
+
+\end_inset
+
+However, if the employer does not know the type of employee, then the employer
+ sets wage equal to the expected value of 
+\begin_inset Formula $\theta$
+\end_inset
+
+ given the observable value of 
+\begin_inset Formula $e$
+\end_inset
+
+:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \[
+w(e)=\mathbb{E}\left[\theta|e\right]=\mu_{e}\theta_{H}+(1-\mu_{e})\theta_{L}.\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Game Theoretic Application
+\end_layout
+
+\begin_layout Standard
+Given the set up above, what equilibrium concept would work? BNE and PBE
+ both are acceptable.
+ However, PBE is more applicable since wage is bounded by the productivity
+ of the employee and because it makes sense to explicitly state the beliefs
+ of the employer (or Receiver) on and off the equilibrium path.
+ Therefore, we're going to focus on PBE.
+\end_layout
+
+\begin_layout Standard
+Recall the requirements of (weak) PBE:
+\end_layout
+
+\begin_layout Enumerate
+Beliefs 
+\begin_inset Formula $\mu_{e}$
+\end_inset
+
+ assigned to each node in an information set on the equilibrium path.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Given these beliefs, players best respond in each information set (sequential
+ rationality).
+ 
+\end_layout
+
+\begin_layout Enumerate
+Beliefs consistent with Bayes' Rule on the equilibrium path.
+ 
+\end_layout
+
+\begin_layout Standard
+Recall also that in our signaling models (including the Beer-Quiche game),
+ we had pooling, separating, and partial pooling equilibrium.
+ The same should apply to this model as well.
+ 
+\end_layout
+
+\begin_layout Standard
+Now let's consider the following example:
+\end_layout
+
+\begin_layout Example
+A professor (the principal, receiver, or employer) wants to hire students
+ (the agent, sender, or employee) as RAs for the summer.
+ The relevant signal is the average score on econometrics problem sets:
+ 
+\begin_inset Formula $e\in[0,100].$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+This is unrealistic in that the signal (or the problem sets) does not increase
+ marginal productivity.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+In the Gibbons (1992) version of the Spence education model, education 
+\begin_inset Formula $e$
+\end_inset
+
+ increases the productivity---
+\shape italic
+i.e.
+
+\shape default
+ total production 
+\begin_inset Formula $y$
+\end_inset
+
+ is a function of the employee's type and education: 
+\begin_inset Formula $y_{e}>0$
+\end_inset
+
+ and 
+\begin_inset Formula $y_{\theta}>0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Let's assume that 
+\begin_inset Formula $\theta_{H}=\$10,000$
+\end_inset
+
+ and 
+\begin_inset Formula $\theta_{L}=\$5,000$
+\end_inset
+
+; 
+\begin_inset Formula $c_{H}(e)=e^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $c_{L}(e)=2e^{2}$
+\end_inset
+
+; and 
+\begin_inset Formula $\mu(H)=\frac{4}{5}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mu(L)=\frac{1}{5}$
+\end_inset
+
+.
+ Then student's optimization problem is as follows:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula \[
+\max_{e}u_{j}(e)=w(e)-c_{j}(e),\,\forall j\in\left\{ L,H\right\} .\]
+
+\end_inset
+
+If the employer (professor) was able to distinguish between the two types
+ of students, what is the optimal level of education for each type? Do you
+ see that it is: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+e_{L}^{FB}=e_{H}^{FB}=0.\]
+
+\end_inset
+
+In Contract Theory, we denote this no information asymmetry level of education
+ with the superscript 
+\begin_inset Quotes eld
+\end_inset
+
+FB
+\begin_inset Quotes erd
+\end_inset
+
+, or first-best.
+ It is the first best in the sense that it is the Pareto optimal outcome.
+ Do you see why? If not, review the asymmetric information model below and
+ then return to this question.
+ 
+\end_layout
+
+\begin_layout Section
+Separating Equilibrium
+\end_layout
+
+\begin_layout Standard
+In a separating equilibrium, the high types choose 
+\begin_inset Formula $e_{H}>0$
+\end_inset
+
+ and the low types choose 
+\begin_inset Formula $e_{L}=0$
+\end_inset
+
+.
+ Why would the low type of employee choose a level of education greater
+ than 0? Because education is costly, it would be profitable for the low
+ type to increase education greater than 0 if and only if it would increase
+ the wage she would receive, and hence make her better off.
+ Since we're in a separating equilibrium, it must be the case that the low
+ type invest 0 in education (and has no incentive to deviate to a higher
+ level of education).
+ 
+\end_layout
+
+\begin_layout Standard
+Since we assume a competitive labor market, 
+\begin_inset Formula $w(e_{H})=\theta_{H}$
+\end_inset
+
+ and 
+\begin_inset Formula $w(e_{L}=0)=\theta_{L}$
+\end_inset
+
+.
+ Now we can solve for the PBE using each employee types' Incentive Compatibility
+ Constraints (ICC):
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+If ICCs are satisfied, no type wants to deviate and pretend to be another
+ type.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $ICC_{H}$
+\end_inset
+
+:
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Note that the ICC is normally written as: 
+\begin_inset Formula $e_{H}=\arg\max_{e}u_{H}(e_{H})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $u_{H}(e_{H})\geq u_{H}(e_{L}=0)\Rightarrow w(e_{H})-c_{H}(e_{H})\geq w(e_{L})-c_{H}(e_{L})$
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow10,000-e_{H}^{2}\geq5000-0\Rightarrow e_{H}\leq70.7$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $ICC_{L}$
+\end_inset
+
+: 
+\begin_inset Formula $u_{L}(e_{L}=0)\geq u_{L}(e_{H})\Rightarrow w(0)-c_{L}(0)\geq w(e_{H})-c_{L}(e_{H})$
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow5,000-0\geq10,000-2e_{H}^{2}\Rightarrow e_{H}\geq50$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Therefore, 
+\begin_inset Formula $e_{H}\in\left[50,70.7\right]$
+\end_inset
+
+.
+ Note that of these equilibrium levels of 
+\begin_inset Formula $e_{H}$
+\end_inset
+
+, dominance refinement
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+More on this below.
+\end_layout
+
+\end_inset
+
+ eliminates all of equilibria except for 
+\begin_inset Formula $e_{H}=50$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+To provide some intuition for the results above: for the high type of student,
+ she wouldn't invest more than 70.7 in education because she'd be worse off
+ than if she was considered a low type and received $5,000.
+ Also for the high type, she'd want to invest more than 50 in education
+ or else she would not be able to separate herself from the low type.
+ 
+\end_layout
+
+\begin_layout Standard
+What beliefs of the Receiver (employer) on and off the equilibrium path
+ get us the separating equilibrium? Consider the following:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mu(H|e)=\begin{cases}
+1, & if\, e\geq e_{H}\\
+0, & otherwise\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+See Appendix A-2 for a representation of the separating equilibrium.
+ 
+\end_layout
+
+\begin_layout Section
+Pooling Equilibrium and PBE Refinements
+\end_layout
+
+\begin_layout Subsection
+Pooling PBE
+\end_layout
+
+\begin_layout Standard
+Let's assume that the initial (prior) distribution of high type and low
+ type students is 
+\begin_inset Formula $\mu(H)=\frac{4}{5}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mu(L)=\frac{1}{5}$
+\end_inset
+
+.
+ If both the high and low types pooled at the same level of education 
+\begin_inset Formula $e_{p}$
+\end_inset
+
+, then:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mathbb{E}\left[\theta|e_{p}\right]=\lambda\theta_{H}+(1-\lambda)\theta_{L}=9000.\]
+
+\end_inset
+
+At the pooling equilibrium, the low type must be as well off as if the low
+ type received the low type payoff (
+\begin_inset Formula $ICC_{L}$
+\end_inset
+
+ must hold):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+9000-c_{L}(e_{p})\geq5000-c_{L}(e_{L}=0)\Rightarrow9000-2e_{p}^{2}\geq5000\Rightarrow e_{p}\leq44.7.\]
+
+\end_inset
+
+Therefore, it is possible to sustain pooling for any 
+\begin_inset Formula $e_{p}\leq44.7.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+What beliefs of the Receiver (employer) on and off the equilibrium path
+ get us the pooling equilibrium at education level 
+\begin_inset Formula $e_{p}$
+\end_inset
+
+, which has to be less than 44.7? One possibility is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mu(H|e_{p})=\begin{cases}
+\frac{4}{5}, & if\, e=e_{p}\in[0,\,44.7]\\
+0, & otherwise\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now you should be able to figure out the sequentially rational strategies
+ given these beliefs.
+ 
+\end_layout
+
+\begin_layout Standard
+See Appendix A-3 for a representation of the pooling equilibrium.
+ 
+\end_layout
+
+\begin_layout Subsection
+Refinement of PBE
+\end_layout
+
+\begin_layout Subsubsection
+Dominance Refinement
+\end_layout
+
+\begin_layout Definition
+If possible, each player's reasonable beliefs off the equilibrium path should
+ not assign positive probability to nodes that are reached only if another
+ player plays 
+\shape italic
+a strategy that is strictly dominated beginning at some information set
+\shape default
+.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Note that this is different from not assigning positive probabilities to
+ strictly dominated strategies.
+ See Gibbons (1992, pp.
+ 232-35).
+ 
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+In the context of the model above, given that 
+\begin_inset Formula $\forall e\in[0,100],\, w(e)\in(5000,10000)$
+\end_inset
+
+, low types should never choose a level of education 
+\begin_inset Formula $e>50$
+\end_inset
+
+ (
+\begin_inset Formula $\because$
+\end_inset
+
+even if a low type is able to deceive the employer into thinking she is
+ a high type and get wage equal to 10000, if she increases her education
+ to a level greater than 50, then she's worse off than if she just got the
+ low type wage with zero education).
+ This means that the probability of a high type for values of 
+\begin_inset Formula $e>50$
+\end_inset
+
+: 
+\begin_inset Formula $\mu(H|e>50)=1$
+\end_inset
+
+, which means that 
+\begin_inset Formula $w(e>50)=10,000$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Now consider pooling at 
+\begin_inset Formula $e_{p}=44.7$
+\end_inset
+
+: high types strictly prefer 
+\begin_inset Formula $e_{H}=50+\epsilon$
+\end_inset
+
+,
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+I'm trying to be careful with the strict and weak inequalities, but we could
+ just have said 
+\begin_inset Formula $e_{H}=50$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+ with 
+\begin_inset Formula $w=10,000$
+\end_inset
+
+ to a pooling equilibrium at 
+\begin_inset Formula $e_{p}=44.7$
+\end_inset
+
+ and wage equal to 9000.
+ Therefore, there can be no pooling at 
+\begin_inset Formula $e_{p}=44.7$
+\end_inset
+
+ once we apply the dominance refinement.
+\end_layout
+
+\begin_layout Standard
+Now consider pooling at 
+\begin_inset Formula $e_{p}=0$
+\end_inset
+
+ and 
+\begin_inset Formula $w(0)=9000$
+\end_inset
+
+.
+ Here the high types will not be better off by deviating from the pooling
+ equilibrium---
+\shape italic
+i.e.
+
+\shape default
+ payoff for the high types of pooling is equal to 
+\begin_inset Formula $9000-0^{2}=9000$
+\end_inset
+
+, which is greater than deviating to 
+\begin_inset Formula $e=50+\epsilon\Rightarrow10000-\left(50+\epsilon\right)^{2}\approx7500$
+\end_inset
+
+.
+ We can set 
+\begin_inset Formula $w(e)$
+\end_inset
+
+ after defining the beliefs such that they satisfy the dominance refinement.
+ For example:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mu(H|e)=\begin{cases}
+\frac{4}{5}, & if\, e=e_{p}=0\\
+0, & if\, e\in(0,50]\\
+1, & if\, e>50\end{cases}\]
+
+\end_inset
+
+which leads to the following sequentially rational strategies by the employer/Re
+ceiver/principal:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+w(e)=\begin{cases}
+9000, & if\, e=0\\
+5000, & if\, e\in(0,50]\\
+10000, & if\, e>50\end{cases}\]
+
+\end_inset
+
+In conclusion, we've found a pooling PBE which satisfies the dominance refinemen
+t.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+We can refine the pooling equilibrium even more by noting the following:
+ the levels education that will sustain a pooling equilibrium after dominance
+ refinement requires that:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula \begin{eqnarray*}
+9000-e_{p}^{2} & > & 10,000-(50+\epsilon^{2})\approx7500\\
+e_{p} & < & 38.73.\end{eqnarray*}
+
+\end_inset
+
+This means that we can rewrite the on and off equilibrium beliefs and sequential
+ly rational strategies above as follows:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula \[
+\mu(H|e)=\begin{cases}
+\frac{4}{5}, & if\, e\in[0,\,38.73)\\
+0, & if\, e\in[38.73,\,50]\\
+1, & if\, e>50\end{cases}\]
+
+\end_inset
+
+and
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula \[
+w(e)=\begin{cases}
+9000, & if\, e\in[0,\,38.73)\\
+5000, & if\, e\in[38.73,\,50]\\
+10000, & if\, e>50\end{cases}\]
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fn:general pooling"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ However, this pooling PBE will not survive the next PBE refinement.
+ 
+\end_layout
+
+\begin_layout Standard
+Since you've seen the dominance refinement in action once, go back to the
+ separating equilibrium above and show that only the separating PBE with
+ 
+\begin_inset Formula $e_{H}=50$
+\end_inset
+
+ survives the dominance refinement.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Equilibrium Dominance Refinement (Cho-Kreps Intuitive Criterion)
+\end_layout
+
+\begin_layout Definition
+Given a PBE in a signaling game, the signal 
+\begin_inset Formula $s_{j}$
+\end_inset
+
+ is equilibrium dominated for type 
+\begin_inset Formula $t_{i}\in T$
+\end_inset
+
+, where 
+\begin_inset Formula $T$
+\end_inset
+
+ is a set of all types, if 
+\begin_inset Formula $t_{i}$
+\end_inset
+
+'s equilibrium payoff is greater than 
+\begin_inset Formula $t_{i}$
+\end_inset
+
+'s highest possible payoff from sending the signal 
+\begin_inset Formula $s_{j}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Given the definition of equilibrium dominance, we can define the following
+ PBE refinement:
+\end_layout
+
+\begin_layout Definition
+(Cho-Kreps Intuitive Criterion): If the information set following 
+\begin_inset Formula $s_{j}$
+\end_inset
+
+is off the equilibrium path and it is equilibrium dominated for type 
+\begin_inset Formula $t_{i}$
+\end_inset
+
+ then (if possible) the Receiver's belief 
+\begin_inset Formula $\mu(t|s_{j})$
+\end_inset
+
+ should place zero probability on type 
+\begin_inset Formula $t_{i}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Let's consider pooling at 
+\begin_inset Formula $e_{p}=0$
+\end_inset
+
+ and 
+\begin_inset Formula $w(e_{p})=9000$
+\end_inset
+
+.
+ Therefore, the payoff to the low type at 
+\begin_inset Formula $\left[e_{p},w(e_{p})\right]$
+\end_inset
+
+ is equal to 
+\begin_inset Formula $u_{L}=9000$
+\end_inset
+
+, and the low types should never choose a level of 
+\begin_inset Formula $e$
+\end_inset
+
+ such that: 
+\begin_inset Formula \begin{eqnarray*}
+u_{L}(e,w & = & 10000)<9000\Rightarrow\\
+2e^{2} & > & 1000\Rightarrow e>22.4,\end{eqnarray*}
+
+\end_inset
+
+which ends up breaking all pooling equilibrium.
+ Do you see why? Given the pooling equilibrium, the low type would never
+ set her level of education greater than 22.4, which means that 
+\begin_inset Formula $\mu(H|e>22.4)=1$
+\end_inset
+
+.
+ Given these beliefs of the Receiver/employer, the high type employee/Sender
+ would be better off by deviating to 
+\begin_inset Formula $e=22.4+\epsilon$
+\end_inset
+
+ for a payoff greater than what the high type was getting at the pooling
+ equilibrium.
+ 
+\end_layout
+
+\begin_layout Standard
+Now that you've seen Cho-Kreps in action for 
+\begin_inset Formula $e_{p}=0$
+\end_inset
+
+, try it for a general 
+\begin_inset Formula $e_{p}\in[0,\,38.73]$
+\end_inset
+
+ that we discussed in footnote 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fn:general pooling"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section
+Imperfect Signals and Partial Pooling
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+I doubt we'll have time for this in section, but please review to check
+ that you've understood the concepts above.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Imperfect Signals
+\end_layout
+
+\begin_layout Standard
+Now assume that some proportion 
+\begin_inset Formula $\alpha=\frac{1}{2}$
+\end_inset
+
+ of low types work on problem sets with high types in a group:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+c_{L,group}(e)=c_{H}(e)=e^{2}<c_{L,no\, group}(e)=2e^{2},\]
+
+\end_inset
+
+but 
+\begin_inset Formula $\theta_{L,group}=\theta_{L,no\, group}=5000$
+\end_inset
+
+.
+ We're asked to solve for a separating equilibrium.
+ We know that 
+\begin_inset Formula $e_{L,ng}=0$
+\end_inset
+
+ and wage equal to 5000 in a separating equilibrium, while the other students
+ solve the following maximization problem:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\max_{e}w(e)-e^{2}\Rightarrow e_{L,g}=e_{H}\]
+
+\end_inset
+
+in equilibrium.
+ The intuition here is that since the low types who work with the high types
+ have the same costs as the high types, they are able to act like the high
+ types and thereby get the high type wages.
+ However, the professors know that there is a mix of high and low types
+ in the high equilibrium level of education.
+ Therefore, they will fix wages such that they are equal to the expected
+ productivity given a high level of education.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mathbb{E}\left[\theta|e_{H}=e_{L,g}\right] & = & \Pr(\theta_{H}|e_{H})\cdot\theta_{H}+\Pr(\theta_{L}|e_{H})\cdot\theta_{L}\\
+ & = & \frac{\Pr(\theta_{H}\cap e_{H})\cdot\theta_{H}}{\Pr(e_{H})}+\frac{\Pr(\theta_{L}\cap e_{H})\cdot\theta_{L}}{\Pr(e_{H})}\\
+ & = & \frac{\lambda\cdot\theta_{H}+(1-\lambda)\alpha\cdot\theta_{L}}{\lambda+(1-\lambda)\alpha}=\frac{\frac{4}{5}\cdot10000+\frac{1}{5}\cdot\frac{1}{2}\cdot5000}{\frac{4}{5}+\frac{1}{5}\cdot\frac{1}{2}}\\
+ & \approx & 9444.\end{eqnarray*}
+
+\end_inset
+
+Therefore, 
+\begin_inset Formula $w(e_{H}=e_{L,g})=\mathbb{E}\left[\theta|e_{H}=e_{L,g}\right]=9444$
+\end_inset
+
+, with associated level of education for the low type who does not work
+ as a group equal to 
+\begin_inset Formula $e_{L,ng}\approx47.1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The result is that the high types are worse off because some of the low
+ types are able to pool with them.
+ 
+\end_layout
+
+\begin_layout Subsection
+Partial Pooling Equilibrium
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Again, Gibbons (1992) provides a great overview of the partial pooling equilibri
+um.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Partial pooling (as we saw in the Beer-Quiche game) is a mixed strategy
+ where usually one of the Sender types plays a mixed strategy and randomizes
+ the signals she sends to the Receiver.
+ This implies that this type is indifferent between the two signals---
+\shape italic
+i.e.
+
+\shape default
+ gets the same payoff from both signals.
+ Consider the following beliefs:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mu(H|e)=\begin{cases}
+\frac{8}{9}, & if\, e=e_{H}=e_{L,g}=47.1\\
+0, & otherwise\end{cases}\]
+
+\end_inset
+
+which leads to the following (sequentially rational) wage schedule:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+w(e)=\begin{cases}
+9444, & if\, e=e_{H}=e_{L,g}=47.1\\
+5000, & otherwise\end{cases}\]
+
+\end_inset
+
+In the solutions to part (d) above we found that the equilibrium 
+\begin_inset Formula $[47.1,\,9444]$
+\end_inset
+
+ by finding where the low types were indifferent, and we know that the average
+ productivity is 9444 when 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+ of the low types pool with the high types.
+ 
+\end_layout
+
+\begin_layout Standard
+This partial pooling equilibrium is not consistent with either of the refinement
+s discussed above because the high types will want to choose a level of
+ education greater than 50 and get 10,000.
+ 
+\end_layout
+
+\end_body
+\end_document

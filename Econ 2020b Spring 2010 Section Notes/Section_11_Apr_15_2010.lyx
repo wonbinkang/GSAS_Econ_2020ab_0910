@@ -1,0 +1,1252 @@
+#LyX 1.6.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-sec
+\end_modules
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Section Notes 11
+\end_layout
+
+\begin_layout Author
+Wonbin Kang
+\end_layout
+
+\begin_layout Date
+April 15, 2010
+\end_layout
+
+\begin_layout Section*
+Agenda
+\end_layout
+
+\begin_layout Enumerate
+Moral Hazard Terminology
+\end_layout
+
+\begin_layout Enumerate
+Principal-Agent (PA) with 3 Actions and 2 Outcomes
+\end_layout
+
+\begin_layout Enumerate
+Takeaway Messages from PA Problem
+\end_layout
+
+\begin_layout Section
+Moral Hazard Terminology
+\end_layout
+
+\begin_layout Standard
+There two types of moral hazard:
+\end_layout
+
+\begin_layout Enumerate
+
+\shape italic
+ex ante
+\shape default
+ moral hazard: Given that an agent is insured, the agent will not take costly
+ steps to reduce the probability of losses.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\shape italic
+ex post
+\shape default
+ moral hazard: Given that an agent suffers a loss and the agent's insurance
+ company pays a portion of the loss, the agent will over-consume.
+ 
+\end_layout
+
+\begin_layout Standard
+In the model we will look at this week, an agent chooses an action (which
+ is costly for the agent) that influences the 
+\shape italic
+probability
+\shape default
+ of a good outcome.
+ Principal does not observe the action, but does observe the outcome; which
+ is where the information asymmetry comes from.
+ Therefore, the principal can condition payment on the outcome, but this
+ will not get us to the 
+\shape italic
+first best
+\shape default
+.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+First best as defined in Section Note 9.
+ Recall my explanation for why we call the full information case as the
+ first best.
+ If this is unclear, review Lecture Note 15.
+ 
+\end_layout
+
+\end_inset
+
+ Further assume that the principal is risk neutral and the agent is risk
+ averse.
+ 
+\end_layout
+
+\begin_layout Standard
+The key to understanding moral hazard models is to note that there is a
+ trade-off from the perspective of the risk neutral principal: to incentivize
+ the agent to put in more effort by varying the wages according to an observable
+ (or contractible) variable which is 
+\shape italic
+not perfectly correlated 
+\shape default
+with effort; and to provide some insurance such that the risk averse agent's
+ individual rationality constraint is satisfied.
+ In other words, if an agent bears risk because there exists noise with
+ regards to the observable variable, the agent will have to be paid a higher
+ (expected) wage to achieve its reservation utility (in other words, for
+ the Individual Rationality Constraint to hold).
+ 
+\end_layout
+
+\begin_layout Section
+Principal-Agent with 3 Actions and 2 Outcomes
+\end_layout
+
+\begin_layout Example
+A firm hires a scientist to develop a new product.
+ The scientist can choose a level of 
+\begin_inset Formula $e\in\left\{ e_{l},\, e_{m},\, e_{h}\right\} $
+\end_inset
+
+, where 
+\begin_inset Formula $e_{l}<e_{m}<e_{h}$
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The model would be more realistic if the scientist's choice set was continuous
+ and we could solve by setting up the optimization problem and the corresponding
+ Lagrangian.
+ 
+\end_layout
+
+\end_inset
+
+ and gets a wage 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ The scientist's utility is additive and is written as:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula \[
+u(e,w)=\ln w-c(e),\]
+
+\end_inset
+
+where 
+\begin_inset Formula $c(e_{l})=0$
+\end_inset
+
+; 
+\begin_inset Formula $c(e_{m})=1$
+\end_inset
+
+; and 
+\begin_inset Formula $c(e_{h})=2$
+\end_inset
+
+.
+ The reservation utility 
+\begin_inset Formula $\bar{u}_{0}$
+\end_inset
+
+ is equal to zero (0) and known by both the principal and the agent.
+ 
+\end_layout
+
+\begin_layout Example
+There are two possible outcomes:
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+A more general model would have a continuous set of outcomes.
+ 
+\end_layout
+
+\end_inset
+
+ a good outcome (the scientist invents a widget) denoted 
+\begin_inset Formula $x_{G}$
+\end_inset
+
+ and a bad outcome (the scientist fails to invent a widget) denoted 
+\begin_inset Formula $x_{B}$
+\end_inset
+
+.
+ Assume that the probability of a good outcome given the level of effort
+ are as follows:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula \begin{eqnarray*}
+\Pr(x_{G}|e_{l}) & \equiv & p_{l}=\frac{1}{10}\\
+\Pr(x_{G}|e_{m}) & \equiv & p_{m}=\frac{1}{2}\\
+\Pr(x_{G}|e_{h}) & \equiv & p_{h}=\frac{2}{3}\end{eqnarray*}
+
+\end_inset
+
+Note that the probability of the good outcome is increasing in the level
+ of effort, or higher effort levels first order stochastically dominate
+ (FOSD) lower effort levels.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Check that this is in fact the case by drawing the cdfs for each level of
+ effort.
+ 
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+Revenue to the firm is equal to 12 if the outcome is 
+\begin_inset Formula $x_{G}$
+\end_inset
+
+ and 0 otherwise.
+ With a slight abuse of notation, let's say that 
+\begin_inset Formula $x_{G}=12$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{B}=0$
+\end_inset
+
+.
+ 
+\shape italic
+The principal has bargaining power and so can set the contract
+\shape default
+.
+ Recall that if the principal has full bargaining power, then 
+\begin_inset Quotes eld
+\end_inset
+
+the agent always receive her reservation utility level, and Pareto comparison
+ between contracts depends only on the principal's utility that is induced
+ by those contracts.
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Lecture Note ch 15, p.
+ 469.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Who is the principal and who is the agent? 
+\end_layout
+
+\begin_layout Subsection
+First Best
+\end_layout
+
+\begin_layout Standard
+When you have a signaling or moral hazard model, always look at the first
+ best equilibria and the first best outcomes.
+ 
+\end_layout
+
+\begin_layout Standard
+The firm will offer a contract of the form 
+\begin_inset Formula $\left[e_{i},w(e_{i})\right]=\left[e_{i},w_{i}\right]$
+\end_inset
+
+, which denotes a level of effort for a given wage level.
+ 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+For those of you familiar with Mechanism Design, the problem, like many
+ of our previous problems, boils down to the uninformed party finding the
+ optimal allocation given the messages of the informed party, or finding
+ the optimal mechanism.
+ 
+\end_layout
+
+\end_inset
+
+ Since we're in the first best, we don't have to worry about the agent's
+ IC, but we do have to consider the agent's IR (or PC).
+ The agent's IR given the wage menu above is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\ln w_{i}-c(e_{i})\geq\bar{u}_{0},\]
+
+\end_inset
+
+which will bind with equality leading to:
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Important to see why this constraint binds with equality.
+ Further, this is the key step which gets us to the first best outcome.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+w_{i}=\exp\left\{ c(e_{i})\right\} .\label{FB}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The firm will maximize its expected profit, which can be written as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left[e_{i},w_{i}\right]\in\arg\max_{e,w}\left\{ p_{i}\cdot x_{G}+(1-p_{i})x_{B}-w_{i}\right\} .\]
+
+\end_inset
+
+Since we're in a 3 action, 2 outcome case, we can solve the firm's expected
+ profit maximization problem by comparing the following three outcomes:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mathbb{E}\left[\pi_{l}\right] & = & p_{l}\cdot x_{G}-w_{l}=\frac{1}{10}\cdot12-\exp\left\{ 0\right\} =\frac{1}{5}\\
+\mathbb{E}\left[\pi_{m}\right] & = & p_{m}\cdot x_{G}-w_{m}=\frac{1}{2}\cdot12-\exp\left\{ 1\right\} \approx3.28\\
+\mathbb{E}\left[\pi_{h}\right] & = & p_{h}\cdot x_{G}-w_{h}=\frac{2}{3}\cdot12-\exp\left\{ 2\right\} \approx0.61\end{eqnarray*}
+
+\end_inset
+
+Therefore, the optimal complete information contract (or wage menu) is 
+\begin_inset Formula $\left[e_{m},\exp\left\{ 1\right\} \right]$
+\end_inset
+
+.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+We can write the rest of the contract for low and high levels of effort
+ such that the expected utility of the agent is less than its reservation
+ utility.
+ In the alternative, we could say that the principal makes a take it or
+ leave it offer of this form.
+ Note that at the first best outcome, the optimal contract results in the
+ principal providing complete insurance to the risk averse agent.
+ This won't be the case in the second best (or information asymmetry) case.
+ Recall Proposition 2 from the Lecture Notes Ch 15.
+\end_layout
+
+\end_inset
+
+ The expected profit at the optimal complete info contract is equal to approxima
+tely 3.28.
+ 
+\end_layout
+
+\begin_layout Standard
+The key take-away from the first best is that because the agent's action
+ (or effort) is observable to the firm, the firm can condition completely
+ on the observable level of effort (and not on the good or bad outcome).
+ This gets us equation (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "FB"
+
+\end_inset
+
+), which can be substituted into the objective function of the firm's expected
+ profit maximization problem.
+ This is the first best in terms of being on the Pareto frontier.
+ However, note that the firm gets all of the surplus, which is a consequence
+ of the IR binding with equality for all levels of effort.
+ 
+\end_layout
+
+\begin_layout Standard
+Now let's look at the second best, or asymmetric information, case.
+\end_layout
+
+\begin_layout Subsection
+Second Best
+\end_layout
+
+\begin_layout Standard
+Now the firm cannot provide a contract, or wage menu, contingent on the
+ agent's effort because effort is not observable to the firm.
+ This is called the second best because we add another set of constraints
+ (the ICs) to the principal's maximization problem.
+ 
+\end_layout
+
+\begin_layout Standard
+Once we're in the asymmetric information world, we need to consider the
+ following:
+\end_layout
+
+\begin_layout Enumerate
+For any level of effort, what is the least costly way of inducing it for
+ the firm? Formally, this question is equivalent to the Individual Rationality
+ Constraint for each level of effort.
+\end_layout
+
+\begin_layout Enumerate
+What is the utility maximizing effort level for the agent?
+\end_layout
+
+\begin_layout Enumerate
+Given the answers to questions 1.
+ and 2.
+ above, which wage menu maximizes the firm's profit?
+\end_layout
+
+\begin_layout Standard
+To begin, note that the form of the wage menu is 
+\begin_inset Formula $\left[x_{k},w(x_{k})\right]=\left[x_{k},w_{k}\right]$
+\end_inset
+
+ where 
+\begin_inset Formula $k\in\left\{ G,B\right\} $
+\end_inset
+
+.
+ Given this wage menu, the firm solves its expected profit maximization
+ problem subject to the agent's IR and IC:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\max_{w_{G},w_{B}}\mathbb{E}\left[\pi\right]=p_{i}\cdot(x_{G}-w_{G})+(1-p_{i})\cdot(x_{B}-w_{B})\label{SB objective function}\end{equation}
+
+\end_inset
+
+s.t.
+ the agent's participation constraint (IR):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+p_{i}\cdot\ln w_{G}+(1-p_{i})\cdot\ln w_{B}-c(e_{i})\geq\bar{u}_{0}\label{SB PC}\end{equation}
+
+\end_inset
+
+and s.t.
+ the agent's incentive compatability constraint (IC):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+p_{i}\cdot\ln w_{G}+(1-p_{i})\cdot\ln w_{B}-c(e_{i})\geq p_{j}\cdot\ln w_{G}+(1-p_{j})\cdot\ln w_{B}-c(e_{j})\label{SB ICC}\end{equation}
+
+\end_inset
+
+for all 
+\begin_inset Formula $j\neq i$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Now we need to check each level of effort and see whether all of the constraints
+ are satisfied.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Low effort: 
+\begin_inset Formula $e_{l}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If the principal prefers to induce the lowest level of effort, then a flat
+ wage is optimal; and so, if the agent chooses the lowest effort level,
+ the agent is fully insured.
+ 
+\end_layout
+
+\begin_layout Standard
+The IR (which again binds with equality) can be rewritten as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+p_{l}\cdot\ln\underline{w}+(1-p_{l})\cdot\ln\underline{w}-c(e_{l})=\ln\underline{w}=0\Rightarrow\underline{w}=1.\]
+
+\end_inset
+
+Since we don't have to consider the IC and we have only one wage level,
+ we can calculate the expected profit of the firm as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mathbb{E}\left[\pi|e_{l}\right]=\frac{1}{5}=0.2.\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A couple questions before moving on:
+\end_layout
+
+\begin_layout Enumerate
+Why is it optimal to fully insure the agent who puts in the lowest level
+ of effort? Note that inducing a 
+\begin_inset Quotes eld
+\end_inset
+
+higher
+\begin_inset Quotes erd
+\end_inset
+
+ level of effort requires the IC to be satisfied.
+ The result is an inefficient distribution of risk (or risk sharing), which
+ requires the principal to compensate the agent for taking on risk (compared
+ to the first best).
+ In short, it is costly for the principal to condition wage levels on outcomes.
+ Therefore, if the level of effort that the principal wants to induce is
+ the lowest effort level, 
+\begin_inset Formula $e_{l}$
+\end_inset
+
+, then it is optimal for the principal to provide a flat wage rate.
+ The result is low effort because the agent has no incentive to exert a
+ greater level of effort (which is costly for the agent).
+\end_layout
+
+\begin_layout Enumerate
+Why don't we consider the IC? See the answer to 1.
+ above.
+ I noted that with a flat rate, there was no incentive for the agent to
+ exert effort.
+ Therefore, we don't have to consider the IC.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Medium effort: 
+\begin_inset Formula $e_{m}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Given medium effort, the IR of the agent (which binds with equality) will
+ be:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\frac{1}{2}\ln w_{G}+\frac{1}{2}\ln w_{B}-1=0\label{medium effort IR}\end{equation}
+
+\end_inset
+
+and the two ICs are as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray}
+IC_{ml}:\,\frac{1}{2}\ln w_{G}+\frac{1}{2}\ln w_{B}-1 & \geq & \frac{1}{10}\ln w_{G}+\frac{9}{10}\ln w_{B}-0\label{medium effort IC ML}\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\begin_inset Formula \begin{equation}
+IC_{mh}:\,\frac{1}{2}\ln w_{G}+\frac{1}{2}\ln w_{B}-1\geq\frac{2}{3}\ln w_{G}+\frac{1}{3}\ln w_{B}-2\label{medium effort IC MH}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Which of the two ICs will bind with equality? In many instances where there
+ are multiple ICs, one or more of the ICs will bind with equality.
+ For purposes of this class,
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Choosing which ICs will bind is tricky and is sometimes substituted using
+ what is called the IC FOC, which we won't consider here.
+ 
+\end_layout
+
+\end_inset
+
+ note that the IC for the induced level of effort usually binds with the
+ level of effort one unit lower than the level of effort under consideration.
+ Therefore, from inequality (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "medium effort IC ML"
+
+\end_inset
+
+) above, we get the following equality:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\frac{2}{5}\ln w_{G}-\frac{2}{5}\ln w_{B}=1.\label{medium effort IC ML bind}\end{equation}
+
+\end_inset
+
+Solving equations (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "medium effort IR"
+
+\end_inset
+
+) and (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "medium effort IC ML bind"
+
+\end_inset
+
+), we get: 
+\begin_inset Formula $\ln w_{G}=2.25$
+\end_inset
+
+ and 
+\begin_inset Formula $\ln w_{B}=-0.25$
+\end_inset
+
+.
+ Of course, we need to check that these values satisfy inequality (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "medium effort IC MH"
+
+\end_inset
+
+), or the 
+\begin_inset Formula $IC_{mh}$
+\end_inset
+
+.
+ Since the IC for the medium and high levels of effort is satisfied,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+w_{G} & \approx & 9.49\\
+w_{B} & \approx & 0.78\end{eqnarray*}
+
+\end_inset
+
+Note that there was solution to this system of equations and inequalities.
+ However, there may be instances where a solution does not exist, in which
+ case the given effort level is not implementable.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+One possible sufficiency test for implementability is: 1) adjacency and
+ 2) monotonicity.
+ You can learn about these concepts in Contract Theory.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The expected profit of the firm if it makes a take it or leave it offer
+ as identified above is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mathbb{E}\left[\pi|e_{m}\right]=\frac{1}{2}\cdot(12-9.49)+\frac{1}{2}\cdot(0-0.78)\approx0.87.\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+High effort: 
+\begin_inset Formula $e_{h}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Given high effort, the IR of the agent (which binds with equality) will
+ be:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\frac{2}{3}\ln w_{G}+\frac{1}{3}\ln w_{B}-2=0\label{high effort IR}\end{equation}
+
+\end_inset
+
+and the two ICs are as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray}
+IC_{hl}:\,\frac{2}{3}\ln w_{G}+\frac{1}{3}\ln w_{B}-2 & \geq & \frac{1}{10}\ln w_{G}+\frac{9}{10}\ln w_{B}-0\label{high effort IC HL}\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\begin_inset Formula \begin{equation}
+IC_{hm}:\,\frac{2}{3}\ln w_{G}+\frac{1}{3}\ln w_{B}-2\geq\frac{1}{2}\ln w_{G}+\frac{1}{2}\ln w_{B}-1\label{high effort IC HM}\end{equation}
+
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+Again the question is which of the two IC constraints will bind with equality.
+ According to the rule of thumb above, it should be inequality (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "high effort IC HM"
+
+\end_inset
+
+), or the 
+\begin_inset Formula $IC_{hm}$
+\end_inset
+
+, above.
+ We can rewrite as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\frac{1}{6}\ln w_{G}-\frac{1}{6}\ln w_{B}=1.\label{high effort IC HM bind}\end{equation}
+
+\end_inset
+
+Solving equations (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "high effort IR"
+
+\end_inset
+
+) and (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "high effort IC HM bind"
+
+\end_inset
+
+), we get: 
+\begin_inset Formula $\ln w_{G}=4$
+\end_inset
+
+ and 
+\begin_inset Formula $\ln w_{B}=-2$
+\end_inset
+
+.
+ Of course, we need to check that these values satisfy inequality (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "high effort IC HL"
+
+\end_inset
+
+), and we find that 
+\begin_inset Formula $0\geq0.4-1.8$
+\end_inset
+
+ which is a contradiction.
+ Therefore, the contract with wages equal to 
+\begin_inset Formula $w_{G}\approx54.6$
+\end_inset
+
+, 
+\begin_inset Formula $w_{B}\approx0.135$
+\end_inset
+
+, and 
+\begin_inset Formula $\mathbb{E}\left[\pi|e_{h}\right]=\frac{2}{3}\cdot(12-54.6)+\frac{1}{3}\cdot(0-0.135)$
+\end_inset
+
+ is not implementable.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Conclusion
+\end_layout
+
+\begin_layout Standard
+The principal maximizes its expected profit by making a take it or leave
+ it offer where
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left[w_{G},w_{B}\right]=\left[9.49,\,0.78\right].\]
+
+\end_inset
+
+This second best contract results in an expected profit equal to 
+\begin_inset Formula $0.87>0.2$
+\end_inset
+
+ and the agent/scientist puts in medium effort.
+\end_layout
+
+\begin_layout Section
+Takeaway Messages from PA Problem
+\end_layout
+
+\begin_layout Itemize
+What are the welfare implications of non-contractible (or unobservable)
+ effort?
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The scientist (or agent) is equally well off, in that in expectation, the
+ agent's utility is equal to the reservation utility, which is zero.
+ This has to be true since the IR always binds in the example above.
+\end_layout
+
+\begin_layout Itemize
+The firm (or principal) is worse off: full info profit (or first best) is
+ equal to 3.28 and the asymmetric info profit (or second best) is equal to
+ 0.87.
+\end_layout
+
+\begin_layout Itemize
+The asymmetric information leads to a welfare loss and a Pareto sub optimal
+ outcome (or a second best outcome).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+When contracting for high effort pay more for outcomes that have a greater
+ correlation with high effort (which results in wage structures which may
+ not be monotonic).
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Consider the example in Lecture Note 15 where higher effort FOSDs lower
+ effort, but the likelihood ratios are not monotonically decreasing.
+ The pdf can be found below.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+If sabotage is possible, wage menu should be weakly increasing in outcome.
+ The idea is that if destruction of output is possible, then the agent can
+ destroy output to maximize its payoff.
+ 
+\end_layout
+
+\begin_layout Itemize
+All relevant information should be used in determining the wage structure.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+For a review of the final three bullet points, review Lecture Note 15.
+ There are a few major typos, but you should be able to get through it.
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+FOSD vs MLRP
+\end_layout
+
+\begin_layout Standard
+PDF
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x_{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a'$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.55
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.25
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a^{*}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.05
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.65
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LR
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Julian had the ratios reversed in class.
+ This doesn't matter for the proposition below or for the analysis.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.31
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.83
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+The point of this exercise is to see that the pdf leads to 
+\begin_inset Formula $a^{*}$
+\end_inset
+
+ FOSD 
+\begin_inset Formula $a'$
+\end_inset
+
+, where 
+\begin_inset Formula $a^{*}$
+\end_inset
+
+ is the high effort level and 
+\begin_inset Formula $a'$
+\end_inset
+
+ is the low effort level.
+ However, we don't get the monotonically increasing wage menu (increasing
+ wage as outcome increases), because the high effort level is highly correlated
+ with the medium outcome.
+ Therefore, the optimal wage contract will likely have:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+w_{2}^{*}>w_{3}^{*}>w_{1}^{*}\]
+
+\end_inset
+
+to implement the high level of effort 
+\begin_inset Formula $a^{*}$
+\end_inset
+
+ instead of 
+\begin_inset Formula $a'$
+\end_inset
+
+.
+ Keep the following proposition in mind:
+\end_layout
+
+\begin_layout Proposition
+The optimal incentive scheme is monotonically increasing in the outcome
+ if and only if MLRP holds.
+ 
+\end_layout
+
+\end_body
+\end_document

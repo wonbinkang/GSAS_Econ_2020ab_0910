@@ -1,0 +1,1080 @@
+#LyX 1.6.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-sec
+\end_modules
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Section Notes 7
+\end_layout
+
+\begin_layout Author
+Wonbin Kang
+\end_layout
+
+\begin_layout Date
+March 11, 2010
+\end_layout
+
+\begin_layout Section*
+Agenda
+\end_layout
+
+\begin_layout Enumerate
+Finitely Repeated Games
+\end_layout
+
+\begin_layout Enumerate
+Infinitely Repeated Games
+\end_layout
+
+\begin_layout Enumerate
+Folk Theorem
+\end_layout
+
+\begin_layout Enumerate
+Early Evaluations
+\end_layout
+
+\begin_layout Section
+Finitely Repeated Games
+\end_layout
+
+\begin_layout Standard
+Normally, exposition of finitely repeated games use the Prisoners' Dilemma
+ and the equilibrium concept is SPNE.
+ However, let me introduce the following Proposition which applies to all
+ repeated games:
+\end_layout
+
+\begin_layout Proposition
+If the stage game 
+\begin_inset Formula $\Gamma(I,\Sigma,\vec{u})$
+\end_inset
+
+ has a unique NE, then the finitely repeated game of this stage game, with
+ 
+\begin_inset Formula $t\in\left\{ 1,...,T\right\} $
+\end_inset
+
+ has a unique subgame perfect outcome: the NE of the stage game is played
+ in every stage.
+\end_layout
+
+\begin_layout Standard
+The problem is that this isn't very interesting.
+ What about non-NE play at some of the stage games in a finitely repeated
+ game? For example, for a given SPNE, could we have 
+\begin_inset Quotes eld
+\end_inset
+
+Cooperate
+\begin_inset Quotes erd
+\end_inset
+
+ in some of the stage games of such SPNE of the finitely repeated Prisoners'
+ Dilemma? 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+In a 2 period Prisoners' Dilemma, we won't be able to sustain 
+\begin_inset Quotes eld
+\end_inset
+
+Cooperate
+\begin_inset Quotes erd
+\end_inset
+
+ as an SPNE, regardless of the payoffs.
+ Can you think of a reason? HINT: It has to do with credibility in the final
+ stage game.
+ On the other hand, in an infinitely repeated Prisoners' Dilemma, 
+\begin_inset Quotes eld
+\end_inset
+
+Cooperate
+\begin_inset Quotes erd
+\end_inset
+
+ can be sustained in equilibrium despite the fact that the only NE of the
+ stage game is [Defect, Defect].
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I'm not going to go into this in the section notes, but I refer you to Gibbons
+ (1992, Section 2.3A).
+ The take-away is that if there exists a credible threat or promise about
+ future behavior (in the form of punishments which are NE in the stage game),
+ then current behavior can be influenced.
+ This means that a cooperative outcome can be achieved in certain finitely
+ repeated games (even in games with 2 periods).
+ 
+\end_layout
+
+\begin_layout Section
+Infinitely Repeated Games
+\end_layout
+
+\begin_layout Standard
+Normally when we think about repeated games, we think about infinitely repeated
+ prisoner's dilemma games because we're interested in when and how cooperation
+ can be maintained in equilibrium.
+ Let's look at the following example:
+\end_layout
+
+\begin_layout Subsection
+Discounting
+\end_layout
+
+\begin_layout Standard
+Recall from class that the value of $1 in period t is equal to 
+\begin_inset Formula $\frac{\$1}{1+\beta}\cdot(1-z)=\delta\cdot\$1$
+\end_inset
+
+ in period t-1.
+ The discount factor 
+\begin_inset Formula $\delta=\frac{1-z}{1+\beta}$
+\end_inset
+
+ is composed of both an interest rate (which captures the time value of
+ money) and the probability that a game ends after a certain number of periods.
+ Note the following characteristics:
+\end_layout
+
+\begin_layout Enumerate
+If the probability of a game ending at a certain period is fixed at 
+\begin_inset Formula $z$
+\end_inset
+
+, then 
+\begin_inset Formula $z_{1}=1-z$
+\end_inset
+
+; 
+\begin_inset Formula $z_{2}=(1-z)z$
+\end_inset
+
+; 
+\begin_inset Formula $z_{3}=(1-z)^{2}z$
+\end_inset
+
+; ...
+ ; 
+\begin_inset Formula $z_{t}=(1-z)^{t-1}z$
+\end_inset
+
+; ...; where 
+\begin_inset Formula $z_{t}=\Pr$
+\end_inset
+
+(the game ends at time 
+\begin_inset Formula $t$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sum_{t=0}^{^{\infty}}z_{t}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Infinitely Repeated PD with Deterministic Discount Factor
+\end_layout
+
+\begin_layout Example
+Payoffs are:
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cooperate
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Defect
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cooperate
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3,3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Defect
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5,0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+; discount factor 
+\begin_inset Formula $\delta_{t}=\frac{1-z_{t}}{1+r}$
+\end_inset
+
+, where 
+\begin_inset Formula $z_{it}=\Pr(player\, i\, ends\, game\, at\, period\, t)$
+\end_inset
+
+, 
+\begin_inset Formula $z_{t}=z_{1t}+z_{2t}$
+\end_inset
+
+, and 
+\begin_inset Formula $r$
+\end_inset
+
+ is the interest rate.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+The probability of the game ending at any given period 
+\begin_inset Formula $t$
+\end_inset
+
+ is equal to the probability that player 1 ends the game or player 2 ends
+ the game.
+ 
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Example
+Let's first assume that the interest rate is equal to zero (0) and the probabili
+ty of a game ending at any given period is equal to 
+\begin_inset Formula $z$
+\end_inset
+
+, or 
+\begin_inset Formula $z_{1}=z_{2}=...=z_{t}=...=z$
+\end_inset
+
+.
+ Also assume that 
+\begin_inset Formula $r=0$
+\end_inset
+
+ for this and the following game.
+ Given these assumptions, what level of 
+\begin_inset Formula $z$
+\end_inset
+
+ will sustain cooperation when both players are playing a grim trigger strategy?
+\end_layout
+
+\begin_layout Enumerate
+We assumed that both player 1 and 2 were playing a 
+\shape italic
+grim trigger strategy
+\shape default
+.
+ Therefore, the candidate strategy profile is 
+\begin_inset Formula $\vec{\sigma}^{*}=\left[s_{1},s_{2}\right]$
+\end_inset
+
+, where:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \[
+s_{1}=s_{2}=\begin{cases}
+"C" & in\, first\, period\\
+"C" & if\,(c,c)\, in\, all\, previous\, periods\\
+"D" & otherwise\end{cases}\]
+
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+The 
+\begin_inset Quotes eld
+\end_inset
+
+otherwise
+\begin_inset Quotes erd
+\end_inset
+
+ is the punishment strategy.
+ Recall in the Cold War game we had 
+\begin_inset Quotes eld
+\end_inset
+
+Nuke
+\begin_inset Quotes erd
+\end_inset
+
+ as a punishment option.
+ Here, the punishment is 
+\begin_inset Quotes eld
+\end_inset
+
+D
+\begin_inset Quotes erd
+\end_inset
+
+ for all remaining periods.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Single Deviation Principle: If player 
+\begin_inset Formula $i$
+\end_inset
+
+ has some profitable deviation, then there is a profitable deviation that
+ differs from 
+\begin_inset Formula $s_{i}$
+\end_inset
+
+ in only one period.
+ This means that we need to check each possible deviation only once.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The payoff for player 1 (and player 2) under the strategy profile above
+ starting at any time period 
+\begin_inset Formula $t$
+\end_inset
+
+ is: 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \[
+u_{1}(s_{1},s_{2})=3+3\delta+3\delta^{2}+...=\sum_{t=0}^{\infty}3\delta^{t}=3\cdot\frac{1}{1-\delta}\]
+
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+The sum of a geometric series where 
+\begin_inset Formula $\alpha\in(0,1)$
+\end_inset
+
+ can be solved by:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula \begin{eqnarray}
+V & = & 1+\alpha+\alpha^{2}+\alpha^{3}+...\label{eq:geometric1}\\
+\alpha V & = & \alpha+\alpha^{2}+\alpha^{3}+\alpha^{4}+...\label{eq:geometric 2}\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Subtracting equations 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:geometric1"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:geometric 2"
+
+\end_inset
+
+, we can find the sum of a geometric series:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula \[
+(1-\alpha)V=1\Rightarrow V=\frac{1}{1-\alpha}\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Now let's consider the payoff of player 1, if she decides to deviate in
+ period 
+\begin_inset Formula $t$
+\end_inset
+
+:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \[
+u_{1}(s_{1}^{dev},s_{2})=5+1\cdot\delta+1\cdot\delta^{2}+...=5+\frac{\delta}{1-\delta}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Therefore, in order to sustain cooperation, we need to have 
+\begin_inset Formula $u_{1}(s_{1},s_{2})\geq u_{1}(s_{1}^{dev},s_{2})$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{3}{1-\delta}\geq5+\frac{\delta}{1-\delta}\Rightarrow\delta\geq\frac{1}{2}\Rightarrow z\leq\frac{1}{2}.\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+What have we just shown? Have we shown that the Grim Trigger Strategy is
+ a NE or an SPNE? We've just shown that this is a NE.
+ Now we want to show that this is a SPNE.
+ How? Based on the definition of SPNE, we need to show that the Grim Trigger
+ strategy is a NE in each of the subgames of the infinitely repeated stage
+ game: here the stage game is a Prisoners' Dilemma.
+ What are the subgames of the infinitely repeated Prisoners' Dilemma? Note
+ that each subgame of the infinitely repeated Prisoners' Dilemma is equal
+ to the entire game.
+ 
+\end_layout
+
+\begin_layout Standard
+Pick a stage 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ The strategies the precede 
+\begin_inset Formula $t$
+\end_inset
+
+ are either 
+\begin_inset Quotes eld
+\end_inset
+
+Cooperate
+\begin_inset Quotes erd
+\end_inset
+
+ has been played in all stages by both players, in which case the Grim Trigger
+ strategy is in play at stage 
+\begin_inset Formula $t$
+\end_inset
+
+, which we know is a NE; or there was a 
+\begin_inset Quotes eld
+\end_inset
+
+Deviate
+\begin_inset Quotes erd
+\end_inset
+
+ somewhere before stage 
+\begin_inset Formula $t$
+\end_inset
+
+, in which case the NE punishment strategy is in play, which we know is
+ also a NE for that subgame.
+ 
+\end_layout
+
+\begin_layout Subsection
+Infinitely Repeated PD with Stochastic Discount Factor
+\end_layout
+
+\begin_layout Example
+Now let's assume that the interest rate is equal to zero (0) and the probability
+ of a game ending at any given period 
+\begin_inset Formula $t$
+\end_inset
+
+ is equal to 
+\begin_inset Formula $z_{t}=z_{1t}+z_{2t}$
+\end_inset
+
+, where 
+\begin_inset Formula $z_{it}\sim^{iid}U\left[0,\frac{1}{4}\right]$
+\end_inset
+
+.
+ Given these assumptions, what level of 
+\begin_inset Formula $z_{1t}$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+This will generalize to player 2.
+ 
+\end_layout
+
+\end_inset
+
+ will sustain cooperation when both players are playing a grim trigger strategy?
+ Let's further assume that at the beginning of period 
+\begin_inset Formula $t$
+\end_inset
+
+, each player 
+\begin_inset Formula $i$
+\end_inset
+
+ learns 
+\begin_inset Formula $z_{it}$
+\end_inset
+
+, but only knows the distribution of the other player's probability of ending
+ the game.
+ 
+\end_layout
+
+\begin_layout Enumerate
+What is the expected discount factor at period 
+\begin_inset Formula $t$
+\end_inset
+
+? 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \[
+\mathbb{E}\left[\delta_{t}\right]=\mathbb{E}\left[1-z_{t}\right]=1-\mathbb{E}\left[z_{1t}\right]-\mathbb{E}\left[z_{2t}\right]=1-\frac{1}{4}=\frac{3}{4}.\]
+
+\end_inset
+
+This is also the probability that the game does not end at period 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+For each player what is the expected probability of the game ending given
+ player 1's own draw of 
+\begin_inset Formula $z_{1t}$
+\end_inset
+
+? In other words, what is the expected discount factor
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \[
+\mathbb{E}\left[z_{t}|z_{1t}\right]=z_{1t}+\mathbb{E}\left[z_{2t}|z_{1t}\right]=z_{1t}+\mathbb{E}\left[z_{2t}\right]=z_{1t}+\frac{1}{8}\]
+
+\end_inset
+
+
+\begin_inset Formula \[
+\therefore\mathbb{E}\left[\delta_{t}|z_{1t}\right]=\mathbb{E}\left[1-z_{t}|z_{1t}\right]=1-\mathbb{E}\left[z_{t}|z_{1t}\right]=\frac{7}{8}-z_{1t}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The payoff for player 1 (and player 2) under the strategy profile above
+ starting at any time period 
+\begin_inset Formula $t$
+\end_inset
+
+ is: 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \begin{eqnarray*}
+U_{1}(s_{1},s_{2}|z_{1t}) & = & 3+3\cdot\mathbb{E}\left[\delta_{t}|z_{1t}\right]+3\cdot\mathbb{E}\left[\delta_{t}|z_{1t}\right]\cdot\mathbb{E}\left[\delta_{t}\right]+3\cdot\mathbb{E}\left[\delta_{t}|z_{1t}\right]\cdot\mathbb{E}\left[\delta_{t}\right]^{2}+...\\
+ & = & 3+\frac{3\cdot\mathbb{E}\left[\delta_{t}|z_{1t}\right]}{1-\mathbb{E}\left[\delta_{t}\right]}=3+\frac{3\left(\frac{7}{8}-z_{1t}\right)}{\frac{1}{4}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Now let's consider the payoff of player 1, if she decides to deviate in
+ period 
+\begin_inset Formula $t$
+\end_inset
+
+:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \begin{eqnarray*}
+U_{1}(s_{1}^{dev},s_{2}|z_{1t}) & = & 5+1\cdot\mathbb{E}\left[\delta_{t}|z_{1t}\right]+1\cdot\mathbb{E}\left[\delta_{t}|z_{1t}\right]\cdot\mathbb{E}\left[\delta_{t}\right]+1\cdot\mathbb{E}\left[\delta_{t}|z_{1t}\right]\cdot\mathbb{E}\left[\delta_{t}\right]^{2}+...\\
+ & = & 5+\frac{\mathbb{E}\left[\delta_{t}|z_{1t}\right]}{1-\mathbb{E}\left[\delta_{t}\right]}=5+\frac{\left(\frac{7}{8}-z_{1t}\right)}{\frac{1}{4}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Therefore, cooperation is sustainable if:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \[
+3+\frac{3\left(\frac{7}{8}-z_{1t}\right)}{\frac{1}{4}}\geq5+\frac{\left(\frac{7}{8}-z_{1t}\right)}{\frac{1}{4}}\Rightarrow z_{1t}\leq\frac{5}{8}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+But what did we say about the initial distribution? 
+\begin_inset Formula $z_{it}\sim^{iid}U\left[0,\frac{1}{4}\right]$
+\end_inset
+
+.
+ Therefore, cooperation is always sustainable.
+ For a more interesting case where cooperation can unravel after a certain
+ draw, consider the case where 
+\begin_inset Formula $z_{it}\sim^{iid}U\left[0,\,0.42\right]$
+\end_inset
+
+.
+ Try it and see what happens.
+ 
+\end_layout
+
+\begin_layout Subsection
+The Grim Trigger Strategy
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Only for those interested.
+ For those not interested, just remember that in an infinitely repeated
+ game, you'll be able to find a grim trigger strategy which is SPNE.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Why do we care so much about Grim Trigger strategies? The reason is that
+ they always exist in dynamic or repeated games.
+ Consider the following theorem (the proof of which can be found in Fudenberg
+ and Tirole):
+\end_layout
+
+\begin_layout Theorem
+Suppose 
+\begin_inset Formula $\sigma^{*}\in S$
+\end_inset
+
+ is a pure strategy SPNE, with the distribution of on the equilibrium path
+ actions given by 
+\begin_inset Formula $p(a|\sigma^{*})$
+\end_inset
+
+.
+ Then, there exists a discount factor 
+\begin_inset Formula $\bar{\delta}\in(0,1)$
+\end_inset
+
+ such that for all 
+\begin_inset Formula $\delta>\bar{\delta}$
+\end_inset
+
+, there exists a SPNE 
+\begin_inset Formula $\sigma^{**}$
+\end_inset
+
+ with 
+\begin_inset Formula $p(a|\sigma^{*})=p(a|\sigma^{**})$
+\end_inset
+
+ and 
+\begin_inset Formula $\sigma^{**}$
+\end_inset
+
+ involves a continuation payoff of 
+\begin_inset Formula $U_{i}^{minmax}(\sigma_{i},\sigma_{-i}^{*})$
+\end_inset
+
+ to player 
+\begin_inset Formula $i$
+\end_inset
+
+, if 
+\begin_inset Formula $i$
+\end_inset
+
+ is the first to deviate from 
+\begin_inset Formula $\sigma^{**}$
+\end_inset
+
+ at date t after some history 
+\begin_inset Formula $h^{t-1}\in H^{t-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Where,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+U_{i}^{minmax}(\sigma_{i},\sigma_{-i}^{*})=\min_{\sigma_{-i}^{*}\in S_{-i}}\max_{\sigma_{i}\in S_{i}}\sum_{s=0}^{\infty}\delta^{s}u_{i}(\sigma_{i,t+s},\sigma_{-i,t+s}^{*}).\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In short, if there exists a SPNE in an infinitely repeated game, then for
+ a high enough discount factor, there exists a strategy profile where the
+ first player to deviate receives her minmax continuation payoff which is
+ also SPNE.
+ Note that it could be the case that 
+\begin_inset Formula $\sigma^{*}=\sigma^{**}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+This is why we look at Grim Trigger Strategies.
+ Note that the theorem above was written for a general dynamic model.
+ It can be simplified for purposes of the infinitely repeated game.
+ 
+\end_layout
+
+\begin_layout Section
+Recursive Methods
+\end_layout
+
+\begin_layout Standard
+There is no way to provide you with a thorough review of recursive methods
+ and Bellman equations, however, the key insights are fairly simple and
+ may be helpful to you in solving your problem sets this week and on the
+ exam.
+\end_layout
+
+\begin_layout Standard
+Assume that the discounted value of a stream of payoffs at time 
+\begin_inset Formula $t$
+\end_inset
+
+ given some domain is equal to 
+\begin_inset Formula $V(\cdot|t)$
+\end_inset
+
+; let the instantaneous payoff be equal to 
+\begin_inset Formula $u(\cdot)$
+\end_inset
+
+; and the discount rate is equal to 
+\begin_inset Formula $\delta$
+\end_inset
+
+.
+ Further assume that the relevant domain of the function 
+\begin_inset Formula $V(\cdot|t)$
+\end_inset
+
+ is the strategy space of all of the players playing the infinite game,
+ therefore,
+\begin_inset Formula $V:\times_{i\in N}\Sigma_{i}\rightarrow\mathbb{R}$
+\end_inset
+
+.
+ Then we can use the following recursive equation:
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Note that we could write this as: 
+\begin_inset Formula $V(\sigma_{i},\sigma_{-i}|t)=u_{i}(\sigma_{i},\sigma_{-i})+\delta V(\sigma_{i},\sigma_{-i}|t+1)\Rightarrow V=u+\delta V$
+\end_inset
+
+ if there are no stochastic elements that would determine the value function
+ in the future.
+  
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+V(\sigma_{i},\sigma_{-i}|t)=u_{i}(\sigma_{i},\sigma_{-i})+\delta\mathbb{E}_{t+1}\left[V(\sigma_{i},\sigma_{-i}|t+1)\right]\Rightarrow V=u+\delta\mathbb{E}_{t+1}\left[V\right].\]
+
+\end_inset
+
+The key is understanding that the value function today is the same as the
+ expected value function tomorrow.
+ Using the terminology of recursive methods: The value function today is
+ equal to the instantaneous payoff today and the discounted continuation
+ value.
+ 
+\end_layout
+
+\begin_layout Section
+Folk Theorem
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+This is for those interested in repeated games.
+ A more thorough exposition can be found in Chris' lecture notes.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+In an infinitely repeated game, assume that there exists a NE with payoff
+ (outcome) equal to 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ for each player 
+\begin_inset Formula $i\in I$
+\end_inset
+
+, where 
+\begin_inset Formula $I$
+\end_inset
+
+ is a finite set.
+ Then as the discount factor 
+\begin_inset Formula $\delta\rightarrow1$
+\end_inset
+
+, there exists a SPNE with a feasible payoff greater than 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ for all 
+\begin_inset Formula $i$
+\end_inset
+
+ in each period (per-period payoffs) which can be sustained by a minmax
+ strategy.
+ 
+\end_layout
+
+\begin_layout Standard
+Here the per-period or average payoff, 
+\begin_inset Formula $\bar{\pi}$
+\end_inset
+
+ can be calculated using the following equation:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\bar{\pi}=(1-\delta)\sum_{t=0}^{\infty}\delta^{t}u_{t},\]
+
+\end_inset
+
+and the feasible payoffs are a set of convex combination of the pure strategy
+ payoffs.
+ 
+\end_layout
+
+\begin_layout Section
+Early Evaluations
+\end_layout
+
+\end_body
+\end_document

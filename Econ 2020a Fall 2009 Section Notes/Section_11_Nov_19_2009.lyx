@@ -1,0 +1,910 @@
+#LyX 1.6.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-ams-extended
+\end_modules
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Section Notes 11
+\end_layout
+
+\begin_layout Author
+Wonbin Kang
+\end_layout
+
+\begin_layout Date
+November 19, 2009
+\end_layout
+
+\begin_layout Part*
+Agenda
+\end_layout
+
+\begin_layout Enumerate
+Fundamental Welfare Theorem Failure
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+I won't go through this in class.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Externalities
+\end_layout
+
+\begin_layout Enumerate
+Monopoly and Price Discrimination
+\end_layout
+
+\begin_layout Section
+Fundamental Welfare Theorem Failure
+\end_layout
+
+\begin_layout Standard
+What assumptions do we need for the Welfare Theorems to hold?
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Recall from the previous section notes that convexity of preferences was
+ necessary for the Second Fundamental Welfare Theorem to hold.
+ See also Practice Problem 17.3.
+ 
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Complete markets: no unpriced goods.
+ This assumption fails when we have externalities.
+ 
+\end_layout
+
+\begin_layout Enumerate
+No market power: all economic agents are price-takers (competitive markets
+ for all goods).
+ This assumptions fails when we are dealing with monopolies/monopsonies,
+ oligopolies/oligopsonies.
+\end_layout
+
+\begin_layout Enumerate
+Complete information for all agents.
+ This assumption fails if we have uncertainty in the payoffs or when there
+ is asymmetric information or imperfect information.
+ 
+\end_layout
+
+\begin_layout Section
+Bilateral Externalities
+\end_layout
+
+\begin_layout Subsection
+Definition
+\end_layout
+
+\begin_layout Standard
+Externalities exist when the actions of one economic agent 
+\shape italic
+directly
+\shape default
+ affect the utility of other agents.
+ As Chris stated in class, if the effect of one agent's action is 
+\shape italic
+indirectly
+\shape default
+ through prices, then it isn't an externality.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Viner (1931) coined the expression 
+\begin_inset Quotes eld
+\end_inset
+
+pecuniary externality.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ Don't get too hung up on the definition.
+ It isn't always clear whether some action is an externality or not.
+ 
+\end_layout
+
+\begin_layout Standard
+Formally, an externality occurs when we can write the utility function of
+ an agent 
+\begin_inset Formula $i$
+\end_inset
+
+ as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+u_{i}(\vec{x},\vec{y})=f(x_{i},y_{i})+g(x_{j},y_{j})\end{equation}
+
+\end_inset
+
+, where 
+\begin_inset Formula $i\neq j$
+\end_inset
+
+.
+ Recall that in all of our previous models the utility of agent 
+\begin_inset Formula $i$
+\end_inset
+
+ was determined solely by his or her consumption bundle.
+ 
+\end_layout
+
+\begin_layout Subsection
+Example
+\end_layout
+
+\begin_layout Standard
+Assume that the good/activity of interest is playing the bag pipes in-doors.
+ Let 
+\begin_inset Formula $h_{1}$
+\end_inset
+
+ denote agent 1's time spent playing the bag-pipes, then we can write agent
+ 1's utility function as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+u_{1}(m_{1},h_{1})=m_{1}+\phi_{1}(h_{1})\end{equation}
+
+\end_inset
+
+, where 
+\begin_inset Formula $\phi'_{1}(\cdot)>0$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi''_{1}(\cdot)<0$
+\end_inset
+
+.
+ If we also assume that agent 1's budget constraint is: 
+\begin_inset Formula $m_{1}+ph_{1}\leq w_{1}$
+\end_inset
+
+, we can plug the binding constraint into the objective function to get
+ to the following optimization problem for agent 1:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\max_{h_{1}}w_{1}-ph_{1}+\phi_{1}(h_{1})\label{eq:max problem for agent 1}\end{equation}
+
+\end_inset
+
+.
+ Problem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:max problem for agent 1"
+
+\end_inset
+
+ has the following first order condition:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\phi'_{1}(h_{1}^{*})=p=0\label{eq:individual opt FOC}\end{equation}
+
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Assuming that there exists an interior solution.
+ For this part of the class, we normally assume that an interior solution
+ exists and don't deal with the K-T conditions.
+ 
+\end_layout
+
+\end_inset
+
+, and assume that 
+\begin_inset Formula $p=0$
+\end_inset
+
+.
+ For those interested, why we assume that 
+\begin_inset Formula $p=0$
+\end_inset
+
+ can be found in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Short-Aside"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Agent 2 is agent 1's neighbor and her utility function
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Notice that agent 2 doesn't get to choose 
+\begin_inset Formula $h_{1}$
+\end_inset
+
+, but it enters her utility function.
+\end_layout
+
+\end_inset
+
+ is: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+u_{2}(m_{2},h_{1})=m_{2}+\phi_{2}(h_{1})\]
+
+\end_inset
+
+, where 
+\begin_inset Formula $\phi'_{2}(\cdot)<0$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi''_{2}(\cdot)<0$
+\end_inset
+
+, which means that playing the bag pipes is a negative externality.
+ 
+\end_layout
+
+\begin_layout Standard
+If we let agent 2 decide the level of 
+\begin_inset Formula $h_{1}$
+\end_inset
+
+, we would have 
+\begin_inset Formula $h_{1}^{*}=0$
+\end_inset
+
+.
+ Can you see why? 
+\end_layout
+
+\begin_layout Standard
+The socially optimal level of playing bag pipes indoors, which we denote
+ as 
+\begin_inset Formula $h_{1}^{FB}$
+\end_inset
+
+ will solve:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\max_{h_{1}}\left\{ u_{1}(m_{1},h_{1})+u_{2}(m_{2},h_{1})\right\} \Leftrightarrow\max_{h_{1}}\left\{ \phi_{1}(h_{1})+\phi_{2}(h_{1})\right\} \label{eq:social opt problem}\end{equation}
+
+\end_inset
+
+.
+ The first order conditions for the optimization problem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:social opt problem"
+
+\end_inset
+
+ is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\phi'_{1}(h_{1}^{FB})+\phi'_{2}(h_{1}^{FB})=0.\label{eq:social opt FOC}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now compare FOCs 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:individual opt FOC"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:social opt FOC"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\phi'_{1}(h_{1}^{FB})=-\phi'_{2}(h_{1}^{FB})>0=\phi'_{1}(h_{1}^{*})\Leftrightarrow\phi'_{1}(h_{1}^{FB})>\phi'_{1}(h_{1}^{*})\]
+
+\end_inset
+
+, therefore,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+h_{1}^{FB}<h_{1}^{*}.\label{eq:negative externality result}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Inequality 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:negative externality result"
+
+\end_inset
+
+ tells us that when we're dealing with a negative externality, we have too
+ much of the externality than is socially optimal.
+ See Figure 1 at the end of the notes.
+\end_layout
+
+\begin_layout Standard
+Try this for when we have a positive externality (public good).
+ 
+\end_layout
+
+\begin_layout Subsection
+Pareto Optimality of 
+\begin_inset Formula $h_{1}^{*}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Is the level of bag pipe playing defined by 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:individual opt FOC"
+
+\end_inset
+
+ above Pareto optimal? It would seem as though that you can't improve agent
+ 2's utility without decreasing agent 1's utility (decreasing 
+\begin_inset Formula $h_{1}$
+\end_inset
+
+would benefit agent 2 but would hurt agent 1, and vice-versa).
+ 
+\end_layout
+
+\begin_layout Standard
+However, 
+\begin_inset Formula $h_{1}^{*}$
+\end_inset
+
+is not Pareto optimal.
+ See Figure 2 at the end of the notes.
+ By decreasing 
+\begin_inset Formula $h_{1}^{*}$
+\end_inset
+
+by 
+\begin_inset Formula $\Delta h>0$
+\end_inset
+
+, the increase in utility for agent 2 is relatively larger than the decrease
+ in utility for agent 1.
+ Therefore, agent 2 can compensate agent 1, using transfers of the numeraire
+ good, to make agent 1 as well off as when he was playing bag pipes to his
+ heart's content.
+ 
+\end_layout
+
+\begin_layout Standard
+In short, efficiency is determined by the quantity of 
+\begin_inset Formula $h_{1}$
+\end_inset
+
+ and not by how the numeraire good is distributed.
+ This leads us to the Coase Theorem, which in a nut shell states: 
+\end_layout
+
+\begin_layout Theorem*
+If property rights are clearly defined, transactions costs are equal to
+ zero, contracts are costlessly and perfectly enforced, parties have complete
+ and perfect information, then the initial allocation of property rights
+ will not matter because bargaining amongst the parties will lead to the
+ Pareto optimal (or efficient) outcome.
+\end_layout
+
+\begin_layout Subsection
+Solutions to Externalities
+\end_layout
+
+\begin_layout Standard
+Possible solutions include:
+\end_layout
+
+\begin_layout Enumerate
+Quotas
+\end_layout
+
+\begin_layout Enumerate
+Pigouvian taxation / subsidies (which forces the party with the property
+ right to internalize the externality)
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+In the example above, we could force agent 1 to solve the following optimization
+ problem, which leads to the optimal taxation that results in the Pareto
+ optimal level of bag pipe playing:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula \[
+\max_{h_{1}}\left\{ \phi_{1}(h_{1})-t\cdot h_{1}\right\} \Rightarrow\phi_{1}'(h_{1}^{**})=t\Rightarrow t^{*}=-\phi_{2}'(h_{1}^{FB})>0\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Coasian Bargaining (or as Aghion would say: 
+\begin_inset Quotes eld
+\end_inset
+
+TIOLI
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Quotes eld
+\end_inset
+
+Take-it-or-leave-it
+\begin_inset Quotes erd
+\end_inset
+
+ offers by the person 
+\shape italic
+with the property right/ex ante bargaining power
+\shape default
+.
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+Market-making
+\end_layout
+
+\begin_layout Enumerate
+Stigma/social recognition
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Isn't this just another form of internalization?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Short Aside
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Short-Aside"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Assume that the numeraire good is good 1.
+ Define the indirect utility function of agent 
+\begin_inset Formula $i$
+\end_inset
+
+ who has quasi linear preferences as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v_{i}(\vec{p},w_{i},h) & = & \max_{x_{i}\geq\geq0}u_{i}(\vec{x}_{i},h)=\max_{x_{i}\geq\geq0}g_{i}(\vec{x}_{-1i},h)+x_{1i}\\
+ & s.t. & \vec{p}\cdot\vec{x}_{i}\leq w_{i}\end{eqnarray*}
+
+\end_inset
+
+, which has the following solutions (or demand correspondences):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{x}_{-1i}^{*}(\vec{p},h)\]
+
+\end_inset
+
+, and
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x_{1i}^{*}(\vec{p},h)=w_{1}-\vec{p}\cdot\vec{x}_{-1i}^{*}(\vec{p},h)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+.
+ Therefore, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+v_{i}(\vec{p},w_{i},h)=g_{i}(\vec{x}_{-1i}(\vec{p},h),h)+w_{i}-\vec{p}\cdot\vec{x}_{-1i}^{*}(\vec{p},h)=w_{i}+\phi_{i}(\vec{p},h)=w_{i}+\phi_{i}(h)\end{equation}
+
+\end_inset
+
+, and we have the desired form, where the final equality comes from the
+ assumption that prices are fixed.
+ 
+\end_layout
+
+\begin_layout Section
+Price Discrimination and Monopoly
+\end_layout
+
+\begin_layout Standard
+Types of price discrimination
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+This taxonomy isn't really helpful in understanding price discrimination,
+ but almost all of the text books have it.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+First Degree Price Discrimination: Monopolist observes the type of the consumer
+ and is able to calculate each consumer's demand correspondences (or their
+ willingness to pay).
+ The monopolist uses this to charge each individual his or her willingness
+ to pay.
+ AKA perfect price discrimination or individual pricing.
+ Generally, the FB outcome can be implemented, but the monopolist seller
+ gets all of the surplus.
+ See Figure 3.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Second Degree Price Discrimination: Monopolist is unable to observe the
+ types of each consumer, and so proposes a menu of prices and quantities.
+ Consumers self-select themselves into their optimal quantity and price,
+ which can derived using the Revelation Principle (see MWG 14.C.2 for more
+ information).
+ Screening models.
+ Ex) Intel's 486 DX and SX, and 487 micro processors, where SX is just a
+ damaged version of the DX, and 487 was an upgrade of the SX to the DX.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Third Degree Price Discrimination: Monopolist is uable to observe types,
+ but is able to observe something immutable that is related the a consumer's
+ willingness to pay.
+ Monopolist charges based on this characteristic.
+ 
+\end_layout
+
+\begin_layout Subsection
+Basic Monopolist's Problem
+\end_layout
+
+\begin_layout Standard
+Recall that a producer/seller of goods in a competitive market must solve
+ its profit maximization problem which can be written as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\max_{q}pq-c(q)\Rightarrow p=c'(q^{C})\]
+
+\end_inset
+
+, or the price (which is exogeneous) is equal to the marginal cost.
+ 
+\end_layout
+
+\begin_layout Standard
+The monopolist's problem is slightly different:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Notice that we use the inverse demand function 
+\begin_inset Formula $p(\cdot)$
+\end_inset
+
+ in the objective function.
+ 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula \begin{equation}
+\max_{q}p(q)q-c(q)\Rightarrow p(q^{M})+p'(q^{M})q^{M}=c'(q^{M})\label{eq:monopolist problem}\end{equation}
+
+\end_inset
+
+, where the LHS of equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:monopolist problem"
+
+\end_inset
+
+ is the marginal revenue 
+\begin_inset Formula $\left(\frac{d\left[p(q)q\right]}{dq}\right)$
+\end_inset
+
+of the monopolist and the RHS is the marginal cost.
+ We see that 
+\begin_inset Formula $p(q^{M})>c'(q^{M})$
+\end_inset
+
+ because 
+\begin_inset Formula $p'(\cdot)<0$
+\end_inset
+
+, which means that the price under a monopoly exceeds the marginal cost
+ of production.
+ This in turn means that 
+\begin_inset Formula $q^{M}<q^{C}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Harvard Football Example
+\end_layout
+
+\begin_layout Standard
+Assume that the good of interest is The Game football tickets, which are
+ being supplied by a monopolistic seller with cost function equal to: 
+\begin_inset Formula $c(Q)=\frac{Q^{2}}{20}$
+\end_inset
+
+, where 
+\begin_inset Formula $Q$
+\end_inset
+
+ is the total number of tickets supplied to the market, including both those
+ supplied to alumni and to students: 
+\begin_inset Formula $Q=q_{a}+q_{s}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Further assume that there are two types of consumers: alumni and students.
+ The demand function for alumni can be written as: 
+\begin_inset Formula $q_{a}(p_{a})=100-p_{a}$
+\end_inset
+
+ and 
+\begin_inset Formula $q_{s}(p_{s})=200-10p_{s}$
+\end_inset
+
+.
+ The monopolist has information on whether a consumer is a student or an
+ alumni and so is able to engage in Third Degree Price Discrimination.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+No Students
+\end_layout
+
+\begin_layout Standard
+If we assume that students are in reading period and unable to attend, the
+ monopolist's problems is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\max_{q_{a}=Q}\left\{ p_{a}(Q)\cdot Q-c(Q)\right\} =\max_{Q}\left\{ (100-Q)\cdot Q-\frac{Q^{2}}{20}\right\} \label{eq:example monopolist problem no stud}\end{equation}
+
+\end_inset
+
+, the FOCs are (assuming an interior solution):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+100-2Q-\frac{Q}{10}=0\Rightarrow Q^{*}=q_{a}^{*}\approx47.6\]
+
+\end_inset
+
+, and the resulting optimal price and profit are: 
+\begin_inset Formula $p_{a}^{*}\approx52.4$
+\end_inset
+
+ and 
+\begin_inset Formula $\pi_{npd}^{*}=q_{a}^{*}\cdot p_{a}^{*}-c(q_{a}^{*})\approx2381.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Third Degree Price Discrimination
+\end_layout
+
+\begin_layout Standard
+Now the monopolist solve the following problem:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\max_{q_{a},q_{s}}\left\{ p_{a}(q_{a})\cdot q_{a}+p_{s}(q_{s})\cdot q_{s}-c(q_{a}+q_{s})\right\}  & \Rightarrow\\
+\max_{q_{a},q_{s}}\left\{ \left(100-q_{a}\right)\cdot q_{a}+\left(20-\frac{q_{s}}{10}\right)\cdot q_{s}-\frac{\left(q_{a}+q_{s}\right)^{2}}{20}\right\} \end{eqnarray*}
+
+\end_inset
+
+, which has the following FOCs:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray}
+100-2q_{a} & = & \frac{\left(q_{a}+q_{s}\right)}{10}\label{eq:1}\\
+20-\frac{q_{s}}{5} & = & \frac{\left(q_{a}+q_{s}\right)}{10}\label{eq:2}\end{eqnarray}
+
+\end_inset
+
+.
+ Solving the system of linear equations 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2"
+
+\end_inset
+
+ results in 
+\begin_inset Formula $q_{a}^{*}\approx45.2$
+\end_inset
+
+, 
+\begin_inset Formula $p_{a}^{*}\approx54.8$
+\end_inset
+
+, 
+\begin_inset Formula $q_{s}^{*}\approx51.6$
+\end_inset
+
+, 
+\begin_inset Formula $p_{s}^{*}\approx14.84$
+\end_inset
+
+, and 
+\begin_inset Formula $\pi_{pd}^{*}=q_{a}^{*}\cdot p_{a}^{*}+q_{s}^{*}\cdot p_{s}^{*}-c(q_{a}^{*}+q_{s}^{*})\approx2774>\pi_{npd}^{*}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_body
+\end_document

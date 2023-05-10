@@ -1,0 +1,660 @@
+#LyX 1.6.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+\end_modules
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Section Notes 8
+\end_layout
+
+\begin_layout Author
+Wonbin Kang
+\end_layout
+
+\begin_layout Date
+October 29, 2009
+\end_layout
+
+\begin_layout Part*
+Agenda
+\end_layout
+
+\begin_layout Enumerate
+Fixed Costs (sunk and non-sunk)
+\end_layout
+
+\begin_layout Enumerate
+Partial Equilibrium
+\end_layout
+
+\begin_layout Section
+Fixed Costs
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Refer to the graphs at the end of the Section Notes.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consider a production technology that produces one output, one input, and
+ a production function such that 
+\begin_inset Formula $f'(\cdot)>0$
+\end_inset
+
+ and 
+\begin_inset Formula $f''(\cdot)<0$
+\end_inset
+
+.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Recall that a production function will have an explicit form, while the
+ transformation function will have an implicit form.
+\end_layout
+
+\end_inset
+
+ Assume further that the cost function associated with this production technolog
+y is as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+c(q)=\frac{1}{2}q^{2}+q+3.\label{eq:cost func}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Do you see that there is fixed cost component to this production technology?
+ What is the fixed cost? 
+\end_layout
+
+\begin_layout Enumerate
+Is the fixed cost sunk? Note that this is an assumption that you will have
+ to make.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Recall that we were able to derive the cost function 
+\begin_inset Formula $c(\vec{\omega},q)$
+\end_inset
+
+ from plugging the solutions to the cost minimization problem (
+\begin_inset Quotes eld
+\end_inset
+
+CMP
+\begin_inset Quotes erd
+\end_inset
+
+), 
+\begin_inset Formula $\vec{z}^{*}=\vec{z}(\vec{\omega},q)$
+\end_inset
+
+, back into the objective function, 
+\begin_inset Formula $\vec{\omega}\cdot\vec{z}$
+\end_inset
+
+.
+ Therefore, 
+\begin_inset Formula $c^{*}=c(\vec{\omega},q)=\vec{\omega}\cdot\vec{z}(\vec{\omega},q)$
+\end_inset
+
+.
+ When working with cost functions of the form found in equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:cost func"
+
+\end_inset
+
+, we are assuming that the input prices, 
+\begin_inset Formula $\vec{\omega}$
+\end_inset
+
+, are fixed, or that 
+\begin_inset Formula $c(q)=c(\bar{\vec{\omega}},q)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Using the cost function in equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:cost func"
+
+\end_inset
+
+, we can calculate the marginal cost of production at 
+\begin_inset Formula $q$
+\end_inset
+
+ units:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+MC(q)=c'(q)=q+1\]
+
+\end_inset
+
+, and the average cost of producing 
+\begin_inset Formula $q$
+\end_inset
+
+ units:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+AC(q)=\frac{c(q)}{q}=\frac{1}{2}q+1+\frac{3}{q}.\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Using the graphical representation in MWG 5.D, we can draw the following
+ pictures for non-sunk and sunk fixed costs.
+ 
+\end_layout
+
+\begin_layout Section
+Partial Equilibrium
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+We call it partial equilibrium because we focus on one good and a composite
+ commodity (all other goods).
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+The Model (and Notation)
+\end_layout
+
+\begin_layout Subsubsection
+The Consumers
+\end_layout
+
+\begin_layout Standard
+There are a total of 
+\begin_inset Formula $I$
+\end_inset
+
+ consumers each with the following utility function:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+u_{i}(m_{i},x_{i})=m_{i}+\phi_{i}(x_{i})\]
+
+\end_inset
+
+, where 
+\begin_inset Formula $\phi'(\cdot)>0$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi''(\cdot)<0$
+\end_inset
+
+.
+ Each individual has endowment of the numeraire good 
+\begin_inset Formula $m$
+\end_inset
+
+ equal to 
+\begin_inset Formula $w_{i}$
+\end_inset
+
+ and no endowment of good 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ The price vector for the two goods 
+\begin_inset Formula $\vec{p}=[p_{m},p_{x}]=[1,p]$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+In an equilibrium, all consumers will be maximizing their utilities subject
+ to their respective budget constraints.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+The Producers (Firms)
+\end_layout
+
+\begin_layout Standard
+There are a total of 
+\begin_inset Formula $J$
+\end_inset
+
+ producers each of which has a cost function, 
+\begin_inset Formula $c_{j}(q_{j})$
+\end_inset
+
+,
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Note that MWG may use the more general notation 
+\begin_inset Formula $y$
+\end_inset
+
+ to be consistent with the production plan vector 
+\begin_inset Formula $\vec{y}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+ which is measured in terms of units of the numeraire good.
+ Producers (or firms) use the numeraire good, which is supplied by the consumers
+ (recall that consumers are endowed with the numeraire good) in exchange
+ for good 
+\begin_inset Formula $x$
+\end_inset
+
+, and transforms them into the output good 
+\begin_inset Formula $x$
+\end_inset
+
+ which is denoted in the context of the firm as 
+\begin_inset Formula $q$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Note also that the firms themselves are owned by the consumers.
+ The ownership share of consumer 
+\begin_inset Formula $i$
+\end_inset
+
+ in firm 
+\begin_inset Formula $j$
+\end_inset
+
+ is equal to 
+\begin_inset Formula $\theta_{ij}$
+\end_inset
+
+, and so 
+\begin_inset Formula $\sum_{i=1}^{I}\theta_{ij}=1$
+\end_inset
+
+.
+ It is also important to remember the budget constraint of the consumer's
+ utility maximization problem must also take into consideration this ownership
+ share of firms.
+ Therefore, the total wealth available to consumer 
+\begin_inset Formula $i$
+\end_inset
+
+ is equal to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+w_{i}+\sum_{j=1}^{J}\theta_{ij}\Pi_{j}(p^{*})\]
+
+\end_inset
+
+, where 
+\begin_inset Formula $\Pi_{j}(p^{*})$
+\end_inset
+
+ is equal to the profit of firm 
+\begin_inset Formula $j$
+\end_inset
+
+ at price 
+\begin_inset Formula $p^{*}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Market Clears at equilibrium price 
+\begin_inset Formula $p^{*}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It must be the case that at the equilibrium price, 
+\begin_inset Formula $p^{*}$
+\end_inset
+
+, the total amount of good 
+\begin_inset Formula $x$
+\end_inset
+
+ demanded and supplied must be equal:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\sum_{i=1}^{I}x_{i}=\sum_{j=1}^{J}q_{j}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Partial Equilibrium Example
+\end_layout
+
+\begin_layout Standard
+What is themarket equi.
+ in the following case: 100 consumers, all with 
+\begin_inset Formula $u_{i}(m_{i},x_{i})=m_{i}+\ln x_{i}$
+\end_inset
+
+ and endowment 
+\begin_inset Formula $w_{i}=\frac{1}{100}w_{m}$
+\end_inset
+
+; 
+\begin_inset Formula $\vec{p}=[p_{m},p_{x}]=[1,p]$
+\end_inset
+
+; and one firm, with cost function 
+\begin_inset Formula $c(q)=5q^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\forall i$
+\end_inset
+
+ the ownership share 
+\begin_inset Formula $\theta_{ij=1}=\frac{1}{100}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Producers
+\end_layout
+
+\begin_layout Standard
+Each producer solves the PMP (in our problem, we only have one firm) to
+ derive the net supply function of good 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ In short, we are looking for the optimal value of 
+\begin_inset Formula $q^{*}$
+\end_inset
+
+ in terms of the parameter 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Therefore,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\max_{q}\Pi(p)=pq-c(q)=pq-5q^{2}\]
+
+\end_inset
+
+.
+ The FOCs result in:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial\Pi(q^{*})}{\partial q}=p-10q^{*}=0\]
+
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\begin_inset Formula $\frac{\partial^{2}\Pi(q^{*})}{\partial q^{2}}=-10<0$
+\end_inset
+
+, so we're at a maximum.
+ 
+\end_layout
+
+\end_inset
+
+ and so the supply function can be written as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+q^{*}(p)=\frac{p}{10}\label{eq:supply}\end{equation}
+
+\end_inset
+
+, and the optimal profit function is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\Pi^{*}(p)=\frac{p^{2}}{10}-\frac{5p^{2}}{100}=\frac{p^{2}}{20}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Consumers
+\end_layout
+
+\begin_layout Standard
+Each consumer solves his or her own utility maximization problem subject
+ to a wealth constraint:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\max_{m_{i},x_{i}}u_{i}(m_{i},x_{i})=m_{i}+\ln x_{i}\, s.t.\, m_{i}+px_{i}\leq\frac{w_{m}}{100}+\frac{\Pi^{*}(p)}{100}\]
+
+\end_inset
+
+, where we know that at the optimum, the constraint will bind.
+ This is important since we don't have to resort to the Lagrangian method.
+ We can rewrite the problem as an unconstrained maximization:
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Do we have to worry about corner solutions? Recall that 
+\begin_inset Formula $m_{i}$
+\end_inset
+
+ is allowed to be negative (meaning that the consumer can borrow) and that
+ the Inada condition for the non-numeraire good applies.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\max_{x_{i}}u_{i}(x_{i})=-px_{i}+\frac{w_{m}}{100}+\frac{\Pi^{*}(p)}{100}+\ln x_{i}\]
+
+\end_inset
+
+.
+ The FOCs result in:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\frac{\partial u(x_{i}^{*})}{\partial x_{i}}=-p+\frac{1}{x_{i}^{*}}=0\Rightarrow x_{i}^{*}(p)=\frac{1}{p}.\label{eq:demand}\end{equation}
+
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Note how the ownership share does not enter into the FOC.
+ Remember that we're using a quasilinear utility function, so there are
+ no wealth effects.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Markets Clear at the Equilibrium Price 
+\begin_inset Formula $p^{*}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since supply must equal demand at the equilibrium price, we have from equations
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:supply"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:demand"
+
+\end_inset
+
+ that the following equation must hold at the equilibrium 
+\begin_inset Formula $p^{*}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+q^{*}(p^{*})=\sum_{i=1}^{I}x_{i}^{*}(p^{*})\Rightarrow\frac{p^{*}}{10}=\frac{100}{p^{*}}\Rightarrow p^{*}=10\sqrt{10}\approx31.6\label{eq:market clear}\end{equation}
+
+\end_inset
+
+, which means that the equilibrium level of good 
+\begin_inset Formula $x$
+\end_inset
+
+ that is consumed is equal to:
+\begin_inset Formula \[
+q^{*}(31.6)=\sum_{i=1}^{I}x_{i}^{*}(31.6)=\sqrt{10}\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

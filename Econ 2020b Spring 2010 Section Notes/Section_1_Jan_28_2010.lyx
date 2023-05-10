@@ -1,0 +1,1383 @@
+#LyX 1.6.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-sec
+\end_modules
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Section Notes 1
+\end_layout
+
+\begin_layout Author
+Wonbin Kang
+\end_layout
+
+\begin_layout Date
+January 28, 2010
+\end_layout
+
+\begin_layout Part*
+Agenda
+\end_layout
+
+\begin_layout Enumerate
+Introduction to Game Theory (basic definitions, assumptions, and representations
+)
+\end_layout
+
+\begin_layout Enumerate
+Dominance and Iterated Dominance
+\end_layout
+
+\begin_layout Enumerate
+Mixed Strategies
+\end_layout
+
+\begin_layout Section*
+Textbooks
+\end_layout
+
+\begin_layout Standard
+Of course, you can rely on MWG for the readings and you can also try the
+ bible of game theory: Fudenberg and Tirole.
+ But these two books are probably better for more advanced classes in Game
+ Theory and as references in the future (especially FT).
+ Two great sources for this class and a firm grounding in Game Theory are:
+ 
+\end_layout
+
+\begin_layout Enumerate
+Robert Gibbons, 1992, 
+\shape italic
+Game Theory for Applied Economists
+\shape default
+, Princeton University Press.
+\end_layout
+
+\begin_layout Enumerate
+Martin J.
+ Osborne, 2004, 
+\shape italic
+An Introduction to Game Theory
+\shape default
+, Oxford University Press.
+ 
+\end_layout
+
+\begin_layout Standard
+I especially recommend Gibbons (1992).
+\end_layout
+
+\begin_layout Section
+Introduction to Game Theory 
+\end_layout
+
+\begin_layout Standard
+What is a game? You might see the following types of notation when dealing
+ with games:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\Gamma_{n} & = & \left[I,\left\{ S_{i}\right\} ,\left\{ u_{i}\left(\cdot\right)\right\} \right]\\
+\Gamma_{e} & = & \left[\mathcal{I},I,\mathfrak{A},p(\cdot),\alpha(\cdot),\mathcal{H},\left\{ \Delta(S_{i})\right\} ,\left\{ u_{i}\left(\cdot\right)\right\} \right]\end{eqnarray*}
+
+\end_inset
+
+.
+ All the above is saying is that, at its core, a game has a set of players,
+ for each player a set of actions, a strategy space for each player, and
+ payoff functions (or outcomes; or preferences over the set of action profiles).
+ Don't worry about these types of representations.
+ 
+\end_layout
+
+\begin_layout Subsection
+Common Definitions (less formal than MWG or FT)
+\end_layout
+
+\begin_layout Standard
+Here are a few terms that you'll come across in the next few weeks:
+\end_layout
+
+\begin_layout Itemize
+Players: This is easy.
+ Only one thing to add: you might see the expression 
+\begin_inset Quotes eld
+\end_inset
+
+in a finite game
+\begin_inset Quotes erd
+\end_inset
+
+ in various propositions or definitions within game theory, in which case,
+ 
+\begin_inset Formula $I<\infty$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Actions: When it is a player's turn to move, what will she do? Will she
+ choose UP or DOWN; COOPERATE or DEFECT; LEFT, RIGHT, or CENTER; 
+\begin_inset Formula $q$
+\end_inset
+
+ or 
+\begin_inset Formula $q'$
+\end_inset
+
+, where 
+\begin_inset Formula $q,q'\in\mathbb{R}_{+}$
+\end_inset
+
+.
+ The actions available to a player can be finite or infinite.
+\end_layout
+
+\begin_layout Itemize
+Information Sets: Concept used to represent a game where we assume that
+ the players DO NOT have 
+\shape italic
+perfect information
+\shape default
+.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+See below for a formal definition of 
+\begin_inset Quotes eld
+\end_inset
+
+perfect information.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ In a sequential (or dynamic) game, which is represented in an 
+\shape italic
+extensive form
+\shape default
+,
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+I won't cover 
+\begin_inset Quotes eld
+\end_inset
+
+extensive form
+\begin_inset Quotes erd
+\end_inset
+
+ vs 
+\begin_inset Quotes eld
+\end_inset
+
+normal (reduced) form
+\begin_inset Quotes erd
+\end_inset
+
+ games.
+ Chris did a good job in class and you'll get practice in this week's problem
+ set.
+\end_layout
+
+\end_inset
+
+ an information set is represented by drawing a circle around the relevant
+ nodes.
+ 
+\end_layout
+
+\begin_layout Itemize
+Strategy: 
+\begin_inset Quotes eld
+\end_inset
+
+A strategy is a 
+\shape italic
+complete contingent plan
+\shape default
+, or 
+\shape italic
+decision rule
+\shape default
+, that specifies how the player will act in 
+\shape italic
+every possible distinguishable circumstance
+\shape default
+ in which she might be called upon to move.
+ ...
+ Thus, a player's strategy amounts to a specification of how she plans to
+ move at each one of her information sets, should it be reached during play
+ of the game.
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+MWG p.228, emphasis in original.
+\end_layout
+
+\end_inset
+
+ You should always try to keep the concepts of 
+\begin_inset Quotes eld
+\end_inset
+
+strategy
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+action
+\begin_inset Quotes erd
+\end_inset
+
+ separate and know the difference between the two.
+ In a static, simultaneous move game, action and strategy may be the same.
+ However, in more complicated (and so interesting) games, this will not
+ be the case.
+ 
+\end_layout
+
+\begin_layout Itemize
+Outcomes/utilities/payoffs: This should be self explanatory.
+ Note that unlike in Econ 2020a, the arguments of player 
+\begin_inset Formula $i$
+\end_inset
+
+'s utility function is not only her own strategy, but the strategy of the
+ other players: 
+\begin_inset Formula $u_{i}(s_{i},\vec{s}_{-i}).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Histories: Don't worry about this now, but the history of player 
+\begin_inset Formula $i$
+\end_inset
+
+, denoted 
+\begin_inset Formula $H_{i}$
+\end_inset
+
+, is the set of sequences after which player 
+\begin_inset Formula $i$
+\end_inset
+
+ is called upon to move or select an action, 
+\begin_inset Formula $a\in\mathcal{A}(h)$
+\end_inset
+
+, or her action set.
+ We'll discuss histories when we get into dynamic, extensive form games.
+\end_layout
+
+\begin_layout Itemize
+Pure Strategies: Although we tend to think in terms of pure strategies and
+ much of applied game theory focuses on pure strategies, it may be helpful
+ to think of pure strategies as mixed strategies with a degenerate probability
+ distribution.
+ In short, a pure strategy is a mixed strategy that 
+\begin_inset Quotes eld
+\end_inset
+
+assigns probability 1 to the action 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ [which is] equivalent to her simply choosing the action 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+....
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Osborne (2004, p.108).
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+Mixed Strategies: This is covered in more detail below.
+ 
+\end_layout
+
+\begin_layout Itemize
+Static vs.
+ Dynamic / Extensive-Form vs Normal-Form / Simultaneous vs Sequential: These
+ should be pretty clear.
+ 
+\end_layout
+
+\begin_layout Example*
+Now let's look at the following examples:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Common Assumptions
+\end_layout
+
+\begin_layout Standard
+Note that all games will not have all of these assumptions.
+ The point is that in more advanced games, we're going to try to relax some
+ of these assumptions.
+\end_layout
+
+\begin_layout Itemize
+Complete Information: Each of the players' payoff functions, which are dependent
+ on the strategies of each player, is 
+\shape italic
+common knowledge
+\shape default
+ to all of the other players.
+ 
+\end_layout
+
+\begin_layout Itemize
+Perfect Information: 
+\begin_inset Quotes eld
+\end_inset
+
+A game is one of 
+\shape italic
+perfect
+\shape default
+ 
+\shape italic
+information
+\shape default
+ if each information set contains a single decision node.
+ Otherwise, it is a game of 
+\shape italic
+imperfect information
+\shape default
+.
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+MWG Definition 7.C.1 (emphasis in original)
+\end_layout
+
+\end_inset
+
+ If we assume perfect information, then each player knows exactly where
+ they are on the game-tree.
+\end_layout
+
+\begin_layout Itemize
+Common Knowledge: 
+\begin_inset Quotes eld
+\end_inset
+
+[A] basic postulate of game theory that all players know the structure of
+ the game, know that their rivals know it, know that their rivals know that
+ they know it, and so on.
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+MWG p.226
+\end_layout
+
+\end_inset
+
+ One aspect of 
+\begin_inset Quotes eld
+\end_inset
+
+common knowledge
+\begin_inset Quotes erd
+\end_inset
+
+ that we assume in most of our games is that each of the players is rational,
+ knows that the other players know she is rational, knows that she knows
+ it, and so on.
+ 
+\end_layout
+
+\begin_layout Section
+Dominance and Iterated Dominance
+\end_layout
+
+\begin_layout Subsection
+Definitions
+\end_layout
+
+\begin_layout Itemize
+Player 
+\begin_inset Formula $i$
+\end_inset
+
+'s strategy 
+\begin_inset Formula $s_{i}$
+\end_inset
+
+ is 
+\shape italic
+strictly dominant
+\shape default
+ iff 
+\begin_inset Formula $u_{i}(s_{i},\vec{s}_{-i})>u_{i}(\hat{s}_{i},\vec{s}_{-i})$
+\end_inset
+
+, 
+\begin_inset Formula $\forall\hat{s}_{i}\in S_{i},\,\hat{s}_{i}\neq s_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $\forall\vec{s}_{-i}\in\times_{-i}S_{k}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Player 
+\begin_inset Formula $i$
+\end_inset
+
+'s strategy 
+\begin_inset Formula $s_{i}$
+\end_inset
+
+ is 
+\shape italic
+weakly dominant
+\shape default
+ iff 
+\begin_inset Formula $u_{i}(s_{i},\vec{s}_{-i})\geq u_{i}(\hat{s}_{i},\vec{s}_{-i})$
+\end_inset
+
+, 
+\begin_inset Formula $\forall\hat{s}_{i}\in S_{i},\,\hat{s}_{i}\neq s_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $\forall\vec{s}_{-i}\in\times_{-i}S_{k}$
+\end_inset
+
+; and 
+\begin_inset Formula $u_{i}(s_{i},\vec{s}_{-i})>u_{i}(\hat{s}_{i},\vec{s}_{-i})$
+\end_inset
+
+, 
+\begin_inset Formula $\forall\hat{s}_{i}\in S_{i},\,\hat{s}_{i}\neq s_{i}$
+\end_inset
+
+ and for some 
+\begin_inset Formula $\vec{s}_{-i}\in\times_{-i}S_{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Player 
+\begin_inset Formula $i$
+\end_inset
+
+'s strategy 
+\begin_inset Formula $s_{i}$
+\end_inset
+
+ is 
+\shape italic
+strictly dominated
+\shape default
+ iff 
+\begin_inset Formula $\exists\hat{s}_{i}\in S_{i},\,\hat{s}_{i}\neq s_{i}$
+\end_inset
+
+ s.
+ t.
+ 
+\begin_inset Formula $u_{i}(s_{i},\vec{s}_{-i})<u_{i}(\hat{s}_{i},\vec{s}_{-i})$
+\end_inset
+
+, 
+\begin_inset Formula $\forall\vec{s}_{-i}\in\times_{-i}S_{k}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Player 
+\begin_inset Formula $i$
+\end_inset
+
+'s strategy 
+\begin_inset Formula $s_{i}$
+\end_inset
+
+ is 
+\shape italic
+weakly dominated
+\shape default
+ iff 
+\begin_inset Formula $\exists\hat{s}_{i}\in S_{i},\,\hat{s}_{i}\neq s_{i}$
+\end_inset
+
+ s.
+ t.
+ 
+\begin_inset Formula $u_{i}(s_{i},\vec{s}_{-i})\leq u_{i}(\hat{s}_{i},\vec{s}_{-i})$
+\end_inset
+
+, 
+\begin_inset Formula $\forall\vec{s}_{-i}\in\times_{-i}S_{k}$
+\end_inset
+
+; and 
+\begin_inset Formula $u_{i}(s_{i},\vec{s}_{-i})<u_{i}(\hat{s}_{i},\vec{s}_{-i})$
+\end_inset
+
+, for some 
+\begin_inset Formula $\vec{s}_{-i}\in\times_{-i}S_{k}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Note that I used 
+\begin_inset Formula $\vec{s}_{-i}\in\times_{-i}S_{k}$
+\end_inset
+
+ to represent the 
+\shape italic
+pure
+\shape default
+ strategies of the 
+\begin_inset Quotes eld
+\end_inset
+
+other
+\begin_inset Quotes erd
+\end_inset
+
+ players.
+ However, keep in mind that the definitions above apply to 
+\shape italic
+mixed
+\shape default
+ strategies 
+\begin_inset Formula $\left(\vec{\sigma}_{-i}\in\times_{-i}\Sigma_{k}\right)$
+\end_inset
+
+ as well, or combinations of both.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+More on this below when we consider mixed strategies.
+\end_layout
+
+\end_inset
+
+ Also note that although I used Bernoulli utility functions in the definitions,
+ we could switch these out with expected utility functions, 
+\begin_inset Formula $U(\cdot)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Examples
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="4">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+M
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+R
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+U
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2,0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+M
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+R
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+U
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5,3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2,2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2,-2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3,5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,-2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3,1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Recall in class Chris noted that the order of eliminating strictly dominated
+ strategies does not matter.
+ However, the same does not apply when we're dealing with 
+\shape italic
+weakly
+\shape default
+ dominated strategies.
+ Check Problem 2.2 in the Practice Problems to see why.
+ 
+\end_layout
+
+\begin_layout Section
+Mixed Strategies
+\end_layout
+
+\begin_layout Definition*
+In the normal form game (simultaneous move), suppose that 
+\begin_inset Formula $S_{i}\equiv\left\{ s_{i1},...,s_{ik},...,s_{iK}\right\} $
+\end_inset
+
+, then a mixed strategy for player 
+\begin_inset Formula $i$
+\end_inset
+
+ is a probability distribution over the possible strategies, 
+\begin_inset Formula $\vec{p}_{i}=\left[p_{i1},...,p_{ik},...,p_{iK}\right]$
+\end_inset
+
+, where 
+\begin_inset Formula $p_{ik}\in\left[0,1\right]$
+\end_inset
+
+ and 
+\begin_inset Formula $\sum_{k=1}^{K}p_{ik}=1$
+\end_inset
+
+.
+ Consider the following games and check to see which pure strategies are
+ strictly dominated.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+R
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+U
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-1,3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5,-1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5,-1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-1,3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+M
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+R
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+U
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3,1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4,0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2,4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2,2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+In the first example the mixed strategy of the form 
+\begin_inset Formula $\vec{p}^{*}=\left[p,\,1-p,\,0\right]$
+\end_inset
+
+, where 
+\begin_inset Formula $p\in\left(\frac{1}{6},\frac{5}{6}\right)$
+\end_inset
+
+, strictly dominates strategy D; and in the second example, a mixed strategy
+ of the form 
+\begin_inset Formula $\vec{q}^{*}=\left[q,\,1-q,\,0\right]$
+\end_inset
+
+, where 
+\begin_inset Formula $q\in\left(\frac{1}{3},1\right)$
+\end_inset
+
+, strictly dominates strategy D.
+ Therefore, in both examples, strategy D is strictly dominated.
+ 
+\end_layout
+
+\end_body
+\end_document
