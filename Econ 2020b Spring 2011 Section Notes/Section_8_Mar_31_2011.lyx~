@@ -1,0 +1,1028 @@
+#LyX 1.6.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-sec
+\end_modules
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Section Notes 8
+\end_layout
+
+\begin_layout Author
+Wonbin Kang and Sam Richardson
+\end_layout
+
+\begin_layout Date
+March 31, 2011
+\end_layout
+
+\begin_layout Section*
+Agenda
+\end_layout
+
+\begin_layout Enumerate
+Information economics overview
+\end_layout
+
+\begin_layout Enumerate
+General model of adverse selection
+\end_layout
+
+\begin_layout Enumerate
+Adverse selection in insurance
+\end_layout
+
+\begin_layout Enumerate
+Adverse selection in auctions
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+We won't cover in section.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Information economics overview
+\end_layout
+
+\begin_layout Standard
+Information economics combines the game theory concepts we learned in Econ
+ 2020a; and the price theory and general equilibrium theory we learned in
+ the Econ 2020b.
+ 
+\end_layout
+
+\begin_layout Subsection
+Fundamental Welfare Theorems
+\end_layout
+
+\begin_layout Standard
+Recall that the two theorems are:
+\end_layout
+
+\begin_layout Theorem
+First Fundamental Welfare Theorem: If a competitive equilibrium (Walrasian
+ equilibrium) exists, then the equilibrium 1) is equal to a Pareto equilibrium;
+ 2) is Pareto optimal; or 3) leads to a Pareto efficient allocation of resources..
+\end_layout
+
+\begin_layout Standard
+Note that bullets 1), 2), and 3) are equivalent statements.
+\end_layout
+
+\begin_layout Theorem
+Second Fundamental Welfare Theorem: Any Pareto optimal equilibrium (or,
+ any Pareto efficient allocation) can be sustained by a competitive equilibrium.
+ 
+\end_layout
+
+\begin_layout Standard
+Recall the assumptions needed for the Fundamental Welfare Theorems:
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Note that the Second Fundamental Welfare Theorem requires one more condition:
+ convexity of preferences.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Complete markets: no unpriced goods
+\end_layout
+
+\begin_layout Enumerate
+No market power: all economic agents are price-takers (competitive markets
+ for all goods).
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+At the end of Econ 2020a, we discussed failures of this assumption: namely,
+ monopolies and externalities.
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Complete information for all agents.
+ This assumption fails if we have uncertainty in the payoffs or when there
+ is asymmetric or imperfect information.
+ Information economics uses the tools of game theory to identify equilibrium
+ when the complete information assumption fails.
+ 
+\end_layout
+
+\begin_layout Subsection
+Timeline of Information Economics Models
+\end_layout
+
+\begin_layout Standard
+The models we will look at in the second half of this semester have some
+ variation of the following timeline:
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Some people find it helpful to draw the timeline of a game/model as in Appendix
+ A-1.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $t=0$
+\end_inset
+
+: Nature determines the agents type (in many texts, denoted as 
+\begin_inset Formula $\theta$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+[
+\begin_inset Formula $t=\frac{1}{2}$
+\end_inset
+
+: signaling and screening models allow actions here]
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $t=1$
+\end_inset
+
+: Principal designs / offers contract
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $t=2$
+\end_inset
+
+: Agents accept or reject contract offer
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $t=3$
+\end_inset
+
+: Nature determines outcomes and payoffs are realized 
+\end_layout
+
+\begin_layout Section
+General Model of Adverse Selection
+\end_layout
+
+\begin_layout Standard
+Consider the following set up: 
+\end_layout
+
+\begin_layout Itemize
+seller's value is 
+\begin_inset Formula $V\sim F(v)$
+\end_inset
+
+, which means that seller is of type equal to 
+\begin_inset Formula $v\in\left[v_{L},v_{H}\right]$
+\end_inset
+
+; 
+\end_layout
+
+\begin_layout Itemize
+buyer's value is equal to 
+\begin_inset Formula $h(v)$
+\end_inset
+
+, where 
+\begin_inset Formula $h(\cdot)$
+\end_inset
+
+ is an increasing function; 
+\end_layout
+
+\begin_layout Itemize
+informational assumption: seller knows 
+\begin_inset Formula $v$
+\end_inset
+
+ and buyer knows the distribution;
+\end_layout
+
+\begin_layout Itemize
+assume that the seller has all of the bargaining power and the buyer makes
+ offers to trade the good at some price 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+At any Rational Expectation Equilibrium of the model above, the equilibrium
+ price 
+\begin_inset Formula $p^{*}$
+\end_inset
+
+ is equal to the expected value to the buyer conditional on trade.
+ Therefore, 
+\shape italic
+ex ante
+\shape default
+, buyers will receive zero surplus in any REE, and 
+\shape italic
+any equilibrium price 
+\begin_inset Formula $p^{*}$
+\end_inset
+
+ that satisfies the buyer's zero surplus condition is a REE
+\shape default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+We further classify the REEs as follows:
+\end_layout
+
+\begin_layout Definition
+A REE is 
+\begin_inset Quotes eld
+\end_inset
+
+unstable
+\begin_inset Quotes erd
+\end_inset
+
+ if a small deviation in the price offered by one buyer would increase the
+ payoffs for both that buyer and the seller.
+ A REE is 
+\begin_inset Quotes eld
+\end_inset
+
+stable
+\begin_inset Quotes erd
+\end_inset
+
+ if no small deviation in price by one buyer would increase the payoffs
+ for both that buyer and the seller.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Do you see why, given a REE, we only need to consider slight deviations
+ to higher prices offered by the buyer to determine whether we are at a
+ stable or unstable equilibrium?
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+To find the set of Rational Expectation outcomes,
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Note that I'm talking in terms of outcomes and not equilibria.
+ The latter would require that I write down the equilibrium strategies of
+ the buyer and the seller.
+ 
+\end_layout
+
+\end_inset
+
+ the first question is to check and see if there exist boundary equilibrium
+ outcomes: the equilibrium price is equal to the lower bound of seller's
+ values or the equilibrium price is equal to at least the upper bound of
+ seller's values.
+ 
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $p^{*}=v_{L}$
+\end_inset
+
+, the probability the good is sold is equal to zero.
+ Further, this REE is stable if and only if 
+\begin_inset Formula $h(v_{L})<v_{L}$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $h(v_{L})>v_{L}$
+\end_inset
+
+, then the buyer and the seller is better off by a slightly higher bid by
+ the buyer.
+ 
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $p^{*}\geq v_{H}$
+\end_inset
+
+, the probability the good is sold is equal to one, and so the following
+ holds: 
+\begin_inset Formula $\left(\mathbb{E}\left[h(v)|V\leq p^{*}\right]=\mathbb{E}\left[h(v)\right]\right)$
+\end_inset
+
+.
+ Note that if 
+\begin_inset Formula $\mathbb{E}\left[h(v)\right]\leq v_{H}$
+\end_inset
+
+, then the buyer receives a negative payoff.
+ Therefore, it must be the case that 
+\begin_inset Formula $\mathbb{E}\left[h(v)\right]>v_{H}$
+\end_inset
+
+ with the corresponding REE price 
+\begin_inset Formula $p^{*}=\mathbb{E}\left[h(v)\right]$
+\end_inset
+
+.
+ In short, although all sellers would be willing to sell at 
+\begin_inset Formula $p^{*}=v_{H}$
+\end_inset
+
+, competition among the buyers results in an equilibrium price greater than
+ 
+\begin_inset Formula $v_{H}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Next we need to ask: given that a trade occurs at some equilibrium price,
+ what is the expected value of the trade to the buyer? In short, we need
+ to know:
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Note that at an interior REE, where some types of sellers will trade and
+ others will not, the zero surplus condition from the definition above requires
+ that:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula \[
+\mathbb{E}\left[h(v)|V\leq p^{*}\right]=p^{*}.\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mathbb{E}\left[h(v)|V\leq p^{*}\right]\]
+
+\end_inset
+
+and whether 
+\begin_inset Formula $\mathbb{E}\left[h(v)|V\leq p^{*}\right]\lessgtr p^{*}$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $\mathbb{E}\left[h(v)|V\leq p^{*}\right]>p^{*}$
+\end_inset
+
+, then an offer of 
+\begin_inset Formula $p^{*}$
+\end_inset
+
+ would be profitable to the buyer.
+ If 
+\begin_inset Formula $\mathbb{E}\left[h(v)|V\leq p^{*}\right]<p^{*}$
+\end_inset
+
+, then an offer of 
+\begin_inset Formula $p^{*}$
+\end_inset
+
+ would be unprofitable to the buyer.
+ Note that at the REE, the zero surplus condition must hold for the buyer.
+ 
+\end_layout
+
+\begin_layout Standard
+Given the analysis above, let's consider the following cases referring to
+ Figures 13-2 to 13-7 in Chapter 13 of the Avery Notes.
+ 
+\end_layout
+
+\begin_layout Itemize
+Consider the case where 
+\begin_inset Formula $h(v_{L})<v_{L}$
+\end_inset
+
+, or the buyer's value of the good is less than that of the seller's at
+ low values of 
+\begin_inset Formula $v$
+\end_inset
+
+.
+ See Figures 13-2 to 13-4.
+ The efficient outcome would have that trade occurs only if the buyer values
+ the good more than the seller or 
+\begin_inset Formula $h(v)>v$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Consider the case where 
+\begin_inset Formula $h(v_{L})>v_{L}$
+\end_inset
+
+.
+ See Figures 13-5 to 13-7.
+ 
+\end_layout
+
+\begin_layout Section
+Adverse Selection in Insurance
+\end_layout
+
+\begin_layout Subsection
+Model Set-Up
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Some people like to draw game trees, but I don't find them very helpful.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Risk averse consumer with wealth 
+\begin_inset Formula $W$
+\end_inset
+
+ and utility function equal to 
+\begin_inset Formula $u(W)=\sqrt{W}$
+\end_inset
+
+.
+ Two states of the world where in one state the consumer loses all of her
+ wealth and in the second state there are no damages.
+ Risk of losing everything is equal to 
+\begin_inset Formula $p\sim U[0,1]$
+\end_inset
+
+.
+ The timing of the model is as follows:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $t=0$
+\end_inset
+
+: Nature determines type of consumer, 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ The consumer knows her type.
+ If 
+\begin_inset Formula $p$
+\end_inset
+
+ is high, then the consumer is high risk.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $t=1$
+\end_inset
+
+: Monopolist insurer determines the contract to be offered: insurer offers
+ full insurance
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Quotes eld
+\end_inset
+
+Full insurance
+\begin_inset Quotes erd
+\end_inset
+
+ means that in the case of damages 
+\begin_inset Formula $d$
+\end_inset
+
+ the consumer receives 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+ at price 
+\begin_inset Formula $\alpha_{1}$
+\end_inset
+
+.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+In Rothschild and Stigler (1976)'s model (a very important model we will
+ see later in the semester), the consumer is able to purchase partial insurance
+ which is denoted as a vector 
+\begin_inset Formula $\vec{\alpha}=[\alpha_{1},\alpha_{2}]$
+\end_inset
+
+ where 
+\begin_inset Formula $\alpha_{1}$
+\end_inset
+
+ is the premium and 
+\begin_inset Formula $\alpha_{2}$
+\end_inset
+
+ is the insurance coverage---
+\shape italic
+i.e.
+
+\shape default
+ the amount of wealth the insurer pays the consumer in case of damages.
+ Where appropriate, I'll use this notation below.
+ 
+\end_layout
+
+\end_inset
+
+ Note that the monopolist doesn't know the consumer's type.
+ We assume that the monopolist insurer is profit maximizing and risk neutral.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $t=2$
+\end_inset
+
+: Consumer decides whether to buy or not to buy.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $t=3$
+\end_inset
+
+: Nature determines outcomes and payoffs are realized.
+ 
+\end_layout
+
+\begin_layout Standard
+Based on the model above and the assumption of full insurance, consumer
+ with insurance will always receive final wealth equal to 
+\begin_inset Formula $W-\alpha_{1}$
+\end_inset
+
+ in both states of the world.
+ If there are no damages, final payoff is 
+\begin_inset Formula $W-\alpha_{1}$
+\end_inset
+
+; and if there are damages, final payoff is 
+\begin_inset Formula $W-d-\alpha_{1}+\alpha_{2}=W-\alpha_{1}\,(\because\alpha_{2}=d)$
+\end_inset
+
+.
+ A consumer without insurance will receive 
+\begin_inset Formula $W$
+\end_inset
+
+ in one state and 0 in the other.
+ The expected utility of an uninsured consumer is equal to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+U_{uninsured}(W,\alpha_{1})=(1-p)\sqrt{W}+p\sqrt{0}.\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Equilibrium
+\end_layout
+
+\begin_layout Standard
+What is the equilibrium price and who buys insurance given the fact that
+ the monopolist insurer does not know the consumer's type (which for purposes
+ of this model is equal to 
+\begin_inset Formula $p$
+\end_inset
+
+)? What would happen if there is full information? We'll go over the first
+ question, but you should try the second question.
+ The equilibrium for the second question is the 
+\begin_inset Quotes eld
+\end_inset
+
+first-best
+\begin_inset Quotes erd
+\end_inset
+
+ outcome and 
+\begin_inset Formula $\alpha_{1}=p\cdot W$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+If insurer sets price equal to 
+\begin_inset Formula $\alpha_{1}$
+\end_inset
+
+, then the consumer will buy insurance iff:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \begin{eqnarray*}
+U_{insured}(W,\alpha_{1}) & \geq & U_{uninsured}(W,\alpha_{1})\\
+\sqrt{W-\alpha_{1}} & \geq & (1-p)\sqrt{W}\\
+\sqrt{\frac{W-\alpha_{1}}{W}} & \geq & 1-p\\
+p & \geq & 1-\sqrt{\frac{W-\alpha_{1}}{W}}\end{eqnarray*}
+
+\end_inset
+
+Therefore, if 
+\begin_inset Formula $\alpha_{1}=0$
+\end_inset
+
+, all consumers buy insurance but insurers get negative profits, which means
+ that there is a profitable deviation for the insurer.
+ At 
+\begin_inset Formula $\alpha_{1}=W$
+\end_inset
+
+, no one buys insurance.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Given a price equal to 
+\begin_inset Formula $\alpha_{1}$
+\end_inset
+
+, the probability that a randomly drawn consumer will buy insurance can
+ be solved for as follows:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \[
+\Pr\left(p\geq1-\sqrt{\frac{W-\alpha_{1}}{W}}\right)=1-\left(1-\sqrt{\frac{W-\alpha_{1}}{W}}\right)=\sqrt{\frac{W-\alpha_{1}}{W}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Given the probability that a consumer will buy insurance, what is the expected
+ profit for the insurer? To solve for the expected profit, we need to calculated
+ the expected risk of a consumer who has bought insurance:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \begin{eqnarray*}
+\mathbb{E}\left[p|bought\, insurance\right] & = & \mathbb{E}\left[p\,|\, p\geq1-\sqrt{\frac{W-\alpha_{1}}{W}}\right]\\
+ & = & \frac{1}{2}\cdot\left[1+1-\sqrt{\frac{W-\alpha_{1}}{W}}\right]\\
+ & = & 1-\frac{1}{2}\cdot\sqrt{\frac{W-\alpha_{1}}{W}}\end{eqnarray*}
+
+\end_inset
+
+Given the consumer's risk as perceived by insurer, the insurer will maximize
+ its profits.
+ To put this model in the context of the signaling models we discussed before:
+ from the perspective of the insurer, the consumer (Sender) sends a signal
+ (buying insurance) and based on this signal the insurer (Receiver) updates
+ its beliefs.
+ Therefore, the expected profit of the insurer on the sale of this insurance
+ policy is equal to:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \[
+\mathbb{E}\left(\pi\right)=\alpha_{1}-W\cdot\mathbb{E}\left[p|bought\, insurance\right]=\alpha_{1}-W\left(1-\frac{1}{2}\cdot\sqrt{\frac{W-\alpha_{1}}{W}}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Therefore, in equilibrium it must be the case that:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \begin{eqnarray*}
+\mathbb{E}\left(\pi\right) & = & \alpha_{1}-W\left(1-\frac{1}{2}\cdot\sqrt{\frac{W-\alpha_{1}}{W}}\right)\geq0\\
+ & \Rightarrow & \alpha_{1}\geq\frac{3w}{4}\end{eqnarray*}
+
+\end_inset
+
+If we have competitive markets, 
+\begin_inset Formula $\alpha_{1}=\frac{3w}{4}$
+\end_inset
+
+, and only consumers with risk 
+\begin_inset Formula $p\geq\frac{1}{2}$
+\end_inset
+
+ will buy insurance.
+ 
+\end_layout
+
+\begin_layout Section
+Adverse Selection in Auctions
+\end_layout
+
+\begin_layout Subsection
+Short Overview
+\end_layout
+
+\begin_layout Standard
+Winner's Curse typically refers to auctions in which the value of the item
+ is uncertain to the buyers:
+\end_layout
+
+\begin_layout Itemize
+oil exploration rights;
+\end_layout
+
+\begin_layout Itemize
+spectrum auctions;
+\end_layout
+
+\begin_layout Itemize
+free agents in sports
+\end_layout
+
+\begin_layout Standard
+If you take an Industrial Organization class, you'll think a lot about this:
+ in equilibrium, bidders take winner's curse into account when submitting
+ bids.
+\end_layout
+
+\begin_layout Standard
+In FCC spectrum auctions in California, PacBell hired Paul Milgrom to give
+ seminars on winner's curse to all their competitors.
+ The result was that PacBell won the auction at a really good price.
+ 
+\end_layout
+
+\begin_layout Subsection
+Model Set-Up
+\end_layout
+
+\begin_layout Standard
+Assume that players are bidding in a second price auction.
+ Assume that player 
+\begin_inset Formula $i$
+\end_inset
+
+'s estimated value is equal to 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+, and 
+\begin_inset Formula $i\in\left\{ 1,2\right\} $
+\end_inset
+
+; and that each players' value of the good/service being auctioned has a
+ distribution equal to 
+\begin_inset Formula $F(v_{i})$
+\end_inset
+
+ and the probability density function of 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ is as provided below.
+ Recall that in a second price auction, it is a weakly dominant strategy
+ for a player's bid to equal her value (which in this model is a random
+ variable).
+ 
+\end_layout
+
+\begin_layout Subsection
+Model Equilibrium
+\end_layout
+
+\begin_layout Enumerate
+What is the expectation of player 
+\begin_inset Formula $i$
+\end_inset
+
+'s valuation?
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \[
+\mathbb{E}(v_{i})=\int_{-\infty}^{\infty}v_{i}f(v_{i})dv_{i}\]
+
+\end_inset
+
+Let's assume that the probability distribution function of 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ is as follows:
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+The graphical representation of the PDF can be found in Appendix A-2.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \[
+f(v_{i})=\begin{cases}
+\frac{v_{i}}{25}, & 0\leq v_{i}<5\\
+\frac{2}{5}-\frac{v_{i}}{25}, & 5\leq v_{i}\leq10\\
+0, & otherwise\end{cases}\]
+
+\end_inset
+
+Given the pdf of 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+, we can now calculate the expected value of player 
+\begin_inset Formula $i$
+\end_inset
+
+'s valuation:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \begin{eqnarray*}
+\mathbb{E}(v_{i}) & = & \int_{0}^{5}\left(v_{i}\cdot\frac{v_{i}}{25}\right)dv_{i}+\int_{5}^{10}\left\{ v_{i}\cdot\left(\frac{2}{5}-\frac{v_{i}}{25}\right)\right\} dv_{i}\\
+ & = & \frac{v_{i}^{3}}{75}|_{0}^{5}+\left(\frac{1}{5}v_{i}^{2}-\frac{v_{i}^{3}}{75}\right)|_{5}^{10}=5\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+What is player 
+\begin_inset Formula $i$
+\end_inset
+
+'s probability of winning given the value of 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+?
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \[
+\Pr(player\, i\, wins|v_{i})=\Pr(v_{2}<v_{1}|v_{1})=F(v_{1}),\]
+
+\end_inset
+
+which we can solve for by integrating the pdf we solved for above:
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Note that -1 in the cdf is a 
+\begin_inset Quotes eld
+\end_inset
+
+normalizing variable
+\begin_inset Quotes erd
+\end_inset
+
+ which is required so that the probability measure properties are met.
+ 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \[
+F(v_{i})=\begin{cases}
+\frac{v_{i}^{2}}{50} & ,0\leq v_{i}<5\\
+\frac{2}{5}v_{i}-\frac{v_{i}^{2}}{50}-1 & ,5\leq v_{i}\leq10\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

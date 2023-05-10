@@ -1,0 +1,1511 @@
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-sec
+\end_modules
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Section Notes 11
+\end_layout
+
+\begin_layout Author
+Abby Friedman, Wonbin Kang
+\end_layout
+
+\begin_layout Date
+November 19, 2010
+\end_layout
+
+\begin_layout Section*
+Agenda
+\end_layout
+
+\begin_layout Enumerate
+Perfect Bayesian Equilibrium
+\end_layout
+
+\begin_layout Enumerate
+PBE Examples
+\end_layout
+
+\begin_layout Enumerate
+Signaling Examples
+\end_layout
+
+\begin_layout Section
+Perfect Bayesian Equilibrium (
+\begin_inset Quotes eld
+\end_inset
+
+PBE
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Subsection
+PBE in Context
+\end_layout
+
+\begin_layout Standard
+To put things into perspective, let's look at the equilibrium concepts we've
+ covered.
+ We've looked at NE in static games of complete information; SPNE in dynamic
+ games of complete and perfect information; BNE in static games of incomplete
+ information; and now PBE in dynamic games of incomplete information.
+ As emphasized throughout section, each new equilibrium concept is a way
+ to 
+\begin_inset Quotes eld
+\end_inset
+
+refine
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+strengthen
+\begin_inset Quotes erd
+\end_inset
+
+ our original NE concept.
+ However, it is important to note that 
+\begin_inset Quotes eld
+\end_inset
+
+the stronger equilibrium concept differs from the weaker concept only for
+ richer games, not for simpler games.
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Gibbons (1992, p.
+ 173)
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+For example, if asked to consider whether a strategy profile is PBE in a
+ 
+\shape italic
+static
+\shape default
+ game with incomplete information, you'll discover that PBE is equivalent
+ to BNE.
+ Can you think of an example of such a game? Recall that the equilibrium
+ concept that Elon used in class for the High-Low poker game (with probability
+ 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+) was 
+\begin_inset Quotes eld
+\end_inset
+
+Nash equilibrium.
+\begin_inset Quotes erd
+\end_inset
+
+ The concept I introduced in section was 
+\begin_inset Quotes eld
+\end_inset
+
+Bayes Nash equilibrium.
+\begin_inset Quotes erd
+\end_inset
+
+ However, the most precise equilibrium concept, at least for purposes of
+ this class, would be 
+\begin_inset Quotes eld
+\end_inset
+
+Perfect Bayes Nash equilibrium.
+\begin_inset Quotes erd
+\end_inset
+
+ Why? Recall the form of the game: it's a dynamic game with incomplete informati
+on.
+ So a useful taxonomy to have in mind:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Complete Information
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Incomplete Information
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Static
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nash equi.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bayes-Nash equi.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dynamic
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Subgame Perfect Nash equi.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Perfect Bayesian equi.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Note that this matrix in no way addresses the subtleties between the various
+ equilibrium concepts.
+ In fact, this taxonomy is arbitrary and can be criticized for a number
+ of reasons.
+ However, it is a helpful way to begin to develop your ideas of 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+PBE strengthens BNE in the context of a 
+\shape italic
+dynamic
+\shape default
+ game with incomplete information.
+ In short, PBE refines BNE much like SPNE refines NE.
+ So we know that all PBE are BNE, but all BNE are not PBE.
+ Just as SPNE requires strategies to be a NE for the entire game and each
+ 
+\shape italic
+proper subgame
+\shape default
+, PBE requires strategies to be BNE for the entire game and for each and
+ every 
+\shape italic
+continuation
+\shape default
+ game.
+ 
+\end_layout
+
+\begin_layout Standard
+PBE is actually even richer because we can consider it a refinement of not
+ only BNE, but also SPNE.
+ PBE does so by analyzing each players' beliefs (as in BNE), but in a dynamic
+ setting.
+ Further, the definition of PBE forces us to consider strategy profiles
+ and beliefs which are reasonable on the equilibrium path (or off).
+ 
+\end_layout
+
+\begin_layout Subsection
+Definition of PBE
+\end_layout
+
+\begin_layout Standard
+A PBE consists of a strategy profile 
+\begin_inset Formula $(\sigma)$
+\end_inset
+
+ and system of beliefs 
+\begin_inset Formula $(\mu)$
+\end_inset
+
+.
+ Some texts call the pairing of the two, 
+\begin_inset Formula $\left[\sigma,\mu\right]$
+\end_inset
+
+ a behavioral strategy profile.
+ For a candidate behavioral strategy profile to be PBE, it must satisfy
+ the following conditions:
+\end_layout
+
+\begin_layout Enumerate
+At each information set, the player who moves must assign a belief, or probabili
+ty 
+\begin_inset Formula $\mu_{k}$
+\end_inset
+
+ to 
+\shape italic
+each
+\shape default
+ node within the information set.
+ For a singleton information set, the player's belief puts probability one
+ on the single decision node.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Given the beliefs at each information set and other players' subsequent
+ strategies, the player who moves at the information set must select an
+ action that is optimal---
+\shape italic
+i.e.
+
+\shape default
+ all players must best-respond given their beliefs and the strategies of
+ the other players.
+ In other words, given each player's beliefs, their strategies must be 
+\shape italic
+sequentially rational
+\shape default
+.
+\end_layout
+
+\begin_layout Enumerate
+Beliefs at all information sets 
+\shape italic
+on the equilibrium
+\shape default
+ 
+\shape italic
+path
+\shape default
+ are determined by Bayes' Rule and the players' equilibrium strategies.
+ So the probability that a player is at decision node 
+\begin_inset Formula $x$
+\end_inset
+
+ given a certain history of play 
+\begin_inset Formula $h$
+\end_inset
+
+ and given the strategy profile 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ is:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \[
+\Pr(x|h,\sigma)=\frac{\Pr(x\cap h|\sigma)}{\Pr(h|\sigma)}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+[Beliefs at all information sets 
+\shape italic
+off the equilibrium path 
+\shape default
+are determined by Bayes' Rule and the players' equilibrium strategies 
+\shape italic
+where possible
+\shape default
+.]
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Bullets 1-3 are required for 
+\begin_inset Quotes eld
+\end_inset
+
+weak
+\begin_inset Quotes erd
+\end_inset
+
+ PBE and bullet 4 is required for PBE.
+ Usually there won't be a difference, but see Example 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "exa:simple PBE"
+
+\end_inset
+
+ below.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We solve for PBE using the guess and check method: 
+\end_layout
+
+\begin_layout Itemize
+Propose a candidate strategy profile 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ and/or the behavioral strategy for 
+\shape italic
+one
+\shape default
+ of the players.
+\end_layout
+
+\begin_layout Itemize
+Calculate other players' beliefs 
+\begin_inset Formula $\mu$
+\end_inset
+
+ based on the profile above.
+ 
+\end_layout
+
+\begin_layout Itemize
+Calculate the BR of other players conditional on these calculated beliefs.
+\end_layout
+
+\begin_layout Itemize
+Check if any of the players have an incentive to deviate (Because you calculated
+ the BR of the 
+\begin_inset Quotes eld
+\end_inset
+
+other
+\begin_inset Quotes erd
+\end_inset
+
+ players, you may only need to check the incentives of the first player).
+ 
+\end_layout
+
+\begin_layout Itemize
+If possible, calculate beliefs consistent with the behavioral strategy profile
+ off the equilibrium path.
+ 
+\end_layout
+
+\begin_layout Section
+PBE Examples
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+From Gibbons (1992)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset CommandInset label
+LatexCommand label
+name "exa:simple PBE"
+
+\end_inset
+
+See the game outlined in Appendix A-1.
+ 
+\end_layout
+
+\begin_layout Standard
+Some preliminary findings:
+\end_layout
+
+\begin_layout Enumerate
+Only one proper subgame starting at player 2's decision node.
+ The normal form representation of this subgame between player 2 and 3 is:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L'
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+R'
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+2
+\bar default
+,1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+3
+\bar default
+,
+\bar under
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+R
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,
+\bar under
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Therefore, the SPNE of the entire game is [D,L,R'], which we suspect is
+ unique based on Zermelo.
+ Further, if we couple this strategy profile with the beliefs of player
+ 3 at his information set, or 
+\begin_inset Formula $p=1$
+\end_inset
+
+, we have that [D,L,R',
+\begin_inset Formula $p=1$
+\end_inset
+
+] is a PBE.
+ Note that bullets 1-4 in section 1.2 are satisfied.
+ 
+\end_layout
+
+\begin_layout Standard
+Now consider the behavioral strategy profile, [A,L,L',
+\begin_inset Formula $p=0$
+\end_inset
+
+], which leads to payoffs (2,0,0).
+ 
+\end_layout
+
+\begin_layout Enumerate
+Is this a NE? No player has an incentive to deviate, so YES.
+ We only need to check whether player 1 has an incentive to deviate.
+ Do you see why?
+\end_layout
+
+\begin_layout Enumerate
+Let's see if this is weakly PBE.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Player 3 is the only player with a non-singleton information set.
+ We've specified his beliefs as 
+\begin_inset Formula $p=0$
+\end_inset
+
+.
+ Given these beliefs and the other player's strategies, he is best responding
+ by playing L' (sequentially rational).
+\end_layout
+
+\begin_layout Enumerate
+Are players 1 and 2 best responding? If player 1 deviates to D, her payoff
+ is 1 (< 2).
+ Player 2 is indifferent between L and R since either way he's getting a
+ payoff of 0.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Therefore, [A,L,L',
+\begin_inset Formula $p=0$
+\end_inset
+
+] is weakly PBE based on bullets 1-3 (the definition of weak PBE) in section
+ 1.2 above.
+ However, this isn't SPNE.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+But we said that PBE could be considered a refinement of SPNE.
+ What's the problem? The problem is that the definition of weak PBE doesn't
+ consider bullet 4: constraints on beliefs off the equilibrium path.
+ [A,L,L',
+\begin_inset Formula $p=0$
+\end_inset
+
+] has beliefs, 
+\begin_inset Formula $p=0$
+\end_inset
+
+, which are inconsistent with the player 2's strategy of playing her dominant
+ strategy of L.
+ Adding bullet 4, and thereby strengthening the definition of PBE so that
+ beliefs correspond to the play of other players, results in player 3's
+ belief being 
+\begin_inset Formula $p=1$
+\end_inset
+
+.
+ Then player 3's strategy of L' does not satisfy sequential rationality,
+ and so this equilibrium is not a PBE.
+ 
+\end_layout
+
+\begin_layout Example
+Now what if player 2 had an additional strategy 
+\begin_inset Quotes eld
+\end_inset
+
+A'
+\begin_inset Quotes erd
+\end_inset
+
+ which would end the game.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Extensive form not in the appendix.
+ Just draw a branch from player 2's decision node.
+\end_layout
+
+\end_inset
+
+ Consider the behavioral strategy profiles [A,A',L',
+\begin_inset Formula $p=0$
+\end_inset
+
+] and [A; 
+\begin_inset Formula $\mu_{1}$
+\end_inset
+
+L + 
+\begin_inset Formula $(1-\mu_{1})$
+\end_inset
+
+R + 0A'; L' ; 
+\begin_inset Formula $p=0$
+\end_inset
+
+].
+ We're not going to consider whether these strategies are PBE or not, but
+ concentrate on the beliefs.
+ 
+\end_layout
+
+\begin_layout Enumerate
+For [A,A',L',
+\begin_inset Formula $p=0$
+\end_inset
+
+], player 3's information set is again off the equilibrium path.
+ However, unlike in the example above, player 2's strategy is to end the
+ game by playing A'.
+ Therefore, player 2's strategy does not constrain player 3's beliefs and
+ so player 3 may have any beliefs that he wants.
+ Hence the language in bullet 4: 
+\begin_inset Quotes eld
+\end_inset
+
+if possible.
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+For [A; 
+\begin_inset Formula $\mu_{1}$
+\end_inset
+
+L + 
+\begin_inset Formula $(1-\mu_{1})$
+\end_inset
+
+R + 0A'; L' ; 
+\begin_inset Formula $p=0$
+\end_inset
+
+], player 3's information set is again off the equilibrium path, but player
+ 2's mixed strategy constrains player 3's beliefs.
+ Therefore, 
+\begin_inset Formula $p\neq0$
+\end_inset
+
+ and it must be the case that 
+\begin_inset Formula $p=\mu_{1}$
+\end_inset
+
+ for bullet 4 to be satisfied.
+ 
+\end_layout
+
+\begin_layout Section
+Signaling Examples
+\end_layout
+
+\begin_layout Example
+Let's look at an abstract version of the signaling model.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Gibbons (1992).
+\end_layout
+
+\end_inset
+
+ There are two types of Senders: 
+\begin_inset Formula $t\in\left\{ t_{1},t_{2}\right\} $
+\end_inset
+
+, and the 
+\shape italic
+ex ante
+\shape default
+ probability distribution is 
+\begin_inset Formula $\Pr(t=t_{1})=\frac{1}{2}$
+\end_inset
+
+; there are two signals that any type of Sender can send: 
+\begin_inset Formula $m\in\left\{ L,R\right\} $
+\end_inset
+
+; the beliefs of the Receiver are denoted 
+\begin_inset Formula $\left[p,1-p\right]$
+\end_inset
+
+ and 
+\begin_inset Formula $\left[q,1-q\right]$
+\end_inset
+
+, respectively for Receiver's two information sets; the Receiver has two
+ actions at each information set: 
+\begin_inset Formula $a\in\left\{ u,d\right\} $
+\end_inset
+
+.
+ The payoffs are as depicted in the extensive form of the game in Appendix
+ A-2.
+ 
+\end_layout
+
+\begin_layout Enumerate
+What are the strategy spaces of each player?
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \begin{eqnarray*}
+S_{Sender} & \equiv & \left\{ LL,\, LR,\, RL,\, RR\right\} \\
+S_{Receiver} & \equiv & \left\{ uu,\, ud,\, du,\, dd\right\} \end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Per the guess and check method outlined above in section 1.2, find all 
+\shape italic
+pure strategy
+\shape default
+ PBE.
+ Let's consider each of the Senders strategies.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Quotes eld
+\end_inset
+
+Pooling
+\begin_inset Quotes erd
+\end_inset
+
+ on L (or LL): Receiver's beliefs for the information set on the equilibrium
+ path are 
+\begin_inset Formula $p=\frac{1}{2},\,1-p=\frac{1}{2}$
+\end_inset
+
+.
+ Sequential rationality dictates that the Receiver best responds to LL by
+ playing 
+\begin_inset Quotes eld
+\end_inset
+
+u
+\begin_inset Quotes erd
+\end_inset
+
+ since:
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Note that 
+\begin_inset Quotes eld
+\end_inset
+
+u
+\begin_inset Quotes erd
+\end_inset
+
+ is strictly dominant.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \[
+U_{Receiver}(u|p=\frac{1}{2},LL)=\frac{1}{2}\left(3+4\right)=\frac{7}{2}>U_{Receiver}(d|p=\frac{1}{2},LL)=0.\]
+
+\end_inset
+
+Sender receives either 1 or 2 (depending on type).
+ Does either type of Sender have an incentive to deviate? Clearly, type
+ 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+ does not want to deviate and send signal R, since she'll get a lower payoff.
+ But type 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ can get a higher payoff of 2 if she sends the signal R and the Receiver
+ plays 
+\begin_inset Quotes eld
+\end_inset
+
+u
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Therefore, off the equilibrium path, we need to have the Receiver playing
+ 
+\begin_inset Quotes eld
+\end_inset
+
+d
+\begin_inset Quotes erd
+\end_inset
+
+, which is consistent with all beliefs where 
+\begin_inset Formula $q<\frac{2}{3}$
+\end_inset
+
+:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \[
+\because U_{Receiver}(d|q)=q\cdot0+\left(1-q\right)\cdot2>U_{Receiver}(u|a)=q\cdot1+\left(1-q\right)\cdot0\]
+
+\end_inset
+
+Therefore, we have that [LL, ud, 
+\begin_inset Formula $p=\frac{1}{2}$
+\end_inset
+
+, 
+\begin_inset Formula $q<\frac{2}{3}$
+\end_inset
+
+] is a PBE.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Quotes eld
+\end_inset
+
+Pooling
+\begin_inset Quotes erd
+\end_inset
+
+ on R (or RR): Receiver's beliefs for the information set on the equilibrium
+ path are 
+\begin_inset Formula $q=\frac{1}{2},\,1-q=\frac{1}{2}$
+\end_inset
+
+.
+ Sequential rationality dictates that the Receiver best responds to LL by
+ playing 
+\begin_inset Quotes eld
+\end_inset
+
+d
+\begin_inset Quotes erd
+\end_inset
+
+ since:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \[
+U_{Receiver}(d|q=\frac{1}{2},RR)=\frac{1}{2}\left(0+2\right)>U_{Receiver}(u|q=\frac{1}{2},RR)=\frac{1}{2}\left(1+0\right).\]
+
+\end_inset
+
+We could go through the same steps we did in (a) above, or we can note that
+ Sender type 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ receives 0 with the behavioral strategy profile.
+ However, Sender type 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ is guaranteed at least a payoff of 1 if she deviates.
+ Of course, we know from (a) above that Receiver's best response to the
+ signal 
+\begin_inset Quotes eld
+\end_inset
+
+L
+\begin_inset Quotes erd
+\end_inset
+
+ is to play 
+\begin_inset Quotes eld
+\end_inset
+
+u
+\begin_inset Quotes erd
+\end_inset
+
+ so Sender type 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ will get 1.
+ Therefore, there is no PBE (or equilibrium) when the Sender pools on R.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Quotes eld
+\end_inset
+
+Separating
+\begin_inset Quotes erd
+\end_inset
+
+ with type 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ playing L and type 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+ playing R: Since both of Receiver's information sets are now on the equilibrium
+ path, we need to figure out the beliefs for both information sets using
+ Bayes' Rule and players' strategies.
+ This is trivial: 
+\begin_inset Formula $p=1$
+\end_inset
+
+ and 
+\begin_inset Formula $q=0$
+\end_inset
+
+.
+ The Receiver's best response to her beliefs are 
+\begin_inset Quotes eld
+\end_inset
+
+ud
+\begin_inset Quotes erd
+\end_inset
+
+ so that the payoff for the Sender is equal to 1 for both types.
+ Now let's check for Sender's incentive to deviate.
+ Notice that Sender type 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+ could get 2 if she deviates and sends signal L (since the Receiver best
+ responds to the signal L with 
+\begin_inset Quotes eld
+\end_inset
+
+u
+\begin_inset Quotes erd
+\end_inset
+
+).
+ Therefore, this cannot be an equilibrium.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Quotes eld
+\end_inset
+
+Separating
+\begin_inset Quotes erd
+\end_inset
+
+ with type 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ playing R and type 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+ playing L: Since both of Receiver's information sets are now on the equilibrium
+ path, we need to figure out the beliefs for both information sets using
+ Bayes' Rule and players' strategies.
+ This is again trivial: 
+\begin_inset Formula $p=0$
+\end_inset
+
+ and 
+\begin_inset Formula $q=1$
+\end_inset
+
+.
+ Receiver's best response given her beliefs are 
+\begin_inset Quotes eld
+\end_inset
+
+uu
+\begin_inset Quotes erd
+\end_inset
+
+ so that the payoff for the Sender is equal to 2 for both types.
+ Check that each type of Sender does not have an incentive to deviate.
+ Therefore, [RL, uu, 
+\begin_inset Formula $p=0$
+\end_inset
+
+, 
+\begin_inset Formula $q=1$
+\end_inset
+
+] is a PBE.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Example
+Mark Buehrle's throwing arm is either in good or bad shape, with 
+\begin_inset Formula $\Pr(t=Good)=\frac{1}{2}$
+\end_inset
+
+.
+ Value to the ChiSox is $20 million if Buehrle's arm is in good shape and
+ worth $0 if it's in bad shape.
+ Buehrle knows what his type is, but the ChiSox do not.
+ The ChiSox can offer Buehrle an $8 million dollar contract or offer him
+ nothing.
+ Buehrle can send a signal to the ChiSox organization by choosing to take
+ a physical which would reveal the state of his arm for $1 million, or send
+ a signal by doing nothing at all.
+ ChiSox's beliefs as to Buehrle's arm is denoted by 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Assume that Buehrle's utility is monotonically increasing in the offer
+ he receives from the ChiSox.
+ 
+\end_layout
+
+\begin_layout Standard
+The extensive form of the game is Appendix A-3.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+There is typo in the Appendix.
+ The action for ChiSox 3 before the payoff (-1,0) should be 
+\begin_inset Quotes eld
+\end_inset
+
+no offer.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ Note that if testing was not a possible action for Buehrle, the ChiSox
+ would offer him an $8 million dollar contract.
+ 
+\end_layout
+
+\begin_layout Standard
+What is the strategy space of Buehrle and the ChiSox?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+S_{M.Buerhle} & \equiv & \left\{ TT;\, TN;\, NT;\, NN\right\} \\
+S_{ChiSox} & \equiv & \left\{ OOO;\, OONo;\, ONoO;\, NoOO;...;\, NoNoNo\right\} \end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let's do the same analysis as above:
+\end_layout
+
+\begin_layout Enumerate
+Pooling on 
+\begin_inset Quotes eld
+\end_inset
+
+no test
+\begin_inset Quotes erd
+\end_inset
+
+: Therefore, ChiSox's beliefs are such that 
+\begin_inset Formula $p=\frac{1}{2}$
+\end_inset
+
+; ChiSox best respond given these beliefs and Buehrle's strategy by playing
+ 
+\begin_inset Quotes eld
+\end_inset
+
+offer
+\begin_inset Quotes erd
+\end_inset
+
+ (since $2 million > 0).
+ Also, note that both of Buehrle's types, good or bad, cannot do better
+ regardless of what the ChiSox do by deviating and sending the signal 
+\begin_inset Quotes eld
+\end_inset
+
+no test.
+\begin_inset Quotes erd
+\end_inset
+
+ Therefore, the behavioral strategy profile [(no test, no test); (offer,
+ offer, no offer); 
+\begin_inset Formula $p=\frac{1}{2}$
+\end_inset
+
+] is PBE.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Pooling on 
+\begin_inset Quotes eld
+\end_inset
+
+test': Again, we could go through all of the messy steps as we did above,
+ but note that Buehrle's 
+\begin_inset Quotes eld
+\end_inset
+
+bad
+\begin_inset Quotes erd
+\end_inset
+
+ type will get a payoff of -$1 million (since the ChiSox know exactly where
+ they are on the game tree).
+ If the 
+\begin_inset Quotes eld
+\end_inset
+
+bad
+\begin_inset Quotes erd
+\end_inset
+
+ type were to deviate and play 
+\begin_inset Quotes eld
+\end_inset
+
+no test
+\begin_inset Quotes erd
+\end_inset
+
+ then he's assured of at least 
+\begin_inset Quotes eld
+\end_inset
+
+0
+\begin_inset Quotes erd
+\end_inset
+
+ regardless of the ChiSox's beliefs.
+ Therefore, this can't be an equilibrium.
+\end_layout
+
+\begin_layout Enumerate
+Separating with type 
+\begin_inset Quotes eld
+\end_inset
+
+bad
+\begin_inset Quotes erd
+\end_inset
+
+ playing 
+\begin_inset Quotes eld
+\end_inset
+
+no test
+\begin_inset Quotes erd
+\end_inset
+
+ and type 
+\begin_inset Quotes eld
+\end_inset
+
+good
+\begin_inset Quotes erd
+\end_inset
+
+ playing 
+\begin_inset Quotes eld
+\end_inset
+
+test
+\begin_inset Quotes erd
+\end_inset
+
+: ChiSox's beliefs are such that 
+\begin_inset Formula $p=0$
+\end_inset
+
+.
+ ChiSox best respond by playing 
+\begin_inset Quotes eld
+\end_inset
+
+offer
+\begin_inset Quotes erd
+\end_inset
+
+ if the signal is 
+\begin_inset Quotes eld
+\end_inset
+
+test
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+no offer
+\begin_inset Quotes erd
+\end_inset
+
+ if the signal is 
+\begin_inset Quotes eld
+\end_inset
+
+no test.
+\begin_inset Quotes erd
+\end_inset
+
+ Can either the 
+\begin_inset Quotes eld
+\end_inset
+
+good
+\begin_inset Quotes erd
+\end_inset
+
+ or the 
+\begin_inset Quotes eld
+\end_inset
+
+bad
+\begin_inset Quotes erd
+\end_inset
+
+ type do better by deviating given these beliefs? No because the 
+\begin_inset Quotes eld
+\end_inset
+
+good
+\begin_inset Quotes erd
+\end_inset
+
+ type would get $0 (since ChiSox have beliefs such that 
+\begin_inset Formula $p=0$
+\end_inset
+
+ and so will play 
+\begin_inset Quotes eld
+\end_inset
+
+no offer
+\begin_inset Quotes erd
+\end_inset
+
+) and because the 
+\begin_inset Quotes eld
+\end_inset
+
+bad
+\begin_inset Quotes erd
+\end_inset
+
+ type would get -$1 million if he deviates (since ChiSox know what type
+ Buehrle is if he tests).
+ Therefore, [(test, no test); (no offer, offer, no offer); 
+\begin_inset Formula $p=0$
+\end_inset
+
+] is a PBE.
+ 
+\end_layout
+
+\begin_layout Standard
+Between the two PBEs above, one seems a bit odd.
+ Is there an equilibrium refinement that might be able to get rid of the
+ less desirable equilibrium in 3 above? We'll discuss Cho-Kreps Intuitive
+ Criterion and Dominance Refinements (which refine PBE) in Econ 2020b in
+ the context of the Spence education model.
+ 
+\end_layout
+
+\end_body
+\end_document

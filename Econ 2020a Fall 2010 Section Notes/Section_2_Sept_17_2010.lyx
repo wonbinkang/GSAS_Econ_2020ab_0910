@@ -1,0 +1,1337 @@
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+\end_modules
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Section Notes 2
+\end_layout
+
+\begin_layout Author
+Abby Friedman, Wonbin Kang
+\end_layout
+
+\begin_layout Date
+September 17, 2010
+\end_layout
+
+\begin_layout Part*
+Clarifications from Class
+\end_layout
+
+\begin_layout Standard
+Recall from class, homothetic preferences are preferences such that a bundle
+ of goods 
+\begin_inset Formula $\vec{x}\sim\vec{x}'$
+\end_inset
+
+ is equivalent to 
+\begin_inset Formula $\alpha\vec{x}\sim\alpha\vec{x}'$
+\end_inset
+
+ where 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ is a positive constant.
+ 
+\end_layout
+
+\begin_layout Standard
+With a Walrasian demand function of the form 
+\begin_inset Formula $x^{*}(\vec{p},w)$
+\end_inset
+
+ represents homothetic preferences if the following holds:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x^{*}(\vec{p},\alpha w)=\alpha x^{*}(\vec{p},w),\]
+
+\end_inset
+
+which leads to the wealth expansion curve that we saw in class.
+ 
+\end_layout
+
+\begin_layout Standard
+Now what is the relationship between homothetic preferences and utility
+ functions? As Chris said in class, homothetic preferences are represented
+ by a homogeneous of degree 1 utility function---
+\shape italic
+i.e.
+
+\shape default
+ 
+\begin_inset Formula $u(\alpha\vec{x})=\alpha u(\vec{x})$
+\end_inset
+
+.
+ An example of such a utility function is the Cobb-Douglas which we see
+ in section today.
+ 
+\end_layout
+
+\begin_layout Standard
+Recall that once you see a utility function, you might want to transform
+ the function such that the function is easier to manipulate 
+\shape italic
+and the property that wealth expansion paths are linear is preserved
+\shape default
+.
+ Chris touched on this in class, but really didn't get into this, but FYI,
+ the resulting transformed function is a homothetic function.
+ The definition of a homothetic function is:
+\end_layout
+
+\begin_layout Definition
+Homothetic functions: Function 
+\begin_inset Formula $u:\mathbb{R}^{L}\rightarrow\mathbb{R}^{1}$
+\end_inset
+
+is homothetic if it is a monotone transformation of a homogeneous function.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+As I wrote in the math review notes, a great exposition of homothetic and
+ homogeneous functions can be found in Ch.
+ 20 of Simon and Blume (1994).
+ 
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+A useful way to think about this definitions is that homothetic functions
+ are to homogeneous functions what quasiconcavity is to concavity.
+ In short, they are properties of functions (and imply certain properties
+ of functions) that are preserved under monotonic transformation.
+ Therefore, since the definition of a homogeneous of degree k function is
+ that 
+\begin_inset Formula $f(\alpha\vec{x})=\alpha^{k}f(\vec{x})$
+\end_inset
+
+, this means that a homothetic function will also have this property.
+ This is what Chris was getting at in the lecture.
+ 
+\end_layout
+
+\begin_layout Definition
+Numeraire good: Numeraire goods are goods, usually with a fixed price of
+ 
+\begin_inset Quotes eld
+\end_inset
+
+1,
+\begin_inset Quotes erd
+\end_inset
+
+ used when only the relative prices of goods are relevant (as in the case
+ of utility maximization and most of the problems that you will encounter
+ in Ec 2020a).
+ Suppose we have a set 
+\begin_inset Formula $X$
+\end_inset
+
+ of designer suits for which an economic agent has preferences that can
+ be represented by a quasiconcave and continuous utility function (which
+ means that the consumer's preference over the designer suit set is convex).
+ Let's assume for simplicity that 
+\begin_inset Formula $X\equiv\left\{ Zegna,Versace,Dolce\right\} $
+\end_inset
+
+.
+ The agent knows the market prices of each good which we can denote in the
+ form of a price vector: 
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula \[
+\vec{p}'=[p_{Zegna},p_{Versace},p_{Dolce}],\]
+
+\end_inset
+
+but since we usually only care about relative prices in our model of consumer
+ behavior, we could write the price vector as follows:
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula \[
+\vec{q}'=\left[1,\frac{p_{Versace}}{p_{Zegna}},\frac{p_{Dolce}}{p_{Zegna}}\right]=\left[1,q_{Versace},q_{Dolce}\right].\]
+
+\end_inset
+
+Then we would call Zegna the 
+\shape italic
+numeraire
+\shape default
+ good, since we can express the other goods in set 
+\begin_inset Formula $X$
+\end_inset
+
+ in terms of Zegna---
+\shape italic
+e.g.
+
+\shape default
+ Versace is worth 0.9 Zegna and Dolce is worth 1.15 Zegnas.
+ That's why the price of the numeraire is usually set to 1.
+ 
+\end_layout
+
+\begin_layout Part*
+Agenda
+\end_layout
+
+\begin_layout Enumerate
+Utility Maximization Problem (hereinafter 
+\begin_inset Quotes eld
+\end_inset
+
+UMP
+\begin_inset Quotes erd
+\end_inset
+
+) with Cobb-Douglas utility function
+\end_layout
+
+\begin_layout Enumerate
+UMP with quasi-linear utility function (using the Kuhn-Tucker method)
+\end_layout
+
+\begin_layout Section
+UMP with Cobb-Douglas utility functions
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "pro:1"
+
+\end_inset
+
+How much 
+\begin_inset Formula $x_{1},x_{2}$
+\end_inset
+
+ should I consume given wealth 
+\begin_inset Formula $w$
+\end_inset
+
+; prices 
+\begin_inset Formula $p_{1},p_{2}$
+\end_inset
+
+; and a utility function such that 
+\begin_inset Formula $u(x_{1},x_{2})=x_{1}x_{2}^{2}$
+\end_inset
+
+? 
+\end_layout
+
+\begin_layout Enumerate
+What is the objective? Maximize utility.
+ A related question might be: what is the objective function?
+\end_layout
+
+\begin_layout Enumerate
+What are the choice variables (the endogenous variables)? What are the parameter
+s (exogenous / state variables)? 
+\end_layout
+
+\begin_layout Enumerate
+What are the constraints? The budget constraint and non-negativity constraints
+ on the choice/endogenous variables.
+\end_layout
+
+\begin_layout Enumerate
+How do we set up the problem? Once set up, how do we solve? How do we interpret
+ the answer? Can we use pictures like the ones we saw in Section Notes 1
+ to help us? 
+\end_layout
+
+\begin_layout Subsection
+Setting up the UMP
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula \begin{equation}
+\max_{x_{1}x_{2}\geq\geq0}u(x_{1},x_{2})=x_{1}x_{2}^{2}\label{eq:1}\end{equation}
+
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Is the objective function a concave function? For a precise answer, we'd
+ have to look at signs of the two principal minors of the two-dimensional
+ Hessian.
+ Is it a quasiconcave function? What is the implication? See Section 3.2.2
+ of the Miller Notes and the math review notes on quasiconcavity.
+ 
+\end_layout
+
+\end_inset
+
+ s.t.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+p_{1}x_{1}+p_{2}x_{2}-w\leq0.\label{eq:2}\end{equation}
+
+\end_inset
+
+Do we like the form of equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1"
+
+\end_inset
+
+? We could work with this form, but recall from the readings and from the
+ math review notes that utility is an 
+\shape italic
+ordinal
+\shape default
+ concept.
+ Therefore, the preferences of the consumer who is solving Problem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pro:1"
+
+\end_inset
+
+ can be represented by not only 
+\begin_inset Formula $u(x_{1},x_{2})=x_{1}x_{2}^{2}$
+\end_inset
+
+, but also any monotonic transformation of this equation.
+ 
+\end_layout
+
+\begin_layout Standard
+Let's transform the objective function in equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1"
+
+\end_inset
+
+ so that we can write the UMP as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\max_{x_{1}x_{2}\geq\geq0}\ln u(x_{1},x_{2})=\ln x_{1}+2\ln x_{2}\label{eq:3}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+s.t.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+p_{1}x_{1}+p_{2}x_{2}-w\leq0\label{eq:4}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Note that the budget constraint in equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2"
+
+\end_inset
+
+ will hold with equality in our utility maximization problem.
+ 
+\end_layout
+
+\begin_layout Subsection
+Solving the UMP
+\end_layout
+
+\begin_layout Standard
+Solving the UMP requires use of the Lagrangian.
+ In Econ 2020a, we use the Lagrangian in a mechancial manner.
+ Think of the Lagrangian as a clever way of turning a constrained optimization
+ problem into an unconstrained optimization problem.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+See Simon and Blume (1994, chs.
+ 17, 18) for an extensive review of unconstrained and constrained optimization.
+\end_layout
+
+\end_inset
+
+ Consider the following two choice variables and two inequality constraint
+ problem:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula \[
+\max_{x_{1}x_{2}}f(x_{1},x_{2})\]
+
+\end_inset
+
+ s.t.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+g_{1}(x_{1},x_{2}) & \leq & b_{1},\\
+g_{2}(x_{1},x_{2}) & \leq & b_{2}\end{eqnarray*}
+
+\end_inset
+
+In general, we write the Lagrangian for the above problem as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mathcal{L}(x_{1},x_{2},\lambda_{1},\lambda_{2})=f(x_{1},x_{2})-\lambda_{1}[g_{1}(x_{1},x_{2})-b_{1}]-\lambda_{2}[g_{2}(x_{1},x_{2})-b_{2}].\]
+
+\end_inset
+
+Try the more general case where there are 
+\begin_inset Formula $n$
+\end_inset
+
+ choice variables and 
+\begin_inset Formula $m$
+\end_inset
+
+ inequality constraints.
+ 
+\end_layout
+
+\begin_layout Standard
+In Problem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pro:1"
+
+\end_inset
+
+, since we have two endogenous variables and one constraint, the Lagrangian
+ is as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\mathcal{L}(x_{1},x_{2})=\ln x_{1}+2\ln x_{2}-\lambda[p_{1}x_{1}+p_{2}x_{2}-w].\label{eq:5}\end{equation}
+
+\end_inset
+
+Before we start differentiating the Lagrangian, we have to make a key assumption
+: the critical points of the Lagrangian in equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:5"
+
+\end_inset
+
+, which are defined as 
+\begin_inset Formula $x_{1}^{*},x_{2}^{*}$
+\end_inset
+
+, are greater than zero---
+\shape italic
+i.e.
+
+\shape default
+ the critical points are internal solutions, and not boundary/corner solutions.
+ After making this assumption, we start differentiating and we find the
+ following 
+\shape italic
+first order conditions
+\shape default
+ (FOCs):
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+You don't need to know this, but if there aren't any assumptions on the
+ functional form of the objective function, the first order conditions are
+ 
+\shape italic
+necessary
+\shape default
+ conditions and not 
+\shape italic
+sufficient
+\shape default
+ conditions for an optimum.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial\mathcal{L}(x_{1}^{*},x_{2}^{*},\lambda^{*})}{\partial x_{1}} & = & \frac{1}{x_{1}^{*}}-\lambda^{*}p_{1}=0\Rightarrow\lambda^{*}=\frac{1}{p_{1}x_{1}^{*}}\\
+\frac{\partial\mathcal{L}(x_{1}^{*},x_{2}^{*},\lambda^{*})}{\partial x_{2}} & = & \frac{2}{x_{2}^{*}}-\lambda^{*}p_{2}=0\Rightarrow\lambda^{*}=\frac{2}{p_{2}x_{2}^{*}}\\
+\frac{\partial\mathcal{L}(x_{1}^{*},x_{2}^{*},\lambda^{*})}{\partial\lambda} & = & w-p_{1}x_{1}-p_{2}x_{2}=0.\end{eqnarray*}
+
+\end_inset
+
+We have a system of three equations in three unknowns, 
+\begin_inset Formula $x_{1}^{*},x_{2}^{*},\lambda^{*}$
+\end_inset
+
+.
+ If we solve this system of equations, we find that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x_{1}^{*}(p_{1},p_{2},w)=\frac{1}{3}\left(\frac{w}{p_{1}}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x_{2}^{*}(p_{1},p_{2},w)=\frac{2}{3}\left(\frac{w}{p_{2}}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\lambda^{*}(p_{1},p_{2},w)=\frac{1}{w}.\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Interpretation
+\end_layout
+
+\begin_layout Enumerate
+Check the demands for good 1 and good 2 and see if they are homogeneous
+ of degree zero.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Note that 
+\begin_inset Formula $p_{1}x_{1}^{*}=\frac{1}{3}w$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{2}x_{2}^{*}=\frac{2}{3}w$
+\end_inset
+
+.
+ What does this mean? It means that total expenditure on good 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+will be equal to 
+\begin_inset Formula $\frac{1}{3}$
+\end_inset
+
+ of wealth and total expenditure on good 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ will be equal to 
+\begin_inset Formula $\frac{2}{3}$
+\end_inset
+
+ of wealth.
+ These numbers correspond to the powers on the original objective function.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Let's do some comparative statics:
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Recall that we can do comparative statics because the FOCs are identities
+ and not just equations.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial x_{1}^{*}}{\partial p_{1}} & = & -\frac{w}{3p_{1}^{2}}<0\\
+\frac{\partial x_{1}^{*}}{\partial p_{2}} & = & 0\\
+\frac{\partial x_{1}^{*}}{\partial w} & = & \frac{1}{3p_{1}}>0.\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+UMP with quasi-linear utility functions
+\end_layout
+
+\begin_layout Standard
+When should you use the Kuhn-Tucker (hereinafter 
+\begin_inset Quotes eld
+\end_inset
+
+K-T
+\begin_inset Quotes erd
+\end_inset
+
+) conditions? When dealing with UMPs, the answer is almost always! If you're
+ dealing with an optimization problem that has non-negativity constraints
+ on its arguments and there is a chance that the global optimum will occur
+ at zero for one of the arguments, you should use K-T.
+ With that said, many of our problem sets and/or exam questions assume the
+ existence of interior solutions (non-zero maximizers) or are set up in
+ such a way that the optimum will always take place at an interior solution.
+ 
+\end_layout
+
+\begin_layout Standard
+An example is helpful in showing you why we need to analyze the K-T conditions.
+ Consider a function 
+\begin_inset Formula $u:X\rightarrow\mathbb{R}^{1}$
+\end_inset
+
+, where 
+\begin_inset Formula $X\subset\mathbb{R}^{1}$
+\end_inset
+
+.
+ Let's also assume that 
+\begin_inset Formula $u(x)=-(x+2)^{2}$
+\end_inset
+
+.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Do the preferences represented by this one-dimensional utility function
+ satisfy strong monotonicity? How about monotonicity? How about local non-satiat
+ion?
+\end_layout
+
+\end_inset
+
+ We know that 
+\begin_inset Formula $u(x)$
+\end_inset
+
+ is maximized at 
+\begin_inset Formula $x=-2$
+\end_inset
+
+, which is 
+\begin_inset Quotes eld
+\end_inset
+
+interior
+\begin_inset Quotes erd
+\end_inset
+
+ to the restricted domain.
+ But what if we restricted 
+\begin_inset Formula $x\in[0,+\infty)$
+\end_inset
+
+? Then the value of the endogenous variable that maximizes the function
+ 
+\begin_inset Formula $u:X\rightarrow\mathbb{R}^{1}$
+\end_inset
+
+ is equal to 
+\begin_inset Formula $x^{*}=0$
+\end_inset
+
+, which is at the 
+\begin_inset Quotes eld
+\end_inset
+
+corner
+\begin_inset Quotes erd
+\end_inset
+
+ of the restricted domain.
+ We need to consider these
+\shape italic
+ corner 
+\shape default
+solutions when dealing with multivariable functions as well.
+ 
+\end_layout
+
+\begin_layout Standard
+What is the bottom line? Draw a picture and check to see if we might be
+ looking at an optimum occurring at a corner.
+ Recall the graphs that we looked at in the previous section notes.
+ Also, if you solve the Lagrangian (in our 
+\begin_inset Quotes eld
+\end_inset
+
+normal
+\begin_inset Quotes erd
+\end_inset
+
+ way) and discover that the objective function is maximized at negative
+ values, then it's a good bet that you should be using the K-T conditions.
+ 
+\end_layout
+
+\begin_layout Standard
+Now let's look at a UMP where we would have to consider corner solutions
+\end_layout
+
+\begin_layout Problem
+\begin_inset CommandInset label
+LatexCommand label
+name "pro:2"
+
+\end_inset
+
+How much 
+\begin_inset Formula $x_{1},\, x_{2}$
+\end_inset
+
+ should I consume given wealth 
+\begin_inset Formula $w$
+\end_inset
+
+; prices 
+\begin_inset Formula $p_{1},\, p_{2}$
+\end_inset
+
+; and a utility function such that 
+\begin_inset Formula $u(x_{1},x_{2})=x_{1}+\sqrt{x_{2}}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Subsection
+Setting up the UMP
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula \begin{equation}
+\max_{x_{1}x_{2}}u(x_{1},x_{2})=x_{1}+\sqrt{x_{2}}\label{eq:6}\end{equation}
+
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Is this objective function concave? Again we'd have to look at the principal
+ minors of the two dimensional Hessian (whatever that means), but recall
+ one of the theorems that I discussed in the Math Review notes---linear
+ combinations of concave functions are what? 
+\end_layout
+
+\end_inset
+
+ s.t.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray}
+p_{1}x_{1}+p_{2}x_{2}-w & \leq & 0.\label{eq:7}\\
+-x_{1} & \leq & 0\\
+-x_{2} & \leq & 0\end{eqnarray}
+
+\end_inset
+
+Can we make any monotonic transformation that will simplify the problem
+ for us? I can't think of anything with quasi-linear utility functions,
+ but if you find a simplification, please let me and the entire class know.
+ 
+\end_layout
+
+\begin_layout Subsection
+Solving the UMP
+\end_layout
+
+\begin_layout Standard
+For Problem 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pro:2"
+
+\end_inset
+
+, the Lagrangian is as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mathcal{L}(x_{1},x_{2})=x_{1}+\sqrt{x_{2}}-\lambda[p_{1}x_{1}+p_{2}x_{2}-w].\]
+
+\end_inset
+
+We now have to find the 
+\shape italic
+Kuhn-Tucker first order conditions
+\shape default
+, which include the following inequalities:
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\begin_inset Formula \begin{equation}
+\frac{\partial\mathcal{L}(x_{1}^{*},x_{2}^{*},\lambda^{*})}{\partial x_{1}}=1-\lambda^{*}p_{1}\leq0\Rightarrow\lambda^{*}p_{1}\geq1\label{eq:KT1}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\frac{\partial\mathcal{L}(x_{1}^{*},x_{2}^{*},\lambda^{*})}{\partial x_{2}}=\frac{1}{2\sqrt{x_{2}^{*}}}-\lambda^{*}p_{2}\leq0\Rightarrow\lambda^{*}p_{2}\geq\frac{1}{2\sqrt{x_{2}^{*}}}\label{eq:KT2}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\frac{\partial\mathcal{L}(x_{1}^{*},x_{2}^{*},\lambda^{*})}{\partial\lambda}=w-p_{1}x_{1}-p_{2}x_{2}\geq0,\label{eq:KT3}\end{equation}
+
+\end_inset
+
+and the following 
+\shape italic
+complimentary slackness
+\shape default
+ conditions:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+x_{1}^{*}\frac{\partial\mathcal{L}(x_{1}^{*},x_{2}^{*},\lambda^{*})}{\partial x_{1}}=x_{1}^{*}(1-\lambda^{*}p_{1})=0\label{eq:KTE1}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+x_{2}^{*}\frac{\partial\mathcal{L}(x_{1}^{*},x_{2}^{*},\lambda^{*})}{\partial x_{2}}=x_{2}^{*}\left(\frac{1}{2\sqrt{x_{2}^{*}}}-\lambda^{*}p_{2}\right)=0\label{eq:KTE2}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\lambda^{*}\frac{\partial\mathcal{L}(x_{1}^{*},x_{2}^{*},\lambda^{*})}{\partial\lambda}=\lambda^{*}(w-p_{1}x_{1}-p_{2}x_{2})=0.\label{eq:KTE3}\end{equation}
+
+\end_inset
+
+Now what do we do? Recall why we're doing this.
+ It's because we want to check whether one or both of the two endogenous
+ variables 
+\begin_inset Formula $x_{1}^{*},\, x_{2}^{*}$
+\end_inset
+
+ take on the value zero.
+ We're worried about the non-negativity constraints.
+ So we know that there are going to be four different combinations that
+ we need to consider:
+\end_layout
+
+\begin_layout Subsubsection
+Optimal values satisfy 
+\begin_inset Formula $x_{1}^{*}=x_{2}^{*}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This is trivial since from equations 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:KT1"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:KTE3"
+
+\end_inset
+
+, it must be that 
+\begin_inset Formula $w=0$
+\end_inset
+
+.
+ Do you see why? If an economic agent has no wealth than the maximum utility
+ will be equal to zero at 
+\begin_inset Formula $x_{1}^{*}=x_{2}^{*}=0$
+\end_inset
+
+.
+ Further, check out the conditions 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:KT2"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:KTE2"
+
+\end_inset
+
+.
+ Do you see that an indeterminancy arises? We don't want that.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Optimal values satisfy 
+\begin_inset Formula $x_{1}^{*}>0,\, x_{2}^{*}=0$
+\end_inset
+
+ (Border Solution)
+\end_layout
+
+\begin_layout Standard
+>From equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:KTE1"
+
+\end_inset
+
+, it must be that 
+\begin_inset Formula $\lambda^{*}p_{1}=1$
+\end_inset
+
+, and from equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:KTE3"
+
+\end_inset
+
+ 
+\begin_inset Formula $x_{1}^{*}=\frac{w}{p_{1}}$
+\end_inset
+
+.
+ But look at inequality 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:KT2"
+
+\end_inset
+
+, at 
+\begin_inset Formula $x_{2}^{*}=0$
+\end_inset
+
+: 
+\begin_inset Formula $\frac{1}{2\sqrt{0}}-\lambda^{*}p_{2}^{*}\leq0$
+\end_inset
+
+.
+ Notice that we have a zero in the denominator of one of the arguments in
+ the LHS.
+ Therefore, we have a contradiction because of the indeterminancy of the
+ LHS of the inequality.
+\end_layout
+
+\begin_layout Standard
+For those of you who care, this is telling us that an economic agent with
+ the above utility function would never consume zero of the non-numeraire
+ good, because at 
+\begin_inset Formula $x_{2}^{*}=0$
+\end_inset
+
+, the marginal utility of good 2 is infinite, or
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\lim_{x_{2}\rightarrow0}\frac{\partial u(x_{1},x_{2})}{\partial x_{2}}=\infty,\]
+
+\end_inset
+
+which is one element of the famed Inada conditions in neoclassical growth
+ models.
+ Basically, the concavity of the non-numeraire good utility function leads
+ to the first graph that Chris put on the board where the marginal utility
+ of the non-numeraire good was greater than the marginal utility of the
+ numeraire good.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Optimal values satisfy 
+\begin_inset Formula $x_{1}^{*}=0,x_{2}^{*}>0$
+\end_inset
+
+ (Border Solution)
+\end_layout
+
+\begin_layout Standard
+>From equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:KTE2"
+
+\end_inset
+
+, we know that 
+\begin_inset Formula $\lambda^{*}p_{2}=\frac{1}{2\sqrt{x_{2}^{*}}}$
+\end_inset
+
+, which means that 
+\begin_inset Formula $\lambda^{*}\neq0$
+\end_inset
+
+.
+ From equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:KTE3"
+
+\end_inset
+
+, 
+\begin_inset Formula $x_{2}^{*}=\frac{w}{p_{2}}$
+\end_inset
+
+.
+ Plug this into the equation, 
+\begin_inset Formula $\lambda^{*}p_{2}=\frac{1}{2\sqrt{x_{2}^{*}}}$
+\end_inset
+
+, and we have that 
+\begin_inset Formula $\lambda^{*}=\frac{1}{2\sqrt{p_{2}w}}$
+\end_inset
+
+.
+ We need to check our answers against the only inequality that is left for
+ us to check: inequality 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:KT1"
+
+\end_inset
+
+.
+ If we plug our solution for 
+\begin_inset Formula $\lambda^{*}$
+\end_inset
+
+ into inequality 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:KT1"
+
+\end_inset
+
+, then we find that our solution will hold if 
+\begin_inset Formula $p_{1}\geq2\sqrt{p_{2}w}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Optimal values satisfy 
+\begin_inset Formula $x_{1}^{*}>0,\, x_{2}^{*}>0$
+\end_inset
+
+ (Interior Solution)
+\end_layout
+
+\begin_layout Standard
+We know from equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:KTE1"
+
+\end_inset
+
+ that 
+\begin_inset Formula $\lambda^{*}=\frac{1}{p_{1}}$
+\end_inset
+
+ and from equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:KTE2"
+
+\end_inset
+
+ that 
+\begin_inset Formula $x_{2}^{*}=\frac{1}{4(\lambda^{*}p_{2})^{2}}=\frac{p_{1}^{2}}{4p_{2}^{2}}$
+\end_inset
+
+.
+ Note that since we now know that 
+\begin_inset Formula $\lambda^{*}$
+\end_inset
+
+ cannot be negative, it must be the case that 
+\begin_inset Formula $x_{1}^{*}=\frac{w}{p_{1}}-\frac{p_{1}}{4p_{2}}$
+\end_inset
+
+ (
+\begin_inset Formula $\because$
+\end_inset
+
+ equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:KTE3"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+So which of the solutions is the 
+\begin_inset Quotes eld
+\end_inset
+
+correct
+\begin_inset Quotes erd
+\end_inset
+
+ one.
+ First, look at Section 2.2.4 and notice that 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+
+\begin_inset Formula $x_{2}^{*}=\frac{p_{1}^{2}}{4p_{2}^{2}}>0$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+Of course, we have to assume that prices are greater than zero.
+ 
+\end_layout
+
+\end_inset
+
+ However, for 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+
+\begin_inset Formula $x_{1}^{*}=\frac{w}{p_{1}}-\frac{p_{1}}{4p_{2}}$
+\end_inset
+
+, this will have values greater than zero (as we assumed) if 
+\begin_inset Formula $\frac{w}{p_{1}}>\frac{p_{1}}{4p_{2}}\Rightarrow4p_{2}w>p_{1}^{2}\Rightarrow0<p_{1}<2\sqrt{p_{2}w})$
+\end_inset
+
+.
+ Therefore, we now see that the solution to this problem depends on the
+ relative values of good 1 and good 2, and the value of the agent's wealth.
+ 
+\end_layout
+
+\begin_layout Subsection
+Interpretation
+\end_layout
+
+\begin_layout Enumerate
+Check that the demands for good 1 and good 2 are h.o.d.
+ zero.
+ You should find that all of the solutions in 2.2.3 and 2.2.4 are h.o.d.
+ zero.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Let's do some comparative statics for the solutions to 2.2.3, where 
+\begin_inset Formula $x_{1}^{*}=0,\, x_{2}^{*}=\frac{w}{p_{2}}$
+\end_inset
+
+.
+ Since the comparative statics with regard to good 1 is trivial, let's jump
+ right to good 2.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial x_{2}^{*}}{\partial p_{1}} & = & 0\\
+\frac{\partial x_{2}^{*}}{\partial p_{2}} & = & -\frac{w}{p_{2}^{2}}<0\\
+\frac{\partial x_{2}^{*}}{\partial w} & = & \frac{1}{p_{2}}>0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Now let's do some comparative statics for the solutions to 2.2.4, where 
+\begin_inset Formula $x_{1}^{*}=\frac{w}{p_{1}}-\frac{p_{1}}{4p_{2}},x_{2}^{*}=\frac{p_{1}^{2}}{4p_{2}^{2}}$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial x_{1}^{*}}{\partial p_{1}} & = & -\frac{w}{p_{1}^{2}}-\frac{1}{4p_{2}}<0\\
+\frac{\partial x_{1}^{*}}{\partial p_{2}} & = & +\frac{p_{1}}{4p_{2}^{2}}>0\\
+\frac{\partial x_{1}^{*}}{\partial w} & = & \frac{1}{p_{1}}>0\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial x_{2}^{*}}{\partial p_{1}} & = & 2\frac{p_{1}}{4p_{2}^{2}}\\
+\frac{\partial x_{2}^{*}}{\partial p_{2}} & = & -2\frac{p_{1}^{2}}{4p_{2}^{3}}<0\\
+\frac{\partial x_{2}^{*}}{\partial w} & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Notice that there isn't a wealth effect for the non-numeraire good (good
+ 2), which will be very important as we move on toward partial/general equilibri
+um models.
+ 
+\end_layout
+
+\end_body
+\end_document

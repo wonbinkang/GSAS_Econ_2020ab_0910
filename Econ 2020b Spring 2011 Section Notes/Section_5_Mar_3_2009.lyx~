@@ -1,0 +1,856 @@
+#LyX 1.6.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+\end_modules
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Section Notes 5
+\end_layout
+
+\begin_layout Author
+Wonbin Kang
+\end_layout
+
+\begin_layout Date
+March 3, 2011
+\end_layout
+
+\begin_layout Part*
+Agenda
+\end_layout
+
+\begin_layout Enumerate
+Pure Exchange Economy
+\end_layout
+
+\begin_layout Enumerate
+Examples 
+\end_layout
+
+\begin_layout Section
+Pure Exchange Equilibrium
+\end_layout
+
+\begin_layout Subsection
+The Model
+\end_layout
+
+\begin_layout Standard
+Two consumers: 1 and 2; two goods: 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+; initial total endowments: 
+\begin_inset Formula $\bar{e}_{x}=10$
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{e}_{y}=8$
+\end_inset
+
+; and no production.
+ Note that in this model there appears to be four endogeneous variables
+ which denote the allocation of the two goods: 
+\begin_inset Formula $[x_{1},y_{1},x_{2},y_{2}]$
+\end_inset
+
+ and one endogeneous price variable which allows the markets to clear: 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ However, in reality, because the total endowment is fixed at the outset,
+ it must be the case that: 
+\begin_inset Formula $x_{1}+x_{2}=\bar{e}_{x}=10$
+\end_inset
+
+ and 
+\begin_inset Formula $y_{1}+y_{2}=\bar{e}_{y}=8$
+\end_inset
+
+.
+ So in reality, we're only dealing with, at most, three endogeneous variables.
+ 
+\end_layout
+
+\begin_layout Subsection
+Edgeworth Box 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+This is a very important concept and provides much of the intuition behind
+ general equilibrium, so make sure that you're comfortable with it.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This model can be depicted using the Edgeworth Box.
+ Draw the line depicting the number of units of good 
+\begin_inset Formula $x$
+\end_inset
+
+ on the horizontal axis and the number of units of good 
+\begin_inset Formula $y$
+\end_inset
+
+ on the vertical axis.
+ Note that points within the box are both feasible: 
+\begin_inset Formula $x_{1}+x_{2}\leq\bar{e}_{x}=10$
+\end_inset
+
+ and 
+\begin_inset Formula $y_{1}+y_{2}\leq\bar{e}_{y}=8$
+\end_inset
+
+, and non-wasteful: 
+\begin_inset Formula $x_{1}+x_{2}=\bar{e}_{x}=10$
+\end_inset
+
+ and 
+\begin_inset Formula $y_{1}+y_{2}=\bar{e}_{y}=8$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+In Figure 1, we see an exchange equilibrium where the price vector 
+\begin_inset Formula $\vec{p}=[p_{x},p_{y}]$
+\end_inset
+
+ clears the markets for both good x and good y.
+ The allocation 
+\begin_inset Formula $[\vec{x}^{*},\vec{y}^{*}]$
+\end_inset
+
+ is a Pareto Optimal allocation (since the indifference curves of Consumer
+ 1 and 2 are tangent to each other) and the allocation 
+\begin_inset Formula $[\vec{x}^{*},\vec{y}^{*}]$
+\end_inset
+
+ is on a higher indifference curve for both Consumers than those which pass
+ through the initial endowment, 
+\begin_inset Formula $\vec{e}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+In Figure 2, we see an instance where the price vector 
+\begin_inset Formula $\vec{p}=[p_{x},p_{y}]$
+\end_inset
+
+ does not clear the markets for both good x and good y; there is excess
+ demand for good 
+\begin_inset Formula $x$
+\end_inset
+
+ and excess supply for good 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The difference between the two figures arises from the UMPs that each consumer
+ is solving.
+ In each figure, Consumer 1 and 2 are choosing their optimal bundle such
+ that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial u_{i}(x_{i}^{*},y_{i}^{*})/\partial x}{\partial u_{i}(x_{i}^{*},y_{i}^{*})/\partial y}=\frac{p_{x}}{p_{y}}\,\forall i\in\left\{ 1,2\right\} .\]
+
+\end_inset
+
+However, in the scenario depicted in Figure 2, the following Pareto condition
+ does not hold:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial u_{1}(x_{1i}^{*},y_{1}^{*})/\partial x}{\partial u_{1}(x_{1}^{*},y_{1}^{*})/\partial y}\neq\frac{\partial u_{2}(x_{2}^{*},y_{2}^{*})/\partial x}{\partial u_{2}(x_{2}^{*},y_{2}^{*})/\partial y}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+The Exchange/Walrasian Equilibrium
+\end_layout
+
+\begin_layout Standard
+The exchange equilibrium we are looking for can be thought of as follows:
+ 
+\end_layout
+
+\begin_layout Enumerate
+Given an endowment, 
+\begin_inset Formula $\vec{e}$
+\end_inset
+
+, rotate the budget line through such endowment.
+ This rotation can be thought of as changing the relative prices of good
+ x and good y since the slope of the budget line is equal to 
+\begin_inset Formula $-\frac{p_{x}}{p_{y}}$
+\end_inset
+
+.
+ Note that here we need to assume that prices 
+\begin_inset Formula $p_{x}$
+\end_inset
+
+, 
+\begin_inset Formula $p_{y}\in(0,\infty)$
+\end_inset
+
+.
+ See MWG ch 15.B, Figure 15.B.5.
+\end_layout
+
+\begin_layout Enumerate
+Then for each relative price ratio (slope of the budget line), solve the
+ UMP for Consumer 1, which will result in the offer curve.
+ The offer curve can be thought of as the solutions to the Consumer 1's
+ UMP, which are functions (or correspondences) of the relative price ratio,
+ 
+\begin_inset Formula $\frac{p_{x}}{p_{y}}$
+\end_inset
+
+.
+ Do the same for Consumer 2.
+ Equilibrium candidates are at the intersection of the offer curves.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \[
+\max_{x_{i},y_{i}}u_{i}(x_{i},y_{i})\, s.t.\, p_{x}x_{i}+p_{y}y_{i}\leq p_{x}e_{xi}+p_{y}e_{yi}\,\forall i\in\left\{ 1,2\right\} \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Given these candidates, we need to check to see if there exists a price
+ ratio, given the initial endowment, that will clear the markets for one
+ of the goods (if one of the markets clear, the other will also clear since
+ both Consumer 1 and Consumer 2's demanded bundles lie on the budget line).
+ In short, we need to check whether either:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \[
+x_{1}^{*}+x_{2}^{*}=e_{x1}+e_{x2},\]
+
+\end_inset
+
+or 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \[
+y_{1}^{*}+y_{2}^{*}=e_{y1}+e_{y2}.\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Another issue that economists have grappled with is the existence of exchange
+ equilibria.
+ A comprehensive review of this material is well beyond the scope of Ec
+ 2020a, but for those interested see MWG ch 17.C and 17.D.
+ Suffice it to say that a Walrasian equilibrium exists in a pure exchange
+ economy in which 
+\begin_inset Formula $\bar{\omega}=[\omega_{1}...\omega_{L}]\gg0$
+\end_inset
+
+, where 
+\begin_inset Formula $\omega_{l}=\sum_{i}\omega_{li}$
+\end_inset
+
+, and each consumer has continuous, strictly convex, and strongly monotone
+ preferences.
+ 
+\end_layout
+
+\begin_layout Section
+Examples
+\end_layout
+
+\begin_layout Example
+Let 
+\begin_inset Formula $u_{1}(x_{1},y_{1})=x_{1}^{\frac{1}{2}}y_{1}^{\frac{1}{2}}$
+\end_inset
+
+ and 
+\begin_inset Formula $u_{2}(x_{2},y_{2})=x_{2}^{\frac{1}{2}}y_{2}^{\frac{1}{2}}$
+\end_inset
+
+; 
+\begin_inset Formula $e_{x1}=8,\, e_{x2}=2,\, e_{y1}=2,\, e_{y2}=6$
+\end_inset
+
+; and 
+\begin_inset Formula $\vec{p}=[1,p]$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Prices have been normalized.
+\end_layout
+
+\end_inset
+
+.
+ Solve for the exchange equilibrium allocation and the equilibrium price.
+ 
+\end_layout
+
+\begin_layout Standard
+Consumer 1's UMP is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\max_{x_{1},y_{1}}x_{1}^{\frac{1}{2}}y_{1}^{\frac{1}{2}}\, s.t.\, x_{1}+py_{1}\leq e_{x1}+pe_{y1}=8+2p\]
+
+\end_inset
+
+which has the following solutions:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray}
+x_{1}^{*}(p) & = & \frac{8+2p}{2}=4+p\label{eq:1}\\
+y_{1}^{*}(p) & = & \frac{8+2p}{2p}=\frac{4}{p}+1.\label{eq:2}\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consumer 2's UMP yields the following solutions:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray}
+x_{2}^{*}(p) & = & \frac{e_{x2}+pe_{y2}}{2}=\frac{2+6p}{2}=1+3p\label{eq:3}\\
+y_{2}^{*}(p) & = & \frac{e_{x2}+pe_{y2}}{2p}=\frac{2+6p}{2p}=\frac{1}{p}+3.\label{eq:4}\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We now have to determine the 
+\begin_inset Formula $p^{*}$
+\end_inset
+
+such that markets will clear.
+ Note that the price ratio for this problem, as in many problems you will
+ come across in Econ 2020a, is equal to the inverse of the price of good
+ y because we normalized the price of one good to equal 1.
+ If we don't normalize the price of good 1, we would be solving for 
+\begin_inset Formula $\frac{p_{x}}{p_{y}}$
+\end_inset
+
+ and we wouldn't be able to solve for 
+\begin_inset Formula $p_{x}$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{y}$
+\end_inset
+
+ separately.
+ In short, the exchange equilibrium allows us to pin down the price ratio,
+ but not the exact prices of good x and good y.
+ 
+\end_layout
+
+\begin_layout Standard
+Let's use good 
+\begin_inset Formula $x$
+\end_inset
+
+ to solve for 
+\begin_inset Formula $p^{*}$
+\end_inset
+
+ since it has the easier equations:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x_{1}^{*}(p)+x_{2}^{*}(p) & = & 5+4p^{*}=e_{x1}+e_{x2}=10\\
+\therefore p^{*} & = & \frac{5}{4}.\end{eqnarray*}
+
+\end_inset
+
+If we plug the equilibrium price ratio into equations 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq5"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq6"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq7"
+
+\end_inset
+
+, and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq8"
+
+\end_inset
+
+, we can solve for the equilibrium allocation 
+\begin_inset Formula $[\vec{x}^{*},\vec{y}^{*}]$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Example
+Let 
+\begin_inset Formula $u_{1}(x_{1},y_{1})=x_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $u_{2}(x_{2},y_{2})=x_{2}^{\frac{1}{2}}y_{2}^{\frac{1}{2}}$
+\end_inset
+
+; 
+\begin_inset Formula $e_{x1}=10,\, e_{x2}=0,\, e_{y1}=0,\, e_{y2}=8$
+\end_inset
+
+; and 
+\begin_inset Formula $\vec{p}=[1,p]$
+\end_inset
+
+.
+ Solve for the exchange equilibrium allocation and the equilibrium price.
+\end_layout
+
+\begin_layout Standard
+Consumer 1's UMP is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\max_{x_{1}}x_{1}\, s.t.\, x_{1}+py_{1}\leq e_{x1}+pe_{y1}=10\]
+
+\end_inset
+
+which has the following border solutions:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray}
+x_{1}^{*}(p) & = & 10\label{eq5}\\
+y_{1}^{*}(p) & = & 0.\label{eq6}\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consumer 2's UMP yields the following solutions:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray}
+x_{2}^{*}(p) & = & \frac{e_{x2}+pe_{y2}}{2}=\frac{8p}{2}=4p\label{eq7}\\
+y_{2}^{*}(p) & = & \frac{e_{x2}+pe_{y2}}{2p}=\frac{8p}{2p}=4.\label{eq8}\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Markets clear for good 
+\begin_inset Formula $x$
+\end_inset
+
+ and so 
+\begin_inset Formula $10+4p=10$
+\end_inset
+
+, therefore, 
+\begin_inset Formula $p^{*}=0$
+\end_inset
+
+, which is intuitive since Consumer 2 is supplying good 
+\begin_inset Formula $y$
+\end_inset
+
+, but Consumer 1 doesn't demand good 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ At 
+\begin_inset Formula $p^{*}=0$
+\end_inset
+
+, we have multiple equilibria.
+ See Edgeworth Box at the end of the section notes.
+ 
+\end_layout
+
+\begin_layout Example
+Consumers 1 and 2; goods 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+; Let 
+\begin_inset Formula $u(x_{1},y_{1})=\min\left\{ x_{1}^{2}y_{1},300\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $v(x_{2},y_{2})=x_{2}y_{2}^{2}$
+\end_inset
+
+; 
+\begin_inset Formula $\bar{e}_{x}=\bar{e}_{y}=12$
+\end_inset
+
+; and 
+\begin_inset Formula $\vec{p}=[1,p]$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Example
+
+\series bold
+Part a)
+\series default
+ 
+\shape italic
+Explain how you would identify the set of Pareto Optimal allocations for
+ this economy.
+\end_layout
+
+\begin_layout Example
+Recall that the set of Pareto Optimal allocations could be written as follows:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula \[
+S\equiv\left\{ \left(\vec{x},\vec{y}\right)|MRS_{x_{1}y_{1}}=MRS_{x_{2}y_{2}}\right\} .\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+For Consumer 1, the marginal utilities are as follows:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula \[
+\frac{\partial u}{\partial x_{1}}\begin{cases}
+2x_{1}y_{1} & if\, x_{1}^{2}y_{1}<300\\
+0 & otherwise\end{cases}\]
+
+\end_inset
+
+
+\begin_inset Formula \[
+\frac{\partial u}{\partial y_{1}}\begin{cases}
+x_{1}^{2} & if\, x_{1}^{2}y_{1}<300\\
+0 & otherwise\end{cases}\]
+
+\end_inset
+
+therefore if 
+\begin_inset Formula $x_{1}^{2}y_{1}\geq300$
+\end_inset
+
+, then the marginal rate of subsitution is undefined and if 
+\begin_inset Formula $x_{1}^{2}y_{1}<300$
+\end_inset
+
+, the marginal rate of substitution can be written as follows:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula \begin{equation}
+\frac{\frac{\partial u}{\partial x_{1}}}{\frac{\partial u}{\partial y_{1}}}=\frac{2y_{1}}{x_{1}}.\label{eq:8}\end{equation}
+
+\end_inset
+
+For Consumer 2, the marginal utilities are as follows:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial u}{\partial x_{2}} & = & y_{2}^{2}\\
+\frac{\partial u}{\partial y_{2}} & = & 2x_{2}y_{2}\end{eqnarray*}
+
+\end_inset
+
+so that the marginal rate of subsitution is equal to:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula \begin{equation}
+\frac{\frac{\partial u}{\partial x_{2}}}{\frac{\partial u}{\partial y_{2}}}=\frac{y_{2}}{2x_{2}}.\label{eq:9}\end{equation}
+
+\end_inset
+
+Therefore, for values of 
+\begin_inset Formula $x_{1},\, y_{1}$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $x_{1}^{2}y_{1}<300$
+\end_inset
+
+, we set equations 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:8"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:9"
+
+\end_inset
+
+ equal to each other noting that 
+\begin_inset Formula $x_{1}+x_{2}=12$
+\end_inset
+
+ and 
+\begin_inset Formula $y_{1}+y_{2}=12$
+\end_inset
+
+ because the total endowment for both goods is equal to 12.
+ Then we get the following for 
+\begin_inset Formula $x_{1},y_{1}$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $x_{1}^{2}y_{1}<300$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula \begin{equation}
+\frac{2y_{1}}{x_{1}}=\frac{y_{2}}{2x_{2}}\Rightarrow\frac{2y_{1}}{x_{1}}=\frac{12-y_{1}}{2(12-x_{1})}\Rightarrow y_{1}=\frac{4x_{1}}{16-x_{1}}\label{eq:10}\end{equation}
+
+\end_inset
+
+, which defines the set of Pareto Optimal allocations.
+ See end of the section notes for the graphical representation.
+ 
+\end_layout
+
+\begin_layout Example
+
+\series bold
+Part b)
+\series default
+ 
+\shape italic
+Consider the initial endowment of (8,4) for Consumer 1.
+ Normalize 
+\begin_inset Formula $p_{x}=1$
+\end_inset
+
+.
+ What price 
+\begin_inset Formula $p_{y}$
+\end_inset
+
+, if any, will sustain this allocation as an exchange equilibrium? 
+\end_layout
+
+\begin_layout Example
+First note that 
+\begin_inset Formula $x_{1}^{2}y_{1}=256<300$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Example
+The key to this question is to see that for the initial allocation to be
+ an exchange equilibrium, it must be the case that it is Pareto Optimal
+ (in the sense that you cannot make one consumer better off without making
+ the other worse off, or equivalently, there can be no gains from trade).
+ 
+\end_layout
+
+\begin_layout Example
+From 
+\series bold
+part a)
+\series default
+ above, we have the conditions for Pareto optimality in equations 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:10"
+
+\end_inset
+
+.
+ Furthermore, the marginal rates of substitutions for both consumers must
+ equal the price ratio:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula \[
+\frac{2y_{1}}{x_{1}}=\frac{y_{2}}{2x_{2}}=\frac{1}{p_{y}}\Rightarrow p_{y}^{*}=1\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+
+\series bold
+Part c)
+\series default
+ 
+\shape italic
+Repeat part b) above, but with the initial endowment of Consumer 1 equal
+ to (10,5) (which means that the Consumer 2's endowment is equal to (2,7)).
+ 
+\end_layout
+
+\begin_layout Example
+Note that 
+\begin_inset Formula $x_{1}^{2}y_{1}=500>300$
+\end_inset
+
+, which means that the MRS of Consumer 1 is not defined.
+ Intuitively, Consumer 1 is indifferent between any consumption bundle 
+\begin_inset Formula $(x_{1},y_{1})$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $x_{1}^{2}y_{1}>300$
+\end_inset
+
+ and so depending on the assumptions that you make on the behavior of Consumer
+ 1 when indifferent between consumption bundles, a price ratio may or may
+ not exist, or there may be multiple price ratios that allow for gains from
+ trade.
+ 
+\end_layout
+
+\begin_layout Example
+
+\series bold
+Part d)
+\series default
+ N/A
+\end_layout
+
+\end_body
+\end_document

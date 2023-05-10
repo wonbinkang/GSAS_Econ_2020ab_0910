@@ -1,0 +1,237 @@
+#LyX 1.6.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+\end_modules
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+Question 3, Spring 2009 Final
+\end_layout
+
+\begin_layout Standard
+Consider an exchange economy with two goods and two consumers.
+\end_layout
+
+\begin_layout Standard
+Consumer 1 has utility function 
+\begin_inset Formula $u(x_{1},y_{1})=x_{1}+\ln y_{1}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Standard
+Consumer 2 has utility function 
+\begin_inset Formula $v(x_{1},y_{1})=x_{2}\cdot y_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The initial endowments are 
+\begin_inset Formula $\left(e_{1x},e_{1y}\right)$
+\end_inset
+
+ for person 1 and 
+\begin_inset Formula $\left(e_{2x},e_{2y}\right)$
+\end_inset
+
+ for person 2.
+\end_layout
+
+\begin_layout Standard
+An equilibrium is given by prices 
+\begin_inset Formula $\left(p^{*},q^{*}\right)$
+\end_inset
+
+ and associated consumption bundles 
+\begin_inset Formula $\left(x_{1}^{*},y_{1}^{*}\right)$
+\end_inset
+
+ for person 1 and 
+\begin_inset Formula $\left(x_{2}^{*},y_{2}^{*}\right)$
+\end_inset
+
+ for person 2.
+ Assume throughout the problem that prices are normalized so that 
+\begin_inset Formula $p^{*}=1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Problem*
+(a) Assume that 
+\begin_inset Formula $e_{1x}>0$
+\end_inset
+
+ and 
+\begin_inset Formula $e_{1y}>0$
+\end_inset
+
+.
+ Explain the following statement: 
+\begin_inset Quotes eld
+\end_inset
+
+In equilibrium it must be that 
+\begin_inset Formula $y_{1}^{*}>0$
+\end_inset
+
+, but it is possible that 
+\begin_inset Formula $x_{1}^{*}=0$
+\end_inset
+
+.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The rest of the problem considers the effect of an increase in 
+\begin_inset Formula $e_{1x}$
+\end_inset
+
+ to 
+\begin_inset Formula $e_{1x}+k$
+\end_inset
+
+ where 
+\begin_inset Formula $k>0$
+\end_inset
+
+.
+ Denote quantities in the original an new equilibrium outcomes as follows:
+\end_layout
+
+\begin_layout Itemize
+Original Equilibrium:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Endowments: 
+\begin_inset Formula $\left(e_{1x},\, e_{1y}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(e_{2x},\, e_{2y}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Prices: 
+\begin_inset Formula $\left(p^{*}=1,\, q^{*}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Bundles: 
+\begin_inset Formula $\left(x_{1}^{*},y_{1}^{*}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(x_{2}^{*},y_{2}^{*}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Original Equilibrium:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Endowments: 
+\begin_inset Formula $\left(e_{1x}+k,\, e_{1y}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(e_{2x},\, e_{2y}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Prices: 
+\begin_inset Formula $\left(p^{**}=1,\, q^{**}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Bundles: 
+\begin_inset Formula $\left(x_{1}^{**},y_{1}^{**}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(x_{2}^{**},y_{2}^{**}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Assume that there is a unique equilibrium under both orginal and new conditions.
+\end_layout
+
+\begin_layout Problem*
+(b) 
+\end_layout
+
+\end_body
+\end_document

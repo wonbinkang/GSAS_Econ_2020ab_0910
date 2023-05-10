@@ -1,0 +1,1289 @@
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-ams-extended
+\end_modules
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Section Notes 2
+\end_layout
+
+\begin_layout Author
+Wonbin Kang, Sam Richardson
+\end_layout
+
+\begin_layout Date
+February 3, 2011
+\end_layout
+
+\begin_layout Part*
+Agenda
+\end_layout
+
+\begin_layout Enumerate
+Monopoly and Price Discrimination
+\end_layout
+
+\begin_layout Enumerate
+Bertrand (Price Competition) vs.
+ Cournot (Quantity Competition)
+\end_layout
+
+\begin_layout Enumerate
+Stackelberg Model (variant of Cournot)
+\end_layout
+
+\begin_layout Enumerate
+Kreps-Sheinkman (1983) (won't cover in section)
+\end_layout
+
+\begin_layout Section
+Price Discrimination and Monopoly
+\end_layout
+
+\begin_layout Standard
+Types of price discrimination
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+This taxonomy isn't really helpful in understanding price discrimination,
+ but almost all of the text books have it.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+First Degree Price Discrimination: Monopolist observes the type of the consumer
+ and is able to calculate each consumer's demand correspondences (or their
+ willingness to pay).
+ The monopolist uses this to charge each individual his or her willingness
+ to pay.
+ AKA perfect price discrimination or individual pricing.
+ Generally, the first-best (FB) outcome can be implemented because with
+ perfect price discrimination there may not be any DWL.
+ Note that the monopolist seller gets all of the surplus.
+ See Figure 3.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Second Degree Price Discrimination: Monopolist is unable to observe the
+ types of each consumer, and so proposes a menu of prices and quantities.
+ Consumers self-select themselves into their optimal quantity and price,
+ which can be derived using the Revelation Principle (see MWG 14.C.2 for more
+ information).
+ Screening models.
+ Ex) Intel's 486 DX and SX, and 487 micro processors, where SX is just a
+ damaged version of the DX, and 487 was an upgrade of the SX to the DX.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Third Degree Price Discrimination: Monopolist is uable to observe types,
+ but is able to observe something immutable that is related to a consumer's
+ willingness to pay.
+ Monopolist charges based on this characteristic.
+ 
+\end_layout
+
+\begin_layout Subsection
+Basic Monopolist's Problem
+\end_layout
+
+\begin_layout Standard
+Recall that a producer/seller of goods in a competitive market must solve
+ its profit maximization problem which can be written as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\max_{q}pq-c(q)\Rightarrow p=c'(q^{C}),\]
+
+\end_inset
+
+or the price (which is exogeneous) is equal to the marginal cost.
+ 
+\end_layout
+
+\begin_layout Standard
+The monopolist's problem is slightly different:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Notice that we use the inverse demand function 
+\begin_inset Formula $p(\cdot)$
+\end_inset
+
+ in the objective function.
+ 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula \begin{equation}
+\max_{q}p(q)q-c(q)\Rightarrow p(q^{M})+p'(q^{M})q^{M}=c'(q^{M})\label{eq:monopolist problem}\end{equation}
+
+\end_inset
+
+where the LHS of equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:monopolist problem"
+
+\end_inset
+
+ is the marginal revenue 
+\begin_inset Formula $\left(\frac{d\left[p(q)q\right]}{dq}\right)$
+\end_inset
+
+of the monopolist and the RHS is the marginal cost.
+ We see that 
+\begin_inset Formula $p(q^{M})>c'(q^{M})$
+\end_inset
+
+ because 
+\begin_inset Formula $p'(\cdot)<0$
+\end_inset
+
+, which means that the price under a monopoly exceeds the marginal cost
+ of production.
+ This in turn means that 
+\begin_inset Formula $q^{M}<q^{C}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Harvard Football Example
+\end_layout
+
+\begin_layout Standard
+Assume that the good of interest is The Game football tickets, which are
+ being supplied by a monopolistic seller with cost function equal to: 
+\begin_inset Formula $c(Q)=\frac{Q^{2}}{20}$
+\end_inset
+
+, where 
+\begin_inset Formula $Q$
+\end_inset
+
+ is the total number of tickets supplied to the market, including both those
+ supplied to alumni and to students: 
+\begin_inset Formula $Q=q_{a}+q_{s}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Further assume that there are two types of consumers: alumni and students.
+ The demand function for alumni can be written as: 
+\begin_inset Formula $q_{a}(p_{a})=100-p_{a}$
+\end_inset
+
+ and 
+\begin_inset Formula $q_{s}(p_{s})=200-10p_{s}$
+\end_inset
+
+.
+ The monopolist has information on whether a consumer is a student or an
+ alumni and so is able to engage in Third Degree Price Discrimination.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+No Students
+\end_layout
+
+\begin_layout Standard
+If we assume that students are in reading period and unable to attend, the
+ monopolist's problems is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\max_{q_{a}=Q}\left\{ p_{a}(Q)\cdot Q-c(Q)\right\} =\max_{Q}\left\{ (100-Q)\cdot Q-\frac{Q^{2}}{20}\right\} \label{eq:example monopolist problem no stud}\end{equation}
+
+\end_inset
+
+the FOCs are (assuming an interior solution):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+100-2Q-\frac{Q}{10}=0\Rightarrow Q^{*}=q_{a}^{*}\approx47.6\]
+
+\end_inset
+
+and the resulting optimal price and profit are: 
+\begin_inset Formula $p_{a}^{*}\approx52.4$
+\end_inset
+
+ and 
+\begin_inset Formula $\pi_{npd}^{*}=q_{a}^{*}\cdot p_{a}^{*}-c(q_{a}^{*})\approx2381.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Third Degree Price Discrimination
+\end_layout
+
+\begin_layout Standard
+Now the monopolist solves the following problem:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\max_{q_{a},q_{s}}\left\{ p_{a}(q_{a})\cdot q_{a}+p_{s}(q_{s})\cdot q_{s}-c(q_{a}+q_{s})\right\}  & \Rightarrow\\
+\max_{q_{a},q_{s}}\left\{ \left(100-q_{a}\right)\cdot q_{a}+\left(20-\frac{q_{s}}{10}\right)\cdot q_{s}-\frac{\left(q_{a}+q_{s}\right)^{2}}{20}\right\} \end{eqnarray*}
+
+\end_inset
+
+which has the following FOCs:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray}
+100-2q_{a} & = & \frac{\left(q_{a}+q_{s}\right)}{10}\label{eq:1}\\
+20-\frac{q_{s}}{5} & = & \frac{\left(q_{a}+q_{s}\right)}{10}\label{eq:2}\end{eqnarray}
+
+\end_inset
+
+Solving the system of linear equations 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2"
+
+\end_inset
+
+ results in 
+\begin_inset Formula $q_{a}^{*}\approx45.2$
+\end_inset
+
+, 
+\begin_inset Formula $p_{a}^{*}\approx54.8$
+\end_inset
+
+, 
+\begin_inset Formula $q_{s}^{*}\approx51.6$
+\end_inset
+
+, 
+\begin_inset Formula $p_{s}^{*}\approx14.84$
+\end_inset
+
+, and 
+\begin_inset Formula $\pi_{pd}^{*}=q_{a}^{*}\cdot p_{a}^{*}+q_{s}^{*}\cdot p_{s}^{*}-c(q_{a}^{*}+q_{s}^{*})\approx2774>\pi_{npd}^{*}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+How much is produced (sold) when only alumni are sold to? How much is produced
+ (sold) when the monopolist seller is able to price discriminate? Intuition?
+\end_layout
+
+\begin_layout Subsection
+Monopolistic Seller and Two-Type Buyer
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Note that some of this will be revisited in the context of adverse selection.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As noted above, second degree price discrimination involves the monopolistic
+ seller offering a menu of price and quantity contracts.
+ The following is a simple abstract model of second degree price discrimination.
+ See also the Miller Notes on Monopoly.
+\end_layout
+
+\begin_layout Standard
+Consider a setting where there is a monopolistic seller and a buyer who
+ is of two types (a high value type or a low value type and we use the subscript
+ 
+\begin_inset Formula $i\in\left\{ L,H\right\} $
+\end_inset
+
+ to denote each type).
+ The probability of a low-type is equal to 
+\begin_inset Formula $\beta$
+\end_inset
+
+.
+ Assume that the price charged by the monopolist is equal to 
+\begin_inset Formula $T$
+\end_inset
+
+ and the quantity produced/sold is equal to 
+\begin_inset Formula $q$
+\end_inset
+
+.
+ The monopolist has a linear cost function equal to 
+\begin_inset Formula $c\cdot q$
+\end_inset
+
+.
+ The buyer who is of type 
+\begin_inset Formula $i$
+\end_inset
+
+ has separable utility of the following form: 
+\begin_inset Formula $\theta_{i}u(q)-T$
+\end_inset
+
+, where 
+\begin_inset Formula $\theta_{i}$
+\end_inset
+
+ is a parameter denoting the relative utility the buyer gets from consuming
+ the monopolist's good.
+ Assume further that the reservation utility of the buyer is normalized
+ to equal zero (0)
+\end_layout
+
+\begin_layout Subsubsection
+First Degree Price Discrimination (First-Best)
+\end_layout
+
+\begin_layout Standard
+Assume that the seller is able to perfectly observe the type of the buyer.
+ The result is that the seller doesn't need to offer a menu of price and
+ quantity contracts, but can simply make a take-it-or-leave-it one price
+ and quantity contract offer to the buyer.
+ What is the monopolist's constrained optimization problem?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\max_{T_{i},q_{i}}\left[T_{i}-cq_{i}\right]\, s.t.\,\theta_{i}u(q_{i})-T_{i}\geq0\]
+
+\end_inset
+
+which becomes the following unconstrained optimization problem:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\max_{T_{i},q_{i}}\left[\theta_{i}u(q_{i})-cq_{i}\right]\]
+
+\end_inset
+
+The FOCs result in the optimal quantity 
+\begin_inset Formula $q^{FB}$
+\end_inset
+
+ such that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\theta_{H}u'\left(q_{H}^{FB}\right) & = & c\\
+\theta_{L}u'\left(q_{L}^{FB}\right) & = & c\end{eqnarray*}
+
+\end_inset
+
+In conclusion, the monopolist seller who know the buyer's type 
+\begin_inset Formula $i$
+\end_inset
+
+ will make a take-it-or-leave-it offer of:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left[T_{i}=\theta_{i}u\left(q_{i}^{FB}\right),\, q_{i}^{FB}\right]\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Second Degree Price Discrimination (Second-Best)
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+It should be noted that the contract menu below is not the only viable contract.
+ Contracts with linear prices and/or a simple two-part tariff are all possible
+ contracts that the monopolistic seller can use.
+ However, the contract which maximizes the seller's profits is as discussed
+ below.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For second degree price discrimination, we assume that the seller is unable
+ to perfectly observe the type of the buyer.
+ However, she does know the ex ante distribution of types, 
+\begin_inset Formula $\Pr(\theta_{i}=\theta_{L})=\beta$
+\end_inset
+
+.
+ Assuming that monopolist is able to offer a menu of price/quantity contracts
+ and that the buyers will self-select into the optimal contract, we can
+ write the seller's constrained maximization problem as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\max_{\left[T_{H},T_{L},q_{H},q_{L}\right]}\left[\beta\left(T_{L}-cq_{L}\right)+\left(1-\beta\right)\left(T_{H}-cq_{H}\right)\right]\, s.t.\]
+
+\end_inset
+
+
+\begin_inset Formula \begin{eqnarray*}
+\theta_{H}u(q_{H})-T_{H} & \geq & \theta_{H}u(q_{L})-T_{L}\,\,\,(IC_{H})\\
+\theta_{L}u(q_{L})-T_{L} & \geq & \theta_{L}u(q_{H})-T_{H}\,\,\,(IC_{L})\\
+\theta_{H}u(q_{H})-T_{H} & \geq & 0\,\,\,(IR_{H})\\
+\theta_{L}u(q_{L})-T_{L} & \geq & 0\,\,\,(IR_{L})\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proposition
+Of the four constraints, the 
+\begin_inset Formula $IC_{H}$
+\end_inset
+
+ and the 
+\begin_inset Formula $IR_{L}$
+\end_inset
+
+ are the only two constraints that will bind.
+ The remaining two constraints will remain slack at the optimum.
+ 
+\end_layout
+
+\begin_layout Standard
+I'll skip the proof of the proposition.
+ But a good rule of thumb to have is that the the incentive compatibility
+ constraint of the type who wants to act like the other type will bind while
+ his individual rationality constraint is slack.
+ On the other hand, the individual rationality constraint of the type that
+ does not have an incentive to act like the other type will bind while his
+ incentive compatibility constraint will be slack.
+\end_layout
+
+\begin_layout Standard
+The result of Proposition 1 above is that the constrained optimization problem
+ above can be rewritten as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\max_{\left[T_{H},T_{L},q_{H},q_{L}\right]}\left[\beta\left(T_{L}-cq_{L}\right)+\left(1-\beta\right)\left(T_{H}-cq_{H}\right)\right]\, s.t.\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\theta_{H}u(q_{H})-T_{H} & = & \theta_{H}u(q_{L})-T_{L}\\
+\theta_{L}u(q_{L})-T_{L} & = & 0\end{eqnarray*}
+
+\end_inset
+
+which in turn can be written as the following unconstrained optimization
+ problem:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\max_{\left[T_{H},T_{L},q_{H},q_{L}\right]}\left[\beta\left(\theta_{L}u(q_{L})-cq_{L}\right)+\left(1-\beta\right)\left(\theta_{H}u(q_{H})-cq_{H}-\left(\theta_{H}-\theta_{L}\right)u(q_{L})\right)\right]\]
+
+\end_inset
+
+The FOCs are:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\theta_{H}u'\left(q_{H}^{SB}\right) & = & c\\
+\theta_{L}u'\left(q_{L}^{SB}\right) & = & \frac{c}{1-\left(\frac{1-\beta}{\beta}\cdot\frac{\theta_{H}-\theta_{L}}{\theta_{L}}\right)}>c\end{eqnarray*}
+
+\end_inset
+
+which implies that 
+\begin_inset Formula $q_{H}^{FB}=q_{H}^{SB}>q_{L}^{SB}$
+\end_inset
+
+ and that 
+\begin_inset Formula $q_{L}^{FB}>q_{L}^{SB}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In conclusion, with optimal second degree price discrimination:
+\end_layout
+
+\begin_layout Enumerate
+High types consume the same as in the first best optimal quantity, but the
+ low type's consumption is distorted to less than the optimal level of consumpti
+on.
+\end_layout
+
+\begin_layout Enumerate
+The low type's consumer surplus is equal to zero (which must be the case,
+ since his IR constraint binds with equality), while the high type receives
+ an informational rent.
+\end_layout
+
+\begin_layout Section
+Bertrand vs.
+ Cournot Duopoly 
+\end_layout
+
+\begin_layout Proposition
+In the Bertrand Duopoly model, there is a unique Nash Equilibrium (
+\begin_inset Formula $p_{1}^{*},\, p_{2}^{*})$
+\end_inset
+
+, where the two identical firms set their prices equal to the marginal cost
+ 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Both firms earn zero profits.
+ 
+\end_layout
+
+\begin_layout Itemize
+Since price is equal to marginal cost, we get the perfectly competitive
+ outcome with only two firms.
+ 
+\end_layout
+
+\begin_layout Itemize
+Because of Bertrand competition, each firm faces infinitely elastic demand
+ correspondences given the price of the other firm.
+ 
+\end_layout
+
+\begin_layout Itemize
+Therefore, monopoly is the only form of price distortion that can arise.
+ 
+\end_layout
+
+\begin_layout Proposition
+In the Cournot Duopoly model where per unit cost 
+\begin_inset Formula $c>0$
+\end_inset
+
+ for both firms and the inverse demand function 
+\begin_inset Formula $p(q)$
+\end_inset
+
+ is such that 
+\begin_inset Formula $p'(q)<0$
+\end_inset
+
+ and 
+\begin_inset Formula $p(0)>c$
+\end_inset
+
+; any Nash Equilibrium 
+\begin_inset Formula $(q_{1}^{*},q_{2}^{*})$
+\end_inset
+
+ will result in market prices greater than 
+\begin_inset Formula $c$
+\end_inset
+
+ and smaller than the monopoly price.
+\end_layout
+
+\begin_layout Itemize
+Firms earn positive profits and we are not in a perfectly competitive equilibriu
+m.
+\end_layout
+
+\begin_layout Itemize
+Oligopolies arise under the Cournot model.
+ 
+\end_layout
+
+\begin_layout Standard
+Let's look at an example with linear inverse demand functions and constant
+ marginal costs.
+ Assume that both firms have marginal costs equal to 
+\begin_inset Formula $c$
+\end_inset
+
+, and the inverse demand function is linear: 
+\begin_inset Formula $P(Q)=\alpha-Q$
+\end_inset
+
+, where 
+\begin_inset Formula $Q=q_{1}+q_{2}$
+\end_inset
+
+.
+ Further assume that 
+\begin_inset Formula $\alpha>c$
+\end_inset
+
+.
+ The profit function for each firm can be written as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\pi_{1}(q_{1};q_{2}) & = & q_{1}P(q_{1}+q_{2})-cq_{1}=(\alpha-c-q_{2})q_{1}-q_{1}^{2}\\
+\pi_{2}(q_{2};q_{1}) & = & q_{2}P(q_{1}+q_{2})-cq_{2}=(\alpha-c-q_{1})q_{2}-q_{2}^{2}\end{eqnarray*}
+
+\end_inset
+
+We can derive the best response functions for each firm by using the FOCs
+ of each firms' profit maximization problem.
+ Therefore, the best response function for firm 
+\begin_inset Formula $i$
+\end_inset
+
+ is:
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Note that the profit functions for both firms are symmetric.
+ This means that the FOCs will be symmetric leading to symmetric best response
+ functions.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+q_{i}=b_{i}(q_{j})=\frac{\alpha-c-q_{j}}{2}\end{equation}
+
+\end_inset
+
+By the definition of Nash Equilibrium, we know that the following two equations
+ must hold at 
+\begin_inset Formula $(q_{1}^{*},q_{2}^{*})$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+q_{1}^{*} & = & \frac{\alpha-c-q_{2}^{*}}{2}\\
+q_{2}^{*} & = & \frac{\alpha-c-q_{1}^{*}}{2}\end{eqnarray*}
+
+\end_inset
+
+Solving the two equations above defines the Nash Equilibrium:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+(q_{1}^{*},q_{2}^{*})=\left(\frac{\alpha-c}{3},\frac{\alpha-c}{3}\right)\label{eq:Cournot equ}\end{equation}
+
+\end_inset
+
+which results in total output 
+\begin_inset Formula $Q_{Cournot}=\frac{2}{3}\cdot(\alpha-c)$
+\end_inset
+
+ and equilibrium price 
+\begin_inset Formula $P_{Cournot}=P\left(\frac{2}{3}\cdot(\alpha-c)\right)=\frac{1}{3}\cdot(\alpha+2c)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Three remarks:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P_{Cournot}=\frac{1}{3}\cdot(\alpha+2c)>c$
+\end_inset
+
+ (
+\begin_inset Formula $\because\alpha>c$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Q_{Cournot}=\frac{2}{3}\cdot(\alpha-c)>Q_{Monopoly}=\frac{1}{2}\cdot(\alpha-c)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Each firm earns profits equal to: 
+\begin_inset Formula $\frac{1}{9}\cdot(\alpha-c)^{2}$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+The monopolist's profit maximization problem is:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula \[
+\max_{Q}P(Q)\cdot Q-cQ\Rightarrow\max_{Q}(\alpha-c)Q-Q^{2}\]
+
+\end_inset
+
+FOC identifies the monopolist's optimal production level: 
+\begin_inset Formula $Q_{Monopoly}=\frac{\alpha-c}{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Stackelberg Model
+\end_layout
+
+\begin_layout Standard
+One of the assumptions underlying the Cournot model above was that each
+ firm didn't know how much the other firm was producing.
+ However, what happens if firm 2 is now able to observe how much firm 1
+ produces and produces accordingly?
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+In game theory, this is sequential action, and the relevant equilibrium
+ concept is subgame perfect equilibrium.
+\end_layout
+
+\end_inset
+
+ Further, since firm 1 knows that firm 2 is observing its output, will firm
+ 1 change its output from the Cournot equilibrium identified above? 
+\end_layout
+
+\begin_layout Standard
+To repeat the set up from Section 1: Assume that both firms have marginal
+ costs equal to 
+\begin_inset Formula $c$
+\end_inset
+
+, and the inverse demand function is linear: 
+\begin_inset Formula $P(Q)=\alpha-Q$
+\end_inset
+
+, where 
+\begin_inset Formula $Q=q_{1}+q_{2}$
+\end_inset
+
+.
+ Further assume that 
+\begin_inset Formula $\alpha>c$
+\end_inset
+
+ and that firm 1 produces first and then firm 2 produces.
+ 
+\end_layout
+
+\begin_layout Standard
+In equilibrium, let's assume that firm 1 produces 
+\begin_inset Formula $q_{1}^{*}$
+\end_inset
+
+.
+ The firm 2's profit maximization problem is equal to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\max_{q_{2}}P(q_{1}^{*}+q_{2})q_{2}-cq_{2}=\max_{q_{2}}(\alpha-c-q_{1}^{*})q_{2}-q_{2}^{2}\]
+
+\end_inset
+
+the FOC for the above optimization problem results in:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+q_{2}^{*}=b_{2}(q_{1}^{*})=\frac{\alpha-c-q_{1}^{*}}{2}\label{eq:firm2 best response}\end{equation}
+
+\end_inset
+
+Because firm 1 knows that firm 2 will best respond to any output 
+\begin_inset Formula $q_{1}$
+\end_inset
+
+ that firm 1 produces, firm 1's profit maximization problem is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\max_{q_{1}}P\left(q_{1}+\frac{\alpha-c-q_{1}^{*}}{2}\right)q_{1}-cq_{1}\Rightarrow\max_{q_{1}}\frac{1}{2}\cdot q_{1}\cdot\left(\alpha-c-q_{1}\right)\end{equation}
+
+\end_inset
+
+The FOC identifies the optimal level of production for firm 1 as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+q_{1}^{*}=\frac{\alpha-c}{2}\end{equation}
+
+\end_inset
+
+and equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:firm2 best response"
+
+\end_inset
+
+ identifies the optimal production of firm 2 as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+q_{2}^{*}=\frac{\alpha-c}{4}.\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Two remarks in relation to the Cournot model above:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Q_{Stackelberg}=\frac{3}{4}\cdot(\alpha-c)>Q_{Cournot}=\frac{2}{3}\cdot(\alpha-c)>Q_{Monopoly}=\frac{1}{2}\cdot(\alpha-c)$
+\end_inset
+
+, which means that the equilibrium price in the Stackelberg model is less
+ than that of the Cournot model.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Comparing the profits of each firm to that of the Cournot model: 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \begin{eqnarray*}
+\pi_{1}^{Stackelberg} & = & \frac{1}{8}\cdot(\alpha-c)^{2}>\frac{1}{9}\cdot(\alpha-c)^{2}=\pi_{1}^{Cournot}\\
+\pi_{2}^{Stackelberg} & = & \frac{1}{16}\cdot(\alpha-c)^{2}<\frac{1}{9}\cdot(\alpha-c)^{2}=\pi_{2}^{Cournot}.\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Kreps-Scheinkman (1983) 
+\end_layout
+
+\begin_layout Standard
+In the Cournot model, we assume that firms compete on the basis of quantity
+ produced.
+ We can interpret this as a firm choosing its production capacity.
+ If that is the case, then what is the equilibrium when firms first choose
+ their capacity levels and then engage in Bertrand price competition? This
+ is the question addressed by David M.
+ Kreps and Jose A.
+ Scheinkman, 1983, 
+\shape italic
+Quantity Precommitment and Bertrand Competition Yield Cournot Outcomes
+\shape default
+, 
+\bar under
+Bell Journal of Economics
+\bar default
+, 14(2): 326-337.
+ The result of the paper is clearly stated in the title of the article.
+\end_layout
+
+\begin_layout Standard
+Let's examine this result using MWG 12.C.11(a).
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+I won't cover 12.C.11(b), since you need to know some game theory concepts.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consider a capacity constrained duopoly pricing game.
+ Firm j's capacity is 
+\begin_inset Formula $q_{j}$
+\end_inset
+
+ for 
+\begin_inset Formula $j=1,2$
+\end_inset
+
+, and it has a constant cost per unit of output of 
+\begin_inset Formula $c\geq0$
+\end_inset
+
+ up to this capacity limit.
+ Assume that the market demand function 
+\begin_inset Formula $x(p)$
+\end_inset
+
+ is continous and strictly decreasing at all 
+\begin_inset Formula $p$
+\end_inset
+
+ such that 
+\begin_inset Formula $x(p)>0$
+\end_inset
+
+ and that there exists a price 
+\begin_inset Formula $\tilde{p}$
+\end_inset
+
+ such that 
+\begin_inset Formula $x(\tilde{p})=q_{1}+q_{2}$
+\end_inset
+
+.
+ Suppose also that 
+\begin_inset Formula $x(p)$
+\end_inset
+
+ is concave and let 
+\begin_inset Formula $p(\cdot)=x^{-1}(\cdot)$
+\end_inset
+
+ denote the inverse demand function.
+ 
+\end_layout
+
+\begin_layout Standard
+The rationing scheme if as follows:
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $p_{j}>p_{i}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray}
+x_{i}(p_{1},p_{2}) & = & \min\left\{ q_{i},\, x(p_{i})\right\} \label{eq:scheme1}\\
+x_{j}(p_{1},p_{2}) & = & \min\left\{ q_{j},\,\max\left\{ x(p_{j})-q_{i},\,0\right\} \right\} \label{eq:scheme2}\end{eqnarray}
+
+\end_inset
+
+, and if 
+\begin_inset Formula $p_{j}=p_{i}=p$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x_{i}(p_{1},p_{2}) & = & \min\left\{ q_{i},\max\left\{ \frac{x(p)}{2},\, x(p)-q_{j}\right\} \right\} ,\,\forall i\in\left\{ 1,2\right\} .\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Further assume that the higher value consumers (those consumers with a higher
+ willingness to pay) are served first.
+\end_layout
+
+\begin_layout Standard
+Suppose that 
+\begin_inset Formula $q_{1}<b_{1}(q_{2})$
+\end_inset
+
+ and 
+\begin_inset Formula $q_{2}<b_{2}(q_{1})$
+\end_inset
+
+, where 
+\begin_inset Formula $b_{i}(q_{j})$
+\end_inset
+
+ is the best response function for a firm 
+\begin_inset Formula $i$
+\end_inset
+
+ given production level 
+\begin_inset Formula $q_{j}$
+\end_inset
+
+ by firm 
+\begin_inset Formula $j$
+\end_inset
+
+.
+ Show that 
+\begin_inset Formula $p_{1}^{*}=p_{2}^{*}=p(q_{1}+q_{2})$
+\end_inset
+
+ is a Nash Equilibrium.
+ 
+\end_layout
+
+\begin_layout Standard
+Assume that firm 2 charges 
+\begin_inset Formula $p_{2}^{*}=p(q_{1}+q_{2})$
+\end_inset
+
+, the price at which both firms are producing at their respective capacities.
+ If firm 1 charges 
+\begin_inset Formula $p_{1}\leq p(q_{1}+q_{2})$
+\end_inset
+
+, firm 1 will sell its full capacity level 
+\begin_inset Formula $q_{1}$
+\end_inset
+
+, resulting in profits equal to 
+\begin_inset Formula $(p_{1}-c)q_{1}$
+\end_inset
+
+, which is less than the profits that firm 1 would get if it charged 
+\begin_inset Formula $p_{1}^{*}=p_{2}^{*}=p(q_{1}+q_{2})$
+\end_inset
+
+, 
+\begin_inset Formula $(p_{1}^{*}-c)q_{1}$
+\end_inset
+
+.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Notice how important the capacity constraints are.
+ Unlike in our previous Bertrand example, firm 1 does 
+\shape italic
+not
+\shape default
+ produce goods to satisfy the entire demand.
+\end_layout
+
+\end_inset
+
+ Therefore, there is no profitable deviation for firm 1 to charge below
+ 
+\begin_inset Formula $p_{2}^{*}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Is there a profitable deviation for firm 1 to charge above 
+\begin_inset Formula $p_{2}^{*}=p(q_{1}+q_{2})$
+\end_inset
+
+? Note that from the rationing scheme set out above in equations 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:scheme1"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:scheme2"
+
+\end_inset
+
+, the residual demand for firm 1 can be rewritten as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x_{1}(p_{1},p_{2})=\min\left\{ q_{1},\, x(p_{1})-q_{2}\right\} \]
+
+\end_inset
+
+.
+ Note that 
+\begin_inset Formula $x(p_{1})-q_{2}$
+\end_inset
+
+ is the solution to firm 1's profit maximization problem:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\max_{x_{1}}\left\{ p(x_{1}+q_{2})-c\right\} x_{1}\, s.t.\, x_{1}\leq q_{1}\]
+
+\end_inset
+
+.
+ Solving the maximization problem results in a best response function: 
+\begin_inset Formula $x_{1}^{*}=b_{1}(q_{2})$
+\end_inset
+
+, which by assumption is greater than firm 1's capacity: 
+\begin_inset Formula $b_{1}(q_{2})>q_{1}$
+\end_inset
+
+, meaning that firm 1 can't produce 
+\begin_inset Formula $b_{1}(q_{2})$
+\end_inset
+
+.
+ Therefore, we have a corner solution to the problem, where 
+\begin_inset Formula $x_{1}^{*}=q_{1}$
+\end_inset
+
+.
+ Therefore, 
+\begin_inset Formula $p_{1}=p(q_{1}+q_{2})=p_{2}^{*}$
+\end_inset
+
+ and we have contradiction.
+\end_layout
+
+\begin_layout Standard
+Therefore, it is optimal for firm 1 to charge 
+\begin_inset Formula $p(q_{1}+q_{2})$
+\end_inset
+
+ given that firm 2 does the same.
+ 
+\end_layout
+
+\begin_layout Standard
+By symmetry, the same argument applies to firm 2 and so we are at an equilibrium.
+ 
+\end_layout
+
+\begin_layout Standard
+Since we know the result of the Bertrand price competition given capacity
+ constraints, firms will now maximize profits by solving for the optimal
+ capacities 
+\begin_inset Formula $(q_{1}^{*},q_{2}^{*})$
+\end_inset
+
+, given prices will equal 
+\begin_inset Formula $p(q_{1}+q_{2})$
+\end_inset
+
+.
+ Sound familiar? It should, because this is the set up of the Cournot model.
+ 
+\end_layout
+
+\end_body
+\end_document

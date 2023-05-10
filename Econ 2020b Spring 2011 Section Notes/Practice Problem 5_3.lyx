@@ -1,0 +1,163 @@
+#LyX 1.6.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+\end_modules
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+Practice Problem 5.3
+\end_layout
+
+\begin_layout Subsection*
+Part (a)
+\end_layout
+
+\begin_layout Standard
+At 
+\begin_inset Formula $p^{*}=7$
+\end_inset
+
+, 
+\begin_inset Formula $Q^{*}=28$
+\end_inset
+
+.
+ In turn, each firm produces 
+\begin_inset Formula $q_{1}^{*}=q_{2}^{*}=14.$
+\end_inset
+
+ Profit for each firm at this price/quantity vector is equal to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\pi_{i}(p_{i}=7)=p^{*}\cdot q_{i}^{*}-C(q_{i}^{*})=7\cdot14-\frac{1}{2}\cdot14^{2}=0.\]
+
+\end_inset
+
+We need to check that this is an equilibrium.
+ Consider a deviation by firm 1, such that it reduces its price to 
+\begin_inset Formula $7-\varepsilon$
+\end_inset
+
+.
+ Then firm 1's payoff is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\pi_{1}(p_{1}=7-\varepsilon)=7\cdot28-\frac{1}{2}\cdot28^{2}<0.\]
+
+\end_inset
+
+The payoff from deviation is less than that from the candidate equilibrium
+ price/quantity vector.
+ The same applies for firm 2 and so this price/quantity vector constitutes
+ an equilibrium.
+\end_layout
+
+\begin_layout Subsection*
+Part (b)
+\end_layout
+
+\begin_layout Standard
+At 
+\begin_inset Formula $p^{*}=15$
+\end_inset
+
+, 
+\begin_inset Formula $Q^{*}=20$
+\end_inset
+
+.
+ In turn, each firm produces 
+\begin_inset Formula $q_{1}^{*}=q_{2}^{*}=10.$
+\end_inset
+
+ Profit for each firm at this price/quantity vector is equal to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\pi_{i}(p_{i}=7)=p^{*}\cdot q_{i}^{*}-C(q_{i}^{*})=15\cdot10-\frac{1}{2}\cdot10^{2}=100>0.\]
+
+\end_inset
+
+We need to check that this is an equilibrium.
+ Consider a deviation by firm 1, such that it reduces its price to 
+\begin_inset Formula $10-\varepsilon$
+\end_inset
+
+.
+ Then firm 1's payoff is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\pi_{1}(p_{1}=10-\varepsilon)=10\cdot20-\frac{1}{2}\cdot20^{2}=0.\]
+
+\end_inset
+
+Again, the payoff from deviation is less than that from the candidate equilibriu
+m price/quantity vector.
+ The same applies for firm 2 and so this price/quantity vector constitutes
+ an equilibrium.
+\end_layout
+
+\begin_layout Subsection*
+Part (c)
+\end_layout
+
+\begin_layout Standard
+The reason that firms can get positive profits in equilibrium is because
+ cost functions are convex.
+ If firm 1 undercuts firm 2, firm 1's benefit is selling to the entire market.
+ However, this increase in market share has a trade-off: namely that since
+ marginal costs are increasing, the increased total cost may offset the
+ increase in revenue from selling to the entire market.
+ 
+\end_layout
+
+\end_body
+\end_document

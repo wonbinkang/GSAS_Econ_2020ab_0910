@@ -1,0 +1,1250 @@
+#LyX 1.6.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+\end_modules
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Section Notes 4
+\end_layout
+
+\begin_layout Author
+Abby Friedman, Wonbin Kang
+\end_layout
+
+\begin_layout Date
+October 1, 2010
+\end_layout
+
+\begin_layout Part*
+Agenda
+\end_layout
+
+\begin_layout Enumerate
+Linear Approximation of EV (or CV)
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+If time, we'll cover in section.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Probability Review
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+I'm going to assume that most of you know basic probability.
+ If you're having trouble, please schedule office hours with me or Sam.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Expected Utility
+\end_layout
+
+\begin_layout Enumerate
+Independence Axiom
+\end_layout
+
+\begin_layout Enumerate
+Evaluations
+\end_layout
+
+\begin_layout Section
+Linear Approximation of EV
+\end_layout
+
+\begin_layout Problem
+Assume that there are two goods in the world.
+ For a general change in the price of good 1 (while the price of good 2
+ remains the same), calculate the EV (or CV).
+ Assume that the Walrasian demand function for good 1 given a particular
+ price-wealth vector is equal to 
+\begin_inset Formula $x_{1}(p_{1},p_{2},w)$
+\end_inset
+
+, and the Hicksian demand function good 1 given a particular price-utility
+ vector is equal to 
+\begin_inset Formula $h_{1}(p_{1},p_{2},u)$
+\end_inset
+
+.
+ For purposes of this exercise, assume that the Walrasian and Hicksian demand
+ functions are 
+\shape italic
+not
+\shape default
+ linear and further assume that you can only observe the price-wealth vectors,
+ but not the utilities of the agents.
+ 
+\end_layout
+
+\begin_layout Standard
+We're faced with two problems: first, we have a non-linear function which
+ makes analytical problem solving very difficult, and two, if we wanted
+ to empirically test our model, solving for EV requires us to use a parameter
+ that is not observable, 
+\begin_inset Formula $u^{1}$
+\end_inset
+
+ (or 
+\begin_inset Formula $u^{0}$
+\end_inset
+
+ if we want to calculate CV).
+ 
+\end_layout
+
+\begin_layout Subsection
+First Order Taylor Approximation
+\end_layout
+
+\begin_layout Standard
+A basic idea in mathematics when dealing with non-linear functions is to
+ approximate such an equation with a linear function.
+ A tool for such approximation is the first order Taylor approximation.
+ Consider a non-linear function 
+\begin_inset Formula $f:\mathbb{R}^{n}\rightarrow\mathbb{R}$
+\end_inset
+
+.
+ We can approximate this function around the point 
+\begin_inset Formula $\vec{x}^{*}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f(\vec{x})\approx\tilde{f}(\vec{x})=f(\vec{x}^{*})+\nabla f(\vec{x}^{*})(\vec{x}-\vec{x}^{*}),\]
+
+\end_inset
+
+or, if we're dealing with a function 
+\begin_inset Formula $f:\mathbb{R}\rightarrow\mathbb{R}$
+\end_inset
+
+ (as we will be dealing with when approximating EV and CV)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f(x)\approx\tilde{f}(x)=f(x^{*})+f'(x^{*})(x-x^{*}).\]
+
+\end_inset
+
+This gives us an approximation of the function 
+\begin_inset Formula $f$
+\end_inset
+
+, using a linear function that is tangent to 
+\begin_inset Formula $f$
+\end_inset
+
+ at the point 
+\begin_inset Formula $\vec{x}^{*}$
+\end_inset
+
+ (or 
+\begin_inset Formula $x^{*}$
+\end_inset
+
+).
+ What is important to see is that the approximation becomes less precise
+ as the values of 
+\begin_inset Formula $\vec{x}$
+\end_inset
+
+ move away from 
+\begin_inset Formula $\vec{x}^{*}$
+\end_inset
+
+.
+ Therefore, it is important that you choose the 
+\begin_inset Quotes eld
+\end_inset
+
+optimal
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $\vec{x}^{*}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Application to Estimation of EV
+\end_layout
+
+\begin_layout Standard
+Now recall that we want to calculate EV, which is equal to 
+\begin_inset Formula $\int_{p_{1}^{1}}^{p_{1}^{0}}h_{1}(p_{1},\vec{p}_{-1},u^{1})dp_{1}=\int_{p_{1}^{1}}^{p_{1}^{0}}h_{1}(p_{1},p_{2}^{0},u^{1})dp_{1}(\because\vec{p}\in\mathbb{R}_{+}^{2})$
+\end_inset
+
+.
+ If we know that the Hicksian demand function of good 1 is non-linear, then
+ we can approximate it using the first-order Taylor Approximation.
+ First, what value of 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+should we use to approximate the non-linear Hicksian? The answer is obviously
+ the new price of good 1, or 
+\begin_inset Formula $p_{1}^{1}$
+\end_inset
+
+, because we are using the Hicksian demand curve for the new utility level
+ 
+\begin_inset Formula $u^{1}$
+\end_inset
+
+, or the Hicksian demand curve through the point 
+\begin_inset Formula $p_{1}^{1}$
+\end_inset
+
+and 
+\begin_inset Formula $h_{1}(p_{1}^{1},p_{2}^{0},u^{1})$
+\end_inset
+
+.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+So what point should we use if we were estimating the CV of a price change
+ in good 1? Do you see that the approximation has to be around the point
+ 
+\begin_inset Formula $(p_{1}^{0},h_{1}(p_{1}^{0},p_{2}^{0},u^{0})$
+\end_inset
+
+)? 
+\end_layout
+
+\end_inset
+
+ And so:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+h_{1}(p_{1},p_{2}^{0},u^{1})\approx h_{1}(p_{1}^{1},p_{2}^{0},u^{1})+\frac{\partial h_{1}(p_{1}^{1},p_{2}^{0},u^{1})}{\partial p_{1}}(p_{1}-p_{1}^{1}).\label{eq:App of Hicks}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The problem is that equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:App of Hicks"
+
+\end_inset
+
+ cannot be observed.
+ Can you observe 
+\begin_inset Formula $u^{1}$
+\end_inset
+
+? Therefore, we need to change the approximation to a function that includes
+ only parameters that we can observe.
+ First, we know that: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+h_{1}(p_{1}^{1},p_{2}^{0},u^{1})=x_{1}(p_{1}^{1},p_{2}^{0},w).\label{eq:Walrasin =00003D Hicksian}\end{equation}
+
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+If you don't see this, try drawing a picture.
+ 
+\end_layout
+
+\end_inset
+
+ Second, we can use the Slutsky equation for the partial derivative in the
+ second argument of equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:App of Hicks"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\frac{\partial h_{1}(p_{1}^{1},p_{2}^{0},u^{1})}{\partial p_{1}}=\frac{\partial x_{1}(p_{1}^{1},p_{2}^{0},w)}{\partial p_{1}}+\frac{\partial x_{1}(p_{1}^{1},p_{2}^{0},w)}{\partial w}\times x_{1}(p_{1}^{1},p_{2}^{0},w).\label{eq:Slutsky Eq}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If we plug in equations 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Walrasin = Hicksian"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Slutsky Eq"
+
+\end_inset
+
+ into equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:App of Hicks"
+
+\end_inset
+
+, then we have the linear estimation of the non-linear Hicksian demand curve
+ for good 1, in terms of observable parameters
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+In other words, we've gotten rid of the pesky 
+\begin_inset Formula $u^{1}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+h_{1}(p_{1},p_{2}^{0},u^{1})\approx x_{1}(p_{1}^{1},p_{2}^{0},w)+\left[\frac{\partial x_{1}(p_{1}^{1},p_{2}^{0},w)}{\partial p_{1}}+\frac{\partial x_{1}(p_{1}^{1},p_{2}^{0},w)}{\partial w}\times x_{1}(p_{1}^{1},p_{2}^{0},w)\right](p_{1}-p_{1}^{1}).\label{eq:App of Hick FINAL}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+One final note, notice the difference between the estimation of the Hicksian
+ demand curve in equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:App of Hick FINAL"
+
+\end_inset
+
+ and the following Taylor approximation of the Walrasian demand curve around
+ the point 
+\begin_inset Formula $(p_{1}^{1`},x_{1}(p_{1}^{1},p_{2}^{0},w))$
+\end_inset
+
+ (which we could use to calculate the Marshallian Consumer Surplus):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+x_{1}(p_{1},p_{2}^{0},w)\approx x_{1}(p_{1}^{1},p_{2}^{0},w)+\frac{\partial x_{1}(p_{1}^{1},p_{2}^{0},w)}{\partial p_{1}}(p_{1}-p_{1}^{1}).\label{eq:Walrasian taylor expansion}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Try to estimate the Hicksian demand function to calculate CV.
+ As above, try a general two good framework.
+\end_layout
+
+\begin_layout Subsection
+Example (from Miller Notes p.81)
+\end_layout
+
+\begin_layout Standard
+Suppose that we knew that 
+\begin_inset Formula $x_{1}(p_{1}^{0},p_{2}^{0},w)=100$
+\end_inset
+
+; 
+\begin_inset Formula $p_{1}^{0}=10$
+\end_inset
+
+; 
+\begin_inset Formula $\frac{\partial x}{\partial p}=-4$
+\end_inset
+
+; and 
+\begin_inset Formula $\frac{\partial x}{\partial w}=0.02$
+\end_inset
+
+ .
+ Let's assume that the price of good 1 increased to 
+\begin_inset Formula $p_{1}^{1}=12.5$
+\end_inset
+
+.
+ The question asks: 
+\begin_inset Quotes eld
+\end_inset
+
+How much should a public assistance program aimed at maintaining a certain
+ standard of living be increased to offset this price increase?
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Obviously, we need to calculate the CV (since the question was phrased in
+ terms of a social planner compensating the consumers for a price increase
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+You should know that CV is going to be negative.
+ 
+\end_layout
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+Since we're looking for the CV, we have to use the Hicksian demand correspondenc
+e for the utility level 
+\begin_inset Formula $u^{0}$
+\end_inset
+
+, 
+\begin_inset Formula $h_{1}(p_{1},p_{2}^{0},u^{0})$
+\end_inset
+
+.
+ We know that 
+\begin_inset Formula $h_{1}(p_{1}^{0}=10,p_{2}^{0},u^{0})=x_{1}(p_{1}^{0}=10,p_{2}^{0},w)=100$
+\end_inset
+
+ , and we know that we can approximate the slope of 
+\begin_inset Formula $h_{1}(p_{1},p_{2}^{0},u^{0})$
+\end_inset
+
+ via the Slutsky equation as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial h_{1}(p_{1}^{0},p_{2}^{0},u^{0})}{\partial p_{1}} & = & \frac{\partial x_{1}(p_{1}^{0},p_{2}^{0},w)}{\partial p_{1}}+\frac{\partial x_{1}(p_{1}^{0},p_{2}^{0},w)}{\partial w}\times x_{1}(p_{1}^{0},p_{2}^{0},w)\\
+ & = & -4+0.02\times100\\
+ & = & -2.\end{eqnarray*}
+
+\end_inset
+
+Therefore, the Hicksian demand at the new price 
+\begin_inset Formula $p_{1}^{1}=12.5$
+\end_inset
+
+ is approximated by:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+h_{1}(p_{1},p_{2}^{0},u^{0}) & \approx & h_{1}(p_{1}^{0},p_{2}^{0},u^{0})+\frac{\partial h_{1}(p_{1}^{0},p_{2}^{0},u^{0})}{\partial p_{1}}(p_{1}-p_{1}^{0})\\
+h_{1}(p_{1},p_{2}^{0},u^{0}) & \approx & 100+(-2)\times(p_{1}-10)\\
+\therefore h_{1}(p_{1}=12.5,p_{2}^{0},u^{0}) & \approx & 100+(-2)\times2.5=95.\end{eqnarray*}
+
+\end_inset
+
+Computing the CV, we get:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+|CV|=(2.5)\times\left(\frac{95+100}{2}\right)=243.75.\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As an exercise, try calculating the Marshallian Consumer Surplus 
+\begin_inset Formula $(\Delta CS)$
+\end_inset
+
+ by using the linear approximation of the Walrasian demand function.
+\end_layout
+
+\begin_layout Section
+Probability Review
+\end_layout
+
+\begin_layout Subsection
+PDF (PMF): Probability Density (Mass) Function
+\end_layout
+
+\begin_layout Standard
+In the discrete case, the PMF of a random variable 
+\begin_inset Formula $X$
+\end_inset
+
+ is given by 
+\begin_inset Formula $f(x)=\Pr(X=x)$
+\end_inset
+
+.
+ Note that the PMF 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ must be defined from all values of 
+\begin_inset Formula $x$
+\end_inset
+
+ that can be taken by the random variable 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f(x)=\begin{cases}
+\frac{1}{2}\, if\, & X=5\\
+\frac{1}{2}\, if\, & X=10\\
+0 & otherwise\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the continuous case, the PDF of a random variable X is also given by
+ 
+\begin_inset Formula $f(x)$
+\end_inset
+
+, however, in this case, the 
+\begin_inset Formula $\Pr(X=x)=0$
+\end_inset
+
+.
+ The PDF is defined in terms of intervals and so, 
+\begin_inset Formula $\Pr(a\leq X\leq b)=\int_{a}^{b}f(x)dx$
+\end_inset
+
+.
+ Note that 
+\begin_inset Formula $\int_{-\infty}^{\infty}f(x)dx=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula $f(x)=\frac{1}{\sqrt{2\pi\sigma^{2}}}\exp\left(-\frac{(x-\mu)^{2}}{2\sigma^{2}}\right)$
+\end_inset
+
+ is the pdf of a normal distribution with mean 
+\begin_inset Formula $\mu$
+\end_inset
+
+and variance equal to 
+\begin_inset Formula $\sigma^{2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+CDF: Cumulative Distribution Function
+\end_layout
+
+\begin_layout Standard
+The CDF of a random variable 
+\begin_inset Formula $X$
+\end_inset
+
+ is given by 
+\begin_inset Formula $F(x)=\Pr(X\leq x)=\sum_{x_{i}\leq x}f(x_{i})$
+\end_inset
+
+ in the discrete case and 
+\begin_inset Formula $F(x)=\Pr(X\leq x)=\int_{-\infty}^{x}f(x)dx$
+\end_inset
+
+ in the continuous case.
+ 
+\end_layout
+
+\begin_layout Standard
+The CDF is bounded above and below by 1 and 0 respectively: 
+\begin_inset Formula $\lim_{x\rightarrow\infty}F(x)=1$
+\end_inset
+
+ and 
+\begin_inset Formula $\lim_{x\rightarrow-\infty}F(x)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Expectation (or Expected Value)
+\end_layout
+
+\begin_layout Standard
+The expectation or expected value of a random variable is the probability
+ weighted average value of the random variable.
+ Therefore, in the discrete case, we have that 
+\begin_inset Formula $E(X)=\sum_{x_{i}\in X}p_{i}x_{i}$
+\end_inset
+
+ and in the continuous case we have that 
+\begin_inset Formula $E(X)=\int_{-\infty}^{\infty}xdF(x)=\int_{-\infty}^{\infty}xf(x)dx$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Since we sometimes deal with expected utilities, it is important not to
+ conflate the concept of expected value and that of expected utility.
+ It is 
+\shape italic
+not
+\shape default
+ the case that the expected utility of a lottery is equal to the utility
+ of a lottery's expected value:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+U(L)\neq u(E(L)),\]
+
+\end_inset
+
+where 
+\begin_inset Formula $L=[p_{1},...,p_{n}]$
+\end_inset
+
+ and 
+\begin_inset Formula $E(L)=\sum_{i=1}^{n}p_{i}x_{i}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section
+Expected Utility Theorem
+\end_layout
+
+\begin_layout Subsection
+Assumptions on Preferences
+\end_layout
+
+\begin_layout Standard
+Recall that when we started consumer theory, we placed assumptions (or restricti
+ons) on the preferences over a set 
+\begin_inset Formula $X$
+\end_inset
+
+, which denoted all of the bundle of goods (2 goods for Ec 2020a and 
+\begin_inset Formula $L$
+\end_inset
+
+ goods for MWG).
+ Similarly, we are going to place certain restrictions on our preferences
+ over 
+\begin_inset Formula $\mathfrak{L},$
+\end_inset
+
+which denotes the set of lotteries 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ These assumptions are:
+\end_layout
+
+\begin_layout Enumerate
+Rationality
+\end_layout
+
+\begin_layout Enumerate
+Consequentialist: for any risky alternative, only the reduced lottery over
+ final outcomes is of relevance to the decision maker.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+MWG p.
+ 170
+\end_layout
+
+\end_inset
+
+ This means that our set 
+\begin_inset Formula $\mathfrak{L}$
+\end_inset
+
+ is limited to a set of simple lotteries.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Continuous: 
+\begin_inset Formula $\succsim$
+\end_inset
+
+ on the set of simple lotteries 
+\begin_inset Formula $\mathfrak{L}$
+\end_inset
+
+ is continous if 
+\begin_inset Formula $\forall L,\, L',\, L''\in\mathfrak{L}$
+\end_inset
+
+, the following sets are 
+\begin_inset Quotes eld
+\end_inset
+
+closed
+\begin_inset Quotes erd
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ \alpha\in[0,1]:\alpha L+(1-\alpha)L'\succsim L''\right\} \subset[0,1]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ \alpha\in[0,1]:\alpha L+(1-\alpha)L'\precsim L''\right\} \subset[0,1]$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+In words, this means that small changes in probabilities do not change the
+ ordering between lotteries.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Independence Axiom (
+\begin_inset Quotes eld
+\end_inset
+
+IA
+\begin_inset Quotes erd
+\end_inset
+
+): 
+\begin_inset Formula $\succsim$
+\end_inset
+
+ on the set of simple lotteries 
+\begin_inset Formula $\mathfrak{L}$
+\end_inset
+
+ satisfies IA if 
+\begin_inset Formula $\forall L,\, L',\, L''\in\mathfrak{L}$
+\end_inset
+
+, and 
+\begin_inset Formula $\alpha\in[0,1]$
+\end_inset
+
+, we have that:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $L\succsim L'$
+\end_inset
+
+ iff 
+\begin_inset Formula $\alpha L+(1-\alpha)L''\succsim\alpha L'+(1-\alpha)L''$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Expected Utility Function
+\end_layout
+
+\begin_layout Standard
+Once we assume the above, the there exists a utility function 
+\begin_inset Formula $U:\mathfrak{L}\rightarrow\mathfrak{R}$
+\end_inset
+
+ of the following form:
+\begin_inset Formula \[
+U(L)=\sum_{i=1}^{N}p_{i}u_{i},\]
+
+\end_inset
+
+s.t.
+ 
+\begin_inset Formula $L\succsim L'$
+\end_inset
+
+ iff 
+\begin_inset Formula $U(L)\geq U(L')$
+\end_inset
+
+, where 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+ is the probability of event 
+\begin_inset Formula $i$
+\end_inset
+
+ occurring and 
+\begin_inset Formula $u_{i}$
+\end_inset
+
+ is the utility that you get from that event.
+ The point that needs to get across is that a lottery 
+\begin_inset Formula $L$
+\end_inset
+
+ is a vector of probabilities (and so the elements of 
+\begin_inset Formula $L$
+\end_inset
+
+ should sum to 1) that places probabilities on each of the events that is
+ represented by the row of the vector.
+ Then 
+\begin_inset Formula $u_{i}=u(x_{i})$
+\end_inset
+
+ means that the Bernoulli utility function assigns the real number 
+\begin_inset Formula $u_{i}$
+\end_inset
+
+ to the event 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ and the probability of this event happening is represented by the 
+\begin_inset Formula $i$
+\end_inset
+
+th element of the lottery 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Sometimes we write as follows (for the discrete and continuous case):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E(u(x)) & = & \sum_{i=1}^{N}p_{i}u(x_{i})\\
+E(u(x)) & = & \int_{\underline{x}}^{\bar{x}}u(x)dF(x)=\int_{\underline{x}}^{\bar{x}}u(x)f(x)dx.\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Solving the UMP under uncertainty requires you to:
+\end_layout
+
+\begin_layout Enumerate
+Identify each of the possible outcomes: 
+\begin_inset Formula $x_{1},...,x_{K}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Identify utility associated with each of the possible outcomes: 
+\begin_inset Formula $u(x_{1}),...,u(x_{K})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Identify probability of each outcome for each lottery: 
+\begin_inset Formula $L=\left[p_{1}^{L},...,p_{K}^{L}\right]$
+\end_inset
+
+ or 
+\begin_inset Formula $F(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Maximize by choosing the optimal outcome or the optimal lottery:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $x^{*}=argmax_{x}E(u(x))$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $L^{*}=argmax_{L}E(u(x))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Transformation and Normalization of Utility
+\end_layout
+
+\begin_layout Standard
+Recall the ordinality of utilities and how we transformed utility functions
+ via a monotonic transformation.
+ We cannot apply any type of monotone transformation when we're dealing
+ with expected utility, as we could in consumer theory.
+ In fact, we can only apply 
+\shape italic
+positive linear
+\shape default
+ transformations to a given expected utility function.
+ See Proposition 6.B.2 of MWG for a proof.
+ In short, if 
+\begin_inset Formula $\tilde{U}(\cdot)$
+\end_inset
+
+ is a monotonic transformation of 
+\begin_inset Formula $U(\cdot)$
+\end_inset
+
+, then it must be the case that 
+\begin_inset Formula $\tilde{U}(L)=\beta U(L)+\alpha$
+\end_inset
+
+, 
+\begin_inset Formula $\beta>0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Aside from transforming the expected utility function, another simplification
+ that might come in handy in your research is the normalization of the Bernoulli
+ utilities.
+ Let's assume that there exists a continuum of states 
+\begin_inset Formula $x\in[\underline{x},\bar{x}]$
+\end_inset
+
+, then we can normalize utility such that 
+\begin_inset Formula $u(\underline{x})=0$
+\end_inset
+
+ and 
+\begin_inset Formula $u(\bar{x})=1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Example
+Given 
+\begin_inset Formula $u(x)=\sqrt{x}$
+\end_inset
+
+; 
+\begin_inset Formula $L=\left[\frac{1}{3},\frac{1}{3},\frac{1}{3}\right]$
+\end_inset
+
+; and 
+\begin_inset Formula $\vec{x}=\left[1,4,36\right]$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+We can assume that the outcomes are money values.
+ 
+\end_layout
+
+\end_inset
+
+, we know that 
+\begin_inset Formula $U(L)=\left(\frac{1}{3}\times\sqrt{1}\right)+\left(\frac{1}{3}\times\sqrt{4}\right)+\left(\frac{1}{3}\times\sqrt{36}\right)=3$
+\end_inset
+
+.
+ If we want to transform the Bernoulli utilities such that 
+\begin_inset Formula $u(\underline{x}=1)=0$
+\end_inset
+
+ and 
+\begin_inset Formula $u(\bar{x}=36)=1$
+\end_inset
+
+, then:
+\end_layout
+
+\begin_layout Example
+\begin_inset Formula \begin{eqnarray*}
+v(x) & = & \frac{u(x)-u(\underline{x})}{u(\bar{x})-u(\underline{x})}=\frac{u(x)-1}{6-1}=\frac{1}{5}\left(u(x)-1\right)\\
+v(4) & = & \frac{1}{5}\left(\sqrt{4}-1\right)=\frac{1}{5}.\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+Therefore, we know that the new utility function
+\begin_inset Formula $\tilde{U}(L)=p_{1}v(1)+p_{2}v(4)+p_{3}v(36)=\frac{1}{3}\cdot\frac{1}{5}+\frac{1}{3}=\frac{2}{5}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section
+Independence Axiom (or the Independence of Irrelevant Alternatives)
+\end_layout
+
+\begin_layout Definition
+The preference relationship
+\begin_inset Formula $\succsim$
+\end_inset
+
+ on the set of simple lotteries 
+\begin_inset Formula $\mathfrak{L}$
+\end_inset
+
+ satisfies IA if 
+\begin_inset Formula $\forall L,L',L''\in\mathfrak{L}$
+\end_inset
+
+, and 
+\begin_inset Formula $\alpha\in[0,1])$
+\end_inset
+
+, we have that:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $L\succsim L'$
+\end_inset
+
+ iff 
+\begin_inset Formula $\alpha L+(1-\alpha)L''\succsim\alpha L'+(1-\alpha)L''$
+\end_inset
+
+.
+ In words, mixing in the same probability of a third outcome or lottery
+ should not affect the original choice ordering (preference ordering), or
+ if two (2) lotteries have common components, you can disregard the common
+ component and determine the preference relationship between the two lotteries
+ based on the non-common components.
+ 
+\end_layout
+
+\begin_layout Example
+There are two lotteries: 
+\begin_inset Formula $L_{1}=\left[\frac{1}{3},\frac{1}{3},\frac{1}{3}\right]$
+\end_inset
+
+ and 
+\begin_inset Formula $L_{2}=\left[\frac{1}{9},\frac{7}{9},\frac{1}{9}\right]$
+\end_inset
+
+.
+ Which of the two lotteries/strategies
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+For those of you who have taken game theory, can you see why I used the
+ term strategies?
+\end_layout
+
+\end_inset
+
+ do you prefer? 
+\end_layout
+
+\begin_layout Standard
+We use IA to simplify the two lotteries by removing the 
+\begin_inset Quotes eld
+\end_inset
+
+common
+\begin_inset Quotes erd
+\end_inset
+
+ parts (the 
+\begin_inset Formula $L''$
+\end_inset
+
+ in the Definition above).
+ Note that we can write the common part of the two lotteries as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+L_{common}=\left[\frac{1}{9},\frac{1}{3},\frac{1}{9}\right]\cdot\frac{9}{5}=\left[\frac{1}{5},\frac{3}{5},\frac{1}{5}\right].\]
+
+\end_inset
+
+Now we need to find the noncommon parts of each lottery:
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+We call a lottery like 
+\begin_inset Formula $L_{2}^{*}$
+\end_inset
+
+ a degenerate lottery (much like a degenerate density).
+ 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula \begin{eqnarray*}
+L_{1}^{*} & = & \left[\frac{2}{9},0,\frac{2}{9}\right]\cdot\frac{9}{4}=\left[\frac{1}{2},0,\frac{1}{2}\right],\\
+L_{2}^{*} & = & \left[0,\frac{4}{9},0\right]\cdot\frac{9}{4}=\left[0,1,0\right].\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Therefore, by IA, whether an agent prefers 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ to 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ will depend on whether 
+\begin_inset Formula $L_{1}^{*}\succsim L_{2}^{*}$
+\end_inset
+
+, or whether 
+\begin_inset Formula $\frac{1}{2}u(x_{1})+\frac{1}{2}u(x_{3})\geq u(x_{2})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_body
+\end_document

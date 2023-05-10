@@ -1,0 +1,1454 @@
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+\end_modules
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Section Notes 6
+\end_layout
+
+\begin_layout Author
+Wonbin Kang and Sam Richardson
+\end_layout
+
+\begin_layout Date
+March 10, 2011
+\end_layout
+
+\begin_layout Part*
+Agenda
+\end_layout
+
+\begin_layout Enumerate
+Partial Equilibrium
+\end_layout
+
+\begin_layout Enumerate
+Fundamental Welfare Theorem Failure
+\end_layout
+
+\begin_layout Enumerate
+Practice Problem 9.4
+\end_layout
+
+\begin_layout Enumerate
+Practice Problem 9.5
+\end_layout
+
+\begin_layout Section
+Partial Equilibrium
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+We call it partial equilibrium because we focus on one good and a composite
+ commodity (all other goods).
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+The Model (and Notation)
+\end_layout
+
+\begin_layout Subsubsection
+The Consumers
+\end_layout
+
+\begin_layout Standard
+There are a total of 
+\begin_inset Formula $I$
+\end_inset
+
+ consumers each with the following utility function:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+u_{i}(m_{i},x_{i})=m_{i}+\phi_{i}(x_{i})\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\phi'(\cdot)>0$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi''(\cdot)<0$
+\end_inset
+
+.
+ Each individual 
+\begin_inset Formula $i\in I$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Abusing notation, as always.
+\end_layout
+
+\end_inset
+
+ has an endowment of the numeraire good 
+\begin_inset Formula $m$
+\end_inset
+
+ equal to 
+\begin_inset Formula $w_{i}$
+\end_inset
+
+ and no endowment of good 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+It's fine to think of the numeraire good as money.
+ However, note that since we're in the partial equilibrium context, we might
+ want to think of the numeraire good as the money value of all other goods
+ in the economy.
+\end_layout
+
+\end_inset
+
+ The price vector for the two goods 
+\begin_inset Formula $\vec{p}=[p_{m},p_{x}]=[1,p]$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+In an equilibrium, all consumers will maximize their utilities subject to
+ their respective budget constraints.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+The Producers (Firms)
+\end_layout
+
+\begin_layout Standard
+There are a total of 
+\begin_inset Formula $J$
+\end_inset
+
+ producers each of whom have a cost function, 
+\begin_inset Formula $c_{j}(q_{j})$
+\end_inset
+
+,
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Note that MWG may use the more general notation 
+\begin_inset Formula $y$
+\end_inset
+
+ to be consistent with the production plan vector 
+\begin_inset Formula $\vec{y}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+ which is measured in terms of units of the numeraire good.
+ Producers (or firms) use the numeraire good, which is supplied by the consumers
+ (recall that consumers are endowed with the numeraire good) in exchange
+ for good 
+\begin_inset Formula $x$
+\end_inset
+
+, and transform them into the output good 
+\begin_inset Formula $x$
+\end_inset
+
+ which is denoted in the context of the firm as 
+\begin_inset Formula $q$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Note also that the firms themselves are owned by the consumers.
+ The ownership share of consumer 
+\begin_inset Formula $i$
+\end_inset
+
+ in firm 
+\begin_inset Formula $j$
+\end_inset
+
+ is equal to 
+\begin_inset Formula $\theta_{ij}$
+\end_inset
+
+, and so 
+\begin_inset Formula $\sum_{i=1}^{I}\theta_{ij}=1$
+\end_inset
+
+.
+ It is also important to remember the budget constraint of the consumer's
+ utility maximization problem must also take into consideration this ownership
+ share of firms.
+ Therefore, the total wealth available to consumer 
+\begin_inset Formula $i$
+\end_inset
+
+ is equal to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+w_{i}+\sum_{j=1}^{J}\theta_{ij}\Pi_{j}(p^{*}),\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\Pi_{j}(p^{*})$
+\end_inset
+
+ is equal to the profit of firm 
+\begin_inset Formula $j$
+\end_inset
+
+ at price 
+\begin_inset Formula $p^{*}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Market Clears at equilibrium price 
+\begin_inset Formula $p^{*}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It must be the case that at the equilibrium price, 
+\begin_inset Formula $p^{*}$
+\end_inset
+
+, the total amount of good 
+\begin_inset Formula $x$
+\end_inset
+
+ demanded and supplied must be equal:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\sum_{i=1}^{I}x_{i}=\sum_{j=1}^{J}q_{j}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Partial Equilibrium Example
+\end_layout
+
+\begin_layout Standard
+What is the market equilibrium in the following case: 100 consumers, all
+ with 
+\begin_inset Formula $u_{i}(m_{i},x_{i})=m_{i}+\ln x_{i}$
+\end_inset
+
+ and endowment 
+\begin_inset Formula $w_{i}=\frac{1}{100}w_{m}$
+\end_inset
+
+; 
+\begin_inset Formula $\vec{p}=[p_{m},p_{x}]=[1,p]$
+\end_inset
+
+; and one firm, with cost function 
+\begin_inset Formula $c(q)=5q^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\forall i$
+\end_inset
+
+ the ownership share 
+\begin_inset Formula $\theta_{ij=1}=\frac{1}{100}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Producers
+\end_layout
+
+\begin_layout Standard
+Each producer solves the PMP (in our problem, we only have one firm) to
+ derive the net supply function of good 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ In short, we are looking for the optimal value of 
+\begin_inset Formula $q^{*}$
+\end_inset
+
+ in terms of the parameter 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Therefore,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\max_{q}\Pi(p)=pq-c(q)=pq-5q^{2}.\]
+
+\end_inset
+
+The FOCs result in:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial\Pi(q^{*})}{\partial q}=p-10q^{*}=0\]
+
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\begin_inset Formula $\frac{\partial^{2}\Pi(q^{*})}{\partial q^{2}}=-10<0$
+\end_inset
+
+, so we're at a maximum.
+ 
+\end_layout
+
+\end_inset
+
+ and so the supply function can be written as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+q^{*}(p)=\frac{p}{10},\label{eq:supply}\end{equation}
+
+\end_inset
+
+and the optimal profit function is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\Pi^{*}(p)=\frac{p^{2}}{10}-\frac{5p^{2}}{100}=\frac{p^{2}}{20}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Consumers
+\end_layout
+
+\begin_layout Standard
+Each consumer 
+\begin_inset Formula $i$
+\end_inset
+
+, of 100 consumers in the market, solves his or her own utility maximization
+ problem subject to a wealth constraint:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\max_{m_{i},x_{i}}u_{i}(m_{i},x_{i})=m_{i}+\ln x_{i}\, s.t.\, m_{i}+px_{i}\leq\frac{w_{m}}{100}+\frac{\Pi^{*}(p)}{100}\]
+
+\end_inset
+
+where we know that at the optimum, the constraint will bind.
+ This is important since we don't have to resort to the Lagrangian method.
+ We can rewrite the problem as an unconstrained maximization:
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Do we have to worry about corner solutions? Recall that 
+\begin_inset Formula $m_{i}$
+\end_inset
+
+ is allowed to be negative (meaning that the consumer can borrow) and that
+ the Inada condition for the non-numeraire good applies.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\max_{x_{i}}u_{i}(x_{i})=-px_{i}+\frac{w_{m}}{100}+\frac{\Pi^{*}(p)}{100}+\ln x_{i}.\]
+
+\end_inset
+
+The FOCs result in:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\frac{\partial u(x_{i}^{*})}{\partial x_{i}}=-p+\frac{1}{x_{i}^{*}}=0\Rightarrow x_{i}^{*}(p)=\frac{1}{p}.\label{eq:demand}\end{equation}
+
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Note how the ownership share does not enter into the FOC.
+ Remember that we're using a quasilinear utility function, so there are
+ no wealth effects.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Markets Clear at the Equilibrium Price 
+\begin_inset Formula $p^{*}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since supply must equal demand at the equilibrium price, we have from equations
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:supply"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:demand"
+
+\end_inset
+
+ that the following equation must hold at the equilibrium 
+\begin_inset Formula $p^{*}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+q^{*}(p^{*})=\sum_{i=1}^{I}x_{i}^{*}(p^{*})\Rightarrow\frac{p^{*}}{10}=\frac{100}{p^{*}}\Rightarrow p^{*}=10\sqrt{10}\approx31.6\label{eq:market clear}\end{equation}
+
+\end_inset
+
+which means that the equilibrium level of good 
+\begin_inset Formula $x$
+\end_inset
+
+ that is consumed is equal to:
+\begin_inset Formula \[
+q^{*}(31.6)=\sum_{i=1}^{I}x_{i}^{*}(31.6)=\sqrt{10}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Practice Problem 9.4 Pareto Optimality and Various Utility Functions
+\end_layout
+
+\begin_layout Subsection*
+Part (a)
+\end_layout
+
+\begin_layout Standard
+FOCs for a Pareto optimal interior equilibrium with Cobb-Douglas preferences
+ is that the indifference curves of consumer 1 and 2 are tangent to each
+ other.
+ Therefore, the allocation 
+\begin_inset Formula $\left(\vec{x}^{*},\vec{y}^{*}\right)$
+\end_inset
+
+ is Pareto optimal if:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+-\frac{\frac{\partial u(x_{1}^{*},y_{1}^{*})}{\partial x_{1}}}{\frac{\partial u(x_{1}^{*},y_{1}^{*})}{\partial y_{1}}}=-\frac{\frac{\partial v(x_{2}^{*},y_{2}^{*})}{\partial x_{2}}}{\frac{\partial v(x_{2}^{*},y_{2}^{*})}{\partial y_{2}}}\Rightarrow\frac{ax_{1}^{*a-1}y_{1}^{*1-a}}{(1-a)x_{1}^{*a}y_{1}^{*-a}}=\frac{ax_{2}^{*a-1}y_{2}^{*1-a}}{(1-a)x_{2}^{*a}y_{2}^{*-a}}\Rightarrow\frac{x_{1}^{*}}{y_{1}^{*}}=\frac{x_{2}^{*}}{y_{2}^{*}}.\label{eq:1}\end{equation}
+
+\end_inset
+
+If we plug in the endowment constraints, equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1"
+
+\end_inset
+
+ simplifies to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\frac{x_{1}^{*}}{y_{1}^{*}}=\frac{x_{2}^{*}}{y_{2}^{*}}=\frac{e_{x}}{e_{y}}.\label{eq:C-D PO FOC}\end{equation}
+
+\end_inset
+
+where all 
+\begin_inset Formula $x_{i}^{*},y_{i}^{*}>0,\,\forall i\in\left\{ 1,2\right\} $
+\end_inset
+
+.
+ Therefore, any Pareto Optimal division of the endowment will take the form:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(x_{1}^{*},y_{1}^{*}\right)=\alpha\left(e_{x},e_{y}\right);\,\left(x_{2}^{*},y_{2}^{*}\right)=\left(1-\alpha\right)\left(e_{x},e_{y}\right),\,\alpha\in\left(0,1\right).\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Part (b)
+\end_layout
+
+\begin_layout Standard
+FOCs for Pareto optimal interior equilibrium with quasi-linear preferences
+ is that the indifference curves of consumer 1 and 2 are tangent to each
+ other.
+ Therefore, the allocation 
+\begin_inset Formula $(\vec{x}^{*},\vec{y}^{*})$
+\end_inset
+
+ is Pareto Optimal if:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+-\frac{\frac{\partial u(x_{1}^{*},y_{1}^{*})}{\partial x_{1}}}{\frac{\partial u(x_{1}^{*},y_{1}^{*})}{\partial y_{1}}}=-\frac{\frac{\partial v(x_{2}^{*},y_{2}^{*})}{\partial x_{2}}}{\frac{\partial v(x_{2}^{*},y_{2}^{*})}{\partial y_{2}}}\Rightarrow\frac{1}{f'(y_{1}^{*})}=\frac{1}{f'(y_{2}^{*})}\Rightarrow f'(y_{1}^{*})=f'(y_{2}^{*}),\label{eq:2}\end{equation}
+
+\end_inset
+
+which means that 
+\begin_inset Formula $y_{1}^{*}=y_{2}^{*}$
+\end_inset
+
+.
+ If we plug in the endowment constraints, equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2"
+
+\end_inset
+
+ simplifies to:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+y_{1}^{*}=y_{2}^{*}=\frac{e_{y}}{2}\label{eq:qlinear PO FOC}\end{equation}
+
+\end_inset
+
+where all 
+\begin_inset Formula $x_{i}^{*},y_{i}^{*}>0,\,\forall i\in\left\{ 1,2\right\} $
+\end_inset
+
+.
+ Therefore, any Pareto Optimal division of the endowment will take the form:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\left(x_{1}^{*},y_{1}^{*}\right)=\left(x_{1}^{*},\frac{e_{y}}{2}\right);\,\left(x_{2}^{*},y_{2}^{*}\right)=\left(e_{x}-x_{1}^{*},\frac{e_{y}}{2}\right).\label{eq:qlinear equi define-1}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Part (c)
+\end_layout
+
+\begin_layout Standard
+Let's consider the case where 
+\begin_inset Formula $x_{1}^{*}=0$
+\end_inset
+
+, which will generalize to the remaining cases.
+ We know that the marginal rate of substitution for each consumer can be
+ written as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+MRS_{i}=\frac{a}{1-a}\cdot\left(\frac{y_{i}}{x_{i}}\right).\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $x_{1}^{*}=0$
+\end_inset
+
+ and 
+\begin_inset Formula $y_{1}^{*}>0$
+\end_inset
+
+ (
+\begin_inset Formula $\Leftrightarrow x_{2}^{*}=e_{x},\, y_{2}^{*}\geq0$
+\end_inset
+
+), then 
+\begin_inset Formula $MRS_{1}\rightarrow\infty$
+\end_inset
+
+ and 
+\begin_inset Formula $MRS_{2}<\infty$
+\end_inset
+
+.
+ This means that 
+\begin_inset Formula $MRS_{1}>MRS_{2}$
+\end_inset
+
+, and that there is a Pareto improving trade to be made such that consumer
+ 1 demands good x and supplies good y and consumer 2 demands good y and
+ supplies good x.
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $x_{1}^{*}=0$
+\end_inset
+
+ and 
+\begin_inset Formula $y_{1}^{*}=0$
+\end_inset
+
+ (
+\begin_inset Formula $\Leftrightarrow x_{2}^{*}=e_{x},\, y_{2}^{*}=e_{y}$
+\end_inset
+
+), we know that this is a Pareto optimal equilibrium because you can't make
+ anyone better off without making someone else better off.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Part (d)
+\end_layout
+
+\begin_layout Standard
+Consider the case where 
+\begin_inset Formula $x_{1}^{*}=0$
+\end_inset
+
+ and 
+\begin_inset Formula $y_{1}^{*}>0$
+\end_inset
+
+ (
+\begin_inset Formula $\Leftrightarrow x_{2}^{*}=e_{x},\, y_{2}^{*}\geq0$
+\end_inset
+
+).
+ Since consumer 1 doesn't have any good 1, the only Pareto improving trade
+ would have consumer 1 demanding good x and supplying good y, while consumer
+ 2 must demand good y and supply good x.
+ The FOC for this trade to occur is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+MRS_{1}>MRS_{2}\]
+
+\end_inset
+
+which means that for there 
+\shape italic
+not
+\shape default
+ to be a Pareto improving trade, it must be the case that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+MRS_{1}\leq MRS_{2}\Leftrightarrow\frac{1}{f'(y_{1}^{*})}\leq\frac{1}{f'(y_{2}^{*})}\Rightarrow y_{1}^{*}\leq y_{2}^{*}\Rightarrow y_{1}^{*}\leq\frac{e_{y}}{2}.\label{eq:FOC corner qlinear PO equi}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Therefore, any allocation of the following form is a Pareto optimal equilibrium
+ with 
+\begin_inset Formula $x_{1}^{*}=0$
+\end_inset
+
+ and 
+\begin_inset Formula $y_{1}^{*}>0$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\left[(0,y_{1}^{*}),(e_{x},e_{y}-y_{1}^{*})\right],\, y_{1}^{*}\leq\frac{e_{y}}{2}.\label{eq:qlinear equi define}\end{equation}
+
+\end_inset
+
+The same applies to cases where 
+\begin_inset Formula $x_{2}^{*}=0$
+\end_inset
+
+ and 
+\begin_inset Formula $y_{2}^{*}>0$
+\end_inset
+
+ (
+\begin_inset Formula $\Leftrightarrow x_{1}^{*}=e_{x},\, y_{1}^{*}\geq0$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\left[(e_{x},e_{y}-y_{2}^{*}),(0,y_{2}^{*})\right],\, y_{2}^{*}\leq\frac{e_{y}}{2}\label{eq:qlinear equi define 2}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now consider the case where 
+\begin_inset Formula $x_{1}^{*}>0$
+\end_inset
+
+ and 
+\begin_inset Formula $y_{1}^{*}=0$
+\end_inset
+
+ (
+\begin_inset Formula $\Leftrightarrow x_{2}^{*}\geq0,\, y_{2}^{*}=e_{y}$
+\end_inset
+
+).
+ Using the same argument from above, the only Pareto improving trade would
+ have consumer 1 demanding good y and supplying good x, while consumer 2
+ must demand good x and supply good y.
+ The FOC for this trade to occur is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+MRS_{1}<MRS_{2}\]
+
+\end_inset
+
+which means that for there 
+\shape italic
+not
+\shape default
+ to be a Pareto improving trade, it must be the case that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+MRS_{1}\geq MRS_{2}\Leftrightarrow\frac{1}{f'(y_{1}^{*})}\geq\frac{1}{f'(y_{2}^{*})}\Rightarrow y_{1}^{*}=0\geq y_{2}^{*}.\label{eq:FOC y=00003D0 qlinear PO equi}\end{equation}
+
+\end_inset
+
+Inequality (9) is a contradiction because 
+\begin_inset Formula $y_{2}^{*}=e_{y}>0$
+\end_inset
+
+.
+ Therefore, we can't have an equilibrium where consumer 1 consumes 0 of
+ good y.
+ The same applies to the case where 
+\begin_inset Formula $x_{2}^{*}>0$
+\end_inset
+
+ and 
+\begin_inset Formula $y_{2}^{*}=0$
+\end_inset
+
+ (
+\begin_inset Formula $\Leftrightarrow x_{1}^{*}\geq0,\, y_{1}^{*}=e_{y}$
+\end_inset
+
+).
+ This result is a result of the concavity of the non-numeraire good's separable
+ utility function and the quasilinear form of each consumer's utility function.
+\end_layout
+
+\begin_layout Standard
+Therefore, equations 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:qlinear equi define"
+
+\end_inset
+
+and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:qlinear equi define 2"
+
+\end_inset
+
+ define the corner equilibrium for quasi-linear preferences.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Part (e) 
+\end_layout
+
+\begin_layout Standard
+This part of the question is asking you to solve for the competitive/exchange
+ equilibrium (not the Pareto equilibrium).
+ Solving each consumer's UMP, we get:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x_{1}^{*}=a(e_{x1}+pe_{y1});\, y_{1}^{*}=\frac{(1-a)(e_{x1}+pe_{y1})}{p};\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x_{2}^{*}=a(e_{x2}+pe_{y2});\, y_{2}^{*}=\frac{(1-a)(e_{x2}+pe_{y2})}{p}\]
+
+\end_inset
+
+The equilibrium price will clear markets.
+ Recall that we only need to find the equilibrium price that will clear
+ one of the markets.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+x_{1}^{*}+x_{2}^{*}=a(e_{x1}+pe_{y1})+a(e_{x2}+pe_{y2})=a(e_{x}+pe_{y})=e_{x}\Rightarrow p^{*}=\frac{1-a}{a}\cdot\frac{e_{x}}{e_{y}}\label{eq:price}\end{equation}
+
+\end_inset
+
+which shows that equilibrium price depends on aggregate endowment of each
+ good.
+ 
+\end_layout
+
+\begin_layout Standard
+Now we're asked to confirm that this is a Pareto optimal equilibrium (and
+ so the First Welfare Theorem holds).
+ One way to show this is to plug the equilibrium price into 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:CD UMP solutions"
+
+\end_inset
+
+ and check to see that equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:C-D PO FOC"
+
+\end_inset
+
+ holds.
+ 
+\end_layout
+
+\begin_layout Standard
+An easier way to go about this is to see that at a Pareto optimal equilibrium:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\frac{x_{1}^{*}}{y_{1}^{*}}=\frac{e_{x}}{e_{y}}\label{eq:CD PO Condition}\end{equation}
+
+\end_inset
+
+and in the competitive equilibrium:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\frac{x_{1}^{*}}{y_{1}^{*}}=\frac{ap^{*}}{1-a}=\frac{e_{x}}{e_{y}}\,(\because equation\,\ref{eq:price})\label{eq:CD CE Condition}\end{equation}
+
+\end_inset
+
+Therefore, the exchange equi.
+ is a Pareto equi.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Part (f)
+\end_layout
+
+\begin_layout Standard
+The key here is that the problem tells you that each consumer has sufficiently
+ large enough wealth for the FOCs to hold with equality and we have interior
+ solutions.
+ In other words, consumers are not wealth constrained such that they will
+ only consume the non-numeraire good y.
+ Solving the UMP results in the following:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+x_{1}^{*}=(e_{x1}+pe_{y1})-p\frac{e_{y}}{2};\, x_{2}^{*}=(e_{x2}+pe_{y2})-p\frac{e_{y}}{2};\, y_{1}^{*}=y_{2}^{*}=\frac{e_{y}}{2}.\label{eq: qlinear UMP solutions}\end{equation}
+
+\end_inset
+
+Further, the UMP FOCs result in the equilibrium price for good y:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{f'(y_{1}^{*})}{p}=\frac{f'(y_{2}^{*})}{p}=1\Rightarrow p^{*}=f'\left(\frac{e_{y}}{2}\right)\]
+
+\end_inset
+
+which doesn't depend on the individual endowments.
+ 
+\end_layout
+
+\begin_layout Standard
+Note also that 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq: qlinear UMP solutions"
+
+\end_inset
+
+ is the same condition as 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:qlinear PO FOC"
+
+\end_inset
+
+, which means that the exchange equilibrium is a Pareto optimal equilibrium.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Part (g)
+\end_layout
+
+\begin_layout Standard
+Now the condition that there is sufficient wealth fails.
+ Let's assume that consumer 1 doesn't have enough wealth to consume 
+\begin_inset Formula $\frac{e_{y}}{2}$
+\end_inset
+
+ units of good y at the equilibrium price we solved for in (f) above: 
+\begin_inset Formula $p^{*}\cdot\frac{e_{y}}{2}\geq e_{x1}+p^{*}e_{y1}$
+\end_inset
+
+.
+ This means that there is an excess supply of good y (since at 
+\begin_inset Formula $p^{*}$
+\end_inset
+
+ consumer 2 still consumes 
+\begin_inset Formula $\frac{e_{y}}{2}$
+\end_inset
+
+, therefore, the new equilibrium price for good y, 
+\begin_inset Formula $p^{**}<p^{*}$
+\end_inset
+
+.
+ At the new equilibrium price 
+\begin_inset Formula $p^{**}$
+\end_inset
+
+, consumer 1's consumption bundle is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(0,y_{1}^{**}=\frac{e_{x1}}{p^{**}}+e_{y1}<\frac{e_{y}}{2}\right)\]
+
+\end_inset
+
+and consumer 2's consumption bundle is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(e_{x},y_{2}^{**}=f_{y}^{-1}(p^{**})>\frac{e_{y}}{2}\right).\]
+
+\end_inset
+
+ Notice that the following equation implicitly solves for the new equilibrium
+ price, 
+\begin_inset Formula $p^{**}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\frac{e_{x1}}{p^{**}}+e_{y1}+f_{y}^{-1}(p^{**})=e_{y}.\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Finally, does this represent a Pareto optimal equilibrium? Yes.
+ See equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:qlinear equi define"
+
+\end_inset
+
+.
+ Notice that the Pareto optimal equilibrium first order conditions change
+ once we are at a border.
+ 
+\end_layout
+
+\begin_layout Section*
+Practice Problem 9.5 Exchange Equilibrium with Nonconvex Preferences
+\end_layout
+
+\begin_layout Subsection*
+Part (a)
+\end_layout
+
+\begin_layout Standard
+Each consumer has a quasi-linear utility function but preferences over the
+ non-numeraire good are defined by a convex function (not a concave function),
+ such that 
+\begin_inset Formula $u(x_{i},y_{i})=x_{i}+f(y_{i})$
+\end_inset
+
+, where 
+\begin_inset Formula $f'(\cdot)>0;\, f''(\cdot)>0$
+\end_inset
+
+.
+ Therefore, unlike quasi-linear functions with concave utility, the marginal
+ utility of the non-numeraire good is increasing as you increase the consumption
+ of the non-numeraire good, while the marginal utility of the numeraire
+ good is fixed.
+ Therefore, if 
+\begin_inset Formula $\frac{f'(e_{iy})}{p_{y}}<\frac{1}{p_{x}}$
+\end_inset
+
+, then the consumer only consumes good x, the numeraire good, and if 
+\begin_inset Formula $\frac{f'(e_{iy})}{p_{y}}\geq\frac{1}{p_{x}}$
+\end_inset
+
+, then the consumer only consumes good y, the non-numeraire good.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Part (b)
+\end_layout
+
+\begin_layout Standard
+From part (a) above, we know that in any exchange equilibrium consumer 1
+ will consume all of good x or all of good y (the same holds for consumer
+ 2).
+ Since each consumer has endowment equal to (1,1), total wealth for each
+ consumer is equal to 
+\begin_inset Formula $1+p$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Therefore, consumer 1 will consume all of good y if and only if the utility
+ from consuming only good x is less than the utility from consuming only
+ good y:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+1+p\leq\frac{1}{3}\cdot\left(\frac{1+p}{p}\right)^{2}\Rightarrow3p^{2}-p-1\leq0\Rightarrow p\in\left[0,\frac{1+\sqrt{13}}{6}\approx0.76\right]\label{eq:consumer1}\end{equation}
+
+\end_inset
+
+On the other hand, consumer 2 will consume all of good y if and only if:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+1+p\leq3\left(\frac{1+p}{p}\right)^{2}\Rightarrow p^{2}-3p-3\leq0\Rightarrow p\in\left[0,\frac{3+\sqrt{21}}{2}\approx3.79\right]\label{eq:consumer2}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Part (c)
+\end_layout
+
+\begin_layout Standard
+The 
+\shape italic
+only
+\shape default
+ exchange equilibrium has consumer 1 consuming good x and consumer 2 consuming
+ good y (which is intuitive, since the marginal utility of good y is greater
+ for consumer 2).
+ Therefore, the equilibrium price at which markets clear, 
+\begin_inset Formula $p^{*}\in\left[0.76,\,3.79\right]$
+\end_inset
+
+, and consumer 1 consumes 
+\begin_inset Formula $1+p$
+\end_inset
+
+ which has to equal the total endowment of good x:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+1+p=2\Rightarrow p^{*}=1\in\left[0.76,\,3.79\right]\label{eq:define equi. price}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Note that we can't use the marginal rate of substitution to calculate the
+ equilibria in this case because we're dealing with a non-concave function
+ for the non-numeraire good.
+ 
+\end_layout
+
+\begin_layout Standard
+And the resulting competitive/exchange equilibrium:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\left[\left(2,0\right),\left(0,2\right)\right]\label{eq:17.3 x equi}\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Part (d)
+\end_layout
+
+\begin_layout Standard
+Because there is a numeraire good (both consumers have quasi-linear utility),
+ we can add utility functions.
+ Therefore, Pareto optimal equilibria of the form 
+\begin_inset Formula $\left[\vec{x}^{*},\vec{y}^{*}\right]$
+\end_inset
+
+ maximizes:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x_{1}^{*}+x_{2}^{*}+\frac{1}{3}y_{1}^{*2}+3y_{2}^{*2} & = & 2+\frac{1}{3}y_{1}^{*2}+3y_{2}^{*2}=2+\frac{1}{3}y_{1}^{*2}+3\left(2-y_{1}^{*}\right)^{2}\\
+ & \Rightarrow & y_{1}^{*}=0,\, y_{2}^{*}=2\end{eqnarray*}
+
+\end_inset
+
+The resulting Pareto optimal equilibrium is the following:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\left[\left(x_{1}^{*},0\right),\left(2-x_{1}^{*},2\right)\right]\label{eq:PO equi}\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $x_{1}^{*}\in\left[0,2\right]$
+\end_inset
+
+.
+ The exchange equilibrium identified in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:17.3 x equi"
+
+\end_inset
+
+ above is contained within the Pareto optimal set identified in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:PO equi"
+
+\end_inset
+
+ above, and so the First Welfare Theorem applies.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Part (e)
+\end_layout
+
+\begin_layout Standard
+Recall that in partial equilibrium analysis, the numeraire good could take
+ on negative values so that consumers could consume the optimal amount of
+ the non numeraire good.
+ This is not the case here since good x is limited by its endowment to 2.
+ The result is Pareto optimal equilibria of the form found in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:PO equi"
+
+\end_inset
+
+ above.
+ Note that equilibria of the form following form are Pareto optimal, but
+ not exchange equilibria:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left[\left(x_{1}^{*},0\right),\left(2-x_{1}^{*},2\right)\right],\, x_{1}^{*}\in[0,2)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Therefore, the Second Welfare Theorem does not hold because there are Pareto
+ optimal equilibria that cannot be sustained in a competitive equilibrium,
+ which has each consumer only consuming one of the goods.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Part (f)
+\end_layout
+
+\begin_layout Standard
+The initial endowment is the same as before and the same logic applies.
+ The only possible exchange equilibrium has consumer 1 consuming all of
+ good x and consumer 2 consuming all of good y.
+ The equilibrium price will also remain the same at 
+\begin_inset Formula $p^{*}=1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Recall from 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:consumer1"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:consumer2"
+
+\end_inset
+
+ above that the following inequalities must hold:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A\left(\frac{1+p}{p}\right)^{2} & \leq & 1+p\\
+B\left(\frac{1+p}{p}\right)^{2} & \geq & 1+p\end{eqnarray*}
+
+\end_inset
+
+which results in the following at 
+\begin_inset Formula $p^{*}=1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A & \leq & \frac{1}{2}\\
+B & \geq & \frac{1}{2}\end{eqnarray*}
+
+\end_inset
+
+These conditions are necessary for there to be an exchange equilibrium.
+ 
+\end_layout
+
+\begin_layout Section
+Fundamental Welfare Theorem Failure
+\end_layout
+
+\begin_layout Standard
+What assumptions do we need for the Welfare Theorems to hold?
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Recall from the class that convexity of preferences (which leads to what
+ type of utility function?) was necessary for the Second Fundamental Welfare
+ Theorem to hold.
+ See also Practice Problem 9.5 above.
+ 
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+Complete markets: no unpriced goods.
+ This assumption fails when we have externalities.
+ 
+\end_layout
+
+\begin_layout Enumerate
+No market power: all economic agents are price-takers (competitive markets
+ for all goods).
+ This assumptions fails when we are dealing with monopolies/monopsonies,
+ oligopolies/oligopsonies.
+\end_layout
+
+\begin_layout Enumerate
+Complete information for all agents.
+ This assumption fails if we have uncertainty in the payoffs or when there
+ is asymmetric information or imperfect information.
+ 
+\end_layout
+
+\begin_layout Standard
+These are some of the topics we'll discuss after Spring Break.
+\end_layout
+
+\end_body
+\end_document

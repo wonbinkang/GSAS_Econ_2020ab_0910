@@ -1,0 +1,1190 @@
+#LyX 1.6.7 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-sec
+\end_modules
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Section Notes 3
+\end_layout
+
+\begin_layout Author
+Wonbin Kang, Sam Richardson
+\end_layout
+
+\begin_layout Date
+February 10, 2011
+\end_layout
+
+\begin_layout Section*
+Agenda
+\end_layout
+
+\begin_layout Enumerate
+Finitely Repeated Games
+\end_layout
+
+\begin_layout Enumerate
+Centipede Game with Multiple Types
+\end_layout
+
+\begin_layout Enumerate
+Early Evaluations
+\end_layout
+
+\begin_layout Section
+Finitely Repeated Games
+\end_layout
+
+\begin_layout Standard
+Normally, exposition of finitely repeated games use the Prisoners' Dilemma
+ and the equilibrium concept is SPNE.
+ However, let me introduce the following Proposition which applies to all
+ repeated games:
+\end_layout
+
+\begin_layout Proposition
+If the stage game 
+\begin_inset Formula $\Gamma(I,\Sigma,\vec{u})$
+\end_inset
+
+ has a unique NE, then the finitely repeated game of this stage game, with
+ 
+\begin_inset Formula $t\in\left\{ 1,...,T\right\} $
+\end_inset
+
+ has a unique subgame perfect outcome: the NE of the stage game is played
+ in every stage.
+\begin_inset CommandInset label
+LatexCommand label
+name "pro:If-the-stage"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Proposition 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pro:If-the-stage"
+
+\end_inset
+
+ above states that if there exists a unique NE to the stage game, then there
+ is a unique SPNE with NE being played in each stage game.
+ Then a natural question to follow is if there are multiple NE in the stage
+ game, does any combination of those NE 
+\shape italic
+outcomes 
+\shape default
+constitute a SPNE? The answer to this question is yes.
+ 
+\end_layout
+
+\begin_layout Standard
+The problem is that this isn't very interesting.
+ What about non-NE play at some of the stage games in a finitely repeated
+ game? For example, for a given SPNE, could we have 
+\begin_inset Quotes eld
+\end_inset
+
+Cooperate
+\begin_inset Quotes erd
+\end_inset
+
+ in some of the stage games of such SPNE of the finitely repeated Prisoners'
+ Dilemma? 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+In a 2 period Prisoners' Dilemma, we won't be able to sustain 
+\begin_inset Quotes eld
+\end_inset
+
+Cooperate
+\begin_inset Quotes erd
+\end_inset
+
+ as an SPNE.
+ Can you think of a reason? HINT: It has to do with credibility in the final
+ stage game.
+ On the other hand, in an infinitely repeated Prisoners' Dilemma, 
+\begin_inset Quotes eld
+\end_inset
+
+Cooperate
+\begin_inset Quotes erd
+\end_inset
+
+ can be sustained in equilibrium despite the fact that the only NE of the
+ stage game is [Defect, Defect].
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The take-away is that if there exists a credible
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Recall that SPNE got rid of NE which were based on non-credible threats
+ and promises.
+ 
+\end_layout
+
+\end_inset
+
+ threat or promise about future behavior (in the form of punishments which
+ are NE in the stage game), then current behavior can be influenced.
+ This means that a cooperative outcome can be achieved in certain finitely
+ repeated games (even in games with 2 periods).
+ 
+\end_layout
+
+\begin_layout Subsection
+Example 1 
+\end_layout
+
+\begin_layout Standard
+See Section Note 9 from Econ 2020a, U.S.-Soviet Union Twice Repeated Game.
+\end_layout
+
+\begin_layout Subsection
+Example 2
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+From Gibbons (1992, p.
+ 85).
+ Also note that I am being very careful of the terms I use---
+\shape italic
+i.e.
+
+\shape default
+ SPNE, SPNE outcome, NE outcome, 
+\shape italic
+etc.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consider repeating the following stage game twice:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $L_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $M_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $L_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+1
+\bar default
+,
+\bar under
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+5
+\bar default
+,0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $M_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,
+\bar under
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4,4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+3
+\bar default
+,
+\bar under
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+The stage game has two NE.
+ Therefore, a combination of the two NE outcomes to construct a SP outcome
+ is trivial.
+ The more interesting SPNE would have the non stage game equilibrium 
+\begin_inset Formula $\left[M_{1},\, M_{2}\right]$
+\end_inset
+
+ being played in the first stage of the game.
+ Can we construct such a SPNE in the context of a twice repeated game? The
+ answer is yes.
+ 
+\end_layout
+
+\begin_layout Standard
+Consider the following strategy by each player 
+\begin_inset Formula $i$
+\end_inset
+
+: 
+\begin_inset Quotes eld
+\end_inset
+
+Play 
+\begin_inset Formula $R_{i}$
+\end_inset
+
+ in stage 2 if the outcome in stage 1 was 
+\begin_inset Formula $\left[M_{i},\, M_{j}\right]$
+\end_inset
+
+; play 
+\begin_inset Formula $L_{i}$
+\end_inset
+
+, otherwise.
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Note that this is very similar to the strategy considered in Example 1 above.
+\end_layout
+
+\end_inset
+
+ Based on this strategy, we can write the payoff matrix of the twice repeated
+ game as follow:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $L_{2}^{stage\,1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $M_{2}^{stage\,1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R_{2}^{stage\,1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $L_{1}^{stage\,1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+2
+\bar default
+,
+\bar under
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6,1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $M_{1}^{stage\,1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+7
+\bar default
+,
+\bar under
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R_{1}^{stage\,1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\bar under
+4
+\bar default
+,
+\bar under
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Note that the following strategy, which has a non NE action being played
+ in the first stage, constitutes a SPNE outcome:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \[
+\left[M_{1}^{stage\,1},\, M_{2}^{stage\,1};\, R_{1}^{stage\,2},\, R_{2}^{stage\,2}\right]\]
+
+\end_inset
+
+In short, this is an example of when in a finitely repeated game of 
+\begin_inset Formula $T$
+\end_inset
+
+ stages and with multiple NE in the stage game, there can exist a SPNE outcome
+ in which for some stage 
+\begin_inset Formula $t<T$
+\end_inset
+
+ the outcome is not a NE of the stage game.
+ The reason for this is that credible threats or promises about future behavior
+ can influence current behavior.
+ 
+\end_layout
+
+\begin_layout Section
+Centipede Game with Multiple Types
+\end_layout
+
+\begin_layout Standard
+Sam and I will cover some parts of the centipede game, focusing on parts
+ (a) and (b).
+ The logic extends to parts (c) and (d).
+ Note that there is going to be a lot of abuse of notation below.
+ 
+\end_layout
+
+\begin_layout Standard
+Let the 
+\shape italic
+ex ante
+\shape default
+ beliefs of Player 1 on Player 2's type be equal to 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ and the conditional expectation at each move be as defined in the problem.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Part (a)
+\end_layout
+
+\begin_layout Standard
+At 
+\begin_inset Formula $M=3$
+\end_inset
+
+, Player 1 holds the following beliefs of Player 2's type:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\Pr\left(Nice|M=3\right) & = & \lambda_{3}\\
+\Pr\left(Mean|M=3\right) & = & 1-\lambda_{3}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Given these beliefs, you can calculate the expected payoffs of player 1
+ depending on whether player 1 plays 
+\begin_inset Quotes eld
+\end_inset
+
+Continue
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+Stop
+\begin_inset Quotes erd
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+U_{1}(Continue) & = & (1-\lambda_{3})x+\lambda_{3}y\\
+U_{1}(Stop) & = & z\end{eqnarray*}
+
+\end_inset
+
+Comparing the two equations above should give you the beliefs required to
+ sustain a PBE and the sequentially rational strategies of each player starting
+ at 
+\begin_inset Formula $M=3$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Part (b)
+\end_layout
+
+\begin_layout Standard
+Keep the following in mind for Part (b).
+ Depending on Player 1's beliefs, nice Player 2's payoffs are:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula \[
+U_{2}^{nice}(Continue|M=2)=\begin{cases}
+100 & if\,\lambda_{3}>\frac{1}{2}\\
+99 & if\,\lambda_{3}<\frac{1}{2}\end{cases}\]
+
+\end_inset
+
+
+\begin_inset Formula \[
+U_{2}^{nice}(Stop|M=2)=98\]
+
+\end_inset
+
+Therefore, nice Player 2 has a dominant strategy at 
+\begin_inset Formula $M=2$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Part (b1)
+\end_layout
+
+\begin_layout Standard
+The problem simplifies the analysis considerably by asking if a separating
+ equilibrium exists for the two types of Player 2 and gives you the separating
+ actions at 
+\begin_inset Formula $M=2$
+\end_inset
+
+.
+ Since the nice type Player 2 plays 
+\begin_inset Quotes eld
+\end_inset
+
+Continue
+\begin_inset Quotes erd
+\end_inset
+
+ player 1's move at 
+\begin_inset Formula $M=3$
+\end_inset
+
+ will be to play 
+\begin_inset Quotes eld
+\end_inset
+
+Continue
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Does the mean type Player 2 have an incentive to deviate at 
+\begin_inset Formula $M=3$
+\end_inset
+
+? 
+\end_layout
+
+\begin_layout Subsection*
+Part (b2)
+\end_layout
+
+\begin_layout Standard
+Note that we're now pooling on 
+\begin_inset Quotes eld
+\end_inset
+
+Continue
+\begin_inset Quotes erd
+\end_inset
+
+ at 
+\begin_inset Formula $M=3$
+\end_inset
+
+.
+ Therefore, player 1's beliefs at 
+\begin_inset Formula $M=3$
+\end_inset
+
+ become central.
+ Do you see that 
+\begin_inset Formula $\lambda=\lambda_{3}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $\lambda=\lambda_{3}>\frac{1}{2}$
+\end_inset
+
+, we know from part (a) above that player 1 will play 
+\begin_inset Quotes eld
+\end_inset
+
+Continue
+\begin_inset Quotes erd
+\end_inset
+
+.
+ What are the optimal actions at 
+\begin_inset Formula $M=3$
+\end_inset
+
+ for each type of Player 2? Do you see that both types will want to 
+\begin_inset Quotes eld
+\end_inset
+
+Continue
+\begin_inset Quotes erd
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $\lambda=\lambda_{3}<\frac{1}{2}$
+\end_inset
+
+, we know from part (a) above that player 1 will play 
+\begin_inset Quotes eld
+\end_inset
+
+Stop
+\begin_inset Quotes erd
+\end_inset
+
+.
+ What is the optimal action at 
+\begin_inset Formula $M=3$
+\end_inset
+
+ for the mean type of Player 2? Do you see that she will 
+\begin_inset Quotes eld
+\end_inset
+
+Stop
+\begin_inset Quotes erd
+\end_inset
+
+ at 
+\begin_inset Formula $M=3$
+\end_inset
+
+? What about the nice type Player 2?
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $\lambda=\lambda_{3}=\frac{1}{2}$
+\end_inset
+
+, we know from part (a) above that player 1 will play mix (let's write this
+ as: 
+\begin_inset Formula $\left[pContinue,\,(1-p)Stop\right]$
+\end_inset
+
+).
+ Since 
+\begin_inset Quotes eld
+\end_inset
+
+Continue
+\begin_inset Quotes erd
+\end_inset
+
+ is a dominant strategy for the nice type Player 2, we again only need to
+ focus on the mean type.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+U_{2}^{mean}\left(Continue|M=2\right) & = & p101+(1-p)99\\
+U_{2}^{mean}\left(Stop|M=2\right) & = & 100\end{eqnarray*}
+
+\end_inset
+
+which gives you conditions on Player 1's mixing.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Part (b3)
+\end_layout
+
+\begin_layout Standard
+For the values of 
+\begin_inset Formula $\lambda<\frac{1}{2}$
+\end_inset
+
+,we know that there isn't a pooling equilibrium on 
+\begin_inset Quotes eld
+\end_inset
+
+Continue
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Per (b1) above.
+\end_layout
+
+\end_inset
+
+; and we know that the two types can't pool on 
+\begin_inset Quotes eld
+\end_inset
+
+Stop
+\begin_inset Quotes erd
+\end_inset
+
+.
+ We know that there isn't a separating equilibrium where the nice type plays
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Continue
+\begin_inset Quotes erd
+\end_inset
+
+ and the mean type plays 
+\begin_inset Quotes eld
+\end_inset
+
+Stop
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Per (b2) above.
+\end_layout
+
+\end_inset
+
+; and we know that the converse separating equilibrium can't exist as well.
+ So the question is asking you whether there is a partial pooling equilibrium.
+ 
+\end_layout
+
+\begin_layout Standard
+In words, the partial pooling equilibrium will have the nice type playing
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Continue
+\begin_inset Quotes erd
+\end_inset
+
+ and the mean type mixing (again let's write this as: 
+\begin_inset Formula $\left[qContinue,\,(1-q)Stop\right]$
+\end_inset
+
+).
+ In the partial pooling equilibrium, Player 1 is also mixing (let's write
+ this as: 
+\begin_inset Formula $\left[pContinue,\,(1-p)Stop\right]$
+\end_inset
+
+).
+ To figure out the strategy of Player 1 at 
+\begin_inset Formula $M=3$
+\end_inset
+
+, we need to again calculate 
+\begin_inset Formula $\lambda_{3}$
+\end_inset
+
+, but because of the partial pooling characteristic of the equilibrium,
+ Player 1's beliefs will NOT equal the 
+\shape italic
+ex ante 
+\shape default
+distribution of nice/mean types.
+ However, since we know the equilibrium strategy of both types of Player
+ 2, we can calculate Player 1's beliefs via Baye's Rule:
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+To be explicit: 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula \[
+\Pr\left(nice|M=3\right)=\frac{\Pr\left(M=3|nice\right)\cdot\Pr\left(nice\right)}{\Pr\left(M=3|nice\right)\cdot\Pr\left(nice\right)+\Pr\left(M=3|mean\right)\cdot\Pr\left(mean\right)}\]
+
+\end_inset
+
+where you should interpret 
+\begin_inset Formula $M=3$
+\end_inset
+
+ as Player 2 playing continue at 
+\begin_inset Formula $M=2$
+\end_inset
+
+, since this is the only way that you could have arrived at 
+\begin_inset Formula $M=3$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\lambda_{3}=\frac{1\cdot\lambda}{1\cdot\lambda+q\cdot(1-\lambda)}=\frac{\lambda}{\lambda+q\cdot(1-\lambda)}\]
+
+\end_inset
+
+For Player 1 to mix between her two strategies it must be the case the 
+\begin_inset Formula $\lambda_{3}=\frac{1}{2}$
+\end_inset
+
+, which gives you the mean type Player 2's mixing strategyy 
+\begin_inset Formula $\left[q,\,1-q\right]$
+\end_inset
+
+.
+ Now what about Player 1's mixing strategy 
+\begin_inset Formula $\left[p,\,1-p\right]$
+\end_inset
+
+? We actually solved for this above.
+ 
+\end_layout
+
+\begin_layout Section
+Early Evaluations
+\end_layout
+
+\end_body
+\end_document

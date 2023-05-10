@@ -1,0 +1,815 @@
+#LyX 1.6.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+\end_modules
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Section Notes 7
+\end_layout
+
+\begin_layout Author
+Abby Friedman, Wonbin Kang
+\end_layout
+
+\begin_layout Date
+October 22, 2010
+\end_layout
+
+\begin_layout Part*
+Agenda
+\end_layout
+
+\begin_layout Enumerate
+Stochastic Dominance
+\end_layout
+
+\begin_layout Enumerate
+Introduction to Game Theory (basic definitions, assumptions, and representations
+)
+\end_layout
+
+\begin_layout Section
+Stochastic Dominance
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+The handout on stochastic dominance on the course website is a great source
+ to review the key concepts.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+First-Order Stochastic Dominance (FOSD)
+\end_layout
+
+\begin_layout Standard
+By way of background, for those of you who have taken statistics, you know
+ that there are multiple ways to represent the distribution of a random
+ variable.
+ For example, you can use the method of moments (the first, second, third,
+ fourth,...moment), maximum likelihood estimators, etc.
+ The most frequently used is the expected value and the variance of a distributi
+on.
+ Then for any two distributions (or lotteries) over money outcomes, 
+\begin_inset Formula $F(\cdot)$
+\end_inset
+
+ and 
+\begin_inset Formula $G(\cdot)$
+\end_inset
+
+,
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+The random variable 
+\begin_inset Formula $X$
+\end_inset
+
+ is the money outcome and 
+\begin_inset Formula $F(\cdot)$
+\end_inset
+
+ and 
+\begin_inset Formula $G(\cdot)$
+\end_inset
+
+ are the cdfs which represent the lotteries over which we defined an economic
+ agent's preferences in the previous section.
+ We can think of these cdfs as lotteries because the lotteries we considered
+ in the previous section was merely a vector of probabilities over a discrete
+ number of events.
+ 
+\end_layout
+
+\end_inset
+
+we can define the preferences of an economic agent over these two money
+ outcome distributions based on their respective expected values and variances.
+ The former is first-order stochastic dominance and the latter is second-order
+ stochastic dominance.
+ 
+\end_layout
+
+\begin_layout Standard
+For any two distributions over money outcomes, 
+\begin_inset Formula $F(\cdot)$
+\end_inset
+
+ and 
+\begin_inset Formula $G(\cdot)$
+\end_inset
+
+, if 
+\begin_inset Formula $F(\cdot)$
+\end_inset
+
+ first-order stochastically dominates 
+\begin_inset Formula $G(\cdot)$
+\end_inset
+
+, then all agents with weakly increasing utility functions will weakly prefer
+ 
+\begin_inset Formula $F(\cdot)$
+\end_inset
+
+ to 
+\begin_inset Formula $G(\cdot)$
+\end_inset
+
+.
+ Note that first-order stochastic dominance is a very strict condition and
+ typically we will not have either distribution first-order stochastically
+ dominating another.
+ 
+\end_layout
+
+\begin_layout Standard
+More formally, we can define FOSD as follows:
+\end_layout
+
+\begin_layout Definition
+The distribution over money outcomes 
+\begin_inset Formula $F(\cdot)$
+\end_inset
+
+ first-order stochastically dominates 
+\begin_inset Formula $G(\cdot)$
+\end_inset
+
+ if, for 
+\begin_inset Formula $\forall u:\mathbb{R}\rightarrow\mathbb{R}$
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula $u(\cdot)$
+\end_inset
+
+ is a non-decreasing function, we have that:
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula \[
+\int u(x)dF(x)\geq\int u(x)dG(x),\]
+
+\end_inset
+
+or
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula \[
+\int u(x)f(x)dx\geq\int u(x)g(x)dx,\]
+
+\end_inset
+
+where 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ and 
+\begin_inset Formula $g(x)$
+\end_inset
+
+ are the respective pdfs of 
+\begin_inset Formula $F(x)$
+\end_inset
+
+ and 
+\begin_inset Formula $G(x)$
+\end_inset
+
+.
+ This implies that the distribution of monetary payoffs 
+\begin_inset Formula $F(\cdot)$
+\end_inset
+
+ first-order stochastically dominates the distribution 
+\begin_inset Formula $G(\cdot)$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $F(x)\leq G(x),$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Try drawing a picture.
+ Draw two cdfs, s.t.
+ 
+\begin_inset Formula $F(x)\leq G(x),$
+\end_inset
+
+ 
+\begin_inset Formula $\forall x$
+\end_inset
+
+, and reverse the axis to see that for a given probability you want to have
+ a greater value of the random variable 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Second-Order Stochastic Dominance (SOSD)
+\end_layout
+
+\begin_layout Standard
+SOSD uses the variance of a distribution to determine whether an economic
+ agent prefers one money lottery, represented again by a cdf, over another.
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $F(\cdot)$
+\end_inset
+
+ second-order stochastically dominates 
+\begin_inset Formula $G(\cdot)$
+\end_inset
+
+, then the 2 distributions over money (or money lotteries) have the same
+ expected value, but all risk-averse economic agents prefer 
+\begin_inset Formula $F(\cdot)$
+\end_inset
+
+ to 
+\begin_inset Formula $G(\cdot)$
+\end_inset
+
+, which implies that 
+\begin_inset Formula $F(\cdot)$
+\end_inset
+
+ is less risky than 
+\begin_inset Formula $G(\cdot)$
+\end_inset
+
+.
+ In short, because the two distributions over money outcomes have the same
+ expected value, 
+\begin_inset Formula $G(\cdot)$
+\end_inset
+
+ can be represented as a mean-preserving spread of 
+\begin_inset Formula $F(\cdot)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+More formally, we can define SOSD as follows:
+\end_layout
+
+\begin_layout Definition
+For any two distributions 
+\begin_inset Formula $F(\cdot)$
+\end_inset
+
+ and 
+\begin_inset Formula $G(\cdot)$
+\end_inset
+
+ with the same mean, 
+\begin_inset Formula $F(\cdot)$
+\end_inset
+
+ second-order stochastically dominates (or is less risky than) 
+\begin_inset Formula $G(\cdot)$
+\end_inset
+
+ if for every non-decreasing 
+\shape italic
+concave
+\shape default
+ function 
+\begin_inset Formula $u:\mathbb{R}\rightarrow\mathbb{R},$
+\end_inset
+
+ we have that:
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula \[
+\int u(x)dF(x)\geq\int u(x)dG(x).\]
+
+\end_inset
+
+This implies that the distribution of monetary payoffs 
+\begin_inset Formula $F(\cdot)$
+\end_inset
+
+ second-order stochastically dominates the distribution 
+\begin_inset Formula $G(\cdot)$
+\end_inset
+
+ if and only if:
+\end_layout
+
+\begin_layout Definition
+\begin_inset Formula \[
+\int_{-\infty}^{x}G(t)dt\geq\int_{-\infty}^{x}F(t)dt,\,\forall x.\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Again, drawing a picture may provide you with some intuition.
+ 
+\end_layout
+
+\begin_layout Subsection
+Combining FOSD and SOSD
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ FOSDs 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+, and 
+\begin_inset Formula $L_{2}$
+\end_inset
+
+ SOSDs 
+\begin_inset Formula $L_{3}$
+\end_inset
+
+, then all risk-averse economic agents will prefer 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ to 
+\begin_inset Formula $L_{3}$
+\end_inset
+
+ due to transitivity.
+ However, we don't say that 
+\begin_inset Formula $L_{1}$
+\end_inset
+
+ SOSDs 
+\begin_inset Formula $L_{3}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section*
+Game Theory Textbooks
+\end_layout
+
+\begin_layout Standard
+Of course, you can rely on MWG for the readings and you can also try the
+ bible of game theory: Fudenberg and Tirole.
+ But these two books are probably better for more advanced classes in Game
+ Theory and as references in the future (especially FT).
+ Two great sources for this class and a firm grounding in Game Theory are:
+ 
+\end_layout
+
+\begin_layout Enumerate
+Robert Gibbons, 1992, 
+\shape italic
+Game Theory for Applied Economists
+\shape default
+, Princeton University Press.
+\end_layout
+
+\begin_layout Enumerate
+Martin J.
+ Osborne, 2004, 
+\shape italic
+An Introduction to Game Theory
+\shape default
+, Oxford University Press.
+ 
+\end_layout
+
+\begin_layout Standard
+I especially recommend Gibbons (1992).
+\end_layout
+
+\begin_layout Section
+Introduction to Game Theory 
+\end_layout
+
+\begin_layout Standard
+What is a game? You might see the following types of notation when dealing
+ with games:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\Gamma_{n} & = & \left[I,\left\{ S_{i}\right\} ,\left\{ u_{i}\left(\cdot\right)\right\} \right]\\
+\Gamma_{e} & = & \left[\mathcal{I},I,\mathfrak{A},p(\cdot),\alpha(\cdot),\mathcal{H},\left\{ \Delta(S_{i})\right\} ,\left\{ u_{i}\left(\cdot\right)\right\} \right].\end{eqnarray*}
+
+\end_inset
+
+All the above is saying is that, at its core, a game has a set of players,
+ for each player a set of actions, a strategy space for each player, and
+ payoff functions (or outcomes; or preferences over the set of action profiles).
+ Don't worry about these types of representations.
+ 
+\end_layout
+
+\begin_layout Subsection
+Common Definitions (less formal than MWG or FT)
+\end_layout
+
+\begin_layout Standard
+Here are a few terms that you'll come across in the next few weeks:
+\end_layout
+
+\begin_layout Itemize
+Players: This is easy.
+ Only one thing to add: you might see the expression 
+\begin_inset Quotes eld
+\end_inset
+
+in a finite game
+\begin_inset Quotes erd
+\end_inset
+
+ in various propositions or definitions within game theory, in which case,
+ 
+\begin_inset Formula $I<\infty$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Actions: When it is a player's turn to move, what will she do? Will she
+ choose UP or DOWN; COOPERATE or DEFECT; LEFT, RIGHT, or CENTER; 
+\begin_inset Formula $q$
+\end_inset
+
+ or 
+\begin_inset Formula $q'$
+\end_inset
+
+, where 
+\begin_inset Formula $q,q'\in\mathbb{R}_{+}$
+\end_inset
+
+.
+ The actions available to a player can be finite or infinite.
+\end_layout
+
+\begin_layout Itemize
+Information Sets: Concept used to represent a game where we assume that
+ the players DO NOT have 
+\shape italic
+perfect information
+\shape default
+.
+ In a sequential (or dynamic) game, which is represented in an 
+\shape italic
+extensive form
+\shape default
+,
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+I won't cover 
+\begin_inset Quotes eld
+\end_inset
+
+extensive form
+\begin_inset Quotes erd
+\end_inset
+
+ vs 
+\begin_inset Quotes eld
+\end_inset
+
+normal (reduced) form
+\begin_inset Quotes erd
+\end_inset
+
+ games.
+ 
+\end_layout
+
+\end_inset
+
+ an information set is represented by drawing a circle around the relevant
+ nodes.
+ 
+\end_layout
+
+\begin_layout Itemize
+Strategy: 
+\begin_inset Quotes eld
+\end_inset
+
+A strategy is a 
+\shape italic
+complete contingent plan
+\shape default
+, or 
+\shape italic
+decision rule
+\shape default
+, that specifies how the player will act in 
+\shape italic
+every possible distinguishable circumstance
+\shape default
+ in which she might be called upon to move.
+ ...
+ Thus, a player's strategy amounts to a specification of how she plans to
+ move at each one of her information sets, should it be reached during play
+ of the game.
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+MWG p.228, emphasis in original.
+\end_layout
+
+\end_inset
+
+ You should always try to keep the concepts of 
+\begin_inset Quotes eld
+\end_inset
+
+strategy
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+action
+\begin_inset Quotes erd
+\end_inset
+
+ separate and know the difference between the two.
+ In a static, simultaneous move game, action and strategy may be the same.
+ However, in more complicated (and so interesting) games, this will not
+ be the case.
+ 
+\end_layout
+
+\begin_layout Itemize
+Outcomes/utilities/payoffs: This should be self explanatory.
+ Note that the arguments of player 
+\begin_inset Formula $i$
+\end_inset
+
+'s utility function is not only her own strategy, but the strategy of the
+ other players: 
+\begin_inset Formula $u_{i}(s_{i},\vec{s}_{-i}).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Histories: Don't worry about this now, but the history of player 
+\begin_inset Formula $i$
+\end_inset
+
+, denoted 
+\begin_inset Formula $H_{i}$
+\end_inset
+
+, is the set of sequences after which player 
+\begin_inset Formula $i$
+\end_inset
+
+ is called upon to move or select an action, 
+\begin_inset Formula $a\in\mathcal{A}(h)$
+\end_inset
+
+, or her action set.
+ We'll discuss histories when we get into dynamic, extensive form games.
+\end_layout
+
+\begin_layout Itemize
+Pure Strategies: Although we tend to think in terms of pure strategies and
+ much of applied game theory focuses on pure strategies, it may be helpful
+ to think of pure strategies as mixed strategies with a degenerate probability
+ distribution.
+ In short, a pure strategy is a mixed strategy that 
+\begin_inset Quotes eld
+\end_inset
+
+assigns probability 1 to the action 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ [which is] equivalent to her simply choosing the action 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+....
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Osborne (2004, p.108).
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+Mixed Strategies: This is covered in more detail below.
+ 
+\end_layout
+
+\begin_layout Itemize
+Static vs.
+ Dynamic / Extensive-Form vs Normal-Form / Simultaneous vs Sequential: See
+ the example below.
+\end_layout
+
+\begin_layout Example*
+Market Entry Game.
+\end_layout
+
+\begin_layout Example*
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Common Assumptions
+\end_layout
+
+\begin_layout Standard
+Note that all games will not have all of these assumptions.
+ The point is that in more advanced games, we're going to try to relax some
+ of these assumptions.
+\end_layout
+
+\begin_layout Itemize
+Complete Information: Each of the players' payoff functions, which are dependent
+ on the strategies of each player, is 
+\shape italic
+common knowledge
+\shape default
+ to all of the other players.
+ 
+\end_layout
+
+\begin_layout Itemize
+Perfect Information: 
+\begin_inset Quotes eld
+\end_inset
+
+A game is one of 
+\shape italic
+perfect
+\shape default
+ 
+\shape italic
+information
+\shape default
+ if each information set contains a single decision node.
+ Otherwise, it is a game of 
+\shape italic
+imperfect information
+\shape default
+.
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+MWG Definition 7.C.1 (emphasis in original)
+\end_layout
+
+\end_inset
+
+ If we assume perfect information, then each player knows exactly where
+ they are on the game-tree.
+\end_layout
+
+\begin_layout Itemize
+Common Knowledge: 
+\begin_inset Quotes eld
+\end_inset
+
+[A] basic postulate of game theory that all players know the structure of
+ the game, know that their rivals know it, know that their rivals know that
+ they know it, and so on.
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+MWG p.226
+\end_layout
+
+\end_inset
+
+ One aspect of 
+\begin_inset Quotes eld
+\end_inset
+
+common knowledge
+\begin_inset Quotes erd
+\end_inset
+
+ that we assume in most of our games is that each of the players is rational,
+ knows that the other players know she is rational, knows that she knows
+ it, and so on.
+ 
+\end_layout
+
+\end_body
+\end_document

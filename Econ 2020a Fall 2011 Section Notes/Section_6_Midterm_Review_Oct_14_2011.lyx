@@ -1,0 +1,1447 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Midterm Review
+\end_layout
+
+\begin_layout Author
+Abby Friedman, Wonbin Kang
+\end_layout
+
+\begin_layout Date
+October 14, 2011
+\end_layout
+
+\begin_layout Section*
+Agenda
+\end_layout
+
+\begin_layout Enumerate
+Cobb-Douglas EV, CV Example (won't cover in section)
+\end_layout
+
+\begin_layout Enumerate
+2010 Midterm Question 1
+\end_layout
+
+\begin_layout Enumerate
+2006 Midterm Question 3 (won't cover in section)
+\end_layout
+
+\begin_layout Enumerate
+2005 Midterm Question 4
+\end_layout
+
+\begin_layout Enumerate
+2004 Midterm Question 1
+\end_layout
+
+\begin_layout Enumerate
+2005 Midterm Question 1 (won't cover in section)
+\end_layout
+
+\begin_layout Section*
+Some Midterm Tips
+\end_layout
+
+\begin_layout Enumerate
+Since this is open book, make a cheat sheet with the important equations
+ and bring a calculator.
+\end_layout
+
+\begin_layout Enumerate
+Try not to get stuck on one question.
+ You need to pace yourself.
+ Try to get to all of the questions.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Read the questions carefully and make sure that you're actually answering
+ each of the questions.
+ A lot of people didn't fully answer questions on the problem sets.
+ 
+\end_layout
+
+\begin_layout Enumerate
+If you get stuck on the math, describe the process and what the answer might
+ look like.
+ Show Chris what you know.
+ Also, take a step back and really look at the functions/equations that
+ you are being asked to analyze.
+ Some interesting intuition might leap out at you.
+ 
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+2010 Midterm Question 1 (30 points)
+\end_layout
+
+\begin_layout Standard
+See solutions posted on course website.
+\end_layout
+
+\begin_layout Section*
+2006 Midterm Question 3 (20 points)
+\end_layout
+
+\begin_layout Standard
+Based on empirical analysis, you have the following information about a
+ typical poor consumer’s demand for heating oil:
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="right" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Own price elasticity of demand
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Wealth elasticity of demand
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Current price
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Current consumption
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+120
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Current wealth
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12,000
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For the coming heating season, the government is expecting an increase in
+ the price of heating oil to 12.
+ It is interested in determining how much to increase public assistance
+ so that the poor people can maintain their current standard of living after
+ the increase in the price of heating oil.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\shape italic
+Question 3a)
+\series default
+\shape default
+ According to economic theory, how should the government determine the required
+ increase in public assistance? Briefly explain your answer.
+ Be sure to relate it to the concepts studied in class.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\shape italic
+Question 3b)
+\series default
+\shape default
+ Using the data provided above, estimate how much public assistance should
+ be increased in order to maintain the poor consumers’ standard of living.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+[Parts c-e have been added for the purposes of section; they were not on
+ the original exam]
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\shape italic
+Question 3c)
+\series default
+\shape default
+ Now assume that the price increase was due to a tax.
+ Calculate the deadweight loss of the tax using the concept from b.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\shape italic
+Question 3d)
+\series default
+\shape default
+ Calculate the Laspeyres Index for the price change.
+ If we used the Laspeyres Index to compensate the consumer, how much would
+ we increase public assistance? Explain the intuition behind the relationship
+ between this value and the value you found in part b).
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\shape italic
+Question 3e)
+\series default
+\shape default
+ Estimate the Paasche Index for the price change.
+ If we used the Paasche Index to compensate the consumer, how much would
+ we increase public assistance?
+\end_layout
+
+\begin_layout Subsection*
+Solutions
+\end_layout
+
+\begin_layout Standard
+Note that the information given to us is in terms of elasticities.
+ Therefore, one step that we'll probably have to consider is turning these
+ elasticities into the derivatives we've seen in section and in our problem
+ sets.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\shape italic
+Question 3a)
+\series default
+\shape default
+ The correct concept is CV, which is equal to the change in wealth necessary
+ for the consumer to achieve the same utility as before the price change
+ after the price change has occurred.
+ Thus, CV is the increase in wealth needed for the consumer, or the amount
+ of wealth that a social planner has to give to the consumer (hence the
+ minus sign for price increases), so that he or she is able to maintain
+ the same utility level.
+ Formally, CV is calculated as follows: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+CV=e(p^{1},u^{1})-e(p^{1},u^{0})=e(p^{0},u^{0})-e(p^{1},u^{0})=w-e(p^{1},u^{0}).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\shape italic
+Question 3b)
+\series default
+\shape default
+ We use a linear approximation of the Hicksian demand curve.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+See Section Note 4.
+ 
+\end_layout
+
+\end_inset
+
+ Whenever we approximate a non-linear function, the first-step is to determine
+ the point around which we want to approximate.
+ Where is it going to be for this question?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+\epsilon_{oil}^{p} & = & -2=\frac{dx}{dp}\cdot\frac{p}{x}=\frac{dx}{dp}\cdot\frac{10}{120}\Rightarrow\frac{dx}{dp}=-24\label{eq:price elasticity}\\
+\epsilon_{oil}^{w} & = & 10=\frac{dx}{dw}\cdot\frac{w}{x}=\frac{dx}{dw}\cdot\frac{12,000}{120}\Rightarrow\frac{dx}{dw}=0.1\label{eq:wealth elasticity}
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now we use the Slutsky Equation and plug the results from equations 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:price elasticity"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:wealth elasticity"
+
+\end_inset
+
+ to approximate the slope of the Hicksian at the 
+\shape italic
+old
+\shape default
+ price-wealth vector.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{dh}{dp}=\frac{dx}{dp}+\frac{dx}{dw}\cdot x=-24+0.1\cdot120=-12
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The approximate change in the Hicksian demand is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+\Delta h & = & \frac{dh}{dp}\cdot\Delta p=-12\cdot2=-24\\
+h(p=12,\vec{p}^{0},u^{0}) & \approx & h(10)+\frac{dh}{dp}\cdot\Delta p=120-24=96
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Therefore,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+CV=-\frac{1}{2}\cdot2\cdot(96+120)=-216.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\shape italic
+Question 3c) 
+\series default
+\shape default
+To calculate the DWL, we use the following equation, where 
+\begin_inset Formula $T$
+\end_inset
+
+ is equal to the total tax revenue:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+DWL=|CV|-T=216-2\cdot96=24.
+\]
+
+\end_inset
+
+It may be easier for you to draw a picture.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\shape italic
+Question 3d)
+\series default
+\shape default
+ Assume that the non-oil goods are a composite commodity 
+\begin_inset Formula $y$
+\end_inset
+
+ with price 
+\begin_inset Formula $q=1$
+\end_inset
+
+.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+If you don't know what a composite commodity is, don't worry.
+ Think about it as a basket of all other goods, aside from heating oil,
+ that a consumer consumes.
+ You'll learn more about this as we do partial equilibrium.
+\end_layout
+
+\end_inset
+
+ Then we can calculate the Laspeyres index as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+PI_{Laspeyres} & = & \frac{p'x^{0}+q'y^{0}}{px^{0}+qy^{0}}\\
+ & = & \frac{12\cdot120+10,800}{10\cdot120+10,800}=1.02\\
+ &  & (\because p^{0}x^{0}+q^{0}y^{0}=w\rightarrow10\cdot120+1\cdot y^{0}=12,000\rightarrow y^{0}=10,800)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Compensation=|PI_{Laspeyres}-1|\cdot w=240>|CV|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Recall that the Laspeyres Index generally results in over-compensation,
+ since it does not take into account that the consumer facing a price increase
+ on good 
+\begin_inset Formula $x$
+\end_inset
+
+ can re-optimize.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\shape italic
+Question 3e)
+\series default
+\shape default
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+PI_{Paasche} & = & \frac{p'x'+q'y'}{px'+qy'}\\
+ & = & \frac{12\cdot72+11,136}{10\cdot72+11,136}\approx1.0121\\
+ &  & (\because p'x'+q'y'=w\rightarrow12\cdot72+1\cdot y'=12,000\rightarrow y'=11,136)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Compensation=|PI_{Paasche}-1|\cdot w\approx145.20<|CV|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The Paasche Index generally results in under-compensation.
+ 
+\end_layout
+
+\begin_layout Standard
+The Fisher Ideal Index takes the geometric mean of the Laspeyres and Paasche
+ Indices
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+This is the text book definition of the Fischer Ideal Index.
+ 
+\end_layout
+
+\end_inset
+
+ to try to balance out the over and under compensation, respectively:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+PI_{Fisher}=\sqrt{PI_{Laspeyres}\cdot PI_{Paasche}}\approx1.016
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Compensation=|PI_{Fisher}-1|\cdot w=192<|CV|,
+\]
+
+\end_inset
+
+but this is not generally the case for all price increases.
+ 
+\end_layout
+
+\begin_layout Section*
+2005 Midterm Question 4 (20 points)
+\end_layout
+
+\begin_layout Subsection*
+Solutions
+\end_layout
+
+\begin_layout Standard
+The relevant Bernoulli utility function is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+u(x)=cx^{\alpha},
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $c>0$
+\end_inset
+
+ and 
+\begin_inset Formula $\alpha>0$
+\end_inset
+
+.
+ We know that agents/consumers are indifferent between the following lotteries
+ over the respective outcomes:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+L_{1} & = & \left[\frac{1}{10^{6}},\,1-\frac{1}{10^{6}}\right];\,\, x_{1}=\left[\$10^{6},\,0\right]\\
+L_{2} & = & \left[\frac{1}{2\cdot10^{6}},\,\frac{1}{20,000},\,1-\frac{1}{2\cdot10^{6}}-\frac{1}{20,000}\right];\,\, x_{2}=\left[\$10^{6},\,1000,\,0\right]
+\end{eqnarray*}
+
+\end_inset
+
+and 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L_{1}\sim L_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\shape italic
+Question a and b)
+\series default
+\shape default
+ Since agents are indifferent between the two lotteries, it must be the
+ case that 
+\begin_inset Formula $U(L_{1})=U(L_{2})$
+\end_inset
+
+.
+ Let's calculate each.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U(L_{1})=\frac{1}{10^{6}}\cdot c(10^{6})^{\alpha}+\left(1-\frac{1}{10^{6}}\right)\cdot c(0)^{\alpha}=\frac{1}{10^{6}}\cdot c\cdot10^{6\alpha}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U(L_{2})=\frac{1}{2\cdot10^{6}}\cdot c(10^{6})^{\alpha}+\frac{1}{20,000}\cdot c(10^{3})^{\alpha}+\left(1-\frac{1}{2\cdot10^{6}}-\frac{1}{20,000}\right)\cdot c(0)^{\alpha}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Setting the two equations above equal to each other we see that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{1}{10^{6}}\cdot c\cdot10^{6\alpha} & = & \frac{1}{2\cdot10^{6}}\cdot c\cdot10^{6\alpha}+\frac{1}{20,000}\cdot c\cdot10^{3\alpha}\\
+\frac{1}{2\cdot10^{6}}\cdot c\cdot10^{6\alpha} & = & \frac{1}{20,000}\cdot c\cdot10^{3\alpha}\\
+10^{3\alpha} & = & \frac{2\times10^{6}}{2\times10^{4}}=100\\
+\therefore3\alpha & = & 2\\
+\alpha & = & \frac{2}{3}.
+\end{eqnarray*}
+
+\end_inset
+
+The important thing to notice is that 
+\begin_inset Formula $c$
+\end_inset
+
+ is not determined by the indifference between the two lotteries.
+ Recall that positive linear transformations of the expected utility function
+ represent the same preferences over lotteries.
+ Why? Recall our discussion on how the expected utility function was a linear
+ combination of the Bernoulli utility functions.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\shape italic
+Question c)
+\series default
+\shape default
+ Let's solve by using the expected utilities.
+ Define a new lottery 
+\begin_inset Formula $L_{3}=\left[p,\,1-p\right]$
+\end_inset
+
+ over the outcome 
+\begin_inset Formula $x_{3}=\left[1000,\,0\right]$
+\end_inset
+
+.
+ Then we can calculate the following:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+U(L_{3})=p\cdot c\cdot10^{3\alpha}+\left(1-p\right)\cdot c\cdot0^{3\alpha}=100cp\,\left(\because\alpha=\frac{2}{3}\right).
+\]
+
+\end_inset
+
+Since 
+\begin_inset Formula $U(L_{3})=U(L_{1}),$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+100cp & = & \frac{1}{10^{6}}\cdot c\cdot10^{6\alpha}\\
+p & = & \frac{1}{10^{4}}.
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+2004 Midterm Question 1 (30 points)
+\end_layout
+
+\begin_layout Standard
+Consider a two-commodity world and a consumer with the following utility
+ function:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+u(x_{1},x_{2})=\left(x_{1}^{\frac{1}{2}}+x_{2}^{\frac{1}{2}}\right)^{2}.
+\]
+
+\end_inset
+
+The prices of goods 1 and 2 are 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{2}$
+\end_inset
+
+, respectively, and the consumer has initial wealth 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\shape italic
+Question 1a)
+\series default
+\shape default
+ State the consumer's utility maximization problem (3 points).
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\shape italic
+Question 1b)
+\series default
+\shape default
+ Will this consumer's Walrasian demand function satisfy Walras' Law? Explain
+ your answer (3 points).
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\shape italic
+Question 1c)
+\series default
+\shape default
+ Derive the consumer's Walrasian demand function and indirect utility functions
+ (12 points).
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\shape italic
+Question 1d)
+\series default
+\shape default
+ Suppose that the consumer has wealth 
+\begin_inset Formula $w=260$
+\end_inset
+
+.
+ Initially, prices are 
+\begin_inset Formula $(p_{1},p_{2})=(6,8)$
+\end_inset
+
+.
+ Suppose prices change to 
+\begin_inset Formula $(p'_{1},p'_{2})=(5,12)$
+\end_inset
+
+.
+ What is the (exact) EV of this price change (12 points)?
+\end_layout
+
+\begin_layout Subsection*
+Solutions
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\shape italic
+Question 1a) 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+ & \max_{x_{1},x_{2}}\left(x_{1}^{\frac{1}{2}}+x_{2}^{\frac{1}{2}}\right)^{2}\\
+s.t & \vec{p}\cdot\vec{x}\leq w
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\shape italic
+Question 1b)
+\series default
+\shape default
+ Yes.
+ The utility function above is strongly monotone (more is better), which
+ implies Walras' Law.
+ More formally, notice that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\partial u}{\partial x_{1}}>0,\frac{\partial u}{\partial x_{2}}>0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\shape italic
+Question 1c)
+\series default
+\shape default
+ We need to set up the Lagrangian and solve, but before that is there anything
+ we can do to make the function above more tractable? If you don't do this
+ during the exam, you'd be stuck on this question for quite a while.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathfrak{L}(x_{1},x_{2},\lambda)=x_{1}^{\frac{1}{2}}+x_{2}^{\frac{1}{2}}-\lambda\left(p_{1}x_{1}+p_{2}x_{2}-w\right)\label{eq:Lagrangian}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We get the following first order conditions (if we assume an interior solution,
+ which is a pretty good assumption given the fact that the objective function
+ is concave):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{\partial\mathfrak{L}(x_{1}^{*},x_{2}^{*},\lambda^{*})}{\partial x_{1}} & = & \frac{1}{2\sqrt{x_{1}^{*}}}-\lambda^{*}p_{1}=0\\
+\frac{\partial\mathfrak{L}(x_{1}^{*},x_{2}^{*},\lambda^{*})}{\partial x_{2}} & = & \frac{1}{2\sqrt{x_{2}^{*}}}-\lambda^{*}p_{2}=0\\
+\frac{\partial\mathfrak{L}(x_{1}^{*},x_{2}^{*},\lambda^{*})}{\partial\lambda} & = & p_{1}x_{1}+p_{2}x_{2}-w=0.
+\end{eqnarray*}
+
+\end_inset
+
+Solving the three equations for the three unknowns, we get the following
+ (use the symmetry):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x_{1}^{*}(\vec{p},w)=\frac{w}{\left(p_{1}+\frac{p_{1}^{2}}{p_{2}}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x_{2}^{*}(\vec{p},w)=\frac{w}{\left(p_{2}+\frac{p_{2}^{2}}{p_{1}}\right)}.
+\]
+
+\end_inset
+
+Both of which are homogeneous of degree 0 in the price-wealth vector.
+\end_layout
+
+\begin_layout Standard
+Now we're asked to solve for the indirect utility function, which is an
+ identity which takes prices and wealth as its arguments:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+v(\vec{p},w)=\left(\sqrt{x_{1}^{*}}+\sqrt{x_{2}^{*}}\right)^{2}=\left(\sqrt{\frac{w}{\left(p_{1}+\frac{p_{1}^{2}}{p_{2}}\right)}}+\sqrt{\frac{w}{\left(p_{2}+\frac{p_{2}^{2}}{p_{1}}\right)}}\right)^{2}=\frac{w(p_{1}+p_{2})}{p_{1}p_{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\shape italic
+Question 1d)
+\series default
+\shape default
+ Note that there are many ways to calculate the EV.
+ However, why do you think that the problems above asked you to solve for
+ the indirect utility function and why do you think it asks for the 
+\begin_inset Quotes eld
+\end_inset
+
+exact
+\begin_inset Quotes erd
+\end_inset
+
+ EV? We don't want to use approximation using the Slutsky equation here.
+ What we want to use is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+v(\vec{p}^{0},w+EV) & = & v(\vec{p}^{1},w)\\
+\frac{(260+EV)(6+8)}{6\cdot8} & = & \frac{260\cdot(5+12)}{5\cdot12}\\
+\therefore EV & \approx & -7.4286
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+2005 Midterm Question 1 (20 points)
+\end_layout
+
+\begin_layout Standard
+A consumer has utility function 
+\begin_inset Formula $u(x_{1},x_{2})=v(x_{1})+v(x_{2}),$
+\end_inset
+
+where 
+\begin_inset Formula $v(\cdot)$
+\end_inset
+
+ is a strictly increasing, strictly concave function with 
+\begin_inset Formula $v'(0)=\infty$
+\end_inset
+
+.
+ The positive prices of the two goods are 
+\begin_inset Formula $p_{1},p_{2}$
+\end_inset
+
+, respectively, and the consumer has positive initial wealth equal to 
+\begin_inset Formula $w$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\shape italic
+Question 1a)
+\series default
+\shape default
+ Write down the consumer's utility maximization problem.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\shape italic
+Question 1b)
+\series default
+\shape default
+ Let 
+\begin_inset Formula $x_{1}^{*}$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{2}^{*}$
+\end_inset
+
+ denote the consumer's optimal choices of 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+.
+ Derive the conditions that characterize 
+\begin_inset Formula $x_{1}^{*}$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{2}^{*}$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\shape italic
+Question 1c)
+\series default
+\shape default
+ Under what conditions on the exogenous variables will 
+\begin_inset Formula $x_{1}^{*}$
+\end_inset
+
+ be strictly greater than 
+\begin_inset Formula $x_{2}^{*}$
+\end_inset
+
+?
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\shape italic
+Question 1d)
+\series default
+\shape default
+ Derive an expression relating 
+\begin_inset Formula $\frac{dx_{1}^{*}}{dw}$
+\end_inset
+
+ and 
+\begin_inset Formula $\frac{dx_{2}^{*}}{dw}$
+\end_inset
+
+ to the shape of the function 
+\begin_inset Formula $v(\cdot)$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Solutions
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\shape italic
+Question 1a)
+\series default
+\shape default
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+ & \max_{x_{1},x_{2}}v(x_{1})+v(x_{2})\\
+s.t & \vec{p}\cdot\vec{x}\leq w
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\shape italic
+Question 1b)
+\series default
+\shape default
+ We need to set up a Lagrangian.
+ However, is there anything we can do to simplify the maximization? No.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathfrak{L}(x_{1},x_{2},\lambda)=v(x_{1})+v(x_{2})-\lambda\left(p_{1}x_{1}+p_{2}x_{2}-w\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We get the following first order conditions (Note that we know that there
+ will be an interior solution here.
+ Why? It is because of (one of) the Inada condition above,
+\begin_inset Formula $v'(0)=\infty$
+\end_inset
+
+):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{\partial\mathfrak{L}(x_{1}^{*},x_{2}^{*},\lambda^{*})}{\partial x_{1}} & = & v'(x_{1}^{*})-\lambda^{*}p_{1}=0\\
+\frac{\partial\mathfrak{L}(x_{1}^{*},x_{2}^{*},\lambda^{*})}{\partial x_{2}} & = & v'(x_{2}^{*})-\lambda^{*}p_{2}=0\\
+\frac{\partial\mathfrak{L}(x_{1}^{*},x_{2}^{*},\lambda^{*})}{\partial\lambda} & = & p_{1}x_{1}+p_{2}x_{2}-w=0
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Solving for these equations to the extent possible, we have the following
+ equations:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{v'(x_{1}^{*})}{v'(x_{2}^{*})}=\frac{p_{1}}{p_{2}}\label{eq:tangency}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p_{1}x_{1}^{*}+p_{2}x_{2}^{*}=w.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\shape italic
+Question 1c)
+\series default
+\shape default
+ Since 
+\begin_inset Formula $v(\cdot)$
+\end_inset
+
+ is stictly concave, 
+\begin_inset Formula $x_{1}^{*}>x_{2}^{*}$
+\end_inset
+
+ iff 
+\begin_inset Formula $v'(x_{1}^{*})<v'(x_{2}^{*})$
+\end_inset
+
+, which occurs iff 
+\begin_inset Formula $\frac{p_{1}}{p_{2}}<1$
+\end_inset
+
+ or 
+\begin_inset Formula $p_{1}<p_{2}$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\shape italic
+Question 1d)
+\series default
+\shape default
+ I included this because it uses the Implicit Function Theorem.
+ 
+\end_layout
+
+\begin_layout Standard
+Using equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:tangency"
+
+\end_inset
+
+, which is a first order condition, we can define the following identity:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+v'(x_{1}^{*})\equiv\frac{p_{1}}{p_{2}}v'(x_{2}^{*}),
+\]
+
+\end_inset
+
+differentiating both sides of the identity with regards to 
+\begin_inset Formula $w$
+\end_inset
+
+ we get:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+v''(x_{1}^{*})\cdot\frac{dx_{1}^{*}}{dw}\equiv\frac{p_{1}}{p_{2}}v''(x_{2}^{*})\cdot\frac{dx_{2}^{*}}{dw}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

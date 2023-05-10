@@ -1,0 +1,797 @@
+#LyX 1.6.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+\end_modules
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Section Notes 1
+\end_layout
+
+\begin_layout Author
+Wonbin Kang
+\end_layout
+
+\begin_layout Date
+January 27, 2009
+\end_layout
+
+\begin_layout Part*
+Agenda
+\end_layout
+
+\begin_layout Enumerate
+Profit Maximization Problem (PMP)
+\end_layout
+
+\begin_layout Enumerate
+Cost Minimization Problem (CMP)
+\end_layout
+
+\begin_layout Enumerate
+Example of CMP (2003 Final Exam Problem 3)
+\end_layout
+
+\begin_layout Enumerate
+Firm Technology, Cost Function, and Supply
+\end_layout
+
+\begin_layout Section
+PMP
+\end_layout
+
+\begin_layout Standard
+If you've been reading MWG, you'll notice that it uses two different notations:
+ the general and the one output case.
+ Therefore, the two different types of product sets can be defined as follows:
+ 
+\begin_inset Formula $Y\equiv\left\{ \vec{y}\in\mathbb{R}^{L}:F(\vec{y})\right\} $
+\end_inset
+
+, where 
+\begin_inset Formula $\vec{y}$
+\end_inset
+
+ is a vector of net outputs and inputs and 
+\begin_inset Formula $F(\cdot)$
+\end_inset
+
+ is the transformation function, and 
+\begin_inset Formula $Y\equiv\left\{ (-\vec{z},q)\in\mathbb{R}_{-}^{L-1}\times\mathbb{R}_{+}:\vec{z}\geq0,\, f(\vec{z})\geq q\right\} $
+\end_inset
+
+, where 
+\begin_inset Formula $\vec{z}$
+\end_inset
+
+ is a vector of inputs, you have one output 
+\begin_inset Formula $q$
+\end_inset
+
+, and 
+\begin_inset Formula $f(\cdot)$
+\end_inset
+
+ is the production function.
+ For the most part in this class, we'll be looking at the latter version,
+ but you should familiarize yourself with the former.
+ 
+\end_layout
+
+\begin_layout Standard
+Before setting up the PMP, let's consider the parameters: output is equal
+ to 
+\begin_inset Formula $q$
+\end_inset
+
+ and has prices 
+\begin_inset Formula $p$
+\end_inset
+
+, inputs are represented by 
+\begin_inset Formula $\vec{z}$
+\end_inset
+
+ with prices 
+\begin_inset Formula $\vec{\omega}$
+\end_inset
+
+,
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+We'll usually be dealing with two inputs and one output for this class.
+\end_layout
+
+\end_inset
+
+ technology of producer is represented by 
+\begin_inset Formula $f(\cdot)$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $f(\vec{z})\geq q$
+\end_inset
+
+, where we normalize the production function so that 
+\begin_inset Formula $f(\vec{0})=0$
+\end_inset
+
+, which MWG terms as the possibility of inaction is within the production
+ set, and 
+\begin_inset Formula $f(\cdot)$
+\end_inset
+
+ is a monotonically increasing strictly concave function, which means that
+ the firm has a technology that exhibits decreasing returns to scale.
+ 
+\end_layout
+
+\begin_layout Subsection
+Problem
+\end_layout
+
+\begin_layout Standard
+The PMP can be written as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\max_{\vec{z}\geq\geq0}\Pi(q,\vec{z})=pf(\vec{z})-\vec{\omega}\cdot\vec{z},\]
+
+\end_inset
+
+since at the optimum the firm will choose 
+\begin_inset Formula $\vec{z}$
+\end_inset
+
+ such that 
+\begin_inset Formula $f(\vec{z})=q$
+\end_inset
+
+ given 
+\begin_inset Formula $\vec{\omega}\gg0$
+\end_inset
+
+ and a continuous and monotonic production function.
+\end_layout
+
+\begin_layout Standard
+Because we have no information on the exact functional form of 
+\begin_inset Formula $f(\cdot)$
+\end_inset
+
+, we still have to worry about the non-negativity constraints with regards
+ to the choice variables 
+\begin_inset Formula $\vec{z}$
+\end_inset
+
+.
+ Therefore, we use the K-T FOCs and we get:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial\Pi}{\partial z_{i}}=p\frac{\partial f(\vec{z}^{*})}{\partial z_{i}}-\omega_{i}\leq0\,\forall i\]
+
+\end_inset
+
+and the following complementary slackness constraints:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+z_{i}\left(p\frac{\partial f(\vec{z}^{*})}{\partial z_{i}}-\omega_{i}\right)=0.\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If we assume that 
+\begin_inset Formula $z_{i}^{*}>0\,\forall i$
+\end_inset
+
+, then:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{equation}
+\frac{\partial f(\vec{z}^{*})}{\partial z_{i}}=\frac{\omega_{i}}{p}\Rightarrow p\frac{\partial f(\vec{z}^{*})}{\partial z_{i}}=\omega_{i}\label{eq:1}\end{equation}
+
+\end_inset
+
+which can be interpreted as the marginal return of increasing production
+ by increasing the input 
+\begin_inset Formula $i$
+\end_inset
+
+ is equal to the marginal cost of that additional input 
+\begin_inset Formula $i$
+\end_inset
+
+ at the optimum.
+ Draw a picture to see what this looks like.
+\end_layout
+
+\begin_layout Subsection
+Solution
+\end_layout
+
+\begin_layout Standard
+If we solve the K-T first order conditions and the complementary slackness
+ conditions, you get the following solutions:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{z}^{*} & = & \vec{z}(\vec{\omega},p)\Rightarrow z_{i}^{*}=z_{i}(\vec{\omega},p)\Leftrightarrow factor\, demand\\
+q^{*} & = & q(\vec{\omega},p)=f(\vec{z}(\vec{\omega},p))\Leftrightarrow supply\, function\\
+\Pi^{*} & = & \Pi(\vec{\omega},p)=pf(\vec{z}(\vec{\omega},p))-\vec{\omega}\cdot\vec{z}(\vec{\omega},p)\Leftrightarrow profit\, function\end{eqnarray*}
+
+\end_inset
+
+ From the equations above, we can derive the following Lemma:
+\end_layout
+
+\begin_layout Lemma
+Hotelling's Lemma: If there is a unique solution to the PMP, then the following
+ holds:
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Formula \begin{eqnarray*}
+\nabla_{\vec{\omega}}\Pi(\vec{\omega},p) & = & -\vec{z}(\vec{\omega},p)\Leftrightarrow\frac{\partial\Pi(\vec{\omega},p)}{\partial\omega_{i}}=-z_{i}(\vec{\omega},p)\\
+\frac{\partial\Pi(\vec{\omega},p)}{\partial p} & = & q(\vec{\omega},p)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Marginal Rate of Technical Substitution
+\end_layout
+
+\begin_layout Standard
+In consumer theory, we had the marginal rate of substitution between two
+ goods.
+ We have something analogous in production theory as well, the marginal
+ rate of technical substitution (note that if we're dealing with the more
+ general case with 
+\begin_inset Formula $\vec{y}\in Y$
+\end_inset
+
+ as a vector of inputs and outputs, we call it the marginal rate of transformati
+on).
+ We define the marginal rate of technical substitution at the point 
+\begin_inset Formula $\vec{z}^{*}$
+\end_inset
+
+ on the production boundary as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\frac{\partial f(\vec{z}^{*})}{\partial z_{i}}}{\frac{\partial f(\vec{z}^{*})}{\partial z_{j}}}=MRTS_{ij}\]
+
+\end_inset
+
+which can be interpreted as how much should the firm decrease the amount
+ of resource 
+\begin_inset Formula $i$
+\end_inset
+
+ in the production of 
+\begin_inset Formula $q$
+\end_inset
+
+ units of the output if the firm increases the input of resource 
+\begin_inset Formula $j$
+\end_inset
+
+.
+ Note that if we have an interior solution, we can use equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1"
+
+\end_inset
+
+ above to show that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+MRTS_{ij}=\frac{\frac{\partial f(\vec{z}^{*})}{\partial z_{i}}}{\frac{\partial f(\vec{z}^{*})}{\partial z_{j}}}=\frac{\frac{\omega_{i}}{p}}{\frac{\omega_{j}}{p}}=\frac{\omega_{i}}{\omega_{j}}.\]
+
+\end_inset
+
+Try to interpret this.
+ What happens if 
+\begin_inset Formula $MRTS_{ij}>\frac{\omega_{i}}{\omega_{j}}$
+\end_inset
+
+? 
+\end_layout
+
+\begin_layout Section
+CMP
+\end_layout
+
+\begin_layout Standard
+As in consumer theory, where we had the EMP to the UMP, we have the cost
+ minimization problem (CMP) for the producer's profit maximization problem.
+ The CMP is especially useful for the following reasons:
+\end_layout
+
+\begin_layout Enumerate
+We can derive the optimal values of a firm even if the production function
+ 
+\begin_inset Formula $f(\cdot)$
+\end_inset
+
+ is not concave (has decreasing returns to scale technology).
+\end_layout
+
+\begin_layout Enumerate
+We can relax the assumption that all firms act as price takers (we'll see
+ a lot of this when we look at market failures).
+ 
+\end_layout
+
+\begin_layout Subsection
+Problem
+\end_layout
+
+\begin_layout Standard
+We can write it up as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\min_{\vec{z}\geq\geq0}\vec{\omega}\cdot\vec{z}\, s.t.\, f(\vec{z})\geq\bar{q}\]
+
+\end_inset
+
+We know that at the optimum the constraint will bind, however, it's too
+ difficult to plug the constraint into the objective function.
+ Therefore, we turn to the Lagrangian.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mathfrak{L}(\vec{z},\lambda)\equiv\vec{\omega}\cdot\vec{z}-\lambda[f(\vec{z})-\bar{q}].\]
+
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Be very careful of the sign of the multiplier and the form of the constraint.
+\end_layout
+
+\end_inset
+
+ Since we still have the non-negativity constraints on our choice variables
+ and we don't know the exact functional form of the constraint, we use the
+ K-T FOCs and the complementary slackness condition:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial\mathfrak{L}(\vec{z}^{*},\lambda^{*})}{\partial z_{i}} & = & \omega_{i}-\lambda^{*}\cdot\frac{\partial f(\vec{z}^{*})}{\partial z_{i}}\geq0\\
+z_{i}^{*}\left(\omega_{i}-\lambda^{*}\frac{\partial f(\vec{z}^{*})}{\partial z_{i}}\right) & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Notice that the direction of the inequality changes since we have a minization
+ problem.
+ 
+\end_layout
+
+\end_inset
+
+ At an interior, we have the following equality:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\omega_{i}=\lambda^{*}\frac{\partial f(\vec{z}^{*})}{\partial z_{i}}\Rightarrow\lambda^{*}=\frac{\omega_{i}}{\frac{\partial f(\vec{z}^{*})}{\partial z_{i}}}\Rightarrow\frac{\frac{\partial f(\vec{z}^{*})}{\partial z_{i}}}{\frac{\partial f(\vec{z}^{*})}{\partial z_{j}}}=\frac{\omega_{i}}{\omega_{j}}\]
+
+\end_inset
+
+.
+ Let's draw a picture to see what we're dealing with.
+ 
+\end_layout
+
+\begin_layout Subsection
+Solution
+\end_layout
+
+\begin_layout Standard
+If we solve the K-T first order conditions and the complementary slackness
+ conditions, you get the following solutions:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{z}^{*} & = & \vec{z}(\vec{\omega},\bar{q})\Rightarrow z_{i}^{*}=z_{i}(\vec{\omega},\bar{q})\Leftrightarrow conditional\, factor\, demand\\
+c^{*} & = & c(\vec{\omega},\bar{q})=\vec{\omega}\cdot\vec{z}(\vec{\omega},\bar{q})\Leftrightarrow cost\, function\end{eqnarray*}
+
+\end_inset
+
+ From the equations above, we can derive the following Lemma:
+\end_layout
+
+\begin_layout Lemma
+Shepard's Lemma: If there is a unique solution to the CMP, then the following
+ holds:
+\end_layout
+
+\begin_layout Lemma
+\begin_inset Formula \begin{eqnarray*}
+\nabla_{\vec{\omega}}c(\vec{\omega},\bar{q}) & = & \vec{z}(\vec{\omega},\bar{q})\Leftrightarrow\frac{\partial c(\vec{\omega},\bar{q})}{\partial\omega_{i}}=z_{i}(\vec{\omega},\bar{q})\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+CMP Example (2003 Final Problem 3)
+\end_layout
+
+\begin_layout Standard
+Firm produces 
+\begin_inset Formula $q$
+\end_inset
+
+ using 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ according to the following production function: 
+\begin_inset Formula $f(\vec{z})=4\left(z_{1}^{\frac{1}{2}}+z_{2}^{\frac{1}{2}}\right)^{\frac{1}{2}}$
+\end_inset
+
+.
+ The price vector is equal to 
+\begin_inset Formula $\left[p,\omega_{1},\omega_{2}\right]\gg0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Problem
+State the firm's CMP.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\min_{\vec{z}\geq\geq0}\omega_{1}z_{1}+\omega_{2}z_{2}\, s.t.\,4\left(z_{1}^{\frac{1}{2}}+z_{2}^{\frac{1}{2}}\right)^{\frac{1}{2}}\geq\bar{q}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Derive the FOCs while assuming that the solution to the above minimization
+ problem are interior.
+\end_layout
+
+\begin_layout Standard
+If the problem didn't ask you to assume interior solutions, we'd have to
+ use the K-T FOCs and the complementary slackness conditions, or do we?
+\end_layout
+
+\begin_layout Standard
+Notice the following (which applies when we take the first derivative with
+ regards to both 
+\begin_inset Formula $i=1$
+\end_inset
+
+ and 
+\begin_inset Formula $i=2$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial f(\vec{z})}{\partial z_{1}}=2\left(z_{1}^{\frac{1}{2}}+z_{2}^{\frac{1}{2}}\right)^{-\frac{1}{2}}\times\frac{z_{1}^{-\frac{1}{2}}}{2}=\frac{1}{\sqrt{\left(z_{1}^{\frac{1}{2}}+z_{2}^{\frac{1}{2}}\right)\cdot z_{1}}}\]
+
+\end_inset
+
+which means that
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\lim_{z_{1}\rightarrow0}\frac{\partial f(\vec{z})}{\partial z_{1}}=\infty\]
+
+\end_inset
+
+and so you would never utilize 0 of either resource 1 or resource 2.
+ 
+\end_layout
+
+\begin_layout Standard
+Now going back to the problem, we should set up a Lagrangian and take FOCs.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mathfrak{L}(\vec{z},\lambda)=\omega_{1}z_{1}+\omega_{2}z_{2}-\lambda\left[\bar{q}-4\left(z_{1}^{\frac{1}{2}}+z_{2}^{\frac{1}{2}}\right)^{\frac{1}{2}}\right]\]
+
+\end_inset
+
+and the FOCs are:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial\mathfrak{L}(\vec{z}^{*},\lambda^{*})}{\partial z_{1}} & = & \omega_{1}-\frac{\lambda^{*}}{\sqrt{\left(z_{1}^{\frac{1}{2}}+z_{2}^{\frac{1}{2}}\right)\cdot z_{1}}}=0\\
+\frac{\partial\mathfrak{L}(\vec{z}^{*},\lambda^{*})}{\partial z_{2}} & = & \omega_{2}-\frac{\lambda^{*}}{\sqrt{\left(z_{1}^{\frac{1}{2}}+z_{2}^{\frac{1}{2}}\right)\cdot z_{2}}}=0\\
+\frac{\partial\mathfrak{L}(\vec{z}^{*},\lambda^{*})}{\partial\lambda} & = & 4\left(z_{1}^{\frac{1}{2}}+z_{2}^{\frac{1}{2}}\right)^{\frac{1}{2}}-\bar{q}=0\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Note that all of the 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ should be starred.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Find the conditional factor demand and cost functions.
+\end_layout
+
+\begin_layout Standard
+Solving the three equations above, you can solve for the conditional factor
+ demand (notice that 
+\begin_inset Formula $\bar{q}$
+\end_inset
+
+ is a parameter), and if you plug your solutions back into the objective
+ function you get the cost function.
+ The result is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+z_{1}^{*}=z_{1}(\vec{\omega},\bar{q})=\left(\frac{\bar{q}^{4}}{256}\right)\left(\frac{\omega_{2}}{\omega_{1}+\omega_{2}}\right)^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+z_{2}^{*}=z_{2}(\vec{\omega},\bar{q})=\left(\frac{\bar{q}^{4}}{256}\right)\left(\frac{\omega_{1}}{\omega_{1}+\omega_{2}}\right)^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+c(\vec{\omega},\bar{q})=\omega_{1}z_{1}^{*}+\omega_{2}z_{2}^{*}=\frac{\bar{q}^{4}\omega_{1}\omega_{2}}{256(\omega_{1}+\omega_{2})}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+Show that the cost function is convex in output and interpret.
+ 
+\end_layout
+
+\begin_layout Standard
+We need to show either that 
+\begin_inset Formula $\frac{\partial^{2}c(\vec{\omega},q)}{\partial q^{2}}>0$
+\end_inset
+
+ or that for 
+\begin_inset Formula $\alpha\in[0,1]$
+\end_inset
+
+ 
+\begin_inset Formula $c(\vec{\omega},\alpha q_{0}+(1-\alpha)q_{1})<\alpha\cdot c(\vec{\omega},q_{0})+(1-\alpha)\cdot c(\vec{\omega},q_{1})$
+\end_inset
+
+.
+ Let's use try the former:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial c(\vec{\omega},q)}{\partial q}=\frac{q^{3}\omega_{1}\omega_{2}}{64(\omega_{1}+\omega_{2})}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial^{2}c(\vec{\omega},q)}{\partial q^{2}}=\frac{3q^{2}\omega_{1}\omega_{2}}{64(\omega_{1}+\omega_{2})}>0.\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Convex cost functions imply that the marginal cost of producing more units
+ of output is increasing, which means that there are decreasing returns
+ to scale and that the production function is concave.
+ 
+\end_layout
+
+\begin_layout Problem
+Show that the cost function is concave in 
+\begin_inset Formula $\omega_{1}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+You could derive the second derivative of the cost function with regards
+ to 
+\begin_inset Formula $\omega_{1}$
+\end_inset
+
+: 
+\begin_inset Formula $\frac{\partial^{2}c(\vec{\omega},q)}{\partial\omega_{1}^{2}}$
+\end_inset
+
+, and check the sign.
+ When doing so it is helpful to note that 
+\begin_inset Formula $c\propto\frac{\omega_{1}\omega_{2}}{\omega_{1}+\omega_{2}}$
+\end_inset
+
+ and derive the second derivative with regards to 
+\begin_inset Formula $\omega_{1}$
+\end_inset
+
+ of the RHS.
+ You will find that:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial^{2}c(\vec{\omega},q)}{\partial\omega_{1}^{2}}\propto\frac{-2w_{2}^{2}}{(\omega_{1}+\omega_{2})^{3}}<0.\]
+
+\end_inset
+
+The intuition is that if the price of inputs goes up, the firm is able to
+ reoptimize the bundle used to produce the output and so costs will go up
+ less than linearly.
+ Recall that the same applied for the expenditure function (which was also
+ concave).
+ 
+\end_layout
+
+\begin_layout Standard
+However, a more general method of solving this problem is as follows: 
+\end_layout
+
+\begin_layout Standard
+Let 
+\begin_inset Formula $\vec{\omega}=\alpha\vec{\omega}'+(1-\alpha)\vec{\omega}''$
+\end_inset
+
+, where 
+\begin_inset Formula $\alpha\in[0,1]$
+\end_inset
+
+.
+ Then:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+c(\vec{\omega},q) & = & c(\alpha\vec{\omega}'+(1-\alpha)\vec{\omega}'',q)\\
+ & = & \left(\alpha\vec{\omega}'+(1-\alpha)\vec{\omega}''\right)\cdot\vec{z}(\vec{\omega},q)\\
+ & = & \alpha\vec{\omega}'\cdot\vec{z}(\vec{\omega},q)+(1-\alpha)\vec{\omega}''\cdot\vec{z}(\vec{\omega},q)\\
+ & > & \alpha\vec{\omega}'\cdot\vec{z}(\vec{\omega}',q)+(1-\alpha)\vec{\omega}''\cdot\vec{z}(\vec{\omega}'',q)\\
+ & = & \alpha c(\vec{\omega}',q)+(1-\alpha)c(\vec{\omega}'',q)\end{eqnarray*}
+
+\end_inset
+
+which means that the cost function is concave in the prices of the inputs.
+\end_layout
+
+\begin_layout Section
+Firm Technology, Cost Function, and Supply
+\end_layout
+
+\begin_layout Standard
+See MWG 5.D.
+ Sam and I will go over the graphs in section.
+ 
+\end_layout
+
+\end_body
+\end_document
