@@ -1,1 +1,1 @@
-# GSAS_Econ_2020ab_0910
+# Harvard graduate microeconomics sequence lecture notes for 2009-10 academic year
